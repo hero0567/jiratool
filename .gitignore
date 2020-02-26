@@ -1,0 +1,6 @@
+/target/
+.idea/
+.classpath
+.idea/encodings.xml
+.project
+.settings/

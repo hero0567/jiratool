@@ -1,0 +1,8 @@
+
+
+info.app:
+  name: jira tool
+  description: jira tool
+
+server:
+  port: ${HTTP_PORT:8080}
