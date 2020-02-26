@@ -1,0 +1,830 @@
+[INFO] 2020-02-26 13:11:02,209 [] method:com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:33)
+Try to get issue comments of AMZCUS5-5412
+[INFO] 2020-02-26 13:22:20,885 [] method:com.levy.jiratool.rooomy.RooomyIssueService.loadIssueComments(RooomyIssueService.java:17)
+Login...
+[INFO] 2020-02-26 13:22:21,637 [] method:com.levy.jiratool.rooomy.RooomyIssueService.loadIssueComments(RooomyIssueService.java:25)
+Start query comments.
+[INFO] 2020-02-26 13:22:21,640 [] method:com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:34)
+Try to get issue comments of AMZCUS5-5412
+[INFO] 2020-02-26 13:22:28,938 [] method:com.levy.jiratool.rooomy.RooomyIssueService.main(RooomyIssueService.java:50)
+comment: BasicUser{name=cn.songbai.xiao, displayName=Songbai Xiao, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=cn.songbai.xiao} 2019-12-19T11:29:28.760+08:00 1 Seater Cushion:90.00Lx86.00Wx69.00H ;  ;  ;  
+ 
+[INFO] 2020-02-26 13:22:28,945 [] method:com.levy.jiratool.rooomy.RooomyIssueService.main(RooomyIssueService.java:50)
+comment: BasicUser{name=cn.songbai.xiao, displayName=Songbai Xiao, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=cn.songbai.xiao} 2019-12-30T14:33:42.472+08:00 Notes:chairs/sofa
+[INFO] 2020-02-26 13:22:28,945 [] method:com.levy.jiratool.rooomy.RooomyIssueService.main(RooomyIssueService.java:50)
+comment: BasicUser{name=bijaylax, displayName=Bijaylaxmi Pattanaik, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=bijaylax} 2020-01-08T01:31:28.658+08:00 General - File Error - 360 failure
+Model - Geometry - Remove black lines from the seat cushions
+[INFO] 2020-02-26 13:22:28,946 [] method:com.levy.jiratool.rooomy.RooomyIssueService.main(RooomyIssueService.java:50)
+comment: BasicUser{name=bijaylax, displayName=Bijaylaxmi Pattanaik, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=bijaylax} 2020-01-28T18:01:11.041+08:00 Texture - Colour - Color of the model is not matching the reference.
+
+[INFO] 2020-02-26 13:22:28,946 [] method:com.levy.jiratool.rooomy.RooomyIssueService.main(RooomyIssueService.java:50)
+comment: BasicUser{name=bijaylax, displayName=Bijaylaxmi Pattanaik, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=bijaylax} 2020-02-14T13:47:18.125+08:00 Texture - Appearance - Refer Screenshot B07MSWZ5Z1: Color mismatch.
+
+Model - Geometry -  Refer Screenshot B07MSWZ5Z1_1: Hard edges visible.
+B07MSWZ5Z1_4: Shape distorted.
+
+Model - Details -  Refer Screenshot B07MSWZ5Z1_3:  Stitching is not visible. Some space is needed between stitching & seam line.
+[INFO] 2020-02-26 13:36:27,438 [] method:com.levy.jiratool.rooomy.RooomyIssueService.loadIssueCommentsAsync(RooomyIssueService.java:35)
+Login...
+[INFO] 2020-02-26 13:36:28,183 [] method:com.levy.jiratool.rooomy.RooomyIssueService.loadIssueCommentsAsync(RooomyIssueService.java:42)
+Start query comments.
+[INFO] 2020-02-26 13:36:28,290 [] method:com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:50)
+Try to get issue comments of AMZCUS4-147299
+[INFO] 2020-02-26 13:36:28,290 [] method:com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:50)
+Try to get issue comments of AMZCUS4-39085
+[INFO] 2020-02-26 13:36:28,290 [] method:com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:50)
+Try to get issue comments of AMZCUS5-12610
+[INFO] 2020-02-26 13:36:28,290 [] method:com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:50)
+Try to get issue comments of AMZCUS5-11391
+[INFO] 2020-02-26 13:36:34,979 [] method:com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:50)
+Try to get issue comments of AMZCUS5-5873
+[INFO] 2020-02-26 13:36:39,022 [] method:com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:50)
+Try to get issue comments of AMZCUS4-166370
+[INFO] 2020-02-26 13:36:39,857 [] method:com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:50)
+Try to get issue comments of AMZCUS4-39085
+[INFO] 2020-02-26 13:36:43,135 [] method:com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:50)
+Try to get issue comments of AMZCUS5-12024
+[INFO] 2020-02-26 13:36:45,655 [] method:com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:50)
+Try to get issue comments of AMZCUS5-11391
+[INFO] 2020-02-26 13:36:46,883 [] method:com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:50)
+Try to get issue comments of AMZCUS5-5412
+[INFO] 2020-02-26 13:36:48,096 [] method:com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:50)
+Try to get issue comments of AMZCUS5-5412
+[INFO] 2020-02-26 13:36:52,041 [] method:com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:50)
+Try to get issue comments of AMZCUS4-147299
+[INFO] 2020-02-26 13:36:54,426 [] method:com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:50)
+Try to get issue comments of AMZCUS5-12024
+[INFO] 2020-02-26 13:36:55,901 [] method:com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:50)
+Try to get issue comments of AMZCUS5-12610
+[INFO] 2020-02-26 13:36:56,356 [] method:com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:50)
+Try to get issue comments of AMZCUS5-2111
+[INFO] 2020-02-26 13:36:58,900 [] method:com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:50)
+Try to get issue comments of AMZCUS4-166370
+[INFO] 2020-02-26 13:37:00,314 [] method:com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:50)
+Try to get issue comments of AMZCUS5-5873
+[INFO] 2020-02-26 13:37:13,669 [] method:com.levy.jiratool.rooomy.RooomyIssueService.main(RooomyIssueService.java:67)
+comment: BasicUser{name=cn.songbai.xiao, displayName=Songbai Xiao, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=cn.songbai.xiao} 2019-12-19T11:29:28.760+08:00 1 Seater Cushion:90.00Lx86.00Wx69.00H ;  ;  ;  
+ 
+[INFO] 2020-02-26 13:37:13,670 [] method:com.levy.jiratool.rooomy.RooomyIssueService.main(RooomyIssueService.java:67)
+comment: BasicUser{name=cn.songbai.xiao, displayName=Songbai Xiao, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=cn.songbai.xiao} 2019-12-30T14:33:42.472+08:00 Notes:chairs/sofa
+[INFO] 2020-02-26 13:37:13,670 [] method:com.levy.jiratool.rooomy.RooomyIssueService.main(RooomyIssueService.java:67)
+comment: BasicUser{name=bijaylax, displayName=Bijaylaxmi Pattanaik, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=bijaylax} 2020-01-08T01:31:28.658+08:00 General - File Error - 360 failure
+Model - Geometry - Remove black lines from the seat cushions
+[INFO] 2020-02-26 13:37:13,670 [] method:com.levy.jiratool.rooomy.RooomyIssueService.main(RooomyIssueService.java:67)
+comment: BasicUser{name=bijaylax, displayName=Bijaylaxmi Pattanaik, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=bijaylax} 2020-01-28T18:01:11.041+08:00 Texture - Colour - Color of the model is not matching the reference.
+
+[INFO] 2020-02-26 13:37:13,671 [] method:com.levy.jiratool.rooomy.RooomyIssueService.main(RooomyIssueService.java:67)
+comment: BasicUser{name=bijaylax, displayName=Bijaylaxmi Pattanaik, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=bijaylax} 2020-02-14T13:47:18.125+08:00 Texture - Appearance - Refer Screenshot B07MSWZ5Z1: Color mismatch.
+
+Model - Geometry -  Refer Screenshot B07MSWZ5Z1_1: Hard edges visible.
+B07MSWZ5Z1_4: Shape distorted.
+
+Model - Details -  Refer Screenshot B07MSWZ5Z1_3:  Stitching is not visible. Some space is needed between stitching & seam line.
+[INFO] 2020-02-26 13:37:13,671 [] method:com.levy.jiratool.rooomy.RooomyIssueService.main(RooomyIssueService.java:67)
+comment: BasicUser{name=cn.songbai.xiao, displayName=Songbai Xiao, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=cn.songbai.xiao} 2020-01-07T13:47:08.857+08:00 unit_of_measure=inches  ;  SIZE:68.5x102.5x30;;
+[INFO] 2020-02-26 13:37:13,671 [] method:com.levy.jiratool.rooomy.RooomyIssueService.main(RooomyIssueService.java:67)
+comment: BasicUser{name=bijaylax, displayName=Bijaylaxmi Pattanaik, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=bijaylax} 2020-01-24T00:53:42.531+08:00 Model - Details - shape mismatch - ref image
+[INFO] 2020-02-26 13:37:13,671 [] method:com.levy.jiratool.rooomy.RooomyIssueService.main(RooomyIssueService.java:67)
+comment: BasicUser{name=bijaylax, displayName=Bijaylaxmi Pattanaik, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=bijaylax} 2020-02-14T13:33:08.725+08:00 Model - Details -  Refer Screenshot B079YBTTTL: Model overall wrinkles missing.
+
+Model - Geometry -  Refer Screenshot B079YBTTTL_1: Tacks shape incorrect.
+B079YBTTTL_2: Marked portions should be smooth.
+B079YBTTTL_3: Tacks placing depth missing.
+B079YBTTTL_4: See thru.
+B079YBTTTL_5 & B079YBTTTL_6: Gap is visible.
+[INFO] 2020-02-26 13:37:13,672 [] method:com.levy.jiratool.rooomy.RooomyIssueService.main(RooomyIssueService.java:67)
+comment: BasicUser{name=Richard, displayName=Richard, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=Richard} 2020-01-22T14:54:09.127+08:00 Texture - Colour - The color does not match with the reference 
+[INFO] 2020-02-26 13:37:13,672 [] method:com.levy.jiratool.rooomy.RooomyIssueService.main(RooomyIssueService.java:67)
+comment: BasicUser{name=Devaiah, displayName=Devaiah, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=Devaiah} 2020-01-31T02:24:11.040+08:00 Model - Geometry - over all stitches are missing
+[INFO] 2020-02-26 13:37:13,672 [] method:com.levy.jiratool.rooomy.RooomyIssueService.main(RooomyIssueService.java:67)
+comment: BasicUser{name=krirams, displayName=Ramesh Krishna, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=krirams} 2020-02-09T02:53:49.081+08:00 Model - Details - overall stitching looks unrealistic 
+
+Texture - Colour -model color has a darker tone thats not matching with the reference 
+[INFO] 2020-02-26 13:37:13,672 [] method:com.levy.jiratool.rooomy.RooomyIssueService.main(RooomyIssueService.java:67)
+comment: BasicUser{name=Abraham, displayName=Abraham, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=Abraham} 2020-02-11T23:30:34.705+08:00 Model - Details - stitches on top edges of umbrella is unrealistic 
+[INFO] 2020-02-26 13:37:13,672 [] method:com.levy.jiratool.rooomy.RooomyIssueService.main(RooomyIssueService.java:67)
+comment: BasicUser{name=Abraham, displayName=Abraham, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=Abraham} 2020-02-17T21:26:24.319+08:00 Texture - Colour -umbrella color is too bleached out ,check attached image 
+[INFO] 2020-02-26 13:37:13,672 [] method:com.levy.jiratool.rooomy.RooomyIssueService.main(RooomyIssueService.java:67)
+comment: BasicUser{name=affabien, displayName=Fabien,Ajay Joshua, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=affabien} 2019-11-22T20:56:56.381+08:00 Texture - Appearance -woodgrains direction not continuous, not matching on sides marked 1 and 2.
+[INFO] 2020-02-26 13:37:13,673 [] method:com.levy.jiratool.rooomy.RooomyIssueService.main(RooomyIssueService.java:67)
+comment: BasicUser{name=pooshree, displayName=Pooja Shree, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=pooshree} 2019-12-23T18:04:02.671+08:00 Texture - Appearance - texture seam is visible check overall model. 
+texture issue in marked area check overall model. refer screenshot.
+[INFO] 2020-02-26 13:37:13,674 [] method:com.levy.jiratool.rooomy.RooomyIssueService.main(RooomyIssueService.java:67)
+comment: BasicUser{name=raghulj, displayName=Raghul J, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=raghulj} 2020-01-03T17:28:02.141+08:00 Texture - Colour- wood texture color is not matching
+
+Texture - Appearance - wood pattern details are not matching on the top of the model and also in pointed areas
+[INFO] 2020-02-26 13:37:13,674 [] method:com.levy.jiratool.rooomy.RooomyIssueService.main(RooomyIssueService.java:67)
+comment: BasicUser{name=natrajar, displayName=R,Natarajan, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=natrajar} 2020-01-18T01:11:23.387+08:00 Texture - Colour -The color of the wood is not matching.
+
+Model - Details -The position of the leg supports are not matching.
+
+ 
+[INFO] 2020-02-26 13:37:13,674 [] method:com.levy.jiratool.rooomy.RooomyIssueService.main(RooomyIssueService.java:67)
+comment: BasicUser{name=Richard, displayName=Richard, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=Richard} 2020-02-14T13:10:06.623+08:00 General - File Error - Kindly re-upload the file due to an internal server issue
+[INFO] 2020-02-26 13:37:13,675 [] method:com.levy.jiratool.rooomy.RooomyIssueService.main(RooomyIssueService.java:67)
+comment: BasicUser{name=cn.songbai.xiao, displayName=Songbai Xiao, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=cn.songbai.xiao} 2020-01-07T13:56:58.250+08:00 unit_of_measure=inches  ;  SIZE:18x53x74;;
+[INFO] 2020-02-26 13:37:13,675 [] method:com.levy.jiratool.rooomy.RooomyIssueService.main(RooomyIssueService.java:67)
+comment: BasicUser{name=Balamurugan, displayName=Balamurugan, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=Balamurugan} 2020-01-09T17:17:03.944+08:00 Texture - Colour - Texture color not matching with the reference imagery.
+
+Texture - Appearance - Wood texture details not matching with the reference imagery.
+
+Model - Error - Mesh overlap at the marked areas
+
+Model - Geometry -Marked shapes and details not matching with the reference.
+[INFO] 2020-02-26 13:37:13,675 [] method:com.levy.jiratool.rooomy.RooomyIssueService.main(RooomyIssueService.java:67)
+comment: BasicUser{name=Balamurugan, displayName=Balamurugan, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=Balamurugan} 2020-01-21T12:40:34.836+08:00 Texture - Appearance - Wood texture details not matching with the reference imagery.
+
+Model - Error - Mesh overlap at the marked areas. Please Make the shape proper.
+[INFO] 2020-02-26 13:37:13,675 [] method:com.levy.jiratool.rooomy.RooomyIssueService.main(RooomyIssueService.java:67)
+comment: BasicUser{name=Balamurugan, displayName=Balamurugan, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=Balamurugan} 2020-02-06T16:23:23.417+08:00 Texture - Appearance - Wood texture seam need to be fix.
+[INFO] 2020-02-26 13:37:13,676 [] method:com.levy.jiratool.rooomy.RooomyIssueService.main(RooomyIssueService.java:67)
+comment: BasicUser{name=Balamurugan, displayName=Balamurugan, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=Balamurugan} 2020-02-08T15:27:27.187+08:00 Texture - Appearance -Wood texture seems to be too patchy compare to the reference. Please match it.
+[INFO] 2020-02-26 13:37:13,676 [] method:com.levy.jiratool.rooomy.RooomyIssueService.main(RooomyIssueService.java:67)
+comment: BasicUser{name=Balamurugan, displayName=Balamurugan, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=Balamurugan} 2020-02-14T12:53:30.570+08:00 Server error - Please re-upload the file 
+[INFO] 2020-02-26 13:37:13,676 [] method:com.levy.jiratool.rooomy.RooomyIssueService.main(RooomyIssueService.java:67)
+comment: BasicUser{name=natrajar, displayName=R,Natarajan, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=natrajar} 2019-11-14T02:08:55.140+08:00 Texture - Colour -
+
+1.Wood color is not matching
+
+Texture - Appearance -
+
+2.Wood pattern is not matching with reference 
+[INFO] 2020-02-26 13:37:13,680 [] method:com.levy.jiratool.rooomy.RooomyIssueService.main(RooomyIssueService.java:67)
+comment: BasicUser{name=Richard, displayName=Richard, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=Richard} 2020-02-14T12:46:01.435+08:00 Texture - Colour -
+
+1.Wood color is not matching
+[INFO] 2020-02-26 13:37:13,680 [] method:com.levy.jiratool.rooomy.RooomyIssueService.main(RooomyIssueService.java:67)
+comment: BasicUser{name=Richard, displayName=Richard, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=Richard} 2020-02-19T09:52:28.494+08:00 General - File Error - Kindly re-upload the file due to an internal server issue
+[INFO] 2020-02-26 13:37:13,681 [] method:com.levy.jiratool.rooomy.RooomyIssueService.main(RooomyIssueService.java:67)
+comment: BasicUser{name=cn.songbai.xiao, displayName=Songbai Xiao, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=cn.songbai.xiao} 2019-12-19T11:29:13.279+08:00 Chair:54.00Lx41.00Wx81.00H ;  ;  ;  
+ 
+[INFO] 2020-02-26 13:37:13,681 [] method:com.levy.jiratool.rooomy.RooomyIssueService.main(RooomyIssueService.java:67)
+comment: BasicUser{name=Thandra, displayName=Thandra, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=Thandra} 2019-12-25T16:40:56.874+08:00 Model - Geometry - In the marked area The 3D model is not shaped correctly as in the reference.
+ * In the marked area low poly and hard edges are visible.
+
+Model - Details - In the marked area screw details of the model that define the product is not matching with the reference.
+
+Texture - Appearance - Texture is not matching with the reference.
+
+                                    - In the marked area texture scale is visible.
+
+ 
+
+Texture - Detail - In the marked area stitching details are missing.
+
+Texture - Colour - The wood texture's color doesn't match the reference imagery.
+
+Texture - Appearance - Wood texture is not matching with the reference.
+[INFO] 2020-02-26 13:37:13,681 [] method:com.levy.jiratool.rooomy.RooomyIssueService.main(RooomyIssueService.java:67)
+comment: BasicUser{name=Thandra, displayName=Thandra, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=Thandra} 2020-02-08T12:56:58.643+08:00 Model - Geometry - Mesh overlap is visible.
+
+                              - Proportions of the model is not matching with the reference.
+
+Texture - Colour - The wood texture's color doesn't match the reference imagery.
+[INFO] 2020-02-26 13:37:13,682 [] method:com.levy.jiratool.rooomy.RooomyIssueService.main(RooomyIssueService.java:67)
+comment: BasicUser{name=Thandra, displayName=Thandra, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=Thandra} 2020-02-14T12:33:22.417+08:00 Model - Geometry - Increase the width of the backrest and decrease the height of the model to match the proportions.
+[INFO] 2020-02-26 13:37:13,682 [] method:com.levy.jiratool.rooomy.RooomyIssueService.main(RooomyIssueService.java:67)
+comment: BasicUser{name=Thandra, displayName=Thandra, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=Thandra} 2020-02-19T12:03:59.113+08:00 Texture - Colour - The wood texture's color doesn't match the reference imagery, Refer Screenshot ( Refer Screenshot ).
+[INFO] 2020-02-26 13:37:13,682 [] method:com.levy.jiratool.rooomy.RooomyIssueService.main(RooomyIssueService.java:67)
+comment: BasicUser{name=cn.songbai.xiao, displayName=Songbai Xiao, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=cn.songbai.xiao} 2020-01-07T13:47:34.376+08:00 unit_of_measure=inches  ;  Table:70.87x23.62x27.56;;
+[INFO] 2020-02-26 13:37:13,683 [] method:com.levy.jiratool.rooomy.RooomyIssueService.main(RooomyIssueService.java:67)
+comment: BasicUser{name=natrajar, displayName=R,Natarajan, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=natrajar} 2020-01-16T23:00:01.715+08:00 Model - Details -There are sharp corners in some areas.
+
+2. There is a gap visible behind some screws.
+
+3. The shape of the corners of the table is not straight.
+
+4. The height of the table top is not matching.
+
+5. The shape of the bushes are not matching.
+
+Texture - Colour -The color of the bushes are not matching.
+
+ 
+[INFO] 2020-02-26 13:37:13,683 [] method:com.levy.jiratool.rooomy.RooomyIssueService.main(RooomyIssueService.java:67)
+comment: BasicUser{name=raghulj, displayName=Raghul J, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=raghulj} 2020-01-27T14:30:44.597+08:00 Texture - Colour -colour of the pointed area is not matching doesn't match as reference imagery
+[INFO] 2020-02-26 13:37:13,683 [] method:com.levy.jiratool.rooomy.RooomyIssueService.main(RooomyIssueService.java:67)
+comment: BasicUser{name=raghulj, displayName=Raghul J, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=raghulj} 2020-02-06T14:39:49.908+08:00 General - File Error - internal server issue kindly re upload the file
+[INFO] 2020-02-26 13:37:13,685 [] method:com.levy.jiratool.rooomy.RooomyIssueService.main(RooomyIssueService.java:67)
+comment: BasicUser{name=raghulj, displayName=Raghul J, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=raghulj} 2020-02-14T12:32:59.448+08:00 Model - Geometry - shape and proportion of the pointed model is totally mismatching(Screenshot_66,67)
+Texture - Colour -steel colour doesn't match as reference
+
+[INFO] 2020-02-26 13:37:13,685 [] method:com.levy.jiratool.rooomy.RooomyIssueService.main(RooomyIssueService.java:67)
+comment: BasicUser{name=cn.songbai.xiao, displayName=Songbai Xiao, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=cn.songbai.xiao} 2019-12-09T18:23:30.538+08:00 Chair:137.00x243.00x89.00 ;  ;  ; 
+
+[INFO] 2020-02-26 13:37:13,686 [] method:com.levy.jiratool.rooomy.RooomyIssueService.main(RooomyIssueService.java:67)
+comment: BasicUser{name=natrajar, displayName=R,Natarajan, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=natrajar} 2019-12-19T20:57:53.846+08:00  
+
+Model - Geometry -
+
+ 
+
+1.Handrest shape and proportion is not matching
+
+2.Pillows shape and wrinkle is not matching
+
+3.Cushion's edge curve shape and corners is not matching
+
+4.Fix the hand rest low poly
+
+5.Legs shape and proportion is not matching
+
+6.Backrest shape and proportion is not matching
+
+7.Backrest silhouette and wrinkle  doesn't match with reference
+
+8.Overall proportion is not matching
+
+9.Overall stitch flow and shape is not matching
+
+Pivot - 
+
+10.Front side should be facing the Z positive axis
+
+Texture - Appearance -
+
+11.Fabric pattern and texture is not matching
+
+Material - Appearance -
+
+12.Over all fabric material is not matching
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+[INFO] 2020-02-26 13:37:13,686 [] method:com.levy.jiratool.rooomy.RooomyIssueService.main(RooomyIssueService.java:67)
+comment: BasicUser{name=natrajar, displayName=R,Natarajan, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=natrajar} 2020-01-08T19:36:12.046+08:00 Model - Details -
+ # Wrinkles not matching.
+
+Model - Error -
+ # Low poly in the marked area.
+ # Mesh overlap.
+
+Material - Appearance -
+ # Fabric material and texture not matching.
+[INFO] 2020-02-26 13:37:13,687 [] method:com.levy.jiratool.rooomy.RooomyIssueService.main(RooomyIssueService.java:67)
+comment: BasicUser{name=bijaylax, displayName=Bijaylaxmi Pattanaik, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=bijaylax} 2020-01-28T01:09:27.492+08:00 Texture - Appearance -pillow wrinkles mismatch and backrest cushion wrinkles missing - ref image
+[INFO] 2020-02-26 13:37:13,688 [] method:com.levy.jiratool.rooomy.RooomyIssueService.main(RooomyIssueService.java:67)
+comment: BasicUser{name=bijaylax, displayName=Bijaylaxmi Pattanaik, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=bijaylax} 2020-02-14T12:28:02.881+08:00 Model - Details -  Refer Screenshot B01N5B9QH3: Overall stitches missing.
+
+Model - Geometry -  Refer Screenshot B01N5B9QH3_1: Marked bush is not visible in reference.
+B01N5B9QH3_2: Gap is visible. See whole model.
+
+Texture - Appearance - Refer Screenshot B01N5B9QH3_3: Texture pattern slightly mismatch.
+[INFO] 2020-02-26 13:37:13,688 [] method:com.levy.jiratool.rooomy.RooomyIssueService.main(RooomyIssueService.java:67)
+comment: BasicUser{name=cn.songbai.xiao, displayName=Songbai Xiao, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=cn.songbai.xiao} 2019-12-19T11:29:28.760+08:00 1 Seater Cushion:90.00Lx86.00Wx69.00H ;  ;  ;  
+ 
+[INFO] 2020-02-26 13:37:13,688 [] method:com.levy.jiratool.rooomy.RooomyIssueService.main(RooomyIssueService.java:67)
+comment: BasicUser{name=cn.songbai.xiao, displayName=Songbai Xiao, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=cn.songbai.xiao} 2019-12-30T14:33:42.472+08:00 Notes:chairs/sofa
+[INFO] 2020-02-26 13:37:13,689 [] method:com.levy.jiratool.rooomy.RooomyIssueService.main(RooomyIssueService.java:67)
+comment: BasicUser{name=bijaylax, displayName=Bijaylaxmi Pattanaik, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=bijaylax} 2020-01-08T01:31:28.658+08:00 General - File Error - 360 failure
+Model - Geometry - Remove black lines from the seat cushions
+[INFO] 2020-02-26 13:37:13,689 [] method:com.levy.jiratool.rooomy.RooomyIssueService.main(RooomyIssueService.java:67)
+comment: BasicUser{name=bijaylax, displayName=Bijaylaxmi Pattanaik, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=bijaylax} 2020-01-28T18:01:11.041+08:00 Texture - Colour - Color of the model is not matching the reference.
+
+[INFO] 2020-02-26 13:37:13,689 [] method:com.levy.jiratool.rooomy.RooomyIssueService.main(RooomyIssueService.java:67)
+comment: BasicUser{name=bijaylax, displayName=Bijaylaxmi Pattanaik, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=bijaylax} 2020-02-14T13:47:18.125+08:00 Texture - Appearance - Refer Screenshot B07MSWZ5Z1: Color mismatch.
+
+Model - Geometry -  Refer Screenshot B07MSWZ5Z1_1: Hard edges visible.
+B07MSWZ5Z1_4: Shape distorted.
+
+Model - Details -  Refer Screenshot B07MSWZ5Z1_3:  Stitching is not visible. Some space is needed between stitching & seam line.
+[INFO] 2020-02-26 13:37:13,689 [] method:com.levy.jiratool.rooomy.RooomyIssueService.main(RooomyIssueService.java:67)
+comment: BasicUser{name=cn.songbai.xiao, displayName=Songbai Xiao, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=cn.songbai.xiao} 2020-01-07T13:47:08.857+08:00 unit_of_measure=inches  ;  SIZE:68.5x102.5x30;;
+[INFO] 2020-02-26 13:37:13,690 [] method:com.levy.jiratool.rooomy.RooomyIssueService.main(RooomyIssueService.java:67)
+comment: BasicUser{name=bijaylax, displayName=Bijaylaxmi Pattanaik, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=bijaylax} 2020-01-24T00:53:42.531+08:00 Model - Details - shape mismatch - ref image
+[INFO] 2020-02-26 13:37:13,690 [] method:com.levy.jiratool.rooomy.RooomyIssueService.main(RooomyIssueService.java:67)
+comment: BasicUser{name=bijaylax, displayName=Bijaylaxmi Pattanaik, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=bijaylax} 2020-02-14T13:33:08.725+08:00 Model - Details -  Refer Screenshot B079YBTTTL: Model overall wrinkles missing.
+
+Model - Geometry -  Refer Screenshot B079YBTTTL_1: Tacks shape incorrect.
+B079YBTTTL_2: Marked portions should be smooth.
+B079YBTTTL_3: Tacks placing depth missing.
+B079YBTTTL_4: See thru.
+B079YBTTTL_5 & B079YBTTTL_6: Gap is visible.
+[INFO] 2020-02-26 13:37:13,690 [] method:com.levy.jiratool.rooomy.RooomyIssueService.main(RooomyIssueService.java:67)
+comment: BasicUser{name=Richard, displayName=Richard, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=Richard} 2020-01-22T14:54:09.127+08:00 Texture - Colour - The color does not match with the reference 
+[INFO] 2020-02-26 13:37:13,690 [] method:com.levy.jiratool.rooomy.RooomyIssueService.main(RooomyIssueService.java:67)
+comment: BasicUser{name=Devaiah, displayName=Devaiah, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=Devaiah} 2020-01-31T02:24:11.040+08:00 Model - Geometry - over all stitches are missing
+[INFO] 2020-02-26 13:37:13,690 [] method:com.levy.jiratool.rooomy.RooomyIssueService.main(RooomyIssueService.java:67)
+comment: BasicUser{name=krirams, displayName=Ramesh Krishna, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=krirams} 2020-02-09T02:53:49.081+08:00 Model - Details - overall stitching looks unrealistic 
+
+Texture - Colour -model color has a darker tone thats not matching with the reference 
+[INFO] 2020-02-26 13:37:13,691 [] method:com.levy.jiratool.rooomy.RooomyIssueService.main(RooomyIssueService.java:67)
+comment: BasicUser{name=Abraham, displayName=Abraham, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=Abraham} 2020-02-11T23:30:34.705+08:00 Model - Details - stitches on top edges of umbrella is unrealistic 
+[INFO] 2020-02-26 13:37:13,691 [] method:com.levy.jiratool.rooomy.RooomyIssueService.main(RooomyIssueService.java:67)
+comment: BasicUser{name=Abraham, displayName=Abraham, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=Abraham} 2020-02-17T21:26:24.319+08:00 Texture - Colour -umbrella color is too bleached out ,check attached image 
+[INFO] 2020-02-26 13:37:13,691 [] method:com.levy.jiratool.rooomy.RooomyIssueService.main(RooomyIssueService.java:67)
+comment: BasicUser{name=affabien, displayName=Fabien,Ajay Joshua, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=affabien} 2019-11-22T20:56:56.381+08:00 Texture - Appearance -woodgrains direction not continuous, not matching on sides marked 1 and 2.
+[INFO] 2020-02-26 13:37:13,691 [] method:com.levy.jiratool.rooomy.RooomyIssueService.main(RooomyIssueService.java:67)
+comment: BasicUser{name=pooshree, displayName=Pooja Shree, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=pooshree} 2019-12-23T18:04:02.671+08:00 Texture - Appearance - texture seam is visible check overall model. 
+texture issue in marked area check overall model. refer screenshot.
+[INFO] 2020-02-26 13:37:13,692 [] method:com.levy.jiratool.rooomy.RooomyIssueService.main(RooomyIssueService.java:67)
+comment: BasicUser{name=raghulj, displayName=Raghul J, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=raghulj} 2020-01-03T17:28:02.141+08:00 Texture - Colour- wood texture color is not matching
+
+Texture - Appearance - wood pattern details are not matching on the top of the model and also in pointed areas
+[INFO] 2020-02-26 13:37:13,692 [] method:com.levy.jiratool.rooomy.RooomyIssueService.main(RooomyIssueService.java:67)
+comment: BasicUser{name=natrajar, displayName=R,Natarajan, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=natrajar} 2020-01-18T01:11:23.387+08:00 Texture - Colour -The color of the wood is not matching.
+
+Model - Details -The position of the leg supports are not matching.
+
+ 
+[INFO] 2020-02-26 13:37:13,692 [] method:com.levy.jiratool.rooomy.RooomyIssueService.main(RooomyIssueService.java:67)
+comment: BasicUser{name=Richard, displayName=Richard, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=Richard} 2020-02-14T13:10:06.623+08:00 General - File Error - Kindly re-upload the file due to an internal server issue
+[INFO] 2020-02-26 13:37:13,693 [] method:com.levy.jiratool.rooomy.RooomyIssueService.main(RooomyIssueService.java:67)
+comment: BasicUser{name=cn.songbai.xiao, displayName=Songbai Xiao, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=cn.songbai.xiao} 2020-01-07T13:56:58.250+08:00 unit_of_measure=inches  ;  SIZE:18x53x74;;
+[INFO] 2020-02-26 13:37:13,693 [] method:com.levy.jiratool.rooomy.RooomyIssueService.main(RooomyIssueService.java:67)
+comment: BasicUser{name=Balamurugan, displayName=Balamurugan, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=Balamurugan} 2020-01-09T17:17:03.944+08:00 Texture - Colour - Texture color not matching with the reference imagery.
+
+Texture - Appearance - Wood texture details not matching with the reference imagery.
+
+Model - Error - Mesh overlap at the marked areas
+
+Model - Geometry -Marked shapes and details not matching with the reference.
+[INFO] 2020-02-26 13:37:13,693 [] method:com.levy.jiratool.rooomy.RooomyIssueService.main(RooomyIssueService.java:67)
+comment: BasicUser{name=Balamurugan, displayName=Balamurugan, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=Balamurugan} 2020-01-21T12:40:34.836+08:00 Texture - Appearance - Wood texture details not matching with the reference imagery.
+
+Model - Error - Mesh overlap at the marked areas. Please Make the shape proper.
+[INFO] 2020-02-26 13:37:13,693 [] method:com.levy.jiratool.rooomy.RooomyIssueService.main(RooomyIssueService.java:67)
+comment: BasicUser{name=Balamurugan, displayName=Balamurugan, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=Balamurugan} 2020-02-06T16:23:23.417+08:00 Texture - Appearance - Wood texture seam need to be fix.
+[INFO] 2020-02-26 13:37:13,694 [] method:com.levy.jiratool.rooomy.RooomyIssueService.main(RooomyIssueService.java:67)
+comment: BasicUser{name=Balamurugan, displayName=Balamurugan, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=Balamurugan} 2020-02-08T15:27:27.187+08:00 Texture - Appearance -Wood texture seems to be too patchy compare to the reference. Please match it.
+[INFO] 2020-02-26 13:37:13,694 [] method:com.levy.jiratool.rooomy.RooomyIssueService.main(RooomyIssueService.java:67)
+comment: BasicUser{name=Balamurugan, displayName=Balamurugan, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=Balamurugan} 2020-02-14T12:53:30.570+08:00 Server error - Please re-upload the file 
+[INFO] 2020-02-26 13:37:13,694 [] method:com.levy.jiratool.rooomy.RooomyIssueService.main(RooomyIssueService.java:67)
+comment: BasicUser{name=natrajar, displayName=R,Natarajan, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=natrajar} 2019-11-14T02:08:55.140+08:00 Texture - Colour -
+
+1.Wood color is not matching
+
+Texture - Appearance -
+
+2.Wood pattern is not matching with reference 
+[INFO] 2020-02-26 13:37:13,694 [] method:com.levy.jiratool.rooomy.RooomyIssueService.main(RooomyIssueService.java:67)
+comment: BasicUser{name=Richard, displayName=Richard, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=Richard} 2020-02-14T12:46:01.435+08:00 Texture - Colour -
+
+1.Wood color is not matching
+[INFO] 2020-02-26 13:37:13,695 [] method:com.levy.jiratool.rooomy.RooomyIssueService.main(RooomyIssueService.java:67)
+comment: BasicUser{name=Richard, displayName=Richard, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=Richard} 2020-02-19T09:52:28.494+08:00 General - File Error - Kindly re-upload the file due to an internal server issue
+[INFO] 2020-02-26 13:37:13,695 [] method:com.levy.jiratool.rooomy.RooomyIssueService.main(RooomyIssueService.java:67)
+comment: BasicUser{name=cn.songbai.xiao, displayName=Songbai Xiao, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=cn.songbai.xiao} 2019-12-19T11:29:13.279+08:00 Chair:54.00Lx41.00Wx81.00H ;  ;  ;  
+ 
+[INFO] 2020-02-26 13:37:13,695 [] method:com.levy.jiratool.rooomy.RooomyIssueService.main(RooomyIssueService.java:67)
+comment: BasicUser{name=Thandra, displayName=Thandra, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=Thandra} 2019-12-25T16:40:56.874+08:00 Model - Geometry - In the marked area The 3D model is not shaped correctly as in the reference.
+ * In the marked area low poly and hard edges are visible.
+
+Model - Details - In the marked area screw details of the model that define the product is not matching with the reference.
+
+Texture - Appearance - Texture is not matching with the reference.
+
+                                    - In the marked area texture scale is visible.
+
+ 
+
+Texture - Detail - In the marked area stitching details are missing.
+
+Texture - Colour - The wood texture's color doesn't match the reference imagery.
+
+Texture - Appearance - Wood texture is not matching with the reference.
+[INFO] 2020-02-26 13:37:13,695 [] method:com.levy.jiratool.rooomy.RooomyIssueService.main(RooomyIssueService.java:67)
+comment: BasicUser{name=Thandra, displayName=Thandra, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=Thandra} 2020-02-08T12:56:58.643+08:00 Model - Geometry - Mesh overlap is visible.
+
+                              - Proportions of the model is not matching with the reference.
+
+Texture - Colour - The wood texture's color doesn't match the reference imagery.
+[INFO] 2020-02-26 13:37:13,696 [] method:com.levy.jiratool.rooomy.RooomyIssueService.main(RooomyIssueService.java:67)
+comment: BasicUser{name=Thandra, displayName=Thandra, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=Thandra} 2020-02-14T12:33:22.417+08:00 Model - Geometry - Increase the width of the backrest and decrease the height of the model to match the proportions.
+[INFO] 2020-02-26 13:37:13,696 [] method:com.levy.jiratool.rooomy.RooomyIssueService.main(RooomyIssueService.java:67)
+comment: BasicUser{name=Thandra, displayName=Thandra, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=Thandra} 2020-02-19T12:03:59.113+08:00 Texture - Colour - The wood texture's color doesn't match the reference imagery, Refer Screenshot ( Refer Screenshot ).
+[INFO] 2020-02-26 13:37:13,696 [] method:com.levy.jiratool.rooomy.RooomyIssueService.main(RooomyIssueService.java:67)
+comment: BasicUser{name=cn.songbai.xiao, displayName=Songbai Xiao, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=cn.songbai.xiao} 2020-01-07T13:47:34.376+08:00 unit_of_measure=inches  ;  Table:70.87x23.62x27.56;;
+[INFO] 2020-02-26 13:37:13,696 [] method:com.levy.jiratool.rooomy.RooomyIssueService.main(RooomyIssueService.java:67)
+comment: BasicUser{name=natrajar, displayName=R,Natarajan, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=natrajar} 2020-01-16T23:00:01.715+08:00 Model - Details -There are sharp corners in some areas.
+
+2. There is a gap visible behind some screws.
+
+3. The shape of the corners of the table is not straight.
+
+4. The height of the table top is not matching.
+
+5. The shape of the bushes are not matching.
+
+Texture - Colour -The color of the bushes are not matching.
+
+ 
+[INFO] 2020-02-26 13:37:13,697 [] method:com.levy.jiratool.rooomy.RooomyIssueService.main(RooomyIssueService.java:67)
+comment: BasicUser{name=raghulj, displayName=Raghul J, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=raghulj} 2020-01-27T14:30:44.597+08:00 Texture - Colour -colour of the pointed area is not matching doesn't match as reference imagery
+[INFO] 2020-02-26 13:37:13,697 [] method:com.levy.jiratool.rooomy.RooomyIssueService.main(RooomyIssueService.java:67)
+comment: BasicUser{name=raghulj, displayName=Raghul J, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=raghulj} 2020-02-06T14:39:49.908+08:00 General - File Error - internal server issue kindly re upload the file
+[INFO] 2020-02-26 13:37:13,697 [] method:com.levy.jiratool.rooomy.RooomyIssueService.main(RooomyIssueService.java:67)
+comment: BasicUser{name=raghulj, displayName=Raghul J, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=raghulj} 2020-02-14T12:32:59.448+08:00 Model - Geometry - shape and proportion of the pointed model is totally mismatching(Screenshot_66,67)
+Texture - Colour -steel colour doesn't match as reference
+
+[INFO] 2020-02-26 13:40:01,684 [] method:com.levy.jiratool.rooomy.RooomyIssueService.loadIssueCommentsAsync(RooomyIssueService.java:35)
+Login...
+[INFO] 2020-02-26 13:40:02,480 [] method:com.levy.jiratool.rooomy.RooomyIssueService.loadIssueCommentsAsync(RooomyIssueService.java:42)
+Start query comments.
+[INFO] 2020-02-26 13:40:02,613 [] method:com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:51)
+Try to get issue comments of AMZCUS5-12024
+[INFO] 2020-02-26 13:40:02,613 [] method:com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:51)
+Try to get issue comments of AMZCUS4-147299
+[INFO] 2020-02-26 13:40:02,613 [] method:com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:51)
+Try to get issue comments of AMZCUS5-5873
+[INFO] 2020-02-26 13:40:02,613 [] method:com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:51)
+Try to get issue comments of AMZCUS4-39085
+[INFO] 2020-02-26 13:40:02,613 [] method:com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:51)
+Try to get issue comments of AMZCUS5-11391
+[INFO] 2020-02-26 13:40:02,613 [] method:com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:51)
+Try to get issue comments of AMZCUS4-147299
+[INFO] 2020-02-26 13:40:02,613 [] method:com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:51)
+Try to get issue comments of AMZCUS5-12610
+[INFO] 2020-02-26 13:40:02,619 [] method:com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:51)
+Try to get issue comments of AMZCUS5-5412
+[INFO] 2020-02-26 13:40:02,621 [] method:com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:51)
+Try to get issue comments of AMZCUS5-11391
+[INFO] 2020-02-26 13:40:02,638 [] method:com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:51)
+Try to get issue comments of AMZCUS5-12610
+[INFO] 2020-02-26 13:40:02,639 [] method:com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:51)
+Try to get issue comments of AMZCUS4-166370
+[INFO] 2020-02-26 13:40:02,637 [] method:com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:51)
+Try to get issue comments of AMZCUS5-5873
+[INFO] 2020-02-26 13:40:02,637 [] method:com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:51)
+Try to get issue comments of AMZCUS4-166370
+[INFO] 2020-02-26 13:40:02,623 [] method:com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:51)
+Try to get issue comments of AMZCUS5-5412
+[INFO] 2020-02-26 13:40:02,621 [] method:com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:51)
+Try to get issue comments of AMZCUS4-39085
+[INFO] 2020-02-26 13:40:02,621 [] method:com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:51)
+Try to get issue comments of AMZCUS5-12024
+[INFO] 2020-02-26 13:40:02,638 [] method:com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:51)
+Try to get issue comments of AMZCUS5-2111
+[INFO] 2020-02-26 13:40:40,262 [] method:com.levy.jiratool.rooomy.RooomyIssueService.main(RooomyIssueService.java:68)
+comment: BasicUser{name=cn.songbai.xiao, displayName=Songbai Xiao, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=cn.songbai.xiao} 2019-12-19T11:29:28.760+08:00 1 Seater Cushion:90.00Lx86.00Wx69.00H ;  ;  ;  
+ 
+[INFO] 2020-02-26 13:40:40,262 [] method:com.levy.jiratool.rooomy.RooomyIssueService.main(RooomyIssueService.java:68)
+comment: BasicUser{name=cn.songbai.xiao, displayName=Songbai Xiao, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=cn.songbai.xiao} 2019-12-30T14:33:42.472+08:00 Notes:chairs/sofa
+[INFO] 2020-02-26 13:40:40,262 [] method:com.levy.jiratool.rooomy.RooomyIssueService.main(RooomyIssueService.java:68)
+comment: BasicUser{name=bijaylax, displayName=Bijaylaxmi Pattanaik, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=bijaylax} 2020-01-08T01:31:28.658+08:00 General - File Error - 360 failure
+Model - Geometry - Remove black lines from the seat cushions
+[INFO] 2020-02-26 13:40:40,263 [] method:com.levy.jiratool.rooomy.RooomyIssueService.main(RooomyIssueService.java:68)
+comment: BasicUser{name=bijaylax, displayName=Bijaylaxmi Pattanaik, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=bijaylax} 2020-01-28T18:01:11.041+08:00 Texture - Colour - Color of the model is not matching the reference.
+
+[INFO] 2020-02-26 13:40:40,263 [] method:com.levy.jiratool.rooomy.RooomyIssueService.main(RooomyIssueService.java:68)
+comment: BasicUser{name=bijaylax, displayName=Bijaylaxmi Pattanaik, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=bijaylax} 2020-02-14T13:47:18.125+08:00 Texture - Appearance - Refer Screenshot B07MSWZ5Z1: Color mismatch.
+
+Model - Geometry -  Refer Screenshot B07MSWZ5Z1_1: Hard edges visible.
+B07MSWZ5Z1_4: Shape distorted.
+
+Model - Details -  Refer Screenshot B07MSWZ5Z1_3:  Stitching is not visible. Some space is needed between stitching & seam line.
+[INFO] 2020-02-26 13:40:40,263 [] method:com.levy.jiratool.rooomy.RooomyIssueService.main(RooomyIssueService.java:68)
+comment: BasicUser{name=cn.songbai.xiao, displayName=Songbai Xiao, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=cn.songbai.xiao} 2020-01-07T13:47:08.857+08:00 unit_of_measure=inches  ;  SIZE:68.5x102.5x30;;
+[INFO] 2020-02-26 13:40:40,264 [] method:com.levy.jiratool.rooomy.RooomyIssueService.main(RooomyIssueService.java:68)
+comment: BasicUser{name=bijaylax, displayName=Bijaylaxmi Pattanaik, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=bijaylax} 2020-01-24T00:53:42.531+08:00 Model - Details - shape mismatch - ref image
+[INFO] 2020-02-26 13:40:40,264 [] method:com.levy.jiratool.rooomy.RooomyIssueService.main(RooomyIssueService.java:68)
+comment: BasicUser{name=bijaylax, displayName=Bijaylaxmi Pattanaik, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=bijaylax} 2020-02-14T13:33:08.725+08:00 Model - Details -  Refer Screenshot B079YBTTTL: Model overall wrinkles missing.
+
+Model - Geometry -  Refer Screenshot B079YBTTTL_1: Tacks shape incorrect.
+B079YBTTTL_2: Marked portions should be smooth.
+B079YBTTTL_3: Tacks placing depth missing.
+B079YBTTTL_4: See thru.
+B079YBTTTL_5 & B079YBTTTL_6: Gap is visible.
+[INFO] 2020-02-26 13:40:40,264 [] method:com.levy.jiratool.rooomy.RooomyIssueService.main(RooomyIssueService.java:68)
+comment: BasicUser{name=Richard, displayName=Richard, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=Richard} 2020-01-22T14:54:09.127+08:00 Texture - Colour - The color does not match with the reference 
+[INFO] 2020-02-26 13:40:40,265 [] method:com.levy.jiratool.rooomy.RooomyIssueService.main(RooomyIssueService.java:68)
+comment: BasicUser{name=Devaiah, displayName=Devaiah, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=Devaiah} 2020-01-31T02:24:11.040+08:00 Model - Geometry - over all stitches are missing
+[INFO] 2020-02-26 13:40:40,265 [] method:com.levy.jiratool.rooomy.RooomyIssueService.main(RooomyIssueService.java:68)
+comment: BasicUser{name=krirams, displayName=Ramesh Krishna, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=krirams} 2020-02-09T02:53:49.081+08:00 Model - Details - overall stitching looks unrealistic 
+
+Texture - Colour -model color has a darker tone thats not matching with the reference 
+[INFO] 2020-02-26 13:40:40,265 [] method:com.levy.jiratool.rooomy.RooomyIssueService.main(RooomyIssueService.java:68)
+comment: BasicUser{name=Abraham, displayName=Abraham, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=Abraham} 2020-02-11T23:30:34.705+08:00 Model - Details - stitches on top edges of umbrella is unrealistic 
+[INFO] 2020-02-26 13:40:40,265 [] method:com.levy.jiratool.rooomy.RooomyIssueService.main(RooomyIssueService.java:68)
+comment: BasicUser{name=Abraham, displayName=Abraham, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=Abraham} 2020-02-17T21:26:24.319+08:00 Texture - Colour -umbrella color is too bleached out ,check attached image 
+[INFO] 2020-02-26 13:40:40,267 [] method:com.levy.jiratool.rooomy.RooomyIssueService.main(RooomyIssueService.java:68)
+comment: BasicUser{name=affabien, displayName=Fabien,Ajay Joshua, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=affabien} 2019-11-22T20:56:56.381+08:00 Texture - Appearance -woodgrains direction not continuous, not matching on sides marked 1 and 2.
+[INFO] 2020-02-26 13:40:40,267 [] method:com.levy.jiratool.rooomy.RooomyIssueService.main(RooomyIssueService.java:68)
+comment: BasicUser{name=pooshree, displayName=Pooja Shree, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=pooshree} 2019-12-23T18:04:02.671+08:00 Texture - Appearance - texture seam is visible check overall model. 
+texture issue in marked area check overall model. refer screenshot.
+[INFO] 2020-02-26 13:40:40,267 [] method:com.levy.jiratool.rooomy.RooomyIssueService.main(RooomyIssueService.java:68)
+comment: BasicUser{name=raghulj, displayName=Raghul J, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=raghulj} 2020-01-03T17:28:02.141+08:00 Texture - Colour- wood texture color is not matching
+
+Texture - Appearance - wood pattern details are not matching on the top of the model and also in pointed areas
+[INFO] 2020-02-26 13:40:40,267 [] method:com.levy.jiratool.rooomy.RooomyIssueService.main(RooomyIssueService.java:68)
+comment: BasicUser{name=natrajar, displayName=R,Natarajan, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=natrajar} 2020-01-18T01:11:23.387+08:00 Texture - Colour -The color of the wood is not matching.
+
+Model - Details -The position of the leg supports are not matching.
+
+ 
+[INFO] 2020-02-26 13:40:40,267 [] method:com.levy.jiratool.rooomy.RooomyIssueService.main(RooomyIssueService.java:68)
+comment: BasicUser{name=Richard, displayName=Richard, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=Richard} 2020-02-14T13:10:06.623+08:00 General - File Error - Kindly re-upload the file due to an internal server issue
+[INFO] 2020-02-26 13:40:40,268 [] method:com.levy.jiratool.rooomy.RooomyIssueService.main(RooomyIssueService.java:68)
+comment: BasicUser{name=cn.songbai.xiao, displayName=Songbai Xiao, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=cn.songbai.xiao} 2020-01-07T13:56:58.250+08:00 unit_of_measure=inches  ;  SIZE:18x53x74;;
+[INFO] 2020-02-26 13:40:40,268 [] method:com.levy.jiratool.rooomy.RooomyIssueService.main(RooomyIssueService.java:68)
+comment: BasicUser{name=Balamurugan, displayName=Balamurugan, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=Balamurugan} 2020-01-09T17:17:03.944+08:00 Texture - Colour - Texture color not matching with the reference imagery.
+
+Texture - Appearance - Wood texture details not matching with the reference imagery.
+
+Model - Error - Mesh overlap at the marked areas
+
+Model - Geometry -Marked shapes and details not matching with the reference.
+[INFO] 2020-02-26 13:40:40,268 [] method:com.levy.jiratool.rooomy.RooomyIssueService.main(RooomyIssueService.java:68)
+comment: BasicUser{name=Balamurugan, displayName=Balamurugan, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=Balamurugan} 2020-01-21T12:40:34.836+08:00 Texture - Appearance - Wood texture details not matching with the reference imagery.
+
+Model - Error - Mesh overlap at the marked areas. Please Make the shape proper.
+[INFO] 2020-02-26 13:40:40,268 [] method:com.levy.jiratool.rooomy.RooomyIssueService.main(RooomyIssueService.java:68)
+comment: BasicUser{name=Balamurugan, displayName=Balamurugan, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=Balamurugan} 2020-02-06T16:23:23.417+08:00 Texture - Appearance - Wood texture seam need to be fix.
+[INFO] 2020-02-26 13:40:40,268 [] method:com.levy.jiratool.rooomy.RooomyIssueService.main(RooomyIssueService.java:68)
+comment: BasicUser{name=Balamurugan, displayName=Balamurugan, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=Balamurugan} 2020-02-08T15:27:27.187+08:00 Texture - Appearance -Wood texture seems to be too patchy compare to the reference. Please match it.
+[INFO] 2020-02-26 13:40:40,268 [] method:com.levy.jiratool.rooomy.RooomyIssueService.main(RooomyIssueService.java:68)
+comment: BasicUser{name=Balamurugan, displayName=Balamurugan, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=Balamurugan} 2020-02-14T12:53:30.570+08:00 Server error - Please re-upload the file 
+[INFO] 2020-02-26 13:40:40,269 [] method:com.levy.jiratool.rooomy.RooomyIssueService.main(RooomyIssueService.java:68)
+comment: BasicUser{name=natrajar, displayName=R,Natarajan, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=natrajar} 2019-11-14T02:08:55.140+08:00 Texture - Colour -
+
+1.Wood color is not matching
+
+Texture - Appearance -
+
+2.Wood pattern is not matching with reference 
+[INFO] 2020-02-26 13:40:40,269 [] method:com.levy.jiratool.rooomy.RooomyIssueService.main(RooomyIssueService.java:68)
+comment: BasicUser{name=Richard, displayName=Richard, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=Richard} 2020-02-14T12:46:01.435+08:00 Texture - Colour -
+
+1.Wood color is not matching
+[INFO] 2020-02-26 13:40:40,269 [] method:com.levy.jiratool.rooomy.RooomyIssueService.main(RooomyIssueService.java:68)
+comment: BasicUser{name=Richard, displayName=Richard, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=Richard} 2020-02-19T09:52:28.494+08:00 General - File Error - Kindly re-upload the file due to an internal server issue
+[INFO] 2020-02-26 13:40:40,269 [] method:com.levy.jiratool.rooomy.RooomyIssueService.main(RooomyIssueService.java:68)
+comment: BasicUser{name=cn.songbai.xiao, displayName=Songbai Xiao, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=cn.songbai.xiao} 2019-12-19T11:29:13.279+08:00 Chair:54.00Lx41.00Wx81.00H ;  ;  ;  
+ 
+[INFO] 2020-02-26 13:40:40,270 [] method:com.levy.jiratool.rooomy.RooomyIssueService.main(RooomyIssueService.java:68)
+comment: BasicUser{name=Thandra, displayName=Thandra, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=Thandra} 2019-12-25T16:40:56.874+08:00 Model - Geometry - In the marked area The 3D model is not shaped correctly as in the reference.
+ * In the marked area low poly and hard edges are visible.
+
+Model - Details - In the marked area screw details of the model that define the product is not matching with the reference.
+
+Texture - Appearance - Texture is not matching with the reference.
+
+                                    - In the marked area texture scale is visible.
+
+ 
+
+Texture - Detail - In the marked area stitching details are missing.
+
+Texture - Colour - The wood texture's color doesn't match the reference imagery.
+
+Texture - Appearance - Wood texture is not matching with the reference.
+[INFO] 2020-02-26 13:40:40,270 [] method:com.levy.jiratool.rooomy.RooomyIssueService.main(RooomyIssueService.java:68)
+comment: BasicUser{name=Thandra, displayName=Thandra, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=Thandra} 2020-02-08T12:56:58.643+08:00 Model - Geometry - Mesh overlap is visible.
+
+                              - Proportions of the model is not matching with the reference.
+
+Texture - Colour - The wood texture's color doesn't match the reference imagery.
+[INFO] 2020-02-26 13:40:40,270 [] method:com.levy.jiratool.rooomy.RooomyIssueService.main(RooomyIssueService.java:68)
+comment: BasicUser{name=Thandra, displayName=Thandra, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=Thandra} 2020-02-14T12:33:22.417+08:00 Model - Geometry - Increase the width of the backrest and decrease the height of the model to match the proportions.
+[INFO] 2020-02-26 13:40:40,270 [] method:com.levy.jiratool.rooomy.RooomyIssueService.main(RooomyIssueService.java:68)
+comment: BasicUser{name=Thandra, displayName=Thandra, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=Thandra} 2020-02-19T12:03:59.113+08:00 Texture - Colour - The wood texture's color doesn't match the reference imagery, Refer Screenshot ( Refer Screenshot ).
+[INFO] 2020-02-26 13:40:40,270 [] method:com.levy.jiratool.rooomy.RooomyIssueService.main(RooomyIssueService.java:68)
+comment: BasicUser{name=cn.songbai.xiao, displayName=Songbai Xiao, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=cn.songbai.xiao} 2020-01-07T13:47:34.376+08:00 unit_of_measure=inches  ;  Table:70.87x23.62x27.56;;
+[INFO] 2020-02-26 13:40:40,271 [] method:com.levy.jiratool.rooomy.RooomyIssueService.main(RooomyIssueService.java:68)
+comment: BasicUser{name=natrajar, displayName=R,Natarajan, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=natrajar} 2020-01-16T23:00:01.715+08:00 Model - Details -There are sharp corners in some areas.
+
+2. There is a gap visible behind some screws.
+
+3. The shape of the corners of the table is not straight.
+
+4. The height of the table top is not matching.
+
+5. The shape of the bushes are not matching.
+
+Texture - Colour -The color of the bushes are not matching.
+
+ 
+[INFO] 2020-02-26 13:40:40,271 [] method:com.levy.jiratool.rooomy.RooomyIssueService.main(RooomyIssueService.java:68)
+comment: BasicUser{name=raghulj, displayName=Raghul J, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=raghulj} 2020-01-27T14:30:44.597+08:00 Texture - Colour -colour of the pointed area is not matching doesn't match as reference imagery
+[INFO] 2020-02-26 13:40:40,271 [] method:com.levy.jiratool.rooomy.RooomyIssueService.main(RooomyIssueService.java:68)
+comment: BasicUser{name=raghulj, displayName=Raghul J, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=raghulj} 2020-02-06T14:39:49.908+08:00 General - File Error - internal server issue kindly re upload the file
+[INFO] 2020-02-26 13:40:40,275 [] method:com.levy.jiratool.rooomy.RooomyIssueService.main(RooomyIssueService.java:68)
+comment: BasicUser{name=raghulj, displayName=Raghul J, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=raghulj} 2020-02-14T12:32:59.448+08:00 Model - Geometry - shape and proportion of the pointed model is totally mismatching(Screenshot_66,67)
+Texture - Colour -steel colour doesn't match as reference
+
+[INFO] 2020-02-26 13:40:40,275 [] method:com.levy.jiratool.rooomy.RooomyIssueService.main(RooomyIssueService.java:68)
+comment: BasicUser{name=cn.songbai.xiao, displayName=Songbai Xiao, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=cn.songbai.xiao} 2019-12-09T18:23:30.538+08:00 Chair:137.00x243.00x89.00 ;  ;  ; 
+
+[INFO] 2020-02-26 13:40:40,276 [] method:com.levy.jiratool.rooomy.RooomyIssueService.main(RooomyIssueService.java:68)
+comment: BasicUser{name=natrajar, displayName=R,Natarajan, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=natrajar} 2019-12-19T20:57:53.846+08:00  
+
+Model - Geometry -
+
+ 
+
+1.Handrest shape and proportion is not matching
+
+2.Pillows shape and wrinkle is not matching
+
+3.Cushion's edge curve shape and corners is not matching
+
+4.Fix the hand rest low poly
+
+5.Legs shape and proportion is not matching
+
+6.Backrest shape and proportion is not matching
+
+7.Backrest silhouette and wrinkle  doesn't match with reference
+
+8.Overall proportion is not matching
+
+9.Overall stitch flow and shape is not matching
+
+Pivot - 
+
+10.Front side should be facing the Z positive axis
+
+Texture - Appearance -
+
+11.Fabric pattern and texture is not matching
+
+Material - Appearance -
+
+12.Over all fabric material is not matching
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+[INFO] 2020-02-26 13:40:40,276 [] method:com.levy.jiratool.rooomy.RooomyIssueService.main(RooomyIssueService.java:68)
+comment: BasicUser{name=natrajar, displayName=R,Natarajan, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=natrajar} 2020-01-08T19:36:12.046+08:00 Model - Details -
+ # Wrinkles not matching.
+
+Model - Error -
+ # Low poly in the marked area.
+ # Mesh overlap.
+
+Material - Appearance -
+ # Fabric material and texture not matching.
+[INFO] 2020-02-26 13:40:40,277 [] method:com.levy.jiratool.rooomy.RooomyIssueService.main(RooomyIssueService.java:68)
+comment: BasicUser{name=bijaylax, displayName=Bijaylaxmi Pattanaik, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=bijaylax} 2020-01-28T01:09:27.492+08:00 Texture - Appearance -pillow wrinkles mismatch and backrest cushion wrinkles missing - ref image
+[INFO] 2020-02-26 13:40:40,277 [] method:com.levy.jiratool.rooomy.RooomyIssueService.main(RooomyIssueService.java:68)
+comment: BasicUser{name=bijaylax, displayName=Bijaylaxmi Pattanaik, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=bijaylax} 2020-02-14T12:28:02.881+08:00 Model - Details -  Refer Screenshot B01N5B9QH3: Overall stitches missing.
+
+Model - Geometry -  Refer Screenshot B01N5B9QH3_1: Marked bush is not visible in reference.
+B01N5B9QH3_2: Gap is visible. See whole model.
+
+Texture - Appearance - Refer Screenshot B01N5B9QH3_3: Texture pattern slightly mismatch.
+[INFO] 2020-02-26 13:40:40,279 [] method:com.levy.jiratool.rooomy.RooomyIssueService.main(RooomyIssueService.java:68)
+comment: BasicUser{name=cn.songbai.xiao, displayName=Songbai Xiao, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=cn.songbai.xiao} 2019-12-19T11:29:28.760+08:00 1 Seater Cushion:90.00Lx86.00Wx69.00H ;  ;  ;  
+ 
+[INFO] 2020-02-26 13:40:40,279 [] method:com.levy.jiratool.rooomy.RooomyIssueService.main(RooomyIssueService.java:68)
+comment: BasicUser{name=cn.songbai.xiao, displayName=Songbai Xiao, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=cn.songbai.xiao} 2019-12-30T14:33:42.472+08:00 Notes:chairs/sofa
+[INFO] 2020-02-26 13:40:40,280 [] method:com.levy.jiratool.rooomy.RooomyIssueService.main(RooomyIssueService.java:68)
+comment: BasicUser{name=bijaylax, displayName=Bijaylaxmi Pattanaik, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=bijaylax} 2020-01-08T01:31:28.658+08:00 General - File Error - 360 failure
+Model - Geometry - Remove black lines from the seat cushions
+[INFO] 2020-02-26 13:40:40,280 [] method:com.levy.jiratool.rooomy.RooomyIssueService.main(RooomyIssueService.java:68)
+comment: BasicUser{name=bijaylax, displayName=Bijaylaxmi Pattanaik, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=bijaylax} 2020-01-28T18:01:11.041+08:00 Texture - Colour - Color of the model is not matching the reference.
+
+[INFO] 2020-02-26 13:40:40,281 [] method:com.levy.jiratool.rooomy.RooomyIssueService.main(RooomyIssueService.java:68)
+comment: BasicUser{name=bijaylax, displayName=Bijaylaxmi Pattanaik, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=bijaylax} 2020-02-14T13:47:18.125+08:00 Texture - Appearance - Refer Screenshot B07MSWZ5Z1: Color mismatch.
+
+Model - Geometry -  Refer Screenshot B07MSWZ5Z1_1: Hard edges visible.
+B07MSWZ5Z1_4: Shape distorted.
+
+Model - Details -  Refer Screenshot B07MSWZ5Z1_3:  Stitching is not visible. Some space is needed between stitching & seam line.
+[INFO] 2020-02-26 13:40:40,281 [] method:com.levy.jiratool.rooomy.RooomyIssueService.main(RooomyIssueService.java:68)
+comment: BasicUser{name=cn.songbai.xiao, displayName=Songbai Xiao, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=cn.songbai.xiao} 2020-01-07T13:47:08.857+08:00 unit_of_measure=inches  ;  SIZE:68.5x102.5x30;;
+[INFO] 2020-02-26 13:40:40,281 [] method:com.levy.jiratool.rooomy.RooomyIssueService.main(RooomyIssueService.java:68)
+comment: BasicUser{name=bijaylax, displayName=Bijaylaxmi Pattanaik, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=bijaylax} 2020-01-24T00:53:42.531+08:00 Model - Details - shape mismatch - ref image
+[INFO] 2020-02-26 13:40:40,281 [] method:com.levy.jiratool.rooomy.RooomyIssueService.main(RooomyIssueService.java:68)
+comment: BasicUser{name=bijaylax, displayName=Bijaylaxmi Pattanaik, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=bijaylax} 2020-02-14T13:33:08.725+08:00 Model - Details -  Refer Screenshot B079YBTTTL: Model overall wrinkles missing.
+
+Model - Geometry -  Refer Screenshot B079YBTTTL_1: Tacks shape incorrect.
+B079YBTTTL_2: Marked portions should be smooth.
+B079YBTTTL_3: Tacks placing depth missing.
+B079YBTTTL_4: See thru.
+B079YBTTTL_5 & B079YBTTTL_6: Gap is visible.
+[INFO] 2020-02-26 13:40:40,281 [] method:com.levy.jiratool.rooomy.RooomyIssueService.main(RooomyIssueService.java:68)
+comment: BasicUser{name=Richard, displayName=Richard, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=Richard} 2020-01-22T14:54:09.127+08:00 Texture - Colour - The color does not match with the reference 
+[INFO] 2020-02-26 13:40:40,282 [] method:com.levy.jiratool.rooomy.RooomyIssueService.main(RooomyIssueService.java:68)
+comment: BasicUser{name=Devaiah, displayName=Devaiah, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=Devaiah} 2020-01-31T02:24:11.040+08:00 Model - Geometry - over all stitches are missing
+[INFO] 2020-02-26 13:40:40,282 [] method:com.levy.jiratool.rooomy.RooomyIssueService.main(RooomyIssueService.java:68)
+comment: BasicUser{name=krirams, displayName=Ramesh Krishna, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=krirams} 2020-02-09T02:53:49.081+08:00 Model - Details - overall stitching looks unrealistic 
+
+Texture - Colour -model color has a darker tone thats not matching with the reference 
+[INFO] 2020-02-26 13:40:40,283 [] method:com.levy.jiratool.rooomy.RooomyIssueService.main(RooomyIssueService.java:68)
+comment: BasicUser{name=Abraham, displayName=Abraham, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=Abraham} 2020-02-11T23:30:34.705+08:00 Model - Details - stitches on top edges of umbrella is unrealistic 
+[INFO] 2020-02-26 13:40:40,283 [] method:com.levy.jiratool.rooomy.RooomyIssueService.main(RooomyIssueService.java:68)
+comment: BasicUser{name=Abraham, displayName=Abraham, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=Abraham} 2020-02-17T21:26:24.319+08:00 Texture - Colour -umbrella color is too bleached out ,check attached image 
+[INFO] 2020-02-26 13:40:40,283 [] method:com.levy.jiratool.rooomy.RooomyIssueService.main(RooomyIssueService.java:68)
+comment: BasicUser{name=affabien, displayName=Fabien,Ajay Joshua, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=affabien} 2019-11-22T20:56:56.381+08:00 Texture - Appearance -woodgrains direction not continuous, not matching on sides marked 1 and 2.
+[INFO] 2020-02-26 13:40:40,283 [] method:com.levy.jiratool.rooomy.RooomyIssueService.main(RooomyIssueService.java:68)
+comment: BasicUser{name=pooshree, displayName=Pooja Shree, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=pooshree} 2019-12-23T18:04:02.671+08:00 Texture - Appearance - texture seam is visible check overall model. 
+texture issue in marked area check overall model. refer screenshot.
+[INFO] 2020-02-26 13:40:40,284 [] method:com.levy.jiratool.rooomy.RooomyIssueService.main(RooomyIssueService.java:68)
+comment: BasicUser{name=raghulj, displayName=Raghul J, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=raghulj} 2020-01-03T17:28:02.141+08:00 Texture - Colour- wood texture color is not matching
+
+Texture - Appearance - wood pattern details are not matching on the top of the model and also in pointed areas
+[INFO] 2020-02-26 13:40:40,284 [] method:com.levy.jiratool.rooomy.RooomyIssueService.main(RooomyIssueService.java:68)
+comment: BasicUser{name=natrajar, displayName=R,Natarajan, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=natrajar} 2020-01-18T01:11:23.387+08:00 Texture - Colour -The color of the wood is not matching.
+
+Model - Details -The position of the leg supports are not matching.
+
+ 
+[INFO] 2020-02-26 13:40:40,284 [] method:com.levy.jiratool.rooomy.RooomyIssueService.main(RooomyIssueService.java:68)
+comment: BasicUser{name=Richard, displayName=Richard, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=Richard} 2020-02-14T13:10:06.623+08:00 General - File Error - Kindly re-upload the file due to an internal server issue
+[INFO] 2020-02-26 13:40:40,285 [] method:com.levy.jiratool.rooomy.RooomyIssueService.main(RooomyIssueService.java:68)
+comment: BasicUser{name=cn.songbai.xiao, displayName=Songbai Xiao, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=cn.songbai.xiao} 2020-01-07T13:56:58.250+08:00 unit_of_measure=inches  ;  SIZE:18x53x74;;
+[INFO] 2020-02-26 13:40:40,285 [] method:com.levy.jiratool.rooomy.RooomyIssueService.main(RooomyIssueService.java:68)
+comment: BasicUser{name=Balamurugan, displayName=Balamurugan, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=Balamurugan} 2020-01-09T17:17:03.944+08:00 Texture - Colour - Texture color not matching with the reference imagery.
+
+Texture - Appearance - Wood texture details not matching with the reference imagery.
+
+Model - Error - Mesh overlap at the marked areas
+
+Model - Geometry -Marked shapes and details not matching with the reference.
+[INFO] 2020-02-26 13:40:40,285 [] method:com.levy.jiratool.rooomy.RooomyIssueService.main(RooomyIssueService.java:68)
+comment: BasicUser{name=Balamurugan, displayName=Balamurugan, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=Balamurugan} 2020-01-21T12:40:34.836+08:00 Texture - Appearance - Wood texture details not matching with the reference imagery.
+
+Model - Error - Mesh overlap at the marked areas. Please Make the shape proper.
+[INFO] 2020-02-26 13:40:40,285 [] method:com.levy.jiratool.rooomy.RooomyIssueService.main(RooomyIssueService.java:68)
+comment: BasicUser{name=Balamurugan, displayName=Balamurugan, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=Balamurugan} 2020-02-06T16:23:23.417+08:00 Texture - Appearance - Wood texture seam need to be fix.
+[INFO] 2020-02-26 13:40:40,286 [] method:com.levy.jiratool.rooomy.RooomyIssueService.main(RooomyIssueService.java:68)
+comment: BasicUser{name=Balamurugan, displayName=Balamurugan, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=Balamurugan} 2020-02-08T15:27:27.187+08:00 Texture - Appearance -Wood texture seems to be too patchy compare to the reference. Please match it.
+[INFO] 2020-02-26 13:40:40,286 [] method:com.levy.jiratool.rooomy.RooomyIssueService.main(RooomyIssueService.java:68)
+comment: BasicUser{name=Balamurugan, displayName=Balamurugan, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=Balamurugan} 2020-02-14T12:53:30.570+08:00 Server error - Please re-upload the file 
+[INFO] 2020-02-26 13:40:40,286 [] method:com.levy.jiratool.rooomy.RooomyIssueService.main(RooomyIssueService.java:68)
+comment: BasicUser{name=natrajar, displayName=R,Natarajan, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=natrajar} 2019-11-14T02:08:55.140+08:00 Texture - Colour -
+
+1.Wood color is not matching
+
+Texture - Appearance -
+
+2.Wood pattern is not matching with reference 
+[INFO] 2020-02-26 13:40:40,286 [] method:com.levy.jiratool.rooomy.RooomyIssueService.main(RooomyIssueService.java:68)
+comment: BasicUser{name=Richard, displayName=Richard, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=Richard} 2020-02-14T12:46:01.435+08:00 Texture - Colour -
+
+1.Wood color is not matching
+[INFO] 2020-02-26 13:40:40,286 [] method:com.levy.jiratool.rooomy.RooomyIssueService.main(RooomyIssueService.java:68)
+comment: BasicUser{name=Richard, displayName=Richard, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=Richard} 2020-02-19T09:52:28.494+08:00 General - File Error - Kindly re-upload the file due to an internal server issue
+[INFO] 2020-02-26 13:40:40,287 [] method:com.levy.jiratool.rooomy.RooomyIssueService.main(RooomyIssueService.java:68)
+comment: BasicUser{name=cn.songbai.xiao, displayName=Songbai Xiao, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=cn.songbai.xiao} 2019-12-19T11:29:13.279+08:00 Chair:54.00Lx41.00Wx81.00H ;  ;  ;  
+ 
+[INFO] 2020-02-26 13:40:40,287 [] method:com.levy.jiratool.rooomy.RooomyIssueService.main(RooomyIssueService.java:68)
+comment: BasicUser{name=Thandra, displayName=Thandra, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=Thandra} 2019-12-25T16:40:56.874+08:00 Model - Geometry - In the marked area The 3D model is not shaped correctly as in the reference.
+ * In the marked area low poly and hard edges are visible.
+
+Model - Details - In the marked area screw details of the model that define the product is not matching with the reference.
+
+Texture - Appearance - Texture is not matching with the reference.
+
+                                    - In the marked area texture scale is visible.
+
+ 
+
+Texture - Detail - In the marked area stitching details are missing.
+
+Texture - Colour - The wood texture's color doesn't match the reference imagery.
+
+Texture - Appearance - Wood texture is not matching with the reference.
+[INFO] 2020-02-26 13:40:40,287 [] method:com.levy.jiratool.rooomy.RooomyIssueService.main(RooomyIssueService.java:68)
+comment: BasicUser{name=Thandra, displayName=Thandra, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=Thandra} 2020-02-08T12:56:58.643+08:00 Model - Geometry - Mesh overlap is visible.
+
+                              - Proportions of the model is not matching with the reference.
+
+Texture - Colour - The wood texture's color doesn't match the reference imagery.
+[INFO] 2020-02-26 13:40:40,287 [] method:com.levy.jiratool.rooomy.RooomyIssueService.main(RooomyIssueService.java:68)
+comment: BasicUser{name=Thandra, displayName=Thandra, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=Thandra} 2020-02-14T12:33:22.417+08:00 Model - Geometry - Increase the width of the backrest and decrease the height of the model to match the proportions.
+[INFO] 2020-02-26 13:40:40,287 [] method:com.levy.jiratool.rooomy.RooomyIssueService.main(RooomyIssueService.java:68)
+comment: BasicUser{name=Thandra, displayName=Thandra, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=Thandra} 2020-02-19T12:03:59.113+08:00 Texture - Colour - The wood texture's color doesn't match the reference imagery, Refer Screenshot ( Refer Screenshot ).
+[INFO] 2020-02-26 13:40:40,287 [] method:com.levy.jiratool.rooomy.RooomyIssueService.main(RooomyIssueService.java:68)
+comment: BasicUser{name=cn.songbai.xiao, displayName=Songbai Xiao, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=cn.songbai.xiao} 2020-01-07T13:47:34.376+08:00 unit_of_measure=inches  ;  Table:70.87x23.62x27.56;;
+[INFO] 2020-02-26 13:40:40,288 [] method:com.levy.jiratool.rooomy.RooomyIssueService.main(RooomyIssueService.java:68)
+comment: BasicUser{name=natrajar, displayName=R,Natarajan, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=natrajar} 2020-01-16T23:00:01.715+08:00 Model - Details -There are sharp corners in some areas.
+
+2. There is a gap visible behind some screws.
+
+3. The shape of the corners of the table is not straight.
+
+4. The height of the table top is not matching.
+
+5. The shape of the bushes are not matching.
+
+Texture - Colour -The color of the bushes are not matching.
+
+ 
+[INFO] 2020-02-26 13:40:40,288 [] method:com.levy.jiratool.rooomy.RooomyIssueService.main(RooomyIssueService.java:68)
+comment: BasicUser{name=raghulj, displayName=Raghul J, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=raghulj} 2020-01-27T14:30:44.597+08:00 Texture - Colour -colour of the pointed area is not matching doesn't match as reference imagery
+[INFO] 2020-02-26 13:40:40,288 [] method:com.levy.jiratool.rooomy.RooomyIssueService.main(RooomyIssueService.java:68)
+comment: BasicUser{name=raghulj, displayName=Raghul J, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=raghulj} 2020-02-06T14:39:49.908+08:00 General - File Error - internal server issue kindly re upload the file
+[INFO] 2020-02-26 13:40:40,289 [] method:com.levy.jiratool.rooomy.RooomyIssueService.main(RooomyIssueService.java:68)
+comment: BasicUser{name=raghulj, displayName=Raghul J, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=raghulj} 2020-02-14T12:32:59.448+08:00 Model - Geometry - shape and proportion of the pointed model is totally mismatching(Screenshot_66,67)
+Texture - Colour -steel colour doesn't match as reference
+

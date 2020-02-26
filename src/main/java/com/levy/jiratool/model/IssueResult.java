@@ -7,4 +7,5 @@ import lombok.Data;
 public class IssueResult {
     private String id;
     private Iterable<Comment> comments;
+    private long spendTime;
 }
