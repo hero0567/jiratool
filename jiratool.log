@@ -828,3 +828,67 @@ comment: BasicUser{name=raghulj, displayName=Raghul J, self=https://amazon.rooom
 comment: BasicUser{name=raghulj, displayName=Raghul J, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=raghulj} 2020-02-14T12:32:59.448+08:00 Model - Geometry - shape and proportion of the pointed model is totally mismatching(Screenshot_66,67)
 Texture - Colour -steel colour doesn't match as reference
 
+[INFO] 2020-02-26 14:42:08,294 [] method:com.levy.jiratool.rooomy.RooomyIssueService.loadIssueCommentsAsync(RooomyIssueService.java:42)
+Login...
+[INFO] 2020-02-26 14:42:09,546 [] method:com.levy.jiratool.rooomy.RooomyIssueService.loadIssueCommentsAsync(RooomyIssueService.java:49)
+Start query comments.
+[INFO] 2020-02-26 14:42:09,740 [] method:com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:58)
+Try to get issue comments of AMZCUS5-11391
+[INFO] 2020-02-26 14:42:09,798 [] method:com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:58)
+Try to get issue comments of AMZCUS5-5412
+[INFO] 2020-02-26 14:44:40,197 [] method:com.levy.jiratool.rooomy.RooomyIssueService.loadIssueCommentsAsync(RooomyIssueService.java:42)
+Login...
+[INFO] 2020-02-26 14:44:41,090 [] method:com.levy.jiratool.rooomy.RooomyIssueService.loadIssueCommentsAsync(RooomyIssueService.java:49)
+Start query comments.
+[INFO] 2020-02-26 14:44:41,214 [] method:com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:58)
+Try to get issue comments of AMZCUS5-11391
+[INFO] 2020-02-26 14:44:41,214 [] method:com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:58)
+Try to get issue comments of AMZCUS5-5412
+[INFO] 2020-02-26 14:44:48,024 [] method:com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:66)
+Complete get issue comments of AMZCUS5-11391
+[INFO] 2020-02-26 14:44:49,289 [] method:com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:66)
+Complete get issue comments of AMZCUS5-5412
+[INFO] 2020-02-26 14:44:49,295 [] method:com.levy.jiratool.rooomy.RooomyIssueService.main(RooomyIssueService.java:113)
+comment: BasicUser{name=cn.songbai.xiao, displayName=Songbai Xiao, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=cn.songbai.xiao} 2019-12-19T11:29:28.760+08:00 1 Seater Cushion:90.00Lx86.00Wx69.00H ;  ;  ;  
+ 
+[INFO] 2020-02-26 14:44:49,295 [] method:com.levy.jiratool.rooomy.RooomyIssueService.main(RooomyIssueService.java:113)
+comment: BasicUser{name=cn.songbai.xiao, displayName=Songbai Xiao, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=cn.songbai.xiao} 2019-12-30T14:33:42.472+08:00 Notes:chairs/sofa
+[INFO] 2020-02-26 14:44:49,296 [] method:com.levy.jiratool.rooomy.RooomyIssueService.main(RooomyIssueService.java:113)
+comment: BasicUser{name=bijaylax, displayName=Bijaylaxmi Pattanaik, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=bijaylax} 2020-01-08T01:31:28.658+08:00 General - File Error - 360 failure
+Model - Geometry - Remove black lines from the seat cushions
+[INFO] 2020-02-26 14:44:49,296 [] method:com.levy.jiratool.rooomy.RooomyIssueService.main(RooomyIssueService.java:113)
+comment: BasicUser{name=bijaylax, displayName=Bijaylaxmi Pattanaik, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=bijaylax} 2020-01-28T18:01:11.041+08:00 Texture - Colour - Color of the model is not matching the reference.
+
+[INFO] 2020-02-26 14:44:49,297 [] method:com.levy.jiratool.rooomy.RooomyIssueService.main(RooomyIssueService.java:113)
+comment: BasicUser{name=bijaylax, displayName=Bijaylaxmi Pattanaik, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=bijaylax} 2020-02-14T13:47:18.125+08:00 Texture - Appearance - Refer Screenshot B07MSWZ5Z1: Color mismatch.
+
+Model - Geometry -  Refer Screenshot B07MSWZ5Z1_1: Hard edges visible.
+B07MSWZ5Z1_4: Shape distorted.
+
+Model - Details -  Refer Screenshot B07MSWZ5Z1_3:  Stitching is not visible. Some space is needed between stitching & seam line.
+[INFO] 2020-02-26 14:44:49,299 [] method:com.levy.jiratool.rooomy.RooomyIssueService.main(RooomyIssueService.java:113)
+comment: BasicUser{name=cn.songbai.xiao, displayName=Songbai Xiao, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=cn.songbai.xiao} 2020-01-07T13:47:08.857+08:00 unit_of_measure=inches  ;  SIZE:68.5x102.5x30;;
+[INFO] 2020-02-26 14:44:49,300 [] method:com.levy.jiratool.rooomy.RooomyIssueService.main(RooomyIssueService.java:113)
+comment: BasicUser{name=bijaylax, displayName=Bijaylaxmi Pattanaik, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=bijaylax} 2020-01-24T00:53:42.531+08:00 Model - Details - shape mismatch - ref image
+[INFO] 2020-02-26 14:44:49,301 [] method:com.levy.jiratool.rooomy.RooomyIssueService.main(RooomyIssueService.java:113)
+comment: BasicUser{name=bijaylax, displayName=Bijaylaxmi Pattanaik, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=bijaylax} 2020-02-14T13:33:08.725+08:00 Model - Details -  Refer Screenshot B079YBTTTL: Model overall wrinkles missing.
+
+Model - Geometry -  Refer Screenshot B079YBTTTL_1: Tacks shape incorrect.
+B079YBTTTL_2: Marked portions should be smooth.
+B079YBTTTL_3: Tacks placing depth missing.
+B079YBTTTL_4: See thru.
+B079YBTTTL_5 & B079YBTTTL_6: Gap is visible.
+[INFO] 2020-02-26 14:48:14,533 [] method:com.levy.jiratool.rooomy.RooomyIssueService.loadIssueCommentsAsync(RooomyIssueService.java:42)
+Login...
+[INFO] 2020-02-26 14:48:15,402 [] method:com.levy.jiratool.rooomy.RooomyIssueService.loadIssueCommentsAsync(RooomyIssueService.java:49)
+Start query comments.
+[INFO] 2020-02-26 14:48:15,526 [] method:com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:58)
+Try to get issue comments of AMZCUS5-11391
+[INFO] 2020-02-26 14:48:15,526 [] method:com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:58)
+Try to get issue comments of AMZCUS5-5412
+[INFO] 2020-02-26 14:48:25,299 [] method:com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:66)
+Complete get issue comments of AMZCUS5-11391
+[INFO] 2020-02-26 14:48:26,388 [] method:com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:66)
+Complete get issue comments of AMZCUS5-5412
+[INFO] 2020-02-26 14:48:26,395 [] method:com.levy.jiratool.rooomy.RooomyIssueService.writeIssueResult(RooomyIssueService.java:104)
+Save data success.

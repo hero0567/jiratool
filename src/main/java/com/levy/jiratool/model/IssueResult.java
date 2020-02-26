@@ -8,4 +8,7 @@ public class IssueResult {
     private String id;
     private Iterable<Comment> comments;
     private long spendTime;
+    private boolean rejected;
+    private String rejectedComment;
+    private String rejectedReason;
 }

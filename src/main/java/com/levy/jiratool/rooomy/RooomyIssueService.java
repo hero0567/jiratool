@@ -7,12 +7,19 @@ import com.levy.jiratool.model.IssueKey;
 import com.levy.jiratool.model.IssueResult;
 import lombok.extern.slf4j.Slf4j;
 
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.PrintStream;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
 @Slf4j
 public class RooomyIssueService {
+
+    private String[] rejectCauses = {"Model-Detail", "di-mension", "Model-Geometry", "Model-Error",
+            "colo-r", "App-earance",
+            "up-load", "Process-Missing Comment"};
 
     public List<IssueResult> loadIssueComments() {
         log.info("Login...");
@@ -40,8 +47,8 @@ public class RooomyIssueService {
 
         List<IssueKey> issueKeys = LoadIssueKey.loadIssueKey();
         log.info("Start query comments.");
-        System.setProperty("java.util.concurrent.ForkJoinPool.common.parallelism","200");
-        List<IssueResult> issueResults = issueKeys.stream().parallel().map(issueKey ->{
+        System.setProperty("java.util.concurrent.ForkJoinPool.common.parallelism", "200");
+        List<IssueResult> issueResults = issueKeys.stream().parallel().map(issueKey -> {
             return loadIssueResult(jiraClient, issueKey);
         }).collect(Collectors.toList());
         return issueResults;
@@ -56,17 +63,56 @@ public class RooomyIssueService {
         issueResult.setComments(comments);
         long end = System.currentTimeMillis();
         issueResult.setSpendTime((end - begin) / 1000);
+        log.info("Complete get issue comments of {}", issueKey.getId());
         return issueResult;
+    }
+
+    private void checkIssueRejected(List<IssueResult> issueResults) {
+        for (IssueResult issueResult : issueResults) {
+            for (Comment comment : issueResult.getComments()) {
+                for (String rejectCause : rejectCauses) {
+                    if (comment.getBody().contains(rejectCause)) {
+                        issueResult.setRejected(true);
+                        issueResult.setRejectedReason(comment.getBody());
+                        issueResult.setRejectedReason(rejectCause);
+                        break;
+                    }
+                }
+            }
+        }
+    }
+
+    private void writeIssueResult(List<IssueResult> issueResults) {
+        String fname = "./result.txt";
+        try {
+            FileOutputStream fs = new FileOutputStream(new File(fname));
+            PrintStream p = new PrintStream(fs);
+            for (IssueResult issueResult : issueResults) {
+                p.println(String.join(";",
+                        issueResult.getId(),
+                        String.valueOf(issueResult.isRejected()),
+                        issueResult.getRejectedReason(),
+                        issueResult.getRejectedComment(),
+                        String.valueOf(issueResult.getSpendTime())));
+            }
+            p.flush();
+            p.close();
+            fs.close();
+        } catch (Exception e) {
+            log.error("Failed to save data.");
+        }
+        log.info("Save data success.");
+    }
+
+    public void getRejectedIssueComments(){
+        List<IssueResult> issueResults = loadIssueCommentsAsync();
+        checkIssueRejected(issueResults);
+        writeIssueResult(issueResults);
     }
 
 
     public static void main(String[] args) {
         RooomyIssueService issueService = new RooomyIssueService();
-        List<IssueResult> issueResults = issueService.loadIssueCommentsAsync();
-        for(IssueResult issueResult: issueResults){
-            for(Comment comment: issueResult.getComments()){
-                log.info("comment: {} {} {}", comment.getAuthor(),comment.getUpdateDate(), comment.getBody());
-            }
-        }
+        issueService.getRejectedIssueComments();
     }
 }
