@@ -21,7 +21,6 @@ public class JiraClientFactory {
 
     public static JiraClient createJiraClient(String username, String password, String host) {
         try {
-
             AsynchronousJiraRestClientFactory f = new AsynchronousJiraRestClientFactory();
             JiraRestClient jc = f.createWithBasicHttpAuthentication(new URI(host),
                     username, password);

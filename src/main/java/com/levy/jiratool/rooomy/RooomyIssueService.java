@@ -2,7 +2,6 @@ package com.levy.jiratool.rooomy;
 
 import com.atlassian.jira.rest.client.domain.ChangelogGroup;
 import com.atlassian.jira.rest.client.domain.Comment;
-import com.atlassian.jira.rest.client.domain.Worklog;
 
 import com.levy.jiratool.lib.JiraClient;
 import com.levy.jiratool.lib.JiraClientFactory;
@@ -17,6 +16,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 
 @Slf4j
@@ -29,8 +29,8 @@ public class RooomyIssueService {
         rejectCause.put("Model-Dimensions", "di.{0,3}mension");
         rejectCause.put("Model-Geometry", "Model.{0,3}Geometry");
         rejectCause.put("Model-Error", "Model.{0,3}Error");
-        rejectCause.put("Texture-Color", "[Cc]olo(u)?r");
-        rejectCause.put("Texture-Appearance", "App.{0,3}earance");
+        rejectCause.put("Texture-Color", "Texture.{0,3}[Cc]olo(u)?r");
+        rejectCause.put("Texture-Appearance", "Texture.{0,3}App.{0,3}earance");
         rejectCause.put("Process-Zip", "up.{0,3}load");
         rejectCause.put("Process-Missing Comment", "Process.{0,3}Missing Comment");
     }
@@ -75,9 +75,9 @@ public class RooomyIssueService {
         try {
             Iterable<Comment> comments = jiraClient.getComments(issueKey.getId());
             Iterable<ChangelogGroup> changelog = jiraClient.getChangelog(issueKey.getId());
-
             issueResult.setId(issueKey.getId());
             issueResult.setComments(comments);
+            issueResult.setChangelogs(changelog);
             long end = System.currentTimeMillis();
             issueResult.setSpendTime((end - begin) / 1000);
             log.info("Complete get issue comments of {}", issueKey.getId());
@@ -87,20 +87,34 @@ public class RooomyIssueService {
         return issueResult;
     }
 
-    private void checkIssueRejected(List<IssueResult> issueResults) {
-
+    private void mergeAssignee(List<IssueResult> issueResults) {
         for (IssueResult issueResult : issueResults) {
-            Map<String, Boolean> rejectResults = new HashMap<>();
-            issueResult.setRejectResults(rejectResults);
-            for (Comment comment : issueResult.getComments()) {
-                rejectCause.forEach((k, v) -> {
-                    if (comment.getBody().matches(v)) {
-                        rejectResults.put(k, true);
-                    } else {
-                        rejectResults.put(k, false);
+            List<String> assignees = new ArrayList<>();
+            issueResult.setAssignees(assignees);
+            for (ChangelogGroup changelog : issueResult.getChangelogs()) {
+                changelog.getItems().forEach(item -> {
+                    if ("assignee".equals(item.getField())) {
+                        assignees.add(item.getTo() + "(" + changelog.getCreated() + ")");
                     }
                 });
             }
+        }
+    }
+
+    private void mergeIssueRejectedComments(List<IssueResult> issueResults) {
+        for (IssueResult issueResult : issueResults) {
+            List<String> rejectResults = new ArrayList<>();
+            issueResult.setRejectResults(rejectResults);
+            rejectCause.forEach((k, v) -> {
+                String rejectDate = "";
+                for (Comment comment : issueResult.getComments()) {
+                    if (Pattern.compile(v).matcher(comment.getBody()).find()) {
+                        rejectDate = comment.getUpdateDate().toString();
+                        log.debug("Issue({}) Found reject reason： {}, from: {}", issueResult.getId(), v, comment.getBody());
+                    }
+                }
+                rejectResults.add(rejectDate);
+            });
         }
     }
 
@@ -110,8 +124,12 @@ public class RooomyIssueService {
              PrintStream p = new PrintStream(fs);
         ) {
             for (IssueResult issueResult : issueResults) {
+                String assigne = String.join("->", issueResult.getAssignees());
+                String rejectResults = String.join(";", issueResult.getRejectResults());
                 p.println(String.join(";",
                         issueResult.getId(),
+                        assigne,
+                        rejectResults,
                         String.valueOf(issueResult.getSpendTime())));
             }
         } catch (Exception e) {
@@ -122,8 +140,10 @@ public class RooomyIssueService {
 
     public void getRejectedIssueComments() {
         List<IssueResult> issueResults = loadIssueCommentsAsync();
-        checkIssueRejected(issueResults);
+        mergeIssueRejectedComments(issueResults);
+        mergeAssignee(issueResults);
         writeIssueResult(issueResults);
+        System.exit(0);
     }
 
 

@@ -1,14 +1,18 @@
 package com.levy.jiratool.model;
 
+import com.atlassian.jira.rest.client.domain.ChangelogGroup;
 import com.atlassian.jira.rest.client.domain.Comment;
 import lombok.Data;
 
+import java.util.List;
 import java.util.Map;
 
 @Data
 public class IssueResult {
     private String id;
-    private Iterable<Comment> comments;
     private long spendTime;
-    private Map<String, Boolean> rejectResults;
+    private Iterable<Comment> comments;
+    private Iterable<ChangelogGroup> changelogs;
+    private List<String> assignees;
+    private List<String> rejectResults;
 }
