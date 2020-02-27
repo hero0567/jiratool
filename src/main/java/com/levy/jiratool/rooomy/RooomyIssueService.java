@@ -8,10 +8,12 @@ import com.levy.jiratool.lib.JiraClientFactory;
 import com.levy.jiratool.model.IssueKey;
 import com.levy.jiratool.model.IssueResult;
 import lombok.extern.slf4j.Slf4j;
+import org.joda.time.format.DateTimeFormat;
 
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.PrintStream;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -23,6 +25,7 @@ import java.util.stream.Collectors;
 public class RooomyIssueService {
 
     private Map<String, String> rejectCause = new HashMap<>();
+    private String formatter = "yyyy-MM-dd HH:mm:ss";
 
     public RooomyIssueService() {
         rejectCause.put("Model-Detail", "Model.{0,3}Detail");
@@ -94,7 +97,7 @@ public class RooomyIssueService {
             for (ChangelogGroup changelog : issueResult.getChangelogs()) {
                 changelog.getItems().forEach(item -> {
                     if ("assignee".equals(item.getField())) {
-                        assignees.add(item.getTo() + "(" + changelog.getCreated() + ")");
+                        assignees.add(item.getTo() + "(" + changelog.getCreated().toString(DateTimeFormat.forPattern(formatter)) + ")");
                     }
                 });
             }
@@ -109,7 +112,7 @@ public class RooomyIssueService {
                 String rejectDate = "";
                 for (Comment comment : issueResult.getComments()) {
                     if (Pattern.compile(v).matcher(comment.getBody()).find()) {
-                        rejectDate = comment.getUpdateDate().toString();
+                        rejectDate = comment.getUpdateDate().toString(DateTimeFormat.forPattern(formatter));
                         log.debug("Issue({}) Found reject reason： {}, from: {}", issueResult.getId(), v, comment.getBody());
                     }
                 }
@@ -129,6 +132,7 @@ public class RooomyIssueService {
                 p.println(String.join(";",
                         issueResult.getId(),
                         assigne,
+                        String.valueOf(issueResult.getAssignees().size()),
                         rejectResults,
                         String.valueOf(issueResult.getSpendTime())));
             }
@@ -143,12 +147,5 @@ public class RooomyIssueService {
         mergeIssueRejectedComments(issueResults);
         mergeAssignee(issueResults);
         writeIssueResult(issueResults);
-        System.exit(0);
-    }
-
-
-    public static void main(String[] args) {
-        RooomyIssueService issueService = new RooomyIssueService();
-        issueService.getRejectedIssueComments();
     }
 }
