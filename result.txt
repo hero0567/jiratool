@@ -1,2 +1,2 @@
-AMZCUS5-5412;false;null;null;10
-AMZCUS5-11391;false;null;null;9
+AMZCUS5-5412;11
+AMZCUS5-11391;5

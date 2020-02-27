@@ -2,9 +2,7 @@ package com.levy.jiratool.lib;
 
 import com.atlassian.jira.rest.client.JiraRestClient;
 import com.atlassian.jira.rest.client.NullProgressMonitor;
-import com.atlassian.jira.rest.client.domain.BasicProject;
-import com.atlassian.jira.rest.client.domain.Comment;
-import com.atlassian.jira.rest.client.domain.SearchResult;
+import com.atlassian.jira.rest.client.domain.*;
 import com.atlassian.jira.rest.client.internal.jersey.JerseyJiraRestClientFactory;
 import lombok.extern.slf4j.Slf4j;
 
@@ -29,6 +27,16 @@ public class JiraClient {
     public Iterable<Comment> getComments(String issueId){
         NullProgressMonitor pm = new NullProgressMonitor();
         return jc.getIssueClient().getIssue(issueId, pm).getComments();
+    }
+
+    public Iterable<Worklog> getWorklog(String issueId){
+        NullProgressMonitor pm = new NullProgressMonitor();
+        return jc.getIssueClient().getIssue(issueId, pm).getWorklogs();
+    }
+
+    public Iterable<Attachment> getAttachments(String issueId){
+        NullProgressMonitor pm = new NullProgressMonitor();
+        return jc.getIssueClient().getIssue(issueId, pm).getAttachments();
     }
 
     public Iterable<BasicProject> getAllProjects() {

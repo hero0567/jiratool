@@ -1,6 +1,7 @@
 package com.levy.jiratool.rooomy;
 
 import com.atlassian.jira.rest.client.domain.Comment;
+import com.atlassian.jira.rest.client.domain.Worklog;
 import com.levy.jiratool.lib.JiraClient;
 import com.levy.jiratool.lib.JiraClientFactory;
 import com.levy.jiratool.model.IssueKey;
@@ -11,15 +12,26 @@ import java.io.File;
 import java.io.FileOutputStream;
 import java.io.PrintStream;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.stream.Collectors;
 
 @Slf4j
 public class RooomyIssueService {
 
-    private String[] rejectCauses = {"Model-Detail", "di-mension", "Model-Geometry", "Model-Error",
-            "colo-r", "App-earance",
-            "up-load", "Process-Missing Comment"};
+    private Map<String, String> rejectCause = new HashMap<>();
+
+    public RooomyIssueService(){
+        rejectCause.put("Model-Detail" ,"Model.{0,3}Detail");
+        rejectCause.put("Model-Dimensions" ,"di.{0,3}mension");
+        rejectCause.put("Model-Geometry" ,"Model.{0,3}Geometry");
+        rejectCause.put("Model-Error" ,"Model.{0,3}Error");
+        rejectCause.put("Texture-Color" ,"[Cc]olo(u)?r");
+        rejectCause.put("Texture-Appearance" ,"App.{0,3}earance");
+        rejectCause.put("Process-Zip" ,"up.{0,3}load");
+        rejectCause.put("Process-Missing Comment" ,"Process.{0,3}Missing Comment");
+    }
 
     public List<IssueResult> loadIssueComments() {
         log.info("Login...");
@@ -59,6 +71,7 @@ public class RooomyIssueService {
         long begin = System.currentTimeMillis();
         IssueResult issueResult = new IssueResult();
         Iterable<Comment> comments = jiraClient.getComments(issueKey.getId());
+        Iterable<Worklog> worklogs = jiraClient.getWorklog(issueKey.getId());
         issueResult.setId(issueKey.getId());
         issueResult.setComments(comments);
         long end = System.currentTimeMillis();
@@ -68,16 +81,18 @@ public class RooomyIssueService {
     }
 
     private void checkIssueRejected(List<IssueResult> issueResults) {
+
         for (IssueResult issueResult : issueResults) {
+            Map<String, Boolean> rejectResults = new HashMap<>();
+            issueResult.setRejectResults(rejectResults);
             for (Comment comment : issueResult.getComments()) {
-                for (String rejectCause : rejectCauses) {
-                    if (comment.getBody().contains(rejectCause)) {
-                        issueResult.setRejected(true);
-                        issueResult.setRejectedReason(comment.getBody());
-                        issueResult.setRejectedReason(rejectCause);
-                        break;
+                rejectCause.forEach((k,v)->{
+                    if (comment.getBody().matches(v)) {
+                        rejectResults.put(k, true);
+                    }else{
+                        rejectResults.put(k, false);
                     }
-                }
+                });
             }
         }
     }
@@ -90,9 +105,6 @@ public class RooomyIssueService {
             for (IssueResult issueResult : issueResults) {
                 p.println(String.join(";",
                         issueResult.getId(),
-                        String.valueOf(issueResult.isRejected()),
-                        issueResult.getRejectedReason(),
-                        issueResult.getRejectedComment(),
                         String.valueOf(issueResult.getSpendTime())));
             }
             p.flush();
