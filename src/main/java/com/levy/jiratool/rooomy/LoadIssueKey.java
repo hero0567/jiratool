@@ -30,7 +30,10 @@ public class LoadIssueKey {
              BufferedReader bufferedRreader = new BufferedReader(new InputStreamReader(inputStream));) {
             String line;
             while (StringUtils.isNotBlank(line = bufferedRreader.readLine())) {
-                IssueKey issueKey = new IssueKey(line.trim());
+                IssueKey issueKey = new IssueKey();
+                String[] keyInfo = line.split(";", 2);
+                issueKey.setId(keyInfo[1]);
+                issueKey.setName(keyInfo[0]);
                 issueKeys.add(issueKey);
             }
         } catch (IOException e) {

@@ -19,6 +19,10 @@ ChangelogGroup{author=BasicUser{name=bijaylax, displayName=Bijaylaxmi Pattanaik,
 
 mvn assembly:assembly
 
+1. 找出assignee里面的最后2个comments
+2. 改为remark状态的时候的前后3小时，是否上传附件，是否添加comments
+3. assignee去掉固定的一些名字
+
 
 
 
