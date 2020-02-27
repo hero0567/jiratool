@@ -34,8 +34,8 @@ public class RooomyIssueService {
         rejectCause.put("Model-Dimensions", "di.{0,3}mension");
         rejectCause.put("Model-Geometry", "Model.{0,3}Geometry");
         rejectCause.put("Model-Error", "Model.{0,3}Error");
-        rejectCause.put("Texture-Color", "Texture.{0,3}[Cc]olo(u)?r");
-        rejectCause.put("Texture-Appearance", "Texture.{0,3}App.{0,3}earance");
+        rejectCause.put("Texture-Color", "[Cc]olo(u)?r");
+        rejectCause.put("Texture-Appearance", "App.{0,3}earance");
         rejectCause.put("Process-Zip", "up.{0,3}load");
         rejectCause.put("Process-Missing Comment", "Process.{0,3}Missing Comment");
 
