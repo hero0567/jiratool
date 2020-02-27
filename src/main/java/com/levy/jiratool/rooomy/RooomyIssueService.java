@@ -28,6 +28,7 @@ public class RooomyIssueService {
 
     private Map<String, String> rejectCause = new HashMap<>();
     private String formatter = "yyyy-MM-dd HH:mm:ss";
+    private JiraClient jiraClient;
 
     public RooomyIssueService() {
         rejectCause.put("Model-Detail", "Model.{0,3}Detail");
@@ -38,34 +39,15 @@ public class RooomyIssueService {
         rejectCause.put("Texture-Appearance", "Texture.{0,3}App.{0,3}earance");
         rejectCause.put("Process-Zip", "up.{0,3}load");
         rejectCause.put("Process-Missing Comment", "Process.{0,3}Missing Comment");
-    }
 
-    public List<IssueResult> loadIssueComments() {
         log.info("Login...");
-        JiraClient jiraClient = JiraClientFactory.createJiraClient(
+        jiraClient = JiraClientFactory.createJiraClient(
                 "cn.fei.xiao",
                 "fei.xiaoJIRApassword",
                 "https://amazon.rooomy.com.cn");
-
-        List<IssueResult> issueResults = new ArrayList<>();
-        List<IssueKey> issueKeys = LoadIssueKey.loadIssueKey();
-        log.info("Start query comments.");
-        for (IssueKey issueKey : issueKeys) {
-            IssueResult issueResult = loadIssueResult(jiraClient, issueKey);
-            issueResults.add(issueResult);
-        }
-        return issueResults;
     }
 
-    public List<IssueResult> loadIssueCommentsAsync() {
-        log.info("Login...");
-        JiraClient jiraClient = JiraClientFactory.createJiraClient(
-                "cn.fei.xiao",
-                "fei.xiaoJIRApassword",
-                "https://amazon.rooomy.com.cn");
-
-        List<IssueKey> issueKeys = LoadIssueKey.loadIssueKey();
-        log.info("Start query comments.");
+    public List<IssueResult> loadIssueCommentsAsync(List<IssueKey> issueKeys) {
         System.setProperty("java.util.concurrent.ForkJoinPool.common.parallelism", "200");
         List<IssueResult> issueResults = issueKeys.stream().parallel().map(issueKey -> {
             return loadIssueResult(jiraClient, issueKey);
@@ -124,7 +106,13 @@ public class RooomyIssueService {
     }
 
     public void getRejectedIssueComments() {
-        List<IssueResult> issueResults = loadIssueCommentsAsync();
+        String keyDefaultPath = LoadIssueKey.getIssueKeyDefaultPath();
+        getRejectedIssueComments(keyDefaultPath);
+    }
+
+    public void getRejectedIssueComments(String keyPath) {
+        List<IssueKey> issueKeys = LoadIssueKey.loadIssueKey(keyPath);
+        List<IssueResult> issueResults = loadIssueCommentsAsync(issueKeys);
         mergeIssueRejectedComments(issueResults);
         mergeAssignee(issueResults);
         RooomyContextService contextService = new RooomyContextService();

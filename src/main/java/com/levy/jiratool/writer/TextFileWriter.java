@@ -13,7 +13,7 @@ public class TextFileWriter implements FileWriter {
 
     @Override
     public void write(List<String> contents) {
-        String fname = "./result.txt";
+        String fname = "./issueresult.txt";
         try (FileOutputStream fs = new FileOutputStream(new File(fname));
              PrintStream p = new PrintStream(fs);
         ) {

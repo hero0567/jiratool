@@ -5,10 +5,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang.StringUtils;
 import org.springframework.core.io.ClassPathResource;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -17,18 +14,29 @@ public class LoadIssueKey {
 
     private static String issueKeyName = "issuekey.txt";
 
-    public static List<IssueKey> loadIssueKey(){
+    public static String getIssueKeyDefaultPath(){
+
+        try {
+            return new ClassPathResource(issueKeyName).getFile().getAbsolutePath();
+        } catch (IOException e) {
+            log.error("Failed to load default issuekey.txt.");
+        }
+        return "";
+    }
+
+    public static List<IssueKey> loadIssueKey(String keyPath) {
         List<IssueKey> issueKeys = new ArrayList<>();
-        try(InputStream inputStream = new ClassPathResource(issueKeyName).getInputStream()) {
-            BufferedReader bufferedRreader = new BufferedReader(new InputStreamReader(inputStream));
+        try (FileInputStream inputStream = new FileInputStream(keyPath);
+             BufferedReader bufferedRreader = new BufferedReader(new InputStreamReader(inputStream));) {
             String line;
-            while (StringUtils.isNotBlank(line = bufferedRreader.readLine())){
+            while (StringUtils.isNotBlank(line = bufferedRreader.readLine())) {
                 IssueKey issueKey = new IssueKey(line.trim());
                 issueKeys.add(issueKey);
             }
         } catch (IOException e) {
             log.error("Failed to load issue key.", e);
         }
+        log.info("Load {} issue keys.", issueKeys.size());
         return issueKeys;
     }
 }

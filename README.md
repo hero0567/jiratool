@@ -15,3 +15,13 @@ rejectCause.put("Process-Missing Comment" ,"Process-Missing Comment");
 
 
 ChangelogGroup{author=BasicUser{name=bijaylax, displayName=Bijaylaxmi Pattanaik, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=bijaylax}, created=2020-01-08T01:29:00.135+08:00, items=[ChangelogItem{fieldType=JIRA, field=assignee, from=null, fromString=null, to=bijaylax, toString=Bijaylaxmi Pattanaik}]}
+
+
+mvn assembly:assembly
+
+
+
+
+
+
+

@@ -25,10 +25,12 @@ public class MainPage extends JPanel {
     }
 
     private void buildLayout() {
-        JLabel tips = new JLabel("Please choose jira issue key file.");
-        tips.setBounds(170, 10, 400, 40);
-        JLabel dragPath = new JLabel("File Path :");
+        JLabel tips = new JLabel("Please drag or choose jira issue key file.");
+        tips.setBounds(170, 30, 400, 40);
+        JLabel dragPath = new JLabel("Drag File :");
         dragPath.setBounds(30, 80, 100, 40);
+        JLabel choosePath = new JLabel("Choose File :");
+        choosePath.setBounds(20, 150, 100, 40);
 
         backupCheckBox = new JCheckBox("创建新文件夹");
         backupCheckBox.setBounds(370, 42, 300, 30);
@@ -58,6 +60,7 @@ public class MainPage extends JPanel {
         this.add(jsp);
         this.add(tips);
         this.add(dragPath);
+        this.add(choosePath);
         this.add(dragPathField);
         this.add(choosePathField);
         this.add(startBut);
@@ -91,7 +94,7 @@ public class MainPage extends JPanel {
                         try {
                             String filePath = StringUtils.isNotEmpty(dragPath) ? dragPath : choosePath;
                             RooomyIssueService issueService = new RooomyIssueService();
-                            issueService.getRejectedIssueComments();
+                            issueService.getRejectedIssueComments(filePath);
                             long endTime = System.currentTimeMillis();
                             log.info("The operation is done in " + (endTime - startTime) / 1000 + " second!");
                             JOptionPane.showMessageDialog(MainPage.this, "The operation is done!", "Success", JOptionPane.INFORMATION_MESSAGE);
