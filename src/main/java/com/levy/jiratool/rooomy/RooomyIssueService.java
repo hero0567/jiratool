@@ -7,6 +7,8 @@ import com.levy.jiratool.lib.JiraClient;
 import com.levy.jiratool.lib.JiraClientFactory;
 import com.levy.jiratool.model.IssueKey;
 import com.levy.jiratool.model.IssueResult;
+import com.levy.jiratool.writer.FileWriter;
+import com.levy.jiratool.writer.TextFileWriter;
 import lombok.extern.slf4j.Slf4j;
 import org.joda.time.format.DateTimeFormat;
 
@@ -121,31 +123,13 @@ public class RooomyIssueService {
         }
     }
 
-    private void writeIssueResult(List<IssueResult> issueResults) {
-        String fname = "./result.txt";
-        try (FileOutputStream fs = new FileOutputStream(new File(fname));
-             PrintStream p = new PrintStream(fs);
-        ) {
-            for (IssueResult issueResult : issueResults) {
-                String assigne = String.join("->", issueResult.getAssignees());
-                String rejectResults = String.join(";", issueResult.getRejectResults());
-                p.println(String.join(";",
-                        issueResult.getId(),
-                        assigne,
-                        String.valueOf(issueResult.getAssignees().size()),
-                        rejectResults,
-                        String.valueOf(issueResult.getSpendTime())));
-            }
-        } catch (Exception e) {
-            log.error("Failed to save data.");
-        }
-        log.info("Save data success.");
-    }
-
     public void getRejectedIssueComments() {
         List<IssueResult> issueResults = loadIssueCommentsAsync();
         mergeIssueRejectedComments(issueResults);
         mergeAssignee(issueResults);
-        writeIssueResult(issueResults);
+        RooomyContextService contextService = new RooomyContextService();
+        List<String> contents = contextService.getContent(issueResults, rejectCause);
+        FileWriter fileWriter = new TextFileWriter();
+        fileWriter.write(contents);
     }
 }
