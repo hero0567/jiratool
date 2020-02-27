@@ -1,2 +1,2 @@
 Issuekey(CUS);Assignee;ACount;Model-Dimensions;Model-Error;Process-Missing Comment;Process-Zip;Model-Detail;Model-Geometry;Texture-Color;Texture-Appearance;Time
-AMZCUS5-5412;bijaylax(2020-01-08 01:29:00);1;;;;;2020-02-14 13:47:18;2020-02-14 13:47:18;2020-01-28 18:01:11;2020-02-14 13:47:18;2
+AMZCUS5-5412;bijaylax(2020-01-08 01:29:00);1;;;;;2020-02-14 13:47:18;2020-02-14 13:47:18;2020-01-28 18:01:11;2020-02-14 13:47:18;1
