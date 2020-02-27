@@ -12,3 +12,31 @@ Complete get issue comments of AMZCUS5-11391
 Complete get issue comments of AMZCUS5-5412
 [INFO] 2020-02-27 11:55:37,218 com.levy.jiratool.rooomy.RooomyIssueService.writeIssueResult(RooomyIssueService.java:116)
 Save data success.
+[INFO] 2020-02-27 13:54:53,466 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueCommentsAsync(RooomyIssueService.java:56)
+Login...
+[INFO] 2020-02-27 13:54:57,702 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueCommentsAsync(RooomyIssueService.java:63)
+Start query comments.
+[INFO] 2020-02-27 13:54:57,731 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:72)
+Try to get issue comments of AMZCUS5-5412
+[INFO] 2020-02-27 13:54:57,731 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:72)
+Try to get issue comments of AMZCUS5-11391
+[INFO] 2020-02-27 13:54:59,581 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:83)
+Complete get issue comments of AMZCUS5-11391
+[INFO] 2020-02-27 13:54:59,687 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:83)
+Complete get issue comments of AMZCUS5-5412
+[INFO] 2020-02-27 13:54:59,695 com.levy.jiratool.rooomy.RooomyIssueService.writeIssueResult(RooomyIssueService.java:120)
+Save data success.
+[INFO] 2020-02-27 14:00:09,615 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueCommentsAsync(RooomyIssueService.java:56)
+Login...
+[INFO] 2020-02-27 14:00:13,595 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueCommentsAsync(RooomyIssueService.java:63)
+Start query comments.
+[INFO] 2020-02-27 14:00:13,621 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:72)
+Try to get issue comments of AMZCUS5-11391
+[INFO] 2020-02-27 14:00:13,621 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:72)
+Try to get issue comments of AMZCUS5-5412
+[INFO] 2020-02-27 14:00:15,301 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:83)
+Complete get issue comments of AMZCUS5-11391
+[INFO] 2020-02-27 14:00:15,312 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:83)
+Complete get issue comments of AMZCUS5-5412
+[INFO] 2020-02-27 14:00:15,324 com.levy.jiratool.rooomy.RooomyIssueService.writeIssueResult(RooomyIssueService.java:120)
+Save data success.

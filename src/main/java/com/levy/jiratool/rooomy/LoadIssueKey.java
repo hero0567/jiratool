@@ -2,7 +2,7 @@ package com.levy.jiratool.rooomy;
 
 import com.levy.jiratool.model.IssueKey;
 import lombok.extern.slf4j.Slf4j;
-import org.apache.logging.log4j.util.Strings;
+import org.apache.commons.lang.StringUtils;
 import org.springframework.core.io.ClassPathResource;
 
 import java.io.BufferedReader;
@@ -22,7 +22,7 @@ public class LoadIssueKey {
         try(InputStream inputStream = new ClassPathResource(issueKeyName).getInputStream()) {
             BufferedReader bufferedRreader = new BufferedReader(new InputStreamReader(inputStream));
             String line;
-            while (Strings.isNotBlank(line = bufferedRreader.readLine())){
+            while (StringUtils.isNotBlank(line = bufferedRreader.readLine())){
                 IssueKey issueKey = new IssueKey(line.trim());
                 issueKeys.add(issueKey);
             }

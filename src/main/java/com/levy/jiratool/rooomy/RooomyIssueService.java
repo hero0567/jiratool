@@ -1,7 +1,9 @@
 package com.levy.jiratool.rooomy;
 
+import com.atlassian.jira.rest.client.domain.ChangelogGroup;
 import com.atlassian.jira.rest.client.domain.Comment;
 import com.atlassian.jira.rest.client.domain.Worklog;
+
 import com.levy.jiratool.lib.JiraClient;
 import com.levy.jiratool.lib.JiraClientFactory;
 import com.levy.jiratool.model.IssueKey;
@@ -22,15 +24,15 @@ public class RooomyIssueService {
 
     private Map<String, String> rejectCause = new HashMap<>();
 
-    public RooomyIssueService(){
-        rejectCause.put("Model-Detail" ,"Model.{0,3}Detail");
-        rejectCause.put("Model-Dimensions" ,"di.{0,3}mension");
-        rejectCause.put("Model-Geometry" ,"Model.{0,3}Geometry");
-        rejectCause.put("Model-Error" ,"Model.{0,3}Error");
-        rejectCause.put("Texture-Color" ,"[Cc]olo(u)?r");
-        rejectCause.put("Texture-Appearance" ,"App.{0,3}earance");
-        rejectCause.put("Process-Zip" ,"up.{0,3}load");
-        rejectCause.put("Process-Missing Comment" ,"Process.{0,3}Missing Comment");
+    public RooomyIssueService() {
+        rejectCause.put("Model-Detail", "Model.{0,3}Detail");
+        rejectCause.put("Model-Dimensions", "di.{0,3}mension");
+        rejectCause.put("Model-Geometry", "Model.{0,3}Geometry");
+        rejectCause.put("Model-Error", "Model.{0,3}Error");
+        rejectCause.put("Texture-Color", "[Cc]olo(u)?r");
+        rejectCause.put("Texture-Appearance", "App.{0,3}earance");
+        rejectCause.put("Process-Zip", "up.{0,3}load");
+        rejectCause.put("Process-Missing Comment", "Process.{0,3}Missing Comment");
     }
 
     public List<IssueResult> loadIssueComments() {
@@ -70,13 +72,18 @@ public class RooomyIssueService {
         log.info("Try to get issue comments of {}", issueKey.getId());
         long begin = System.currentTimeMillis();
         IssueResult issueResult = new IssueResult();
-        Iterable<Comment> comments = jiraClient.getComments(issueKey.getId());
-        Iterable<Worklog> worklogs = jiraClient.getWorklog(issueKey.getId());
-        issueResult.setId(issueKey.getId());
-        issueResult.setComments(comments);
-        long end = System.currentTimeMillis();
-        issueResult.setSpendTime((end - begin) / 1000);
-        log.info("Complete get issue comments of {}", issueKey.getId());
+        try {
+            Iterable<Comment> comments = jiraClient.getComments(issueKey.getId());
+            Iterable<ChangelogGroup> changelog = jiraClient.getChangelog(issueKey.getId());
+
+            issueResult.setId(issueKey.getId());
+            issueResult.setComments(comments);
+            long end = System.currentTimeMillis();
+            issueResult.setSpendTime((end - begin) / 1000);
+            log.info("Complete get issue comments of {}", issueKey.getId());
+        } catch (Exception e) {
+            log.error("Failed to get issue information.", e);
+        }
         return issueResult;
     }
 
@@ -86,10 +93,10 @@ public class RooomyIssueService {
             Map<String, Boolean> rejectResults = new HashMap<>();
             issueResult.setRejectResults(rejectResults);
             for (Comment comment : issueResult.getComments()) {
-                rejectCause.forEach((k,v)->{
+                rejectCause.forEach((k, v) -> {
                     if (comment.getBody().matches(v)) {
                         rejectResults.put(k, true);
-                    }else{
+                    } else {
                         rejectResults.put(k, false);
                     }
                 });
@@ -99,24 +106,21 @@ public class RooomyIssueService {
 
     private void writeIssueResult(List<IssueResult> issueResults) {
         String fname = "./result.txt";
-        try {
-            FileOutputStream fs = new FileOutputStream(new File(fname));
-            PrintStream p = new PrintStream(fs);
+        try (FileOutputStream fs = new FileOutputStream(new File(fname));
+             PrintStream p = new PrintStream(fs);
+        ) {
             for (IssueResult issueResult : issueResults) {
                 p.println(String.join(";",
                         issueResult.getId(),
                         String.valueOf(issueResult.getSpendTime())));
             }
-            p.flush();
-            p.close();
-            fs.close();
         } catch (Exception e) {
             log.error("Failed to save data.");
         }
         log.info("Save data success.");
     }
 
-    public void getRejectedIssueComments(){
+    public void getRejectedIssueComments() {
         List<IssueResult> issueResults = loadIssueCommentsAsync();
         checkIssueRejected(issueResults);
         writeIssueResult(issueResults);
