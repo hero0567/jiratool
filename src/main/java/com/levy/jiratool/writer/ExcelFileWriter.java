@@ -1,6 +1,7 @@
 package com.levy.jiratool.writer;
 
 import lombok.extern.slf4j.Slf4j;
+import org.apache.poi.ss.usermodel.CellStyle;
 import org.apache.poi.xssf.usermodel.XSSFCell;
 import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
@@ -34,6 +35,12 @@ public class ExcelFileWriter implements FileWriter {
                     row.createCell(j).setCellValue(rowArry[j]);
                 }
             }
+
+            String[] headers = contents.get(0).split(";");
+            for (int i = 0; i < headers.length; i++) {
+                sheet.autoSizeColumn(i);
+            }
+            
             try (FileOutputStream outputStream = new FileOutputStream(path);) {
                 wb.write(outputStream);
                 outputStream.flush();
@@ -42,6 +49,10 @@ public class ExcelFileWriter implements FileWriter {
         } catch (Exception e) {
             log.error("Faild save data to file.", e);
         }
+    }
+
+    private void cellStyle(XSSFWorkbook wb) {
+        CellStyle cellStyle = wb.createCellStyle(); // 创建单元格样式
     }
 
 }

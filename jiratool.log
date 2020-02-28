@@ -6388,3 +6388,247 @@ Time Around check: 2020-02-27T00:12:46.079+08:00, 2020-02-27T00:12:46.072+08:00
 Will save data into: issueresult.xlsx
 [INFO] 2020-02-28 15:13:24,589 com.levy.jiratool.writer.ExcelFileWriter.createExcel(ExcelFileWriter.java:41)
 Success save data to file.
+[INFO] 2020-02-28 15:22:45,496 com.levy.jiratool.rooomy.RooomyIssueService.<init>(RooomyIssueService.java:51)
+Login...
+[INFO] 2020-02-28 15:22:48,612 com.levy.jiratool.rooomy.LoadIssueKey.loadIssueKey(LoadIssueKey.java:40)
+Load 12 issue keys.
+[INFO] 2020-02-28 15:22:48,636 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:67)
+Try to get issue comments of AMZCUS5-15311
+[INFO] 2020-02-28 15:22:48,638 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:67)
+Try to get issue comments of AMZCUS5-15309
+[INFO] 2020-02-28 15:22:48,654 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:67)
+Try to get issue comments of AMZCUS5-15308
+[INFO] 2020-02-28 15:22:48,656 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:67)
+Try to get issue comments of AMZCUS5-15583
+[INFO] 2020-02-28 15:22:48,655 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:67)
+Try to get issue comments of AMZCUS5-15404
+[INFO] 2020-02-28 15:22:48,655 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:67)
+Try to get issue comments of AMZCUS5-15314
+[INFO] 2020-02-28 15:22:48,655 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:67)
+Try to get issue comments of AMZCUS5-15310
+[INFO] 2020-02-28 15:22:48,655 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:67)
+Try to get issue comments of AMZCUS5-15316
+[INFO] 2020-02-28 15:22:48,652 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:67)
+Try to get issue comments of AMZCUS5-15541
+[INFO] 2020-02-28 15:22:48,649 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:67)
+Try to get issue comments of AMZCUS5-15319
+[INFO] 2020-02-28 15:22:48,651 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:67)
+Try to get issue comments of AMZCUS5-15307
+[INFO] 2020-02-28 15:22:48,651 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:67)
+Try to get issue comments of AMZCUS5-15315
+[INFO] 2020-02-28 15:22:57,161 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:103)
+Complete get issue AMZCUS5-15310
+[INFO] 2020-02-28 15:22:57,162 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:82)
+Complete get issue AMZCUS5-15310
+[INFO] 2020-02-28 15:22:57,308 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:103)
+Complete get issue AMZCUS5-15307
+[INFO] 2020-02-28 15:22:57,308 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:82)
+Complete get issue AMZCUS5-15307
+[INFO] 2020-02-28 15:22:57,806 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:103)
+Complete get issue AMZCUS5-15314
+[INFO] 2020-02-28 15:22:57,806 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:82)
+Complete get issue AMZCUS5-15314
+[INFO] 2020-02-28 15:22:59,551 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:103)
+Complete get issue AMZCUS5-15541
+[INFO] 2020-02-28 15:22:59,552 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:82)
+Complete get issue AMZCUS5-15541
+[INFO] 2020-02-28 15:22:59,559 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:103)
+Complete get issue AMZCUS5-15311
+[INFO] 2020-02-28 15:22:59,560 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:82)
+Complete get issue AMZCUS5-15311
+[INFO] 2020-02-28 15:23:00,523 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:103)
+Complete get issue AMZCUS5-15404
+[INFO] 2020-02-28 15:23:00,524 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:82)
+Complete get issue AMZCUS5-15404
+[INFO] 2020-02-28 15:23:02,131 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:103)
+Complete get issue AMZCUS5-15315
+[INFO] 2020-02-28 15:23:02,131 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:82)
+Complete get issue AMZCUS5-15315
+[INFO] 2020-02-28 15:23:04,829 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:103)
+Complete get issue AMZCUS5-15309
+[INFO] 2020-02-28 15:23:04,829 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:82)
+Complete get issue AMZCUS5-15309
+[INFO] 2020-02-28 15:23:05,562 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:103)
+Complete get issue AMZCUS5-15308
+[INFO] 2020-02-28 15:23:05,562 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:82)
+Complete get issue AMZCUS5-15308
+[INFO] 2020-02-28 15:23:07,519 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:103)
+Complete get issue AMZCUS5-15583
+[INFO] 2020-02-28 15:23:07,520 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:82)
+Complete get issue AMZCUS5-15583
+[INFO] 2020-02-28 15:23:15,396 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:103)
+Complete get issue AMZCUS5-15316
+[INFO] 2020-02-28 15:23:15,396 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:82)
+Complete get issue AMZCUS5-15316
+[INFO] 2020-02-28 15:23:20,831 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:103)
+Complete get issue AMZCUS5-15319
+[INFO] 2020-02-28 15:23:20,832 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:82)
+Complete get issue AMZCUS5-15319
+[INFO] 2020-02-28 15:23:20,843 com.levy.jiratool.rooomy.RooomyIssueService.timeAround(RooomyIssueService.java:234)
+Time Around check: 2020-02-28T13:47:58.228+08:00, 2020-02-28T13:47:58.223+08:00
+[INFO] 2020-02-28 15:23:20,843 com.levy.jiratool.rooomy.RooomyIssueService.timeAround(RooomyIssueService.java:234)
+Time Around check: 2020-02-28T13:47:58.228+08:00, 2020-02-28T13:47:27.072+08:00
+[ERROR] 2020-02-28 15:23:20,844 com.levy.jiratool.rooomy.RooomyIssueService.mergeAssignee(RooomyIssueService.java:124)
+Failed to merge assignee for AMZCUS5-15541
+[INFO] 2020-02-28 15:23:20,844 com.levy.jiratool.rooomy.RooomyIssueService.timeAround(RooomyIssueService.java:234)
+Time Around check: 2020-02-28T15:06:38.328+08:00, 2020-02-28T15:06:38.324+08:00
+[INFO] 2020-02-28 15:23:20,845 com.levy.jiratool.rooomy.RooomyIssueService.timeAround(RooomyIssueService.java:234)
+Time Around check: 2020-02-14T18:53:30.558+08:00, 2020-02-14T18:55:55.287+08:00
+[INFO] 2020-02-28 15:23:20,845 com.levy.jiratool.rooomy.RooomyIssueService.timeAround(RooomyIssueService.java:234)
+Time Around check: 2020-02-14T18:53:30.558+08:00, 2020-02-14T18:49:04.214+08:00
+[INFO] 2020-02-28 15:23:20,846 com.levy.jiratool.rooomy.RooomyIssueService.timeAround(RooomyIssueService.java:234)
+Time Around check: 2020-02-28T13:41:29.183+08:00, 2020-02-28T13:41:29.176+08:00
+[INFO] 2020-02-28 15:23:20,846 com.levy.jiratool.rooomy.RooomyIssueService.timeAround(RooomyIssueService.java:234)
+Time Around check: 2020-02-28T13:41:29.183+08:00, 2020-02-28T13:40:25.316+08:00
+[INFO] 2020-02-28 15:23:20,846 com.levy.jiratool.rooomy.RooomyIssueService.timeAround(RooomyIssueService.java:234)
+Time Around check: 2020-02-11T09:42:26.186+08:00, 2020-02-11T09:42:26.179+08:00
+[INFO] 2020-02-28 15:23:20,847 com.levy.jiratool.rooomy.RooomyIssueService.timeAround(RooomyIssueService.java:234)
+Time Around check: 2020-02-11T09:42:26.186+08:00, 2020-02-11T09:41:14.442+08:00
+[INFO] 2020-02-28 15:23:20,847 com.levy.jiratool.rooomy.RooomyIssueService.timeAround(RooomyIssueService.java:234)
+Time Around check: 2020-02-23T01:50:20.211+08:00, 2020-02-23T01:50:20.205+08:00
+[INFO] 2020-02-28 15:23:20,848 com.levy.jiratool.rooomy.RooomyIssueService.timeAround(RooomyIssueService.java:234)
+Time Around check: 2020-02-27T00:16:32.337+08:00, 2020-02-27T00:16:32.330+08:00
+[INFO] 2020-02-28 15:23:20,848 com.levy.jiratool.rooomy.RooomyIssueService.timeAround(RooomyIssueService.java:234)
+Time Around check: 2020-02-27T00:16:32.337+08:00, 2020-02-27T00:16:30.731+08:00
+[INFO] 2020-02-28 15:23:20,849 com.levy.jiratool.rooomy.RooomyIssueService.timeAround(RooomyIssueService.java:234)
+Time Around check: 2020-02-16T00:56:26.125+08:00, 2020-02-16T00:57:52.528+08:00
+[INFO] 2020-02-28 15:23:20,849 com.levy.jiratool.rooomy.RooomyIssueService.timeAround(RooomyIssueService.java:234)
+Time Around check: 2020-02-16T00:56:26.125+08:00, 2020-02-16T00:55:33.156+08:00
+[INFO] 2020-02-28 15:23:20,850 com.levy.jiratool.rooomy.RooomyIssueService.timeAround(RooomyIssueService.java:234)
+Time Around check: 2020-02-28T02:21:34.349+08:00, 2020-02-28T02:21:34.343+08:00
+[INFO] 2020-02-28 15:23:20,850 com.levy.jiratool.rooomy.RooomyIssueService.timeAround(RooomyIssueService.java:234)
+Time Around check: 2020-02-22T21:06:04.219+08:00, 2020-02-22T21:24:07.694+08:00
+[INFO] 2020-02-28 15:23:20,850 com.levy.jiratool.rooomy.RooomyIssueService.timeAround(RooomyIssueService.java:234)
+Time Around check: 2020-02-22T21:06:04.219+08:00, 2020-02-22T21:24:11.818+08:00
+[INFO] 2020-02-28 15:23:20,851 com.levy.jiratool.rooomy.RooomyIssueService.timeAround(RooomyIssueService.java:234)
+Time Around check: 2020-02-25T17:53:04.327+08:00, 2020-02-25T17:53:04.322+08:00
+[INFO] 2020-02-28 15:23:20,851 com.levy.jiratool.rooomy.RooomyIssueService.timeAround(RooomyIssueService.java:234)
+Time Around check: 2020-02-25T17:53:04.327+08:00, 2020-02-25T17:53:01.435+08:00
+[INFO] 2020-02-28 15:23:20,859 com.levy.jiratool.rooomy.RooomyIssueService.timeAround(RooomyIssueService.java:234)
+Time Around check: 2020-02-27T00:12:46.079+08:00, 2020-02-27T00:12:46.072+08:00
+[INFO] 2020-02-28 15:23:20,864 com.levy.jiratool.writer.ExcelFileWriter.createExcel(ExcelFileWriter.java:25)
+Will save data into: issueresult.xlsx
+[INFO] 2020-02-28 15:23:21,755 com.levy.jiratool.writer.ExcelFileWriter.createExcel(ExcelFileWriter.java:41)
+Success save data to file.
+[INFO] 2020-02-28 15:42:50,924 com.levy.jiratool.rooomy.RooomyIssueService.<init>(RooomyIssueService.java:51)
+Login...
+[INFO] 2020-02-28 15:42:54,716 com.levy.jiratool.rooomy.LoadIssueKey.loadIssueKey(LoadIssueKey.java:40)
+Load 12 issue keys.
+[INFO] 2020-02-28 15:42:54,737 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:67)
+Try to get issue comments of AMZCUS5-15309
+[INFO] 2020-02-28 15:42:54,738 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:67)
+Try to get issue comments of AMZCUS5-15316
+[INFO] 2020-02-28 15:42:54,738 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:67)
+Try to get issue comments of AMZCUS5-15310
+[INFO] 2020-02-28 15:42:54,738 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:67)
+Try to get issue comments of AMZCUS5-15311
+[INFO] 2020-02-28 15:42:54,738 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:67)
+Try to get issue comments of AMZCUS5-15541
+[INFO] 2020-02-28 15:42:54,737 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:67)
+Try to get issue comments of AMZCUS5-15307
+[INFO] 2020-02-28 15:42:54,737 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:67)
+Try to get issue comments of AMZCUS5-15319
+[INFO] 2020-02-28 15:42:54,737 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:67)
+Try to get issue comments of AMZCUS5-15314
+[INFO] 2020-02-28 15:42:54,737 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:67)
+Try to get issue comments of AMZCUS5-15404
+[INFO] 2020-02-28 15:42:54,737 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:67)
+Try to get issue comments of AMZCUS5-15583
+[INFO] 2020-02-28 15:42:54,739 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:67)
+Try to get issue comments of AMZCUS5-15315
+[INFO] 2020-02-28 15:42:54,738 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:67)
+Try to get issue comments of AMZCUS5-15308
+[INFO] 2020-02-28 15:43:02,082 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:103)
+Complete get issue AMZCUS5-15310
+[INFO] 2020-02-28 15:43:02,083 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:82)
+Complete get issue AMZCUS5-15310
+[INFO] 2020-02-28 15:43:02,160 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:103)
+Complete get issue AMZCUS5-15311
+[INFO] 2020-02-28 15:43:02,161 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:82)
+Complete get issue AMZCUS5-15311
+[INFO] 2020-02-28 15:43:02,438 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:103)
+Complete get issue AMZCUS5-15583
+[INFO] 2020-02-28 15:43:02,439 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:82)
+Complete get issue AMZCUS5-15583
+[INFO] 2020-02-28 15:43:02,804 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:103)
+Complete get issue AMZCUS5-15316
+[INFO] 2020-02-28 15:43:02,804 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:82)
+Complete get issue AMZCUS5-15316
+[INFO] 2020-02-28 15:43:06,141 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:103)
+Complete get issue AMZCUS5-15309
+[INFO] 2020-02-28 15:43:06,142 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:82)
+Complete get issue AMZCUS5-15309
+[INFO] 2020-02-28 15:43:07,878 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:103)
+Complete get issue AMZCUS5-15541
+[INFO] 2020-02-28 15:43:07,878 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:82)
+Complete get issue AMZCUS5-15541
+[INFO] 2020-02-28 15:43:08,366 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:103)
+Complete get issue AMZCUS5-15319
+[INFO] 2020-02-28 15:43:08,367 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:82)
+Complete get issue AMZCUS5-15319
+[INFO] 2020-02-28 15:43:09,078 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:103)
+Complete get issue AMZCUS5-15404
+[INFO] 2020-02-28 15:43:09,079 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:82)
+Complete get issue AMZCUS5-15404
+[INFO] 2020-02-28 15:43:15,558 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:103)
+Complete get issue AMZCUS5-15307
+[INFO] 2020-02-28 15:43:15,558 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:82)
+Complete get issue AMZCUS5-15307
+[INFO] 2020-02-28 15:43:22,264 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:103)
+Complete get issue AMZCUS5-15315
+[INFO] 2020-02-28 15:43:22,264 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:82)
+Complete get issue AMZCUS5-15315
+[INFO] 2020-02-28 15:43:27,627 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:103)
+Complete get issue AMZCUS5-15314
+[INFO] 2020-02-28 15:43:27,628 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:82)
+Complete get issue AMZCUS5-15314
+[INFO] 2020-02-28 15:43:55,827 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:103)
+Complete get issue AMZCUS5-15308
+[INFO] 2020-02-28 15:43:55,828 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:82)
+Complete get issue AMZCUS5-15308
+[INFO] 2020-02-28 15:43:55,831 com.levy.jiratool.rooomy.RooomyIssueService.timeAround(RooomyIssueService.java:234)
+Time Around check: 2020-02-28T13:47:58.228+08:00, 2020-02-28T13:47:58.223+08:00
+[INFO] 2020-02-28 15:43:55,831 com.levy.jiratool.rooomy.RooomyIssueService.timeAround(RooomyIssueService.java:234)
+Time Around check: 2020-02-28T13:47:58.228+08:00, 2020-02-28T13:47:27.072+08:00
+[ERROR] 2020-02-28 15:43:55,832 com.levy.jiratool.rooomy.RooomyIssueService.mergeAssignee(RooomyIssueService.java:124)
+Failed to merge assignee for AMZCUS5-15541
+[INFO] 2020-02-28 15:43:55,833 com.levy.jiratool.rooomy.RooomyIssueService.timeAround(RooomyIssueService.java:234)
+Time Around check: 2020-02-28T15:06:38.328+08:00, 2020-02-28T15:06:38.324+08:00
+[INFO] 2020-02-28 15:43:55,833 com.levy.jiratool.rooomy.RooomyIssueService.timeAround(RooomyIssueService.java:234)
+Time Around check: 2020-02-14T18:53:30.558+08:00, 2020-02-14T18:55:55.287+08:00
+[INFO] 2020-02-28 15:43:55,833 com.levy.jiratool.rooomy.RooomyIssueService.timeAround(RooomyIssueService.java:234)
+Time Around check: 2020-02-14T18:53:30.558+08:00, 2020-02-14T18:49:04.214+08:00
+[INFO] 2020-02-28 15:43:55,834 com.levy.jiratool.rooomy.RooomyIssueService.timeAround(RooomyIssueService.java:234)
+Time Around check: 2020-02-28T13:41:29.183+08:00, 2020-02-28T13:41:29.176+08:00
+[INFO] 2020-02-28 15:43:55,834 com.levy.jiratool.rooomy.RooomyIssueService.timeAround(RooomyIssueService.java:234)
+Time Around check: 2020-02-28T13:41:29.183+08:00, 2020-02-28T13:40:25.316+08:00
+[INFO] 2020-02-28 15:43:55,835 com.levy.jiratool.rooomy.RooomyIssueService.timeAround(RooomyIssueService.java:234)
+Time Around check: 2020-02-11T09:42:26.186+08:00, 2020-02-11T09:42:26.179+08:00
+[INFO] 2020-02-28 15:43:55,835 com.levy.jiratool.rooomy.RooomyIssueService.timeAround(RooomyIssueService.java:234)
+Time Around check: 2020-02-11T09:42:26.186+08:00, 2020-02-11T09:41:14.442+08:00
+[INFO] 2020-02-28 15:43:55,836 com.levy.jiratool.rooomy.RooomyIssueService.timeAround(RooomyIssueService.java:234)
+Time Around check: 2020-02-23T01:50:20.211+08:00, 2020-02-23T01:50:20.205+08:00
+[INFO] 2020-02-28 15:43:55,837 com.levy.jiratool.rooomy.RooomyIssueService.timeAround(RooomyIssueService.java:234)
+Time Around check: 2020-02-27T00:16:32.337+08:00, 2020-02-27T00:16:32.330+08:00
+[INFO] 2020-02-28 15:43:55,837 com.levy.jiratool.rooomy.RooomyIssueService.timeAround(RooomyIssueService.java:234)
+Time Around check: 2020-02-27T00:16:32.337+08:00, 2020-02-27T00:16:30.731+08:00
+[INFO] 2020-02-28 15:43:55,837 com.levy.jiratool.rooomy.RooomyIssueService.timeAround(RooomyIssueService.java:234)
+Time Around check: 2020-02-16T00:56:26.125+08:00, 2020-02-16T00:57:52.528+08:00
+[INFO] 2020-02-28 15:43:55,838 com.levy.jiratool.rooomy.RooomyIssueService.timeAround(RooomyIssueService.java:234)
+Time Around check: 2020-02-16T00:56:26.125+08:00, 2020-02-16T00:55:33.156+08:00
+[INFO] 2020-02-28 15:43:55,838 com.levy.jiratool.rooomy.RooomyIssueService.timeAround(RooomyIssueService.java:234)
+Time Around check: 2020-02-28T02:21:34.349+08:00, 2020-02-28T02:21:34.343+08:00
+[INFO] 2020-02-28 15:43:55,839 com.levy.jiratool.rooomy.RooomyIssueService.timeAround(RooomyIssueService.java:234)
+Time Around check: 2020-02-22T21:06:04.219+08:00, 2020-02-22T21:24:07.694+08:00
+[INFO] 2020-02-28 15:43:55,839 com.levy.jiratool.rooomy.RooomyIssueService.timeAround(RooomyIssueService.java:234)
+Time Around check: 2020-02-22T21:06:04.219+08:00, 2020-02-22T21:24:11.818+08:00
+[INFO] 2020-02-28 15:43:55,840 com.levy.jiratool.rooomy.RooomyIssueService.timeAround(RooomyIssueService.java:234)
+Time Around check: 2020-02-25T17:53:04.327+08:00, 2020-02-25T17:53:04.322+08:00
+[INFO] 2020-02-28 15:43:55,840 com.levy.jiratool.rooomy.RooomyIssueService.timeAround(RooomyIssueService.java:234)
+Time Around check: 2020-02-25T17:53:04.327+08:00, 2020-02-25T17:53:01.435+08:00
+[INFO] 2020-02-28 15:43:55,840 com.levy.jiratool.rooomy.RooomyIssueService.timeAround(RooomyIssueService.java:234)
+Time Around check: 2020-02-27T00:12:46.079+08:00, 2020-02-27T00:12:46.072+08:00
+[INFO] 2020-02-28 15:43:55,850 com.levy.jiratool.writer.ExcelFileWriter.createExcel(ExcelFileWriter.java:26)
+Will save data into: issueresult.xlsx
+[INFO] 2020-02-28 15:43:57,440 com.levy.jiratool.writer.ExcelFileWriter.createExcel(ExcelFileWriter.java:48)
+Success save data to file.

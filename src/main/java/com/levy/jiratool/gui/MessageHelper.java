@@ -1,7 +1,10 @@
 package com.levy.jiratool.gui;
 
+import lombok.Data;
+
 import javax.swing.*;
 
+@Data
 public class MessageHelper {
 
     private JTextArea logTextArea;
@@ -30,10 +33,5 @@ public class MessageHelper {
             logTextArea.append((System.currentTimeMillis() - startTime) / 1000 + " seconds!");
             logTextArea.append("\r\n");
         }
-    }
-
-
-    public void setLogTextArea(JTextArea logTextArea) {
-        this.logTextArea = logTextArea;
     }
 }

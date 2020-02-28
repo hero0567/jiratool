@@ -252,6 +252,7 @@ public class RooomyIssueService {
     }
 
     public void getRejectedIssueComments(String keyPath) {
+        messager.setStartTime(System.currentTimeMillis());
         List<IssueKey> issueKeys = LoadIssueKey.loadIssueKey(keyPath);
         messager.infot("Totally load " + issueKeys.size() + " valid issue keys.");
 
