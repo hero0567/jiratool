@@ -19,12 +19,16 @@ public class RooomyContextService {
             String secondComment = "";
             if (issueResult.getSecondComment() != null) {
                 Comment comment = issueResult.getSecondComment();
-                secondComment = comment.getAuthor().getDisplayName() + ":" + comment.getBody().replaceAll("\r\n", "");
+                secondComment = comment.getAuthor().getDisplayName() + ":" + comment.getBody()
+                        .replaceAll("\r\n", "")
+                        .replaceAll(";", "");
             }
             String lastComment = "";
             if (issueResult.getLastComment() != null) {
                 Comment comment = issueResult.getLastComment();
-                lastComment = comment.getAuthor().getDisplayName() + ":" + comment.getBody().replaceAll("\r\n", "");
+                lastComment = comment.getAuthor().getDisplayName() + ":" + comment.getBody()
+                        .replaceAll("\r\n", "")
+                        .replaceAll(";", "");
             }
             String remarkComment = issueResult.isRemarkComment() ? "Yes" : "No";
             String remarkAttachment = issueResult.isRemarkAttachment() ? "Yes" : "No";
