@@ -14,7 +14,7 @@ public class LoadIssueKey {
 
     private static String issueKeyName = "issuekey.txt";
 
-    public static String getIssueKeyDefaultPath(){
+    public static String getIssueKeyDefaultPath() {
 
         try {
             return new ClassPathResource(issueKeyName).getFile().getAbsolutePath();
@@ -32,9 +32,13 @@ public class LoadIssueKey {
             while (StringUtils.isNotBlank(line = bufferedRreader.readLine())) {
                 IssueKey issueKey = new IssueKey();
                 String[] keyInfo = line.split(";", 2);
-                issueKey.setId(keyInfo[1]);
-                issueKey.setName(keyInfo[0]);
-                issueKeys.add(issueKey);
+                if (keyInfo.length == 2) {
+                    issueKey.setId(keyInfo[1]);
+                    issueKey.setName(keyInfo[0]);
+                    issueKeys.add(issueKey);
+                }else{
+                    log.info("Found invalid issue key: {}", line);
+                }
             }
         } catch (IOException e) {
             log.error("Failed to load issue key.", e);

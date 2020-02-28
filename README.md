@@ -26,6 +26,20 @@ mvn assembly:assembly
 
 
 
+1. 现在暂时只支持从txt去读ISSUE Key，结果也是保存到txt里面
+2. ISSUE Key的txt格式如下：第一个为QA的名字，第二个为ISSUE Key
+xiao.fei;AMZCUS5-5412
+xiao.fei;AMZCUS5-11391
+3. 生成的结果为issueresult.txt，就在当前目录。结果可以通过Execl的导入功能直接导入到Excel
+4. 程序通过双击jira-tool.jar直接运行，选择ISSUE Key有2种方式。
+    1). 通过拖文件的方式，直接把文件放在第一个灰色的输入框
+    2). 通过Choose..的按钮找到issue key文件
+    
+    
+
+
+
+
 
 
 

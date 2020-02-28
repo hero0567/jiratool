@@ -1,5 +1,6 @@
 package com.levy.jiratool.gui;
 
+import com.levy.jiratool.rooomy.RooomyIssueCounter;
 import com.levy.jiratool.rooomy.RooomyIssueService;
 import org.apache.commons.lang.StringUtils;
 
@@ -16,7 +17,7 @@ public class MainPage extends JPanel {
     private JTextField dragPathField, choosePathField;
     private JTextArea logTextArea;
     private JCheckBox backupCheckBox;
-    private LogHelper log = LogHelper.getLog();
+    private MessageHelper messager = MessageHelper.getLog();
 
     public MainPage() {
         this.setLayout(null);
@@ -51,7 +52,7 @@ public class MainPage extends JPanel {
         fileChooseBut.setBounds(370, 150, 200, 40);
 
         logTextArea = new JTextArea();
-        log.setLogTextArea(logTextArea);
+        messager.setLogTextArea(logTextArea);
         JScrollPane jsp = new JScrollPane(logTextArea);
         jsp.setBounds(50, 250, 520, 340);
         jsp.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_ALWAYS);
@@ -93,15 +94,17 @@ public class MainPage extends JPanel {
                         long startTime = System.currentTimeMillis();
                         try {
                             String filePath = StringUtils.isNotEmpty(dragPath) ? dragPath : choosePath;
+                            RooomyIssueCounter counter = RooomyIssueCounter.getInstance();
+                            counter.setStart(startTime);
                             RooomyIssueService issueService = new RooomyIssueService();
                             issueService.getRejectedIssueComments(filePath);
                             long endTime = System.currentTimeMillis();
-                            log.info("The operation is done in " + (endTime - startTime) / 1000 + " second!");
+                            messager.info("The operation is done in " + (endTime - startTime) / 1000 + " second!");
                             JOptionPane.showMessageDialog(MainPage.this, "The operation is done!", "Success", JOptionPane.INFORMATION_MESSAGE);
                         } catch (Exception e) {
                             System.out.println(e);
                             long endTime = System.currentTimeMillis();
-                            log.info("The operation is abort " + (endTime - startTime) / 1000 + " second!");
+                            messager.info("The operation is abort " + (endTime - startTime) / 1000 + " second!");
                             JOptionPane.showMessageDialog(null, e.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
                         }
                         remove(running_label);

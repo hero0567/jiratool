@@ -35,7 +35,7 @@ public class RooomyContextService {
                     String.valueOf(issueResult.getAssignees().size()),
                     rejectResults,
                     remarkComment,
-//                    remarkAttachment,
+                    remarkAttachment,
                     secondComment,
                     lastComment);
             contentList.add(content);
@@ -51,7 +51,7 @@ public class RooomyContextService {
         header.add("ACount");
         header.add(String.join(";", rejectCause.keySet()));
         header.add("Remark Comment");
-//        header.add("Remark Attachment");
+        header.add("Remark Attachment");
         header.add("Second Comment");
         header.add("Last Comment");
         return String.join(";", header);

@@ -1,9 +1,11 @@
 package com.levy.jiratool.rooomy;
 
+import com.atlassian.jira.rest.client.domain.Attachment;
 import com.atlassian.jira.rest.client.domain.ChangelogGroup;
 import com.atlassian.jira.rest.client.domain.ChangelogItem;
 import com.atlassian.jira.rest.client.domain.Comment;
 
+import com.levy.jiratool.gui.MessageHelper;
 import com.levy.jiratool.lib.JiraClient;
 import com.levy.jiratool.lib.JiraClientFactory;
 import com.levy.jiratool.model.IssueKey;
@@ -30,10 +32,12 @@ public class RooomyIssueService {
     private String formatter = "yyyy-MM-dd HH:mm:ss";
     private JiraClient jiraClient;
     private String[] removedAssignees = {"issue1", "issue2", "issue3", "amazon managem"};
+    private MessageHelper messager = MessageHelper.getLog();
+    private RooomyIssueCounter counter = RooomyIssueCounter.getInstance();
 
     public RooomyIssueService() {
         rejectCause.put("Model-Detail", "Model.{0,3}Detail");
-        rejectCause.put("Model-Dimensions", "di.{0,3}mension");
+        rejectCause.put("Model-Dimensions", "[Dd]i.{0,3}mension");
         rejectCause.put("Model-Geometry", "Model.{0,3}Geometry");
         rejectCause.put("Model-Error", "Model.{0,3}Error");
         rejectCause.put("Texture-Color", "[Cc]olo(u)?r");
@@ -49,7 +53,7 @@ public class RooomyIssueService {
     }
 
     public List<IssueResult> loadIssueCommentsAsync(List<IssueKey> issueKeys) {
-        System.setProperty("java.util.concurrent.ForkJoinPool.common.parallelism", "200");
+        System.setProperty("java.util.concurrent.ForkJoinPool.common.parallelism", "32");
         List<IssueResult> issueResults = issueKeys.stream().parallel().map(issueKey -> {
             return loadIssueResult(jiraClient, issueKey);
         }).collect(Collectors.toList());
@@ -60,112 +64,145 @@ public class RooomyIssueService {
         log.info("Try to get issue comments of {}", issueKey.getId());
         long begin = System.currentTimeMillis();
         IssueResult issueResult = new IssueResult();
+        issueResult.setId(issueKey.getId());
+        issueResult.setName(issueKey.getName());
         try {
             Iterable<Comment> comments = jiraClient.getComments(issueKey.getId());
             Iterable<ChangelogGroup> changelog = jiraClient.getChangelog(issueKey.getId());
-            issueResult.setId(issueKey.getId());
-            issueResult.setName(issueKey.getName());
+            Iterable<Attachment> attachments = jiraClient.getAttachments(issueKey.getId());
             issueResult.setComments(comments);
             issueResult.setChangelogs(changelog);
-            long end = System.currentTimeMillis();
-            issueResult.setSpendTime((end - begin) / 1000);
-            log.info("Complete get issue comments of {}", issueKey.getId());
+            issueResult.setAttachments(attachments);
+            log.info("Complete get issue {}", issueKey.getId());
         } catch (Exception e) {
-            log.error("Failed to get issue information.", e);
+            log.error("Failed to get issue(" + issueKey.getId() + ") information.", e);
         }
+        int completed = counter.getCompletedCounter().incrementAndGet();
+        if (completed % 100 == 0) {
+            messager.infot("Completed load " + completed + " issues.");
+        }
+        long end = System.currentTimeMillis();
+        issueResult.setSpendTime((end - begin) / 1000);
         return issueResult;
     }
 
     private void mergeAssignee(IssueResult issueResult) {
-        List<String> assignees = new ArrayList<>();
-        issueResult.setAssignees(assignees);
-        for (ChangelogGroup changelog : issueResult.getChangelogs()) {
-            changelog.getItems().forEach(item -> {
-                if ("assignee".equals(item.getField())) {
-                    if (!Arrays.asList(removedAssignees).contains(item.getTo().toLowerCase())) {
-                        assignees.add(item.getTo() + "(" + changelog.getCreated().toString(DateTimeFormat.forPattern(formatter)) + ")");
+        try {
+            List<String> assignees = new ArrayList<>();
+            issueResult.setAssignees(assignees);
+            for (ChangelogGroup changelog : issueResult.getChangelogs()) {
+                changelog.getItems().forEach(item -> {
+                    if ("assignee".equals(item.getField())) {
+                        if (!Arrays.asList(removedAssignees).contains(item.getTo().toLowerCase())) {
+                            assignees.add(item.getTo() + "(" + changelog.getCreated().toString(DateTimeFormat.forPattern(formatter)) + ")");
+                        }
                     }
-                }
-            });
+                });
+            }
+        } catch (Exception e) {
+            log.error("Failed to merge assignee for {}", issueResult.getId());
         }
+
     }
 
     private void mergeLastComments(IssueResult issueResult) {
-        for (Comment comment : issueResult.getComments()) {
-            for (String assignee : issueResult.getAssignees()) {
-                if (assignee.toLowerCase().startsWith(comment.getAuthor().getName().toLowerCase() + "(")) {
-                    if (issueResult.getLastComment() == null) {
-                        issueResult.setLastComment(comment);
-                    } else {
-                        issueResult.setSecondComment(comment);
-                        return;
+        try {
+            for (Comment comment : issueResult.getComments()) {
+                for (String assignee : issueResult.getAssignees()) {
+                    if (assignee.toLowerCase().startsWith(comment.getAuthor().getName().toLowerCase() + "(")) {
+                        if (issueResult.getLastComment() == null) {
+                            issueResult.setLastComment(comment);
+                        } else {
+                            issueResult.setSecondComment(comment);
+                            return;
+                        }
                     }
                 }
             }
+        } catch (Exception e) {
+            log.error("Failed to merge last comments for {}", issueResult.getId());
         }
+
     }
 
     private void mergeIssueRejectedComments(IssueResult issueResult) {
-        List<String> rejectResults = new ArrayList<>();
-        issueResult.setRejectResults(rejectResults);
-        String matchKey = "";
-        out:
-        for (Comment comment : issueResult.getComments()) {
+        try {
+            List<String> rejectResults = new ArrayList<>();
+            issueResult.setRejectResults(rejectResults);
+            List<String> matchedKeys = new ArrayList<>();
+            for (Comment comment : issueResult.getComments()) {
+                for (Map.Entry<String, String> entry : rejectCause.entrySet()) {
+                    String k = entry.getKey();
+                    String v = entry.getValue();
+                    if (Pattern.compile(v).matcher(comment.getBody()).find()) {
+                        matchedKeys.add(k);
+                    }
+                }
+                //only compare first comment
+                break;
+            }
             for (Map.Entry<String, String> entry : rejectCause.entrySet()) {
-                String k = entry.getKey();
-                String v = entry.getValue();
-                if (Pattern.compile(v).matcher(comment.getBody()).find()) {
-                    matchKey = k;
-                    break out;
+                if (matchedKeys.contains(entry.getKey())) {
+                    rejectResults.add("1");
+                } else {
+                    rejectResults.add("");
                 }
             }
+        } catch (Exception e) {
+            log.error("Failed to merge comments for {}", issueResult.getId());
         }
-        for (Map.Entry<String, String> entry : rejectCause.entrySet()) {
-            if (matchKey.equals(entry.getKey())) {
-                rejectResults.add("1");
-            } else {
-                rejectResults.add("");
-            }
-        }
+
     }
 
     /**
      * ChangelogGroup{author=BasicUser{name=natrajar, displayName=R,Natarajan, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=natrajar},
      * created=2020-01-18T01:11:23.394+08:00, items=[ChangelogItem{fieldType=CUSTOM, field=External QA Round, from=null, fromString=3, to=null, toString=4},
      * ChangelogItem{fieldType=JIRA, field=status, from=10818, fromString=Unique Ready for Customer, to=10819, toString=Unique Remarks by Customer}]}
-     *
+     * <p>
      * Variation Remarks by Customer [ 10826 ]
      * Unique Remarks by Customer [ 10819 ]
+     *
      * @param issueResult
      */
     private void mergeRemark(IssueResult issueResult) {
-        ChangelogGroup lastRemark = null;
-        out:
-        for (ChangelogGroup changelog : issueResult.getChangelogs()) {
-            for (ChangelogItem item : changelog.getItems()) {
-                if ("status".equals(item.getField())) {
-                    if ("10819".equals(item.getTo())) {
-                        issueResult.setLastRemark(changelog);
-                        lastRemark = changelog;
-                        break out;
+        try {
+            ChangelogGroup lastRemark = null;
+            out:
+            for (ChangelogGroup changelog : issueResult.getChangelogs()) {
+                for (ChangelogItem item : changelog.getItems()) {
+                    if ("status".equals(item.getField())) {
+                        if ("10819".equals(item.getTo())) {
+                            issueResult.setLastRemark(changelog);
+                            lastRemark = changelog;
+                            break out;
+                        }
                     }
                 }
             }
-        }
-
-        if (lastRemark == null) {
-            log.warn("{} not found remark.", issueResult.getId());
-            return;
-        }
-
-        for (Comment comment : issueResult.getComments()) {
-            if (comment.getAuthor().getName().toLowerCase().equals(lastRemark.getAuthor().getName().toLowerCase())
-                    && timeAround(lastRemark.getCreated(), comment.getUpdateDate())) {
-                issueResult.setRemarkComment(true);
-                break;
+            if (lastRemark == null) {
+                log.warn("{} not found remark.", issueResult.getId());
+                return;
             }
+            for (Comment comment : issueResult.getComments()) {
+                if (comment.getAuthor().getName().toLowerCase().equals(lastRemark.getAuthor().getName().toLowerCase())
+                        && timeAround(lastRemark.getCreated(), comment.getUpdateDate())) {
+                    issueResult.setRemarkComment(true);
+                    break;
+                }
 
+            }
+            for (Attachment attachment : issueResult.getAttachments()) {
+                if (attachment.getAuthor().getName().toLowerCase().equals(lastRemark.getAuthor().getName().toLowerCase())
+                        && timeAround(lastRemark.getCreated(), attachment.getCreationDate())) {
+                    issueResult.setRemarkAttachment(true);
+                    break;
+                }
+
+            }
+        } catch (Exception e) {
+            log.error("Failed to merge remark for {}", issueResult.getId());
         }
+
     }
 
     private boolean timeAround(DateTime givenTime, DateTime checkTime) {
@@ -195,7 +232,13 @@ public class RooomyIssueService {
 
     public void getRejectedIssueComments(String keyPath) {
         List<IssueKey> issueKeys = LoadIssueKey.loadIssueKey(keyPath);
+        messager.infot("Totally load " + issueKeys.size() + " valid issue keys.");
+
+        long beginTime = System.currentTimeMillis();
         List<IssueResult> issueResults = loadIssueCommentsAsync(issueKeys);
+        long endTime = System.currentTimeMillis();
+        messager.infot("Completed load all(" + issueKeys.size() + ") issues.");
+
         convertIssue(issueResults);
         RooomyContextService contextService = new RooomyContextService();
         List<String> contents = contextService.getContent(issueResults, rejectCause);

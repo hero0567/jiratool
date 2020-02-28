@@ -14,6 +14,7 @@ public class IssueResult {
     private long spendTime;
     private Iterable<Comment> comments;
     private Iterable<ChangelogGroup> changelogs;
+    private Iterable<Attachment> attachments;
     private List<String> assignees;
     private List<String> rejectResults;
     private Comment lastComment;
