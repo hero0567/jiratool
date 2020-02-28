@@ -1,2 +1,0 @@
-Issuekey(CUS);Assignee;ACount;Model-Dimensions;Model-Error;Process-Missing Comment;Process-Zip;Model-Detail;Model-Geometry;Texture-Color;Texture-Appearance;Remark Comment;Remark Attachment;Second Comment;Last Comment
-fei.xiao;AMZCUS5-15541;;0;;No;No;;

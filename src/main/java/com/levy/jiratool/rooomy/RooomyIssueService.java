@@ -1,5 +1,6 @@
 package com.levy.jiratool.rooomy;
 
+import com.atlassian.jira.rest.client.RestClientException;
 import com.atlassian.jira.rest.client.domain.Attachment;
 import com.atlassian.jira.rest.client.domain.ChangelogGroup;
 import com.atlassian.jira.rest.client.domain.ChangelogItem;
@@ -10,6 +11,7 @@ import com.levy.jiratool.lib.JiraClient;
 import com.levy.jiratool.lib.JiraClientFactory;
 import com.levy.jiratool.model.IssueKey;
 import com.levy.jiratool.model.IssueResult;
+import com.levy.jiratool.writer.ExcelFileWriter;
 import com.levy.jiratool.writer.FileWriter;
 import com.levy.jiratool.writer.TextFileWriter;
 import lombok.extern.slf4j.Slf4j;
@@ -22,6 +24,7 @@ import java.io.FileOutputStream;
 import java.io.PrintStream;
 import java.time.format.DateTimeFormatter;
 import java.util.*;
+import java.util.concurrent.ExecutionException;
 import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 
@@ -67,12 +70,15 @@ public class RooomyIssueService {
         issueResult.setId(issueKey.getId());
         issueResult.setName(issueKey.getName());
         try {
-            Iterable<Comment> comments = jiraClient.getComments(issueKey.getId());
-            Iterable<ChangelogGroup> changelog = jiraClient.getChangelog(issueKey.getId());
-            Iterable<Attachment> attachments = jiraClient.getAttachments(issueKey.getId());
-            issueResult.setComments(comments);
-            issueResult.setChangelogs(changelog);
-            issueResult.setAttachments(attachments);
+            int retry = 0;
+            while (!loadIssueResult(jiraClient, issueKey, issueResult)) {
+                retry++;
+                if (retry == 3) {
+                    log.warn("Issue {} already retry 3 times. will skip it.", issueKey.getId());
+                    break;
+                }
+                log.info("Issue {} will retry {} time.", issueKey.getId(), retry);
+            }
             log.info("Complete get issue {}", issueKey.getId());
         } catch (Exception e) {
             log.error("Failed to get issue(" + issueKey.getId() + ") information.", e);
@@ -84,6 +90,21 @@ public class RooomyIssueService {
         long end = System.currentTimeMillis();
         issueResult.setSpendTime((end - begin) / 1000);
         return issueResult;
+    }
+
+    private boolean loadIssueResult(JiraClient jiraClient, IssueKey issueKey, IssueResult issueResult) {
+        try {
+            Iterable<Comment> comments = jiraClient.getComments(issueKey.getId());
+            Iterable<ChangelogGroup> changelog = jiraClient.getChangelog(issueKey.getId());
+            Iterable<Attachment> attachments = jiraClient.getAttachments(issueKey.getId());
+            issueResult.setComments(comments);
+            issueResult.setChangelogs(changelog);
+            issueResult.setAttachments(attachments);
+            log.info("Complete get issue {}", issueKey.getId());
+        } catch (RestClientException | ExecutionException | InterruptedException e) {
+            return false;
+        }
+        return true;
     }
 
     private void mergeAssignee(IssueResult issueResult) {
@@ -171,7 +192,7 @@ public class RooomyIssueService {
             for (ChangelogGroup changelog : issueResult.getChangelogs()) {
                 for (ChangelogItem item : changelog.getItems()) {
                     if ("status".equals(item.getField())) {
-                        if ("10819".equals(item.getTo())) {
+                        if ("10819".equals(item.getTo()) || "10826".equals(item.getTo())) {
                             issueResult.setLastRemark(changelog);
                             lastRemark = changelog;
                             break out;
@@ -234,15 +255,13 @@ public class RooomyIssueService {
         List<IssueKey> issueKeys = LoadIssueKey.loadIssueKey(keyPath);
         messager.infot("Totally load " + issueKeys.size() + " valid issue keys.");
 
-        long beginTime = System.currentTimeMillis();
         List<IssueResult> issueResults = loadIssueCommentsAsync(issueKeys);
-        long endTime = System.currentTimeMillis();
         messager.infot("Completed load all(" + issueKeys.size() + ") issues.");
 
         convertIssue(issueResults);
         RooomyContextService contextService = new RooomyContextService();
         List<String> contents = contextService.getContent(issueResults, rejectCause);
-        FileWriter fileWriter = new TextFileWriter();
+        FileWriter fileWriter = new ExcelFileWriter();
         fileWriter.write(contents);
     }
 }

@@ -4,4 +4,7 @@
 .idea/encodings.xml
 .project
 .settings/
-jiratool.log*
+jiratool.log.*
+issueresult.*
+issueresult.txt
+jira-tool.iml

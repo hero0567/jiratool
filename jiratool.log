@@ -5916,3 +5916,475 @@ Failed to merge last comments for fei.xiao;AMZCUS5-15541
 Failed to merge remark for fei.xiao;AMZCUS5-15541
 [INFO] 2020-02-28 13:36:55,070 com.levy.jiratool.writer.TextFileWriter.write(TextFileWriter.java:26)
 Save data success.
+[INFO] 2020-02-28 14:21:06,453 com.levy.jiratool.rooomy.RooomyIssueService.<init>(RooomyIssueService.java:48)
+Login...
+[INFO] 2020-02-28 14:21:10,213 com.levy.jiratool.rooomy.LoadIssueKey.loadIssueKey(LoadIssueKey.java:40)
+Load 1 issue keys.
+[INFO] 2020-02-28 14:21:10,230 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:64)
+Try to get issue comments of AMZCUS5-13720
+[INFO] 2020-02-28 14:21:38,863 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:76)
+Complete get issue AMZCUS5-13720
+[INFO] 2020-02-28 14:21:38,870 com.levy.jiratool.rooomy.RooomyIssueService.timeAround(RooomyIssueService.java:213)
+Time Around check: 2020-02-19T21:14:13.715+08:00, 2020-02-19T21:14:13.710+08:00
+[INFO] 2020-02-28 14:21:38,876 com.levy.jiratool.writer.TextFileWriter.write(TextFileWriter.java:26)
+Save data success.
+[INFO] 2020-02-28 14:45:09,143 com.levy.jiratool.rooomy.RooomyIssueService.<init>(RooomyIssueService.java:50)
+Login...
+[INFO] 2020-02-28 14:45:13,985 com.levy.jiratool.rooomy.LoadIssueKey.loadIssueKey(LoadIssueKey.java:40)
+Load 1 issue keys.
+[INFO] 2020-02-28 14:45:13,998 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:66)
+Try to get issue comments of AMZCUS5-13720
+[ERROR] 2020-02-28 14:45:55,399 org.apache.http.impl.nio.client.LoggingAsyncRequestExecutor.exception(LoggingAsyncRequestExecutor.java:74)
+http-outgoing-1 [CLOSED] HTTP protocol exception: null
+java.nio.channels.ClosedChannelException
+	at sun.nio.ch.SocketChannelImpl.ensureReadOpen(SocketChannelImpl.java:257)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:300)
+	at org.apache.http.nio.reactor.ssl.SSLIOSession.receiveEncryptedData(SSLIOSession.java:340)
+	at org.apache.http.nio.reactor.ssl.SSLIOSession.isAppInputReady(SSLIOSession.java:366)
+	at org.apache.http.impl.nio.reactor.AbstractIODispatch.inputReady(AbstractIODispatch.java:118)
+	at org.apache.http.impl.nio.reactor.BaseIOReactor.validate(BaseIOReactor.java:220)
+	at org.apache.http.impl.nio.reactor.AbstractIOReactor.execute(AbstractIOReactor.java:284)
+	at org.apache.http.impl.nio.reactor.BaseIOReactor.execute(BaseIOReactor.java:106)
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor$Worker.run(AbstractMultiworkerIOReactor.java:604)
+	at java.lang.Thread.run(Thread.java:748)
+[ERROR] 2020-02-28 14:45:55,402 org.apache.http.impl.nio.client.LoggingAsyncRequestExecutor.exception(LoggingAsyncRequestExecutor.java:74)
+http-outgoing-1 [CLOSED] HTTP protocol exception: null
+java.nio.channels.ClosedChannelException
+	at sun.nio.ch.SocketChannelImpl.ensureReadOpen(SocketChannelImpl.java:257)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:300)
+	at org.apache.http.nio.reactor.ssl.SSLIOSession.receiveEncryptedData(SSLIOSession.java:340)
+	at org.apache.http.nio.reactor.ssl.SSLIOSession.isAppInputReady(SSLIOSession.java:366)
+	at org.apache.http.impl.nio.reactor.AbstractIODispatch.inputReady(AbstractIODispatch.java:118)
+	at org.apache.http.impl.nio.reactor.BaseIOReactor.validate(BaseIOReactor.java:220)
+	at org.apache.http.impl.nio.reactor.AbstractIOReactor.execute(AbstractIOReactor.java:284)
+	at org.apache.http.impl.nio.reactor.BaseIOReactor.execute(BaseIOReactor.java:106)
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor$Worker.run(AbstractMultiworkerIOReactor.java:604)
+	at java.lang.Thread.run(Thread.java:748)
+[INFO] 2020-02-28 14:45:55,403 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:79)
+Issue AMZCUS5-13720 will retry 1 time.
+[ERROR] 2020-02-28 14:45:56,404 org.apache.http.impl.nio.client.LoggingAsyncRequestExecutor.exception(LoggingAsyncRequestExecutor.java:74)
+http-outgoing-1 [CLOSED] HTTP protocol exception: null
+java.nio.channels.ClosedChannelException
+	at sun.nio.ch.SocketChannelImpl.ensureReadOpen(SocketChannelImpl.java:257)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:300)
+	at org.apache.http.nio.reactor.ssl.SSLIOSession.receiveEncryptedData(SSLIOSession.java:340)
+	at org.apache.http.nio.reactor.ssl.SSLIOSession.isAppInputReady(SSLIOSession.java:366)
+	at org.apache.http.impl.nio.reactor.AbstractIODispatch.inputReady(AbstractIODispatch.java:118)
+	at org.apache.http.impl.nio.reactor.BaseIOReactor.validate(BaseIOReactor.java:220)
+	at org.apache.http.impl.nio.reactor.AbstractIOReactor.execute(AbstractIOReactor.java:284)
+	at org.apache.http.impl.nio.reactor.BaseIOReactor.execute(BaseIOReactor.java:106)
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor$Worker.run(AbstractMultiworkerIOReactor.java:604)
+	at java.lang.Thread.run(Thread.java:748)
+[ERROR] 2020-02-28 14:45:57,405 org.apache.http.impl.nio.client.LoggingAsyncRequestExecutor.exception(LoggingAsyncRequestExecutor.java:74)
+http-outgoing-1 [CLOSED] HTTP protocol exception: null
+java.nio.channels.ClosedChannelException
+	at sun.nio.ch.SocketChannelImpl.ensureReadOpen(SocketChannelImpl.java:257)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:300)
+	at org.apache.http.nio.reactor.ssl.SSLIOSession.receiveEncryptedData(SSLIOSession.java:340)
+	at org.apache.http.nio.reactor.ssl.SSLIOSession.isAppInputReady(SSLIOSession.java:366)
+	at org.apache.http.impl.nio.reactor.AbstractIODispatch.inputReady(AbstractIODispatch.java:118)
+	at org.apache.http.impl.nio.reactor.BaseIOReactor.validate(BaseIOReactor.java:220)
+	at org.apache.http.impl.nio.reactor.AbstractIOReactor.execute(AbstractIOReactor.java:284)
+	at org.apache.http.impl.nio.reactor.BaseIOReactor.execute(BaseIOReactor.java:106)
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor$Worker.run(AbstractMultiworkerIOReactor.java:604)
+	at java.lang.Thread.run(Thread.java:748)
+[ERROR] 2020-02-28 14:45:58,406 org.apache.http.impl.nio.client.LoggingAsyncRequestExecutor.exception(LoggingAsyncRequestExecutor.java:74)
+http-outgoing-1 [CLOSED] HTTP protocol exception: null
+java.nio.channels.ClosedChannelException
+	at sun.nio.ch.SocketChannelImpl.ensureReadOpen(SocketChannelImpl.java:257)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:300)
+	at org.apache.http.nio.reactor.ssl.SSLIOSession.receiveEncryptedData(SSLIOSession.java:340)
+	at org.apache.http.nio.reactor.ssl.SSLIOSession.isAppInputReady(SSLIOSession.java:366)
+	at org.apache.http.impl.nio.reactor.AbstractIODispatch.inputReady(AbstractIODispatch.java:118)
+	at org.apache.http.impl.nio.reactor.BaseIOReactor.validate(BaseIOReactor.java:220)
+	at org.apache.http.impl.nio.reactor.AbstractIOReactor.execute(AbstractIOReactor.java:284)
+	at org.apache.http.impl.nio.reactor.BaseIOReactor.execute(BaseIOReactor.java:106)
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor$Worker.run(AbstractMultiworkerIOReactor.java:604)
+	at java.lang.Thread.run(Thread.java:748)
+[ERROR] 2020-02-28 14:45:59,408 org.apache.http.impl.nio.client.LoggingAsyncRequestExecutor.exception(LoggingAsyncRequestExecutor.java:74)
+http-outgoing-1 [CLOSED] HTTP protocol exception: null
+java.nio.channels.ClosedChannelException
+	at sun.nio.ch.SocketChannelImpl.ensureReadOpen(SocketChannelImpl.java:257)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:300)
+	at org.apache.http.nio.reactor.ssl.SSLIOSession.receiveEncryptedData(SSLIOSession.java:340)
+	at org.apache.http.nio.reactor.ssl.SSLIOSession.isAppInputReady(SSLIOSession.java:366)
+	at org.apache.http.impl.nio.reactor.AbstractIODispatch.inputReady(AbstractIODispatch.java:118)
+	at org.apache.http.impl.nio.reactor.BaseIOReactor.validate(BaseIOReactor.java:220)
+	at org.apache.http.impl.nio.reactor.AbstractIOReactor.execute(AbstractIOReactor.java:284)
+	at org.apache.http.impl.nio.reactor.BaseIOReactor.execute(BaseIOReactor.java:106)
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor$Worker.run(AbstractMultiworkerIOReactor.java:604)
+	at java.lang.Thread.run(Thread.java:748)
+[ERROR] 2020-02-28 14:46:00,410 org.apache.http.impl.nio.client.LoggingAsyncRequestExecutor.exception(LoggingAsyncRequestExecutor.java:74)
+http-outgoing-1 [CLOSED] HTTP protocol exception: null
+java.nio.channels.ClosedChannelException
+	at sun.nio.ch.SocketChannelImpl.ensureReadOpen(SocketChannelImpl.java:257)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:300)
+	at org.apache.http.nio.reactor.ssl.SSLIOSession.receiveEncryptedData(SSLIOSession.java:340)
+	at org.apache.http.nio.reactor.ssl.SSLIOSession.isAppInputReady(SSLIOSession.java:366)
+	at org.apache.http.impl.nio.reactor.AbstractIODispatch.inputReady(AbstractIODispatch.java:118)
+	at org.apache.http.impl.nio.reactor.BaseIOReactor.validate(BaseIOReactor.java:220)
+	at org.apache.http.impl.nio.reactor.AbstractIOReactor.execute(AbstractIOReactor.java:284)
+	at org.apache.http.impl.nio.reactor.BaseIOReactor.execute(BaseIOReactor.java:106)
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor$Worker.run(AbstractMultiworkerIOReactor.java:604)
+	at java.lang.Thread.run(Thread.java:748)
+[ERROR] 2020-02-28 14:46:01,412 org.apache.http.impl.nio.client.LoggingAsyncRequestExecutor.exception(LoggingAsyncRequestExecutor.java:74)
+http-outgoing-1 [CLOSED] HTTP protocol exception: null
+java.nio.channels.ClosedChannelException
+	at sun.nio.ch.SocketChannelImpl.ensureReadOpen(SocketChannelImpl.java:257)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:300)
+	at org.apache.http.nio.reactor.ssl.SSLIOSession.receiveEncryptedData(SSLIOSession.java:340)
+	at org.apache.http.nio.reactor.ssl.SSLIOSession.isAppInputReady(SSLIOSession.java:366)
+	at org.apache.http.impl.nio.reactor.AbstractIODispatch.inputReady(AbstractIODispatch.java:118)
+	at org.apache.http.impl.nio.reactor.BaseIOReactor.validate(BaseIOReactor.java:220)
+	at org.apache.http.impl.nio.reactor.AbstractIOReactor.execute(AbstractIOReactor.java:284)
+	at org.apache.http.impl.nio.reactor.BaseIOReactor.execute(BaseIOReactor.java:106)
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor$Worker.run(AbstractMultiworkerIOReactor.java:604)
+	at java.lang.Thread.run(Thread.java:748)
+[ERROR] 2020-02-28 14:46:02,413 org.apache.http.impl.nio.client.LoggingAsyncRequestExecutor.exception(LoggingAsyncRequestExecutor.java:74)
+http-outgoing-1 [CLOSED] HTTP protocol exception: null
+java.nio.channels.ClosedChannelException
+	at sun.nio.ch.SocketChannelImpl.ensureReadOpen(SocketChannelImpl.java:257)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:300)
+	at org.apache.http.nio.reactor.ssl.SSLIOSession.receiveEncryptedData(SSLIOSession.java:340)
+	at org.apache.http.nio.reactor.ssl.SSLIOSession.isAppInputReady(SSLIOSession.java:366)
+	at org.apache.http.impl.nio.reactor.AbstractIODispatch.inputReady(AbstractIODispatch.java:118)
+	at org.apache.http.impl.nio.reactor.BaseIOReactor.validate(BaseIOReactor.java:220)
+	at org.apache.http.impl.nio.reactor.AbstractIOReactor.execute(AbstractIOReactor.java:284)
+	at org.apache.http.impl.nio.reactor.BaseIOReactor.execute(BaseIOReactor.java:106)
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor$Worker.run(AbstractMultiworkerIOReactor.java:604)
+	at java.lang.Thread.run(Thread.java:748)
+[ERROR] 2020-02-28 14:46:03,415 org.apache.http.impl.nio.client.LoggingAsyncRequestExecutor.exception(LoggingAsyncRequestExecutor.java:74)
+http-outgoing-1 [CLOSED] HTTP protocol exception: null
+java.nio.channels.ClosedChannelException
+	at sun.nio.ch.SocketChannelImpl.ensureReadOpen(SocketChannelImpl.java:257)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:300)
+	at org.apache.http.nio.reactor.ssl.SSLIOSession.receiveEncryptedData(SSLIOSession.java:340)
+	at org.apache.http.nio.reactor.ssl.SSLIOSession.isAppInputReady(SSLIOSession.java:366)
+	at org.apache.http.impl.nio.reactor.AbstractIODispatch.inputReady(AbstractIODispatch.java:118)
+	at org.apache.http.impl.nio.reactor.BaseIOReactor.validate(BaseIOReactor.java:220)
+	at org.apache.http.impl.nio.reactor.AbstractIOReactor.execute(AbstractIOReactor.java:284)
+	at org.apache.http.impl.nio.reactor.BaseIOReactor.execute(BaseIOReactor.java:106)
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor$Worker.run(AbstractMultiworkerIOReactor.java:604)
+	at java.lang.Thread.run(Thread.java:748)
+[ERROR] 2020-02-28 14:46:04,416 org.apache.http.impl.nio.client.LoggingAsyncRequestExecutor.exception(LoggingAsyncRequestExecutor.java:74)
+http-outgoing-1 [CLOSED] HTTP protocol exception: null
+java.nio.channels.ClosedChannelException
+	at sun.nio.ch.SocketChannelImpl.ensureReadOpen(SocketChannelImpl.java:257)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:300)
+	at org.apache.http.nio.reactor.ssl.SSLIOSession.receiveEncryptedData(SSLIOSession.java:340)
+	at org.apache.http.nio.reactor.ssl.SSLIOSession.isAppInputReady(SSLIOSession.java:366)
+	at org.apache.http.impl.nio.reactor.AbstractIODispatch.inputReady(AbstractIODispatch.java:118)
+	at org.apache.http.impl.nio.reactor.BaseIOReactor.validate(BaseIOReactor.java:220)
+	at org.apache.http.impl.nio.reactor.AbstractIOReactor.execute(AbstractIOReactor.java:284)
+	at org.apache.http.impl.nio.reactor.BaseIOReactor.execute(BaseIOReactor.java:106)
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor$Worker.run(AbstractMultiworkerIOReactor.java:604)
+	at java.lang.Thread.run(Thread.java:748)
+[ERROR] 2020-02-28 14:46:05,416 org.apache.http.impl.nio.client.LoggingAsyncRequestExecutor.exception(LoggingAsyncRequestExecutor.java:74)
+http-outgoing-1 [CLOSED] HTTP protocol exception: null
+java.nio.channels.ClosedChannelException
+	at sun.nio.ch.SocketChannelImpl.ensureReadOpen(SocketChannelImpl.java:257)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:300)
+	at org.apache.http.nio.reactor.ssl.SSLIOSession.receiveEncryptedData(SSLIOSession.java:340)
+	at org.apache.http.nio.reactor.ssl.SSLIOSession.isAppInputReady(SSLIOSession.java:366)
+	at org.apache.http.impl.nio.reactor.AbstractIODispatch.inputReady(AbstractIODispatch.java:118)
+	at org.apache.http.impl.nio.reactor.BaseIOReactor.validate(BaseIOReactor.java:220)
+	at org.apache.http.impl.nio.reactor.AbstractIOReactor.execute(AbstractIOReactor.java:284)
+	at org.apache.http.impl.nio.reactor.BaseIOReactor.execute(BaseIOReactor.java:106)
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor$Worker.run(AbstractMultiworkerIOReactor.java:604)
+	at java.lang.Thread.run(Thread.java:748)
+[ERROR] 2020-02-28 14:46:06,419 org.apache.http.impl.nio.client.LoggingAsyncRequestExecutor.exception(LoggingAsyncRequestExecutor.java:74)
+http-outgoing-1 [CLOSED] HTTP protocol exception: null
+java.nio.channels.ClosedChannelException
+	at sun.nio.ch.SocketChannelImpl.ensureReadOpen(SocketChannelImpl.java:257)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:300)
+	at org.apache.http.nio.reactor.ssl.SSLIOSession.receiveEncryptedData(SSLIOSession.java:340)
+	at org.apache.http.nio.reactor.ssl.SSLIOSession.isAppInputReady(SSLIOSession.java:366)
+	at org.apache.http.impl.nio.reactor.AbstractIODispatch.inputReady(AbstractIODispatch.java:118)
+	at org.apache.http.impl.nio.reactor.BaseIOReactor.validate(BaseIOReactor.java:220)
+	at org.apache.http.impl.nio.reactor.AbstractIOReactor.execute(AbstractIOReactor.java:284)
+	at org.apache.http.impl.nio.reactor.BaseIOReactor.execute(BaseIOReactor.java:106)
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor$Worker.run(AbstractMultiworkerIOReactor.java:604)
+	at java.lang.Thread.run(Thread.java:748)
+[ERROR] 2020-02-28 14:46:07,419 org.apache.http.impl.nio.client.LoggingAsyncRequestExecutor.exception(LoggingAsyncRequestExecutor.java:74)
+http-outgoing-1 [CLOSED] HTTP protocol exception: null
+java.nio.channels.ClosedChannelException
+	at sun.nio.ch.SocketChannelImpl.ensureReadOpen(SocketChannelImpl.java:257)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:300)
+	at org.apache.http.nio.reactor.ssl.SSLIOSession.receiveEncryptedData(SSLIOSession.java:340)
+	at org.apache.http.nio.reactor.ssl.SSLIOSession.isAppInputReady(SSLIOSession.java:366)
+	at org.apache.http.impl.nio.reactor.AbstractIODispatch.inputReady(AbstractIODispatch.java:118)
+	at org.apache.http.impl.nio.reactor.BaseIOReactor.validate(BaseIOReactor.java:220)
+	at org.apache.http.impl.nio.reactor.AbstractIOReactor.execute(AbstractIOReactor.java:284)
+	at org.apache.http.impl.nio.reactor.BaseIOReactor.execute(BaseIOReactor.java:106)
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor$Worker.run(AbstractMultiworkerIOReactor.java:604)
+	at java.lang.Thread.run(Thread.java:748)
+[ERROR] 2020-02-28 14:46:08,420 org.apache.http.impl.nio.client.LoggingAsyncRequestExecutor.exception(LoggingAsyncRequestExecutor.java:74)
+http-outgoing-1 [CLOSED] HTTP protocol exception: null
+java.nio.channels.ClosedChannelException
+	at sun.nio.ch.SocketChannelImpl.ensureReadOpen(SocketChannelImpl.java:257)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:300)
+	at org.apache.http.nio.reactor.ssl.SSLIOSession.receiveEncryptedData(SSLIOSession.java:340)
+	at org.apache.http.nio.reactor.ssl.SSLIOSession.isAppInputReady(SSLIOSession.java:366)
+	at org.apache.http.impl.nio.reactor.AbstractIODispatch.inputReady(AbstractIODispatch.java:118)
+	at org.apache.http.impl.nio.reactor.BaseIOReactor.validate(BaseIOReactor.java:220)
+	at org.apache.http.impl.nio.reactor.AbstractIOReactor.execute(AbstractIOReactor.java:284)
+	at org.apache.http.impl.nio.reactor.BaseIOReactor.execute(BaseIOReactor.java:106)
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor$Worker.run(AbstractMultiworkerIOReactor.java:604)
+	at java.lang.Thread.run(Thread.java:748)
+[ERROR] 2020-02-28 14:46:09,421 org.apache.http.impl.nio.client.LoggingAsyncRequestExecutor.exception(LoggingAsyncRequestExecutor.java:74)
+http-outgoing-1 [CLOSED] HTTP protocol exception: null
+java.nio.channels.ClosedChannelException
+	at sun.nio.ch.SocketChannelImpl.ensureReadOpen(SocketChannelImpl.java:257)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:300)
+	at org.apache.http.nio.reactor.ssl.SSLIOSession.receiveEncryptedData(SSLIOSession.java:340)
+	at org.apache.http.nio.reactor.ssl.SSLIOSession.isAppInputReady(SSLIOSession.java:366)
+	at org.apache.http.impl.nio.reactor.AbstractIODispatch.inputReady(AbstractIODispatch.java:118)
+	at org.apache.http.impl.nio.reactor.BaseIOReactor.validate(BaseIOReactor.java:220)
+	at org.apache.http.impl.nio.reactor.AbstractIOReactor.execute(AbstractIOReactor.java:284)
+	at org.apache.http.impl.nio.reactor.BaseIOReactor.execute(BaseIOReactor.java:106)
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor$Worker.run(AbstractMultiworkerIOReactor.java:604)
+	at java.lang.Thread.run(Thread.java:748)
+[ERROR] 2020-02-28 14:46:10,423 org.apache.http.impl.nio.client.LoggingAsyncRequestExecutor.exception(LoggingAsyncRequestExecutor.java:74)
+http-outgoing-1 [CLOSED] HTTP protocol exception: null
+java.nio.channels.ClosedChannelException
+	at sun.nio.ch.SocketChannelImpl.ensureReadOpen(SocketChannelImpl.java:257)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:300)
+	at org.apache.http.nio.reactor.ssl.SSLIOSession.receiveEncryptedData(SSLIOSession.java:340)
+	at org.apache.http.nio.reactor.ssl.SSLIOSession.isAppInputReady(SSLIOSession.java:366)
+	at org.apache.http.impl.nio.reactor.AbstractIODispatch.inputReady(AbstractIODispatch.java:118)
+	at org.apache.http.impl.nio.reactor.BaseIOReactor.validate(BaseIOReactor.java:220)
+	at org.apache.http.impl.nio.reactor.AbstractIOReactor.execute(AbstractIOReactor.java:284)
+	at org.apache.http.impl.nio.reactor.BaseIOReactor.execute(BaseIOReactor.java:106)
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor$Worker.run(AbstractMultiworkerIOReactor.java:604)
+	at java.lang.Thread.run(Thread.java:748)
+[ERROR] 2020-02-28 14:46:11,424 org.apache.http.impl.nio.client.LoggingAsyncRequestExecutor.exception(LoggingAsyncRequestExecutor.java:74)
+http-outgoing-1 [CLOSED] HTTP protocol exception: null
+java.nio.channels.ClosedChannelException
+	at sun.nio.ch.SocketChannelImpl.ensureReadOpen(SocketChannelImpl.java:257)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:300)
+	at org.apache.http.nio.reactor.ssl.SSLIOSession.receiveEncryptedData(SSLIOSession.java:340)
+	at org.apache.http.nio.reactor.ssl.SSLIOSession.isAppInputReady(SSLIOSession.java:366)
+	at org.apache.http.impl.nio.reactor.AbstractIODispatch.inputReady(AbstractIODispatch.java:118)
+	at org.apache.http.impl.nio.reactor.BaseIOReactor.validate(BaseIOReactor.java:220)
+	at org.apache.http.impl.nio.reactor.AbstractIOReactor.execute(AbstractIOReactor.java:284)
+	at org.apache.http.impl.nio.reactor.BaseIOReactor.execute(BaseIOReactor.java:106)
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor$Worker.run(AbstractMultiworkerIOReactor.java:604)
+	at java.lang.Thread.run(Thread.java:748)
+[ERROR] 2020-02-28 14:46:12,425 org.apache.http.impl.nio.client.LoggingAsyncRequestExecutor.exception(LoggingAsyncRequestExecutor.java:74)
+http-outgoing-1 [CLOSED] HTTP protocol exception: null
+java.nio.channels.ClosedChannelException
+	at sun.nio.ch.SocketChannelImpl.ensureReadOpen(SocketChannelImpl.java:257)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:300)
+	at org.apache.http.nio.reactor.ssl.SSLIOSession.receiveEncryptedData(SSLIOSession.java:340)
+	at org.apache.http.nio.reactor.ssl.SSLIOSession.isAppInputReady(SSLIOSession.java:366)
+	at org.apache.http.impl.nio.reactor.AbstractIODispatch.inputReady(AbstractIODispatch.java:118)
+	at org.apache.http.impl.nio.reactor.BaseIOReactor.validate(BaseIOReactor.java:220)
+	at org.apache.http.impl.nio.reactor.AbstractIOReactor.execute(AbstractIOReactor.java:284)
+	at org.apache.http.impl.nio.reactor.BaseIOReactor.execute(BaseIOReactor.java:106)
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor$Worker.run(AbstractMultiworkerIOReactor.java:604)
+	at java.lang.Thread.run(Thread.java:748)
+[ERROR] 2020-02-28 14:46:13,426 org.apache.http.impl.nio.client.LoggingAsyncRequestExecutor.exception(LoggingAsyncRequestExecutor.java:74)
+http-outgoing-1 [CLOSED] HTTP protocol exception: null
+java.nio.channels.ClosedChannelException
+	at sun.nio.ch.SocketChannelImpl.ensureReadOpen(SocketChannelImpl.java:257)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:300)
+	at org.apache.http.nio.reactor.ssl.SSLIOSession.receiveEncryptedData(SSLIOSession.java:340)
+	at org.apache.http.nio.reactor.ssl.SSLIOSession.isAppInputReady(SSLIOSession.java:366)
+	at org.apache.http.impl.nio.reactor.AbstractIODispatch.inputReady(AbstractIODispatch.java:118)
+	at org.apache.http.impl.nio.reactor.BaseIOReactor.validate(BaseIOReactor.java:220)
+	at org.apache.http.impl.nio.reactor.AbstractIOReactor.execute(AbstractIOReactor.java:284)
+	at org.apache.http.impl.nio.reactor.BaseIOReactor.execute(BaseIOReactor.java:106)
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor$Worker.run(AbstractMultiworkerIOReactor.java:604)
+	at java.lang.Thread.run(Thread.java:748)
+[ERROR] 2020-02-28 14:46:14,426 org.apache.http.impl.nio.client.LoggingAsyncRequestExecutor.exception(LoggingAsyncRequestExecutor.java:74)
+http-outgoing-1 [CLOSED] HTTP protocol exception: null
+java.nio.channels.ClosedChannelException
+	at sun.nio.ch.SocketChannelImpl.ensureReadOpen(SocketChannelImpl.java:257)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:300)
+	at org.apache.http.nio.reactor.ssl.SSLIOSession.receiveEncryptedData(SSLIOSession.java:340)
+	at org.apache.http.nio.reactor.ssl.SSLIOSession.isAppInputReady(SSLIOSession.java:366)
+	at org.apache.http.impl.nio.reactor.AbstractIODispatch.inputReady(AbstractIODispatch.java:118)
+	at org.apache.http.impl.nio.reactor.BaseIOReactor.validate(BaseIOReactor.java:220)
+	at org.apache.http.impl.nio.reactor.AbstractIOReactor.execute(AbstractIOReactor.java:284)
+	at org.apache.http.impl.nio.reactor.BaseIOReactor.execute(BaseIOReactor.java:106)
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor$Worker.run(AbstractMultiworkerIOReactor.java:604)
+	at java.lang.Thread.run(Thread.java:748)
+[ERROR] 2020-02-28 14:46:15,427 org.apache.http.impl.nio.client.LoggingAsyncRequestExecutor.exception(LoggingAsyncRequestExecutor.java:74)
+http-outgoing-1 [CLOSED] HTTP protocol exception: null
+java.nio.channels.ClosedChannelException
+	at sun.nio.ch.SocketChannelImpl.ensureReadOpen(SocketChannelImpl.java:257)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:300)
+	at org.apache.http.nio.reactor.ssl.SSLIOSession.receiveEncryptedData(SSLIOSession.java:340)
+	at org.apache.http.nio.reactor.ssl.SSLIOSession.isAppInputReady(SSLIOSession.java:366)
+	at org.apache.http.impl.nio.reactor.AbstractIODispatch.inputReady(AbstractIODispatch.java:118)
+	at org.apache.http.impl.nio.reactor.BaseIOReactor.validate(BaseIOReactor.java:220)
+	at org.apache.http.impl.nio.reactor.AbstractIOReactor.execute(AbstractIOReactor.java:284)
+	at org.apache.http.impl.nio.reactor.BaseIOReactor.execute(BaseIOReactor.java:106)
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor$Worker.run(AbstractMultiworkerIOReactor.java:604)
+	at java.lang.Thread.run(Thread.java:748)
+[INFO] 2020-02-28 14:46:15,848 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:102)
+Complete get issue AMZCUS5-13720
+[INFO] 2020-02-28 14:46:15,849 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:81)
+Complete get issue AMZCUS5-13720
+[INFO] 2020-02-28 14:46:15,856 com.levy.jiratool.rooomy.RooomyIssueService.timeAround(RooomyIssueService.java:233)
+Time Around check: 2020-02-19T21:14:13.715+08:00, 2020-02-19T21:14:13.710+08:00
+[INFO] 2020-02-28 14:46:15,876 com.levy.jiratool.writer.TextFileWriter.write(TextFileWriter.java:26)
+Save data success.
+[INFO] 2020-02-28 14:53:14,496 com.levy.jiratool.rooomy.RooomyIssueService.<init>(RooomyIssueService.java:50)
+Login...
+[INFO] 2020-02-28 14:53:21,584 com.levy.jiratool.rooomy.LoadIssueKey.loadIssueKey(LoadIssueKey.java:40)
+Load 1 issue keys.
+[INFO] 2020-02-28 14:53:21,618 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:66)
+Try to get issue comments of AMZCUS5-13720
+[INFO] 2020-02-28 14:53:51,214 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:102)
+Complete get issue AMZCUS5-13720
+[INFO] 2020-02-28 14:53:51,215 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:81)
+Complete get issue AMZCUS5-13720
+[INFO] 2020-02-28 14:53:51,222 com.levy.jiratool.rooomy.RooomyIssueService.timeAround(RooomyIssueService.java:233)
+Time Around check: 2020-02-19T21:14:13.715+08:00, 2020-02-19T21:14:13.710+08:00
+[INFO] 2020-02-28 14:53:51,231 com.levy.jiratool.writer.TextFileWriter.write(TextFileWriter.java:26)
+Save data success.
+[INFO] 2020-02-28 15:09:56,405 com.levy.jiratool.rooomy.RooomyIssueService.<init>(RooomyIssueService.java:51)
+Login...
+[INFO] 2020-02-28 15:10:02,212 com.levy.jiratool.rooomy.LoadIssueKey.loadIssueKey(LoadIssueKey.java:40)
+Load 1 issue keys.
+[INFO] 2020-02-28 15:10:02,226 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:67)
+Try to get issue comments of AMZCUS5-13720
+[INFO] 2020-02-28 15:10:31,117 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:103)
+Complete get issue AMZCUS5-13720
+[INFO] 2020-02-28 15:10:31,117 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:82)
+Complete get issue AMZCUS5-13720
+[INFO] 2020-02-28 15:10:31,125 com.levy.jiratool.rooomy.RooomyIssueService.timeAround(RooomyIssueService.java:234)
+Time Around check: 2020-02-19T21:14:13.715+08:00, 2020-02-19T21:14:13.710+08:00
+[INFO] 2020-02-28 15:10:31,139 com.levy.jiratool.writer.ExcelFileWriter.createExcel(ExcelFileWriter.java:25)
+Will save data into: issueresult.xlsx
+[ERROR] 2020-02-28 15:10:32,382 com.levy.jiratool.writer.ExcelFileWriter.createExcel(ExcelFileWriter.java:43)
+Faild save data to file.
+java.lang.ArrayIndexOutOfBoundsException: 15
+	at com.levy.jiratool.writer.ExcelFileWriter.createExcel(ExcelFileWriter.java:34)
+	at com.levy.jiratool.writer.ExcelFileWriter.write(ExcelFileWriter.java:21)
+	at com.levy.jiratool.rooomy.RooomyIssueService.getRejectedIssueComments(RooomyIssueService.java:265)
+	at com.levy.jiratool.rooomy.RooomyIssueService.getRejectedIssueComments(RooomyIssueService.java:251)
+	at com.levy.jiratool.RoomyMain.main(RoomyMain.java:8)
+[INFO] 2020-02-28 15:12:43,784 com.levy.jiratool.rooomy.RooomyIssueService.<init>(RooomyIssueService.java:51)
+Login...
+[INFO] 2020-02-28 15:12:47,593 com.levy.jiratool.rooomy.LoadIssueKey.loadIssueKey(LoadIssueKey.java:40)
+Load 12 issue keys.
+[INFO] 2020-02-28 15:12:47,613 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:67)
+Try to get issue comments of AMZCUS5-15307
+[INFO] 2020-02-28 15:12:47,613 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:67)
+Try to get issue comments of AMZCUS5-15404
+[INFO] 2020-02-28 15:12:47,614 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:67)
+Try to get issue comments of AMZCUS5-15311
+[INFO] 2020-02-28 15:12:47,614 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:67)
+Try to get issue comments of AMZCUS5-15319
+[INFO] 2020-02-28 15:12:47,613 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:67)
+Try to get issue comments of AMZCUS5-15316
+[INFO] 2020-02-28 15:12:47,613 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:67)
+Try to get issue comments of AMZCUS5-15314
+[INFO] 2020-02-28 15:12:47,613 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:67)
+Try to get issue comments of AMZCUS5-15310
+[INFO] 2020-02-28 15:12:47,613 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:67)
+Try to get issue comments of AMZCUS5-15583
+[INFO] 2020-02-28 15:12:47,613 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:67)
+Try to get issue comments of AMZCUS5-15541
+[INFO] 2020-02-28 15:12:47,613 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:67)
+Try to get issue comments of AMZCUS5-15309
+[INFO] 2020-02-28 15:12:47,613 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:67)
+Try to get issue comments of AMZCUS5-15308
+[INFO] 2020-02-28 15:12:47,615 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:67)
+Try to get issue comments of AMZCUS5-15315
+[INFO] 2020-02-28 15:12:54,179 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:103)
+Complete get issue AMZCUS5-15404
+[INFO] 2020-02-28 15:12:54,180 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:82)
+Complete get issue AMZCUS5-15404
+[INFO] 2020-02-28 15:12:54,967 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:103)
+Complete get issue AMZCUS5-15310
+[INFO] 2020-02-28 15:12:54,967 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:82)
+Complete get issue AMZCUS5-15310
+[INFO] 2020-02-28 15:12:59,463 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:103)
+Complete get issue AMZCUS5-15307
+[INFO] 2020-02-28 15:12:59,463 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:82)
+Complete get issue AMZCUS5-15307
+[INFO] 2020-02-28 15:12:59,883 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:103)
+Complete get issue AMZCUS5-15319
+[INFO] 2020-02-28 15:12:59,884 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:82)
+Complete get issue AMZCUS5-15319
+[INFO] 2020-02-28 15:13:06,722 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:103)
+Complete get issue AMZCUS5-15309
+[INFO] 2020-02-28 15:13:06,722 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:82)
+Complete get issue AMZCUS5-15309
+[INFO] 2020-02-28 15:13:07,664 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:103)
+Complete get issue AMZCUS5-15583
+[INFO] 2020-02-28 15:13:07,664 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:82)
+Complete get issue AMZCUS5-15583
+[INFO] 2020-02-28 15:13:07,697 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:103)
+Complete get issue AMZCUS5-15308
+[INFO] 2020-02-28 15:13:07,697 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:82)
+Complete get issue AMZCUS5-15308
+[INFO] 2020-02-28 15:13:09,078 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:103)
+Complete get issue AMZCUS5-15315
+[INFO] 2020-02-28 15:13:09,079 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:82)
+Complete get issue AMZCUS5-15315
+[INFO] 2020-02-28 15:13:09,765 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:103)
+Complete get issue AMZCUS5-15541
+[INFO] 2020-02-28 15:13:09,765 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:82)
+Complete get issue AMZCUS5-15541
+[INFO] 2020-02-28 15:13:19,326 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:103)
+Complete get issue AMZCUS5-15316
+[INFO] 2020-02-28 15:13:19,327 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:82)
+Complete get issue AMZCUS5-15316
+[INFO] 2020-02-28 15:13:21,571 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:103)
+Complete get issue AMZCUS5-15314
+[INFO] 2020-02-28 15:13:21,571 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:82)
+Complete get issue AMZCUS5-15314
+[INFO] 2020-02-28 15:13:23,687 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:103)
+Complete get issue AMZCUS5-15311
+[INFO] 2020-02-28 15:13:23,687 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:82)
+Complete get issue AMZCUS5-15311
+[INFO] 2020-02-28 15:13:23,691 com.levy.jiratool.rooomy.RooomyIssueService.timeAround(RooomyIssueService.java:234)
+Time Around check: 2020-02-28T13:47:58.228+08:00, 2020-02-28T13:47:58.223+08:00
+[INFO] 2020-02-28 15:13:23,692 com.levy.jiratool.rooomy.RooomyIssueService.timeAround(RooomyIssueService.java:234)
+Time Around check: 2020-02-28T13:47:58.228+08:00, 2020-02-28T13:47:27.072+08:00
+[ERROR] 2020-02-28 15:13:23,692 com.levy.jiratool.rooomy.RooomyIssueService.mergeAssignee(RooomyIssueService.java:124)
+Failed to merge assignee for AMZCUS5-15541
+[INFO] 2020-02-28 15:13:23,693 com.levy.jiratool.rooomy.RooomyIssueService.timeAround(RooomyIssueService.java:234)
+Time Around check: 2020-02-28T15:06:38.328+08:00, 2020-02-28T15:06:38.324+08:00
+[INFO] 2020-02-28 15:13:23,693 com.levy.jiratool.rooomy.RooomyIssueService.timeAround(RooomyIssueService.java:234)
+Time Around check: 2020-02-14T18:53:30.558+08:00, 2020-02-14T18:55:55.287+08:00
+[INFO] 2020-02-28 15:13:23,693 com.levy.jiratool.rooomy.RooomyIssueService.timeAround(RooomyIssueService.java:234)
+Time Around check: 2020-02-14T18:53:30.558+08:00, 2020-02-14T18:49:04.214+08:00
+[INFO] 2020-02-28 15:13:23,694 com.levy.jiratool.rooomy.RooomyIssueService.timeAround(RooomyIssueService.java:234)
+Time Around check: 2020-02-28T13:41:29.183+08:00, 2020-02-28T13:41:29.176+08:00
+[INFO] 2020-02-28 15:13:23,694 com.levy.jiratool.rooomy.RooomyIssueService.timeAround(RooomyIssueService.java:234)
+Time Around check: 2020-02-28T13:41:29.183+08:00, 2020-02-28T13:40:25.316+08:00
+[INFO] 2020-02-28 15:13:23,694 com.levy.jiratool.rooomy.RooomyIssueService.timeAround(RooomyIssueService.java:234)
+Time Around check: 2020-02-11T09:42:26.186+08:00, 2020-02-11T09:42:26.179+08:00
+[INFO] 2020-02-28 15:13:23,694 com.levy.jiratool.rooomy.RooomyIssueService.timeAround(RooomyIssueService.java:234)
+Time Around check: 2020-02-11T09:42:26.186+08:00, 2020-02-11T09:41:14.442+08:00
+[INFO] 2020-02-28 15:13:23,695 com.levy.jiratool.rooomy.RooomyIssueService.timeAround(RooomyIssueService.java:234)
+Time Around check: 2020-02-23T01:50:20.211+08:00, 2020-02-23T01:50:20.205+08:00
+[INFO] 2020-02-28 15:13:23,695 com.levy.jiratool.rooomy.RooomyIssueService.timeAround(RooomyIssueService.java:234)
+Time Around check: 2020-02-27T00:16:32.337+08:00, 2020-02-27T00:16:32.330+08:00
+[INFO] 2020-02-28 15:13:23,695 com.levy.jiratool.rooomy.RooomyIssueService.timeAround(RooomyIssueService.java:234)
+Time Around check: 2020-02-27T00:16:32.337+08:00, 2020-02-27T00:16:30.731+08:00
+[INFO] 2020-02-28 15:13:23,695 com.levy.jiratool.rooomy.RooomyIssueService.timeAround(RooomyIssueService.java:234)
+Time Around check: 2020-02-16T00:56:26.125+08:00, 2020-02-16T00:57:52.528+08:00
+[INFO] 2020-02-28 15:13:23,696 com.levy.jiratool.rooomy.RooomyIssueService.timeAround(RooomyIssueService.java:234)
+Time Around check: 2020-02-16T00:56:26.125+08:00, 2020-02-16T00:55:33.156+08:00
+[INFO] 2020-02-28 15:13:23,696 com.levy.jiratool.rooomy.RooomyIssueService.timeAround(RooomyIssueService.java:234)
+Time Around check: 2020-02-28T02:21:34.349+08:00, 2020-02-28T02:21:34.343+08:00
+[INFO] 2020-02-28 15:13:23,697 com.levy.jiratool.rooomy.RooomyIssueService.timeAround(RooomyIssueService.java:234)
+Time Around check: 2020-02-22T21:06:04.219+08:00, 2020-02-22T21:24:07.694+08:00
+[INFO] 2020-02-28 15:13:23,697 com.levy.jiratool.rooomy.RooomyIssueService.timeAround(RooomyIssueService.java:234)
+Time Around check: 2020-02-22T21:06:04.219+08:00, 2020-02-22T21:24:11.818+08:00
+[INFO] 2020-02-28 15:13:23,697 com.levy.jiratool.rooomy.RooomyIssueService.timeAround(RooomyIssueService.java:234)
+Time Around check: 2020-02-25T17:53:04.327+08:00, 2020-02-25T17:53:04.322+08:00
+[INFO] 2020-02-28 15:13:23,698 com.levy.jiratool.rooomy.RooomyIssueService.timeAround(RooomyIssueService.java:234)
+Time Around check: 2020-02-25T17:53:04.327+08:00, 2020-02-25T17:53:01.435+08:00
+[INFO] 2020-02-28 15:13:23,698 com.levy.jiratool.rooomy.RooomyIssueService.timeAround(RooomyIssueService.java:234)
+Time Around check: 2020-02-27T00:12:46.079+08:00, 2020-02-27T00:12:46.072+08:00
+[INFO] 2020-02-28 15:13:23,709 com.levy.jiratool.writer.ExcelFileWriter.createExcel(ExcelFileWriter.java:25)
+Will save data into: issueresult.xlsx
+[INFO] 2020-02-28 15:13:24,589 com.levy.jiratool.writer.ExcelFileWriter.createExcel(ExcelFileWriter.java:41)
+Success save data to file.
