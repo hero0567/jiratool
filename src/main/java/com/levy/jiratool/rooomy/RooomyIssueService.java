@@ -1,6 +1,7 @@
 package com.levy.jiratool.rooomy;
 
 import com.atlassian.jira.rest.client.domain.ChangelogGroup;
+import com.atlassian.jira.rest.client.domain.ChangelogItem;
 import com.atlassian.jira.rest.client.domain.Comment;
 
 import com.levy.jiratool.lib.JiraClient;
@@ -11,6 +12,7 @@ import com.levy.jiratool.writer.FileWriter;
 import com.levy.jiratool.writer.TextFileWriter;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang.StringUtils;
+import org.joda.time.DateTime;
 import org.joda.time.format.DateTimeFormat;
 
 import java.io.File;
@@ -60,14 +62,10 @@ public class RooomyIssueService {
         IssueResult issueResult = new IssueResult();
         try {
             Iterable<Comment> comments = jiraClient.getComments(issueKey.getId());
-            List<Comment> invertedOrderCommetns = new ArrayList<>();
-            for (Comment comment : comments) {
-                invertedOrderCommetns.add(0, comment);
-            }
             Iterable<ChangelogGroup> changelog = jiraClient.getChangelog(issueKey.getId());
             issueResult.setId(issueKey.getId());
             issueResult.setName(issueKey.getName());
-            issueResult.setComments(invertedOrderCommetns);
+            issueResult.setComments(comments);
             issueResult.setChangelogs(changelog);
             long end = System.currentTimeMillis();
             issueResult.setSpendTime((end - begin) / 1000);
@@ -111,17 +109,15 @@ public class RooomyIssueService {
         List<String> rejectResults = new ArrayList<>();
         issueResult.setRejectResults(rejectResults);
         String matchKey = "";
+        out:
         for (Comment comment : issueResult.getComments()) {
             for (Map.Entry<String, String> entry : rejectCause.entrySet()) {
                 String k = entry.getKey();
                 String v = entry.getValue();
                 if (Pattern.compile(v).matcher(comment.getBody()).find()) {
                     matchKey = k;
-                    break;
+                    break out;
                 }
-            }
-            if (StringUtils.isNotEmpty(matchKey)) {
-                break;
             }
         }
         for (Map.Entry<String, String> entry : rejectCause.entrySet()) {
@@ -133,11 +129,62 @@ public class RooomyIssueService {
         }
     }
 
+    /**
+     * ChangelogGroup{author=BasicUser{name=natrajar, displayName=R,Natarajan, self=https://amazon.rooomy.com.cn/rest/api/2/user?username=natrajar},
+     * created=2020-01-18T01:11:23.394+08:00, items=[ChangelogItem{fieldType=CUSTOM, field=External QA Round, from=null, fromString=3, to=null, toString=4},
+     * ChangelogItem{fieldType=JIRA, field=status, from=10818, fromString=Unique Ready for Customer, to=10819, toString=Unique Remarks by Customer}]}
+     *
+     * Variation Remarks by Customer [ 10826 ]
+     * Unique Remarks by Customer [ 10819 ]
+     * @param issueResult
+     */
+    private void mergeRemark(IssueResult issueResult) {
+        ChangelogGroup lastRemark = null;
+        out:
+        for (ChangelogGroup changelog : issueResult.getChangelogs()) {
+            for (ChangelogItem item : changelog.getItems()) {
+                if ("status".equals(item.getField())) {
+                    if ("10819".equals(item.getTo())) {
+                        issueResult.setLastRemark(changelog);
+                        lastRemark = changelog;
+                        break out;
+                    }
+                }
+            }
+        }
+
+        if (lastRemark == null) {
+            log.warn("{} not found remark.", issueResult.getId());
+            return;
+        }
+
+        for (Comment comment : issueResult.getComments()) {
+            if (comment.getAuthor().getName().toLowerCase().equals(lastRemark.getAuthor().getName().toLowerCase())
+                    && timeAround(lastRemark.getCreated(), comment.getUpdateDate())) {
+                issueResult.setRemarkComment(true);
+                break;
+            }
+
+        }
+    }
+
+    private boolean timeAround(DateTime givenTime, DateTime checkTime) {
+        long around = 3 * 60 * 60 * 1000;
+        long givenMillis = givenTime.getMillis();
+        long checkMillis = checkTime.getMillis();
+        if (Math.abs(checkMillis - givenMillis) < around) {
+            log.info("Time Around check: {}, {}", givenTime, checkTime);
+            return true;
+        }
+        return false;
+    }
+
     private void convertIssue(List<IssueResult> issueResults) {
         for (IssueResult issueResult : issueResults) {
             mergeIssueRejectedComments(issueResult);
             mergeAssignee(issueResult);
             mergeLastComments(issueResult);
+            mergeRemark(issueResult);
         }
     }
 

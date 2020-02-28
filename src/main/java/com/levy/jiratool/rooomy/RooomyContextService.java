@@ -24,15 +24,18 @@ public class RooomyContextService {
             String lastComment = "";
             if (issueResult.getLastComment() != null) {
                 Comment comment = issueResult.getLastComment();
-                lastComment =  comment.getAuthor().getDisplayName() + ":" + comment.getBody().replaceAll("\r\n", "");
-                ;
+                lastComment = comment.getAuthor().getDisplayName() + ":" + comment.getBody().replaceAll("\r\n", "");
             }
+            String remarkComment = issueResult.isRemarkComment() ? "Yes" : "No";
+            String remarkAttachment = issueResult.isRemarkAttachment() ? "Yes" : "No";
             String content = String.join(";",
                     issueResult.getName(),
                     issueResult.getId(),
                     assigne,
                     String.valueOf(issueResult.getAssignees().size()),
                     rejectResults,
+                    remarkComment,
+//                    remarkAttachment,
                     secondComment,
                     lastComment);
             contentList.add(content);
@@ -47,6 +50,8 @@ public class RooomyContextService {
         header.add("Assignee");
         header.add("ACount");
         header.add(String.join(";", rejectCause.keySet()));
+        header.add("Remark Comment");
+//        header.add("Remark Attachment");
         header.add("Second Comment");
         header.add("Last Comment");
         return String.join(";", header);

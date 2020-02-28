@@ -1,12 +1,11 @@
 package com.levy.jiratool.model;
 
+import com.atlassian.jira.rest.client.domain.Attachment;
 import com.atlassian.jira.rest.client.domain.ChangelogGroup;
 import com.atlassian.jira.rest.client.domain.Comment;
 import lombok.Data;
 
-import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
 
 @Data
 public class IssueResult {
@@ -19,4 +18,7 @@ public class IssueResult {
     private List<String> rejectResults;
     private Comment lastComment;
     private Comment secondComment;
+    private ChangelogGroup lastRemark;
+    private boolean remarkAttachment;
+    private boolean remarkComment;
 }

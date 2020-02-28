@@ -1,0 +1,1395 @@
+[INFO] 2020-02-27 22:49:15,664 com.levy.jiratool.rooomy.RooomyIssueService.<init>(RooomyIssueService.java:44)
+Login...
+[INFO] 2020-02-27 22:49:18,943 com.levy.jiratool.rooomy.LoadIssueKey.loadIssueKey(LoadIssueKey.java:42)
+Load 17 issue keys.
+[INFO] 2020-02-27 22:49:18,978 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:60)
+Try to get issue comments of xiao.fei
+[INFO] 2020-02-27 22:49:18,979 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:60)
+Try to get issue comments of xiao.fei
+[INFO] 2020-02-27 22:49:18,980 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:60)
+Try to get issue comments of xiao.fei
+[INFO] 2020-02-27 22:49:18,997 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:60)
+Try to get issue comments of xiao.fei
+[INFO] 2020-02-27 22:49:18,984 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:60)
+Try to get issue comments of xiao.fei
+[INFO] 2020-02-27 22:49:18,984 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:60)
+Try to get issue comments of xiao.fei
+[INFO] 2020-02-27 22:49:18,984 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:60)
+Try to get issue comments of xiao.fei
+[INFO] 2020-02-27 22:49:18,983 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:60)
+Try to get issue comments of xiao.fei
+[INFO] 2020-02-27 22:49:18,983 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:60)
+Try to get issue comments of xiao.fei
+[INFO] 2020-02-27 22:49:18,983 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:60)
+Try to get issue comments of xiao.fei
+[INFO] 2020-02-27 22:49:18,982 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:60)
+Try to get issue comments of xiao.fei
+[INFO] 2020-02-27 22:49:18,982 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:60)
+Try to get issue comments of xiao.fei
+[INFO] 2020-02-27 22:49:18,982 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:60)
+Try to get issue comments of xiao.fei
+[INFO] 2020-02-27 22:49:18,981 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:60)
+Try to get issue comments of xiao.fei
+[INFO] 2020-02-27 22:49:18,981 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:60)
+Try to get issue comments of xiao.fei
+[INFO] 2020-02-27 22:49:18,981 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:60)
+Try to get issue comments of xiao.fei
+[INFO] 2020-02-27 22:49:18,981 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:60)
+Try to get issue comments of xiao.fei
+[ERROR] 2020-02-27 22:49:20,462 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:74)
+Failed to get issue information.
+java.util.concurrent.ExecutionException: com.atlassian.jira.rest.client.RestClientException: Issue Does Not Exist
+	at com.google.common.util.concurrent.AbstractFuture$Sync.getValue(AbstractFuture.java:294)
+	at com.google.common.util.concurrent.AbstractFuture$Sync.get(AbstractFuture.java:281)
+	at com.google.common.util.concurrent.AbstractFuture.get(AbstractFuture.java:116)
+	at com.google.common.util.concurrent.ForwardingFuture.get(ForwardingFuture.java:63)
+	at com.levy.jiratool.lib.JiraClient.getComments(JiraClient.java:26)
+	at com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:64)
+	at com.levy.jiratool.rooomy.RooomyIssueService.lambda$loadIssueCommentsAsync$0(RooomyIssueService.java:54)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1382)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:481)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
+	at java.util.stream.ReduceOps$ReduceTask.doLeaf(ReduceOps.java:747)
+	at java.util.stream.ReduceOps$ReduceTask.doLeaf(ReduceOps.java:721)
+	at java.util.stream.AbstractTask.compute(AbstractTask.java:316)
+	at java.util.concurrent.CountedCompleter.exec(CountedCompleter.java:731)
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056)
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692)
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:157)
+Caused by: com.atlassian.jira.rest.client.RestClientException: Issue Does Not Exist
+	at com.atlassian.jira.rest.client.internal.async.AbstractAsynchronousRestClient$2.apply(AbstractAsynchronousRestClient.java:165)
+	at com.atlassian.jira.rest.client.internal.async.AbstractAsynchronousRestClient$2.apply(AbstractAsynchronousRestClient.java:159)
+	at com.atlassian.httpclient.api.ResponsePromiseMapFunction.apply(ResponsePromiseMapFunction.java:48)
+	at com.atlassian.httpclient.api.ResponsePromiseMapFunction.apply(ResponsePromiseMapFunction.java:12)
+	at com.atlassian.util.concurrent.Promises$Of$3.apply(Promises.java:285)
+	at com.atlassian.util.concurrent.Promises$2.onSuccess(Promises.java:162)
+	at com.google.common.util.concurrent.Futures$6.run(Futures.java:799)
+	at com.google.common.util.concurrent.MoreExecutors$SameThreadExecutorService.execute(MoreExecutors.java:262)
+	at com.google.common.util.concurrent.ExecutionList$RunnableExecutorPair.execute(ExecutionList.java:149)
+	at com.google.common.util.concurrent.ExecutionList.execute(ExecutionList.java:134)
+	at com.google.common.util.concurrent.AbstractFuture.set(AbstractFuture.java:175)
+	at com.google.common.util.concurrent.SettableFuture.set(SettableFuture.java:53)
+	at com.atlassian.util.concurrent.Promises$Of$3.apply(Promises.java:285)
+	at com.atlassian.util.concurrent.Promises$2.onSuccess(Promises.java:162)
+	at com.google.common.util.concurrent.Futures$6.run(Futures.java:799)
+	at com.google.common.util.concurrent.MoreExecutors$SameThreadExecutorService.execute(MoreExecutors.java:262)
+	at com.google.common.util.concurrent.ExecutionList$RunnableExecutorPair.execute(ExecutionList.java:149)
+	at com.google.common.util.concurrent.ExecutionList.execute(ExecutionList.java:134)
+	at com.google.common.util.concurrent.AbstractFuture.set(AbstractFuture.java:175)
+	at com.google.common.util.concurrent.SettableFuture.set(SettableFuture.java:53)
+	at com.atlassian.httpclient.apache.httpcomponents.SettableFuturePromiseHttpPromiseAsyncClient$1$1.run(SettableFuturePromiseHttpPromiseAsyncClient.java:46)
+	at com.atlassian.httpclient.apache.httpcomponents.SettableFuturePromiseHttpPromiseAsyncClient$ThreadLocalDelegateRunnable$1.run(SettableFuturePromiseHttpPromiseAsyncClient.java:197)
+	at com.atlassian.httpclient.apache.httpcomponents.SettableFuturePromiseHttpPromiseAsyncClient.runInContext(SettableFuturePromiseHttpPromiseAsyncClient.java:90)
+	at com.atlassian.httpclient.apache.httpcomponents.SettableFuturePromiseHttpPromiseAsyncClient$ThreadLocalDelegateRunnable.run(SettableFuturePromiseHttpPromiseAsyncClient.java:192)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[ERROR] 2020-02-27 22:49:20,464 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:74)
+Failed to get issue information.
+java.util.concurrent.ExecutionException: com.atlassian.jira.rest.client.RestClientException: Issue Does Not Exist
+	at com.google.common.util.concurrent.AbstractFuture$Sync.getValue(AbstractFuture.java:294)
+	at com.google.common.util.concurrent.AbstractFuture$Sync.get(AbstractFuture.java:281)
+	at com.google.common.util.concurrent.AbstractFuture.get(AbstractFuture.java:116)
+	at com.google.common.util.concurrent.ForwardingFuture.get(ForwardingFuture.java:63)
+	at com.levy.jiratool.lib.JiraClient.getComments(JiraClient.java:26)
+	at com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:64)
+	at com.levy.jiratool.rooomy.RooomyIssueService.lambda$loadIssueCommentsAsync$0(RooomyIssueService.java:54)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1382)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:481)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
+	at java.util.stream.ReduceOps$ReduceTask.doLeaf(ReduceOps.java:747)
+	at java.util.stream.ReduceOps$ReduceTask.doLeaf(ReduceOps.java:721)
+	at java.util.stream.AbstractTask.compute(AbstractTask.java:316)
+	at java.util.concurrent.CountedCompleter.exec(CountedCompleter.java:731)
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056)
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692)
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:157)
+Caused by: com.atlassian.jira.rest.client.RestClientException: Issue Does Not Exist
+	at com.atlassian.jira.rest.client.internal.async.AbstractAsynchronousRestClient$2.apply(AbstractAsynchronousRestClient.java:165)
+	at com.atlassian.jira.rest.client.internal.async.AbstractAsynchronousRestClient$2.apply(AbstractAsynchronousRestClient.java:159)
+	at com.atlassian.httpclient.api.ResponsePromiseMapFunction.apply(ResponsePromiseMapFunction.java:48)
+	at com.atlassian.httpclient.api.ResponsePromiseMapFunction.apply(ResponsePromiseMapFunction.java:12)
+	at com.atlassian.util.concurrent.Promises$Of$3.apply(Promises.java:285)
+	at com.atlassian.util.concurrent.Promises$2.onSuccess(Promises.java:162)
+	at com.google.common.util.concurrent.Futures$6.run(Futures.java:799)
+	at com.google.common.util.concurrent.MoreExecutors$SameThreadExecutorService.execute(MoreExecutors.java:262)
+	at com.google.common.util.concurrent.ExecutionList$RunnableExecutorPair.execute(ExecutionList.java:149)
+	at com.google.common.util.concurrent.ExecutionList.execute(ExecutionList.java:134)
+	at com.google.common.util.concurrent.AbstractFuture.set(AbstractFuture.java:175)
+	at com.google.common.util.concurrent.SettableFuture.set(SettableFuture.java:53)
+	at com.atlassian.util.concurrent.Promises$Of$3.apply(Promises.java:285)
+	at com.atlassian.util.concurrent.Promises$2.onSuccess(Promises.java:162)
+	at com.google.common.util.concurrent.Futures$6.run(Futures.java:799)
+	at com.google.common.util.concurrent.MoreExecutors$SameThreadExecutorService.execute(MoreExecutors.java:262)
+	at com.google.common.util.concurrent.ExecutionList$RunnableExecutorPair.execute(ExecutionList.java:149)
+	at com.google.common.util.concurrent.ExecutionList.execute(ExecutionList.java:134)
+	at com.google.common.util.concurrent.AbstractFuture.set(AbstractFuture.java:175)
+	at com.google.common.util.concurrent.SettableFuture.set(SettableFuture.java:53)
+	at com.atlassian.httpclient.apache.httpcomponents.SettableFuturePromiseHttpPromiseAsyncClient$1$1.run(SettableFuturePromiseHttpPromiseAsyncClient.java:46)
+	at com.atlassian.httpclient.apache.httpcomponents.SettableFuturePromiseHttpPromiseAsyncClient$ThreadLocalDelegateRunnable$1.run(SettableFuturePromiseHttpPromiseAsyncClient.java:197)
+	at com.atlassian.httpclient.apache.httpcomponents.SettableFuturePromiseHttpPromiseAsyncClient.runInContext(SettableFuturePromiseHttpPromiseAsyncClient.java:90)
+	at com.atlassian.httpclient.apache.httpcomponents.SettableFuturePromiseHttpPromiseAsyncClient$ThreadLocalDelegateRunnable.run(SettableFuturePromiseHttpPromiseAsyncClient.java:192)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[ERROR] 2020-02-27 22:49:20,464 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:74)
+Failed to get issue information.
+java.util.concurrent.ExecutionException: com.atlassian.jira.rest.client.RestClientException: Issue Does Not Exist
+	at com.google.common.util.concurrent.AbstractFuture$Sync.getValue(AbstractFuture.java:294)
+	at com.google.common.util.concurrent.AbstractFuture$Sync.get(AbstractFuture.java:281)
+	at com.google.common.util.concurrent.AbstractFuture.get(AbstractFuture.java:116)
+	at com.google.common.util.concurrent.ForwardingFuture.get(ForwardingFuture.java:63)
+	at com.levy.jiratool.lib.JiraClient.getComments(JiraClient.java:26)
+	at com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:64)
+	at com.levy.jiratool.rooomy.RooomyIssueService.lambda$loadIssueCommentsAsync$0(RooomyIssueService.java:54)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1382)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:481)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
+	at java.util.stream.ReduceOps$ReduceTask.doLeaf(ReduceOps.java:747)
+	at java.util.stream.ReduceOps$ReduceTask.doLeaf(ReduceOps.java:721)
+	at java.util.stream.AbstractTask.compute(AbstractTask.java:316)
+	at java.util.concurrent.CountedCompleter.exec(CountedCompleter.java:731)
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056)
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692)
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:157)
+Caused by: com.atlassian.jira.rest.client.RestClientException: Issue Does Not Exist
+	at com.atlassian.jira.rest.client.internal.async.AbstractAsynchronousRestClient$2.apply(AbstractAsynchronousRestClient.java:165)
+	at com.atlassian.jira.rest.client.internal.async.AbstractAsynchronousRestClient$2.apply(AbstractAsynchronousRestClient.java:159)
+	at com.atlassian.httpclient.api.ResponsePromiseMapFunction.apply(ResponsePromiseMapFunction.java:48)
+	at com.atlassian.httpclient.api.ResponsePromiseMapFunction.apply(ResponsePromiseMapFunction.java:12)
+	at com.atlassian.util.concurrent.Promises$Of$3.apply(Promises.java:285)
+	at com.atlassian.util.concurrent.Promises$2.onSuccess(Promises.java:162)
+	at com.google.common.util.concurrent.Futures$6.run(Futures.java:799)
+	at com.google.common.util.concurrent.MoreExecutors$SameThreadExecutorService.execute(MoreExecutors.java:262)
+	at com.google.common.util.concurrent.ExecutionList$RunnableExecutorPair.execute(ExecutionList.java:149)
+	at com.google.common.util.concurrent.ExecutionList.execute(ExecutionList.java:134)
+	at com.google.common.util.concurrent.AbstractFuture.set(AbstractFuture.java:175)
+	at com.google.common.util.concurrent.SettableFuture.set(SettableFuture.java:53)
+	at com.atlassian.util.concurrent.Promises$Of$3.apply(Promises.java:285)
+	at com.atlassian.util.concurrent.Promises$2.onSuccess(Promises.java:162)
+	at com.google.common.util.concurrent.Futures$6.run(Futures.java:799)
+	at com.google.common.util.concurrent.MoreExecutors$SameThreadExecutorService.execute(MoreExecutors.java:262)
+	at com.google.common.util.concurrent.ExecutionList$RunnableExecutorPair.execute(ExecutionList.java:149)
+	at com.google.common.util.concurrent.ExecutionList.execute(ExecutionList.java:134)
+	at com.google.common.util.concurrent.AbstractFuture.set(AbstractFuture.java:175)
+	at com.google.common.util.concurrent.SettableFuture.set(SettableFuture.java:53)
+	at com.atlassian.httpclient.apache.httpcomponents.SettableFuturePromiseHttpPromiseAsyncClient$1$1.run(SettableFuturePromiseHttpPromiseAsyncClient.java:46)
+	at com.atlassian.httpclient.apache.httpcomponents.SettableFuturePromiseHttpPromiseAsyncClient$ThreadLocalDelegateRunnable$1.run(SettableFuturePromiseHttpPromiseAsyncClient.java:197)
+	at com.atlassian.httpclient.apache.httpcomponents.SettableFuturePromiseHttpPromiseAsyncClient.runInContext(SettableFuturePromiseHttpPromiseAsyncClient.java:90)
+	at com.atlassian.httpclient.apache.httpcomponents.SettableFuturePromiseHttpPromiseAsyncClient$ThreadLocalDelegateRunnable.run(SettableFuturePromiseHttpPromiseAsyncClient.java:192)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[ERROR] 2020-02-27 22:49:20,463 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:74)
+Failed to get issue information.
+java.util.concurrent.ExecutionException: com.atlassian.jira.rest.client.RestClientException: Issue Does Not Exist
+	at com.google.common.util.concurrent.AbstractFuture$Sync.getValue(AbstractFuture.java:294)
+	at com.google.common.util.concurrent.AbstractFuture$Sync.get(AbstractFuture.java:281)
+	at com.google.common.util.concurrent.AbstractFuture.get(AbstractFuture.java:116)
+	at com.google.common.util.concurrent.ForwardingFuture.get(ForwardingFuture.java:63)
+	at com.levy.jiratool.lib.JiraClient.getComments(JiraClient.java:26)
+	at com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:64)
+	at com.levy.jiratool.rooomy.RooomyIssueService.lambda$loadIssueCommentsAsync$0(RooomyIssueService.java:54)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1382)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:481)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
+	at java.util.stream.ReduceOps$ReduceTask.doLeaf(ReduceOps.java:747)
+	at java.util.stream.ReduceOps$ReduceTask.doLeaf(ReduceOps.java:721)
+	at java.util.stream.AbstractTask.compute(AbstractTask.java:316)
+	at java.util.concurrent.CountedCompleter.exec(CountedCompleter.java:731)
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056)
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692)
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:157)
+Caused by: com.atlassian.jira.rest.client.RestClientException: Issue Does Not Exist
+	at com.atlassian.jira.rest.client.internal.async.AbstractAsynchronousRestClient$2.apply(AbstractAsynchronousRestClient.java:165)
+	at com.atlassian.jira.rest.client.internal.async.AbstractAsynchronousRestClient$2.apply(AbstractAsynchronousRestClient.java:159)
+	at com.atlassian.httpclient.api.ResponsePromiseMapFunction.apply(ResponsePromiseMapFunction.java:48)
+	at com.atlassian.httpclient.api.ResponsePromiseMapFunction.apply(ResponsePromiseMapFunction.java:12)
+	at com.atlassian.util.concurrent.Promises$Of$3.apply(Promises.java:285)
+	at com.atlassian.util.concurrent.Promises$2.onSuccess(Promises.java:162)
+	at com.google.common.util.concurrent.Futures$6.run(Futures.java:799)
+	at com.google.common.util.concurrent.MoreExecutors$SameThreadExecutorService.execute(MoreExecutors.java:262)
+	at com.google.common.util.concurrent.ExecutionList$RunnableExecutorPair.execute(ExecutionList.java:149)
+	at com.google.common.util.concurrent.ExecutionList.execute(ExecutionList.java:134)
+	at com.google.common.util.concurrent.AbstractFuture.set(AbstractFuture.java:175)
+	at com.google.common.util.concurrent.SettableFuture.set(SettableFuture.java:53)
+	at com.atlassian.util.concurrent.Promises$Of$3.apply(Promises.java:285)
+	at com.atlassian.util.concurrent.Promises$2.onSuccess(Promises.java:162)
+	at com.google.common.util.concurrent.Futures$6.run(Futures.java:799)
+	at com.google.common.util.concurrent.MoreExecutors$SameThreadExecutorService.execute(MoreExecutors.java:262)
+	at com.google.common.util.concurrent.ExecutionList$RunnableExecutorPair.execute(ExecutionList.java:149)
+	at com.google.common.util.concurrent.ExecutionList.execute(ExecutionList.java:134)
+	at com.google.common.util.concurrent.AbstractFuture.set(AbstractFuture.java:175)
+	at com.google.common.util.concurrent.SettableFuture.set(SettableFuture.java:53)
+	at com.atlassian.httpclient.apache.httpcomponents.SettableFuturePromiseHttpPromiseAsyncClient$1$1.run(SettableFuturePromiseHttpPromiseAsyncClient.java:46)
+	at com.atlassian.httpclient.apache.httpcomponents.SettableFuturePromiseHttpPromiseAsyncClient$ThreadLocalDelegateRunnable$1.run(SettableFuturePromiseHttpPromiseAsyncClient.java:197)
+	at com.atlassian.httpclient.apache.httpcomponents.SettableFuturePromiseHttpPromiseAsyncClient.runInContext(SettableFuturePromiseHttpPromiseAsyncClient.java:90)
+	at com.atlassian.httpclient.apache.httpcomponents.SettableFuturePromiseHttpPromiseAsyncClient$ThreadLocalDelegateRunnable.run(SettableFuturePromiseHttpPromiseAsyncClient.java:192)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[ERROR] 2020-02-27 22:49:20,463 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:74)
+Failed to get issue information.
+java.util.concurrent.ExecutionException: com.atlassian.jira.rest.client.RestClientException: Issue Does Not Exist
+	at com.google.common.util.concurrent.AbstractFuture$Sync.getValue(AbstractFuture.java:294)
+	at com.google.common.util.concurrent.AbstractFuture$Sync.get(AbstractFuture.java:281)
+	at com.google.common.util.concurrent.AbstractFuture.get(AbstractFuture.java:116)
+	at com.google.common.util.concurrent.ForwardingFuture.get(ForwardingFuture.java:63)
+	at com.levy.jiratool.lib.JiraClient.getComments(JiraClient.java:26)
+	at com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:64)
+	at com.levy.jiratool.rooomy.RooomyIssueService.lambda$loadIssueCommentsAsync$0(RooomyIssueService.java:54)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1382)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:481)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
+	at java.util.stream.ReduceOps$ReduceTask.doLeaf(ReduceOps.java:747)
+	at java.util.stream.ReduceOps$ReduceTask.doLeaf(ReduceOps.java:721)
+	at java.util.stream.AbstractTask.compute(AbstractTask.java:316)
+	at java.util.concurrent.CountedCompleter.exec(CountedCompleter.java:731)
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056)
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692)
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:157)
+Caused by: com.atlassian.jira.rest.client.RestClientException: Issue Does Not Exist
+	at com.atlassian.jira.rest.client.internal.async.AbstractAsynchronousRestClient$2.apply(AbstractAsynchronousRestClient.java:165)
+	at com.atlassian.jira.rest.client.internal.async.AbstractAsynchronousRestClient$2.apply(AbstractAsynchronousRestClient.java:159)
+	at com.atlassian.httpclient.api.ResponsePromiseMapFunction.apply(ResponsePromiseMapFunction.java:48)
+	at com.atlassian.httpclient.api.ResponsePromiseMapFunction.apply(ResponsePromiseMapFunction.java:12)
+	at com.atlassian.util.concurrent.Promises$Of$3.apply(Promises.java:285)
+	at com.atlassian.util.concurrent.Promises$2.onSuccess(Promises.java:162)
+	at com.google.common.util.concurrent.Futures$6.run(Futures.java:799)
+	at com.google.common.util.concurrent.MoreExecutors$SameThreadExecutorService.execute(MoreExecutors.java:262)
+	at com.google.common.util.concurrent.ExecutionList$RunnableExecutorPair.execute(ExecutionList.java:149)
+	at com.google.common.util.concurrent.ExecutionList.execute(ExecutionList.java:134)
+	at com.google.common.util.concurrent.AbstractFuture.set(AbstractFuture.java:175)
+	at com.google.common.util.concurrent.SettableFuture.set(SettableFuture.java:53)
+	at com.atlassian.util.concurrent.Promises$Of$3.apply(Promises.java:285)
+	at com.atlassian.util.concurrent.Promises$2.onSuccess(Promises.java:162)
+	at com.google.common.util.concurrent.Futures$6.run(Futures.java:799)
+	at com.google.common.util.concurrent.MoreExecutors$SameThreadExecutorService.execute(MoreExecutors.java:262)
+	at com.google.common.util.concurrent.ExecutionList$RunnableExecutorPair.execute(ExecutionList.java:149)
+	at com.google.common.util.concurrent.ExecutionList.execute(ExecutionList.java:134)
+	at com.google.common.util.concurrent.AbstractFuture.set(AbstractFuture.java:175)
+	at com.google.common.util.concurrent.SettableFuture.set(SettableFuture.java:53)
+	at com.atlassian.httpclient.apache.httpcomponents.SettableFuturePromiseHttpPromiseAsyncClient$1$1.run(SettableFuturePromiseHttpPromiseAsyncClient.java:46)
+	at com.atlassian.httpclient.apache.httpcomponents.SettableFuturePromiseHttpPromiseAsyncClient$ThreadLocalDelegateRunnable$1.run(SettableFuturePromiseHttpPromiseAsyncClient.java:197)
+	at com.atlassian.httpclient.apache.httpcomponents.SettableFuturePromiseHttpPromiseAsyncClient.runInContext(SettableFuturePromiseHttpPromiseAsyncClient.java:90)
+	at com.atlassian.httpclient.apache.httpcomponents.SettableFuturePromiseHttpPromiseAsyncClient$ThreadLocalDelegateRunnable.run(SettableFuturePromiseHttpPromiseAsyncClient.java:192)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[ERROR] 2020-02-27 22:49:20,463 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:74)
+Failed to get issue information.
+java.util.concurrent.ExecutionException: com.atlassian.jira.rest.client.RestClientException: Issue Does Not Exist
+	at com.google.common.util.concurrent.AbstractFuture$Sync.getValue(AbstractFuture.java:294)
+	at com.google.common.util.concurrent.AbstractFuture$Sync.get(AbstractFuture.java:281)
+	at com.google.common.util.concurrent.AbstractFuture.get(AbstractFuture.java:116)
+	at com.google.common.util.concurrent.ForwardingFuture.get(ForwardingFuture.java:63)
+	at com.levy.jiratool.lib.JiraClient.getComments(JiraClient.java:26)
+	at com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:64)
+	at com.levy.jiratool.rooomy.RooomyIssueService.lambda$loadIssueCommentsAsync$0(RooomyIssueService.java:54)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1382)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:481)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
+	at java.util.stream.ReduceOps$ReduceTask.doLeaf(ReduceOps.java:747)
+	at java.util.stream.ReduceOps$ReduceTask.doLeaf(ReduceOps.java:721)
+	at java.util.stream.AbstractTask.compute(AbstractTask.java:316)
+	at java.util.concurrent.CountedCompleter.exec(CountedCompleter.java:731)
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056)
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692)
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:157)
+Caused by: com.atlassian.jira.rest.client.RestClientException: Issue Does Not Exist
+	at com.atlassian.jira.rest.client.internal.async.AbstractAsynchronousRestClient$2.apply(AbstractAsynchronousRestClient.java:165)
+	at com.atlassian.jira.rest.client.internal.async.AbstractAsynchronousRestClient$2.apply(AbstractAsynchronousRestClient.java:159)
+	at com.atlassian.httpclient.api.ResponsePromiseMapFunction.apply(ResponsePromiseMapFunction.java:48)
+	at com.atlassian.httpclient.api.ResponsePromiseMapFunction.apply(ResponsePromiseMapFunction.java:12)
+	at com.atlassian.util.concurrent.Promises$Of$3.apply(Promises.java:285)
+	at com.atlassian.util.concurrent.Promises$2.onSuccess(Promises.java:162)
+	at com.google.common.util.concurrent.Futures$6.run(Futures.java:799)
+	at com.google.common.util.concurrent.MoreExecutors$SameThreadExecutorService.execute(MoreExecutors.java:262)
+	at com.google.common.util.concurrent.ExecutionList$RunnableExecutorPair.execute(ExecutionList.java:149)
+	at com.google.common.util.concurrent.ExecutionList.execute(ExecutionList.java:134)
+	at com.google.common.util.concurrent.AbstractFuture.set(AbstractFuture.java:175)
+	at com.google.common.util.concurrent.SettableFuture.set(SettableFuture.java:53)
+	at com.atlassian.util.concurrent.Promises$Of$3.apply(Promises.java:285)
+	at com.atlassian.util.concurrent.Promises$2.onSuccess(Promises.java:162)
+	at com.google.common.util.concurrent.Futures$6.run(Futures.java:799)
+	at com.google.common.util.concurrent.MoreExecutors$SameThreadExecutorService.execute(MoreExecutors.java:262)
+	at com.google.common.util.concurrent.ExecutionList$RunnableExecutorPair.execute(ExecutionList.java:149)
+	at com.google.common.util.concurrent.ExecutionList.execute(ExecutionList.java:134)
+	at com.google.common.util.concurrent.AbstractFuture.set(AbstractFuture.java:175)
+	at com.google.common.util.concurrent.SettableFuture.set(SettableFuture.java:53)
+	at com.atlassian.httpclient.apache.httpcomponents.SettableFuturePromiseHttpPromiseAsyncClient$1$1.run(SettableFuturePromiseHttpPromiseAsyncClient.java:46)
+	at com.atlassian.httpclient.apache.httpcomponents.SettableFuturePromiseHttpPromiseAsyncClient$ThreadLocalDelegateRunnable$1.run(SettableFuturePromiseHttpPromiseAsyncClient.java:197)
+	at com.atlassian.httpclient.apache.httpcomponents.SettableFuturePromiseHttpPromiseAsyncClient.runInContext(SettableFuturePromiseHttpPromiseAsyncClient.java:90)
+	at com.atlassian.httpclient.apache.httpcomponents.SettableFuturePromiseHttpPromiseAsyncClient$ThreadLocalDelegateRunnable.run(SettableFuturePromiseHttpPromiseAsyncClient.java:192)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[ERROR] 2020-02-27 22:49:20,463 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:74)
+Failed to get issue information.
+java.util.concurrent.ExecutionException: com.atlassian.jira.rest.client.RestClientException: Issue Does Not Exist
+	at com.google.common.util.concurrent.AbstractFuture$Sync.getValue(AbstractFuture.java:294)
+	at com.google.common.util.concurrent.AbstractFuture$Sync.get(AbstractFuture.java:281)
+	at com.google.common.util.concurrent.AbstractFuture.get(AbstractFuture.java:116)
+	at com.google.common.util.concurrent.ForwardingFuture.get(ForwardingFuture.java:63)
+	at com.levy.jiratool.lib.JiraClient.getComments(JiraClient.java:26)
+	at com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:64)
+	at com.levy.jiratool.rooomy.RooomyIssueService.lambda$loadIssueCommentsAsync$0(RooomyIssueService.java:54)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1382)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:481)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
+	at java.util.stream.ReduceOps$ReduceTask.doLeaf(ReduceOps.java:747)
+	at java.util.stream.ReduceOps$ReduceTask.doLeaf(ReduceOps.java:721)
+	at java.util.stream.AbstractTask.compute(AbstractTask.java:316)
+	at java.util.concurrent.CountedCompleter.exec(CountedCompleter.java:731)
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056)
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692)
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:157)
+Caused by: com.atlassian.jira.rest.client.RestClientException: Issue Does Not Exist
+	at com.atlassian.jira.rest.client.internal.async.AbstractAsynchronousRestClient$2.apply(AbstractAsynchronousRestClient.java:165)
+	at com.atlassian.jira.rest.client.internal.async.AbstractAsynchronousRestClient$2.apply(AbstractAsynchronousRestClient.java:159)
+	at com.atlassian.httpclient.api.ResponsePromiseMapFunction.apply(ResponsePromiseMapFunction.java:48)
+	at com.atlassian.httpclient.api.ResponsePromiseMapFunction.apply(ResponsePromiseMapFunction.java:12)
+	at com.atlassian.util.concurrent.Promises$Of$3.apply(Promises.java:285)
+	at com.atlassian.util.concurrent.Promises$2.onSuccess(Promises.java:162)
+	at com.google.common.util.concurrent.Futures$6.run(Futures.java:799)
+	at com.google.common.util.concurrent.MoreExecutors$SameThreadExecutorService.execute(MoreExecutors.java:262)
+	at com.google.common.util.concurrent.ExecutionList$RunnableExecutorPair.execute(ExecutionList.java:149)
+	at com.google.common.util.concurrent.ExecutionList.execute(ExecutionList.java:134)
+	at com.google.common.util.concurrent.AbstractFuture.set(AbstractFuture.java:175)
+	at com.google.common.util.concurrent.SettableFuture.set(SettableFuture.java:53)
+	at com.atlassian.util.concurrent.Promises$Of$3.apply(Promises.java:285)
+	at com.atlassian.util.concurrent.Promises$2.onSuccess(Promises.java:162)
+	at com.google.common.util.concurrent.Futures$6.run(Futures.java:799)
+	at com.google.common.util.concurrent.MoreExecutors$SameThreadExecutorService.execute(MoreExecutors.java:262)
+	at com.google.common.util.concurrent.ExecutionList$RunnableExecutorPair.execute(ExecutionList.java:149)
+	at com.google.common.util.concurrent.ExecutionList.execute(ExecutionList.java:134)
+	at com.google.common.util.concurrent.AbstractFuture.set(AbstractFuture.java:175)
+	at com.google.common.util.concurrent.SettableFuture.set(SettableFuture.java:53)
+	at com.atlassian.httpclient.apache.httpcomponents.SettableFuturePromiseHttpPromiseAsyncClient$1$1.run(SettableFuturePromiseHttpPromiseAsyncClient.java:46)
+	at com.atlassian.httpclient.apache.httpcomponents.SettableFuturePromiseHttpPromiseAsyncClient$ThreadLocalDelegateRunnable$1.run(SettableFuturePromiseHttpPromiseAsyncClient.java:197)
+	at com.atlassian.httpclient.apache.httpcomponents.SettableFuturePromiseHttpPromiseAsyncClient.runInContext(SettableFuturePromiseHttpPromiseAsyncClient.java:90)
+	at com.atlassian.httpclient.apache.httpcomponents.SettableFuturePromiseHttpPromiseAsyncClient$ThreadLocalDelegateRunnable.run(SettableFuturePromiseHttpPromiseAsyncClient.java:192)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[ERROR] 2020-02-27 22:49:20,463 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:74)
+Failed to get issue information.
+java.util.concurrent.ExecutionException: com.atlassian.jira.rest.client.RestClientException: Issue Does Not Exist
+	at com.google.common.util.concurrent.AbstractFuture$Sync.getValue(AbstractFuture.java:294)
+	at com.google.common.util.concurrent.AbstractFuture$Sync.get(AbstractFuture.java:281)
+	at com.google.common.util.concurrent.AbstractFuture.get(AbstractFuture.java:116)
+	at com.google.common.util.concurrent.ForwardingFuture.get(ForwardingFuture.java:63)
+	at com.levy.jiratool.lib.JiraClient.getComments(JiraClient.java:26)
+	at com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:64)
+	at com.levy.jiratool.rooomy.RooomyIssueService.lambda$loadIssueCommentsAsync$0(RooomyIssueService.java:54)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1382)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:481)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
+	at java.util.stream.ReduceOps$ReduceTask.doLeaf(ReduceOps.java:747)
+	at java.util.stream.ReduceOps$ReduceTask.doLeaf(ReduceOps.java:721)
+	at java.util.stream.AbstractTask.compute(AbstractTask.java:316)
+	at java.util.concurrent.CountedCompleter.exec(CountedCompleter.java:731)
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056)
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692)
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:157)
+Caused by: com.atlassian.jira.rest.client.RestClientException: Issue Does Not Exist
+	at com.atlassian.jira.rest.client.internal.async.AbstractAsynchronousRestClient$2.apply(AbstractAsynchronousRestClient.java:165)
+	at com.atlassian.jira.rest.client.internal.async.AbstractAsynchronousRestClient$2.apply(AbstractAsynchronousRestClient.java:159)
+	at com.atlassian.httpclient.api.ResponsePromiseMapFunction.apply(ResponsePromiseMapFunction.java:48)
+	at com.atlassian.httpclient.api.ResponsePromiseMapFunction.apply(ResponsePromiseMapFunction.java:12)
+	at com.atlassian.util.concurrent.Promises$Of$3.apply(Promises.java:285)
+	at com.atlassian.util.concurrent.Promises$2.onSuccess(Promises.java:162)
+	at com.google.common.util.concurrent.Futures$6.run(Futures.java:799)
+	at com.google.common.util.concurrent.MoreExecutors$SameThreadExecutorService.execute(MoreExecutors.java:262)
+	at com.google.common.util.concurrent.ExecutionList$RunnableExecutorPair.execute(ExecutionList.java:149)
+	at com.google.common.util.concurrent.ExecutionList.execute(ExecutionList.java:134)
+	at com.google.common.util.concurrent.AbstractFuture.set(AbstractFuture.java:175)
+	at com.google.common.util.concurrent.SettableFuture.set(SettableFuture.java:53)
+	at com.atlassian.util.concurrent.Promises$Of$3.apply(Promises.java:285)
+	at com.atlassian.util.concurrent.Promises$2.onSuccess(Promises.java:162)
+	at com.google.common.util.concurrent.Futures$6.run(Futures.java:799)
+	at com.google.common.util.concurrent.MoreExecutors$SameThreadExecutorService.execute(MoreExecutors.java:262)
+	at com.google.common.util.concurrent.ExecutionList$RunnableExecutorPair.execute(ExecutionList.java:149)
+	at com.google.common.util.concurrent.ExecutionList.execute(ExecutionList.java:134)
+	at com.google.common.util.concurrent.AbstractFuture.set(AbstractFuture.java:175)
+	at com.google.common.util.concurrent.SettableFuture.set(SettableFuture.java:53)
+	at com.atlassian.httpclient.apache.httpcomponents.SettableFuturePromiseHttpPromiseAsyncClient$1$1.run(SettableFuturePromiseHttpPromiseAsyncClient.java:46)
+	at com.atlassian.httpclient.apache.httpcomponents.SettableFuturePromiseHttpPromiseAsyncClient$ThreadLocalDelegateRunnable$1.run(SettableFuturePromiseHttpPromiseAsyncClient.java:197)
+	at com.atlassian.httpclient.apache.httpcomponents.SettableFuturePromiseHttpPromiseAsyncClient.runInContext(SettableFuturePromiseHttpPromiseAsyncClient.java:90)
+	at com.atlassian.httpclient.apache.httpcomponents.SettableFuturePromiseHttpPromiseAsyncClient$ThreadLocalDelegateRunnable.run(SettableFuturePromiseHttpPromiseAsyncClient.java:192)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[ERROR] 2020-02-27 22:49:20,463 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:74)
+Failed to get issue information.
+java.util.concurrent.ExecutionException: com.atlassian.jira.rest.client.RestClientException: Issue Does Not Exist
+	at com.google.common.util.concurrent.AbstractFuture$Sync.getValue(AbstractFuture.java:294)
+	at com.google.common.util.concurrent.AbstractFuture$Sync.get(AbstractFuture.java:281)
+	at com.google.common.util.concurrent.AbstractFuture.get(AbstractFuture.java:116)
+	at com.google.common.util.concurrent.ForwardingFuture.get(ForwardingFuture.java:63)
+	at com.levy.jiratool.lib.JiraClient.getComments(JiraClient.java:26)
+	at com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:64)
+	at com.levy.jiratool.rooomy.RooomyIssueService.lambda$loadIssueCommentsAsync$0(RooomyIssueService.java:54)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1382)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:481)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
+	at java.util.stream.ReduceOps$ReduceTask.doLeaf(ReduceOps.java:747)
+	at java.util.stream.ReduceOps$ReduceTask.doLeaf(ReduceOps.java:721)
+	at java.util.stream.AbstractTask.compute(AbstractTask.java:316)
+	at java.util.concurrent.CountedCompleter.exec(CountedCompleter.java:731)
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056)
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692)
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:157)
+Caused by: com.atlassian.jira.rest.client.RestClientException: Issue Does Not Exist
+	at com.atlassian.jira.rest.client.internal.async.AbstractAsynchronousRestClient$2.apply(AbstractAsynchronousRestClient.java:165)
+	at com.atlassian.jira.rest.client.internal.async.AbstractAsynchronousRestClient$2.apply(AbstractAsynchronousRestClient.java:159)
+	at com.atlassian.httpclient.api.ResponsePromiseMapFunction.apply(ResponsePromiseMapFunction.java:48)
+	at com.atlassian.httpclient.api.ResponsePromiseMapFunction.apply(ResponsePromiseMapFunction.java:12)
+	at com.atlassian.util.concurrent.Promises$Of$3.apply(Promises.java:285)
+	at com.atlassian.util.concurrent.Promises$2.onSuccess(Promises.java:162)
+	at com.google.common.util.concurrent.Futures$6.run(Futures.java:799)
+	at com.google.common.util.concurrent.MoreExecutors$SameThreadExecutorService.execute(MoreExecutors.java:262)
+	at com.google.common.util.concurrent.ExecutionList$RunnableExecutorPair.execute(ExecutionList.java:149)
+	at com.google.common.util.concurrent.ExecutionList.execute(ExecutionList.java:134)
+	at com.google.common.util.concurrent.AbstractFuture.set(AbstractFuture.java:175)
+	at com.google.common.util.concurrent.SettableFuture.set(SettableFuture.java:53)
+	at com.atlassian.util.concurrent.Promises$Of$3.apply(Promises.java:285)
+	at com.atlassian.util.concurrent.Promises$2.onSuccess(Promises.java:162)
+	at com.google.common.util.concurrent.Futures$6.run(Futures.java:799)
+	at com.google.common.util.concurrent.MoreExecutors$SameThreadExecutorService.execute(MoreExecutors.java:262)
+	at com.google.common.util.concurrent.ExecutionList$RunnableExecutorPair.execute(ExecutionList.java:149)
+	at com.google.common.util.concurrent.ExecutionList.execute(ExecutionList.java:134)
+	at com.google.common.util.concurrent.AbstractFuture.set(AbstractFuture.java:175)
+	at com.google.common.util.concurrent.SettableFuture.set(SettableFuture.java:53)
+	at com.atlassian.httpclient.apache.httpcomponents.SettableFuturePromiseHttpPromiseAsyncClient$1$1.run(SettableFuturePromiseHttpPromiseAsyncClient.java:46)
+	at com.atlassian.httpclient.apache.httpcomponents.SettableFuturePromiseHttpPromiseAsyncClient$ThreadLocalDelegateRunnable$1.run(SettableFuturePromiseHttpPromiseAsyncClient.java:197)
+	at com.atlassian.httpclient.apache.httpcomponents.SettableFuturePromiseHttpPromiseAsyncClient.runInContext(SettableFuturePromiseHttpPromiseAsyncClient.java:90)
+	at com.atlassian.httpclient.apache.httpcomponents.SettableFuturePromiseHttpPromiseAsyncClient$ThreadLocalDelegateRunnable.run(SettableFuturePromiseHttpPromiseAsyncClient.java:192)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[ERROR] 2020-02-27 22:49:20,463 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:74)
+Failed to get issue information.
+java.util.concurrent.ExecutionException: com.atlassian.jira.rest.client.RestClientException: Issue Does Not Exist
+	at com.google.common.util.concurrent.AbstractFuture$Sync.getValue(AbstractFuture.java:294)
+	at com.google.common.util.concurrent.AbstractFuture$Sync.get(AbstractFuture.java:281)
+	at com.google.common.util.concurrent.AbstractFuture.get(AbstractFuture.java:116)
+	at com.google.common.util.concurrent.ForwardingFuture.get(ForwardingFuture.java:63)
+	at com.levy.jiratool.lib.JiraClient.getComments(JiraClient.java:26)
+	at com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:64)
+	at com.levy.jiratool.rooomy.RooomyIssueService.lambda$loadIssueCommentsAsync$0(RooomyIssueService.java:54)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1382)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:481)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
+	at java.util.stream.ReduceOps$ReduceTask.doLeaf(ReduceOps.java:747)
+	at java.util.stream.ReduceOps$ReduceTask.doLeaf(ReduceOps.java:721)
+	at java.util.stream.AbstractTask.compute(AbstractTask.java:316)
+	at java.util.concurrent.CountedCompleter.exec(CountedCompleter.java:731)
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056)
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692)
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:157)
+Caused by: com.atlassian.jira.rest.client.RestClientException: Issue Does Not Exist
+	at com.atlassian.jira.rest.client.internal.async.AbstractAsynchronousRestClient$2.apply(AbstractAsynchronousRestClient.java:165)
+	at com.atlassian.jira.rest.client.internal.async.AbstractAsynchronousRestClient$2.apply(AbstractAsynchronousRestClient.java:159)
+	at com.atlassian.httpclient.api.ResponsePromiseMapFunction.apply(ResponsePromiseMapFunction.java:48)
+	at com.atlassian.httpclient.api.ResponsePromiseMapFunction.apply(ResponsePromiseMapFunction.java:12)
+	at com.atlassian.util.concurrent.Promises$Of$3.apply(Promises.java:285)
+	at com.atlassian.util.concurrent.Promises$2.onSuccess(Promises.java:162)
+	at com.google.common.util.concurrent.Futures$6.run(Futures.java:799)
+	at com.google.common.util.concurrent.MoreExecutors$SameThreadExecutorService.execute(MoreExecutors.java:262)
+	at com.google.common.util.concurrent.ExecutionList$RunnableExecutorPair.execute(ExecutionList.java:149)
+	at com.google.common.util.concurrent.ExecutionList.execute(ExecutionList.java:134)
+	at com.google.common.util.concurrent.AbstractFuture.set(AbstractFuture.java:175)
+	at com.google.common.util.concurrent.SettableFuture.set(SettableFuture.java:53)
+	at com.atlassian.util.concurrent.Promises$Of$3.apply(Promises.java:285)
+	at com.atlassian.util.concurrent.Promises$2.onSuccess(Promises.java:162)
+	at com.google.common.util.concurrent.Futures$6.run(Futures.java:799)
+	at com.google.common.util.concurrent.MoreExecutors$SameThreadExecutorService.execute(MoreExecutors.java:262)
+	at com.google.common.util.concurrent.ExecutionList$RunnableExecutorPair.execute(ExecutionList.java:149)
+	at com.google.common.util.concurrent.ExecutionList.execute(ExecutionList.java:134)
+	at com.google.common.util.concurrent.AbstractFuture.set(AbstractFuture.java:175)
+	at com.google.common.util.concurrent.SettableFuture.set(SettableFuture.java:53)
+	at com.atlassian.httpclient.apache.httpcomponents.SettableFuturePromiseHttpPromiseAsyncClient$1$1.run(SettableFuturePromiseHttpPromiseAsyncClient.java:46)
+	at com.atlassian.httpclient.apache.httpcomponents.SettableFuturePromiseHttpPromiseAsyncClient$ThreadLocalDelegateRunnable$1.run(SettableFuturePromiseHttpPromiseAsyncClient.java:197)
+	at com.atlassian.httpclient.apache.httpcomponents.SettableFuturePromiseHttpPromiseAsyncClient.runInContext(SettableFuturePromiseHttpPromiseAsyncClient.java:90)
+	at com.atlassian.httpclient.apache.httpcomponents.SettableFuturePromiseHttpPromiseAsyncClient$ThreadLocalDelegateRunnable.run(SettableFuturePromiseHttpPromiseAsyncClient.java:192)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[ERROR] 2020-02-27 22:49:20,463 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:74)
+Failed to get issue information.
+java.util.concurrent.ExecutionException: com.atlassian.jira.rest.client.RestClientException: Issue Does Not Exist
+	at com.google.common.util.concurrent.AbstractFuture$Sync.getValue(AbstractFuture.java:294)
+	at com.google.common.util.concurrent.AbstractFuture$Sync.get(AbstractFuture.java:281)
+	at com.google.common.util.concurrent.AbstractFuture.get(AbstractFuture.java:116)
+	at com.google.common.util.concurrent.ForwardingFuture.get(ForwardingFuture.java:63)
+	at com.levy.jiratool.lib.JiraClient.getComments(JiraClient.java:26)
+	at com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:64)
+	at com.levy.jiratool.rooomy.RooomyIssueService.lambda$loadIssueCommentsAsync$0(RooomyIssueService.java:54)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1382)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:481)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
+	at java.util.stream.ReduceOps$ReduceTask.doLeaf(ReduceOps.java:747)
+	at java.util.stream.ReduceOps$ReduceTask.doLeaf(ReduceOps.java:721)
+	at java.util.stream.AbstractTask.compute(AbstractTask.java:316)
+	at java.util.concurrent.CountedCompleter.exec(CountedCompleter.java:731)
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056)
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692)
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:157)
+Caused by: com.atlassian.jira.rest.client.RestClientException: Issue Does Not Exist
+	at com.atlassian.jira.rest.client.internal.async.AbstractAsynchronousRestClient$2.apply(AbstractAsynchronousRestClient.java:165)
+	at com.atlassian.jira.rest.client.internal.async.AbstractAsynchronousRestClient$2.apply(AbstractAsynchronousRestClient.java:159)
+	at com.atlassian.httpclient.api.ResponsePromiseMapFunction.apply(ResponsePromiseMapFunction.java:48)
+	at com.atlassian.httpclient.api.ResponsePromiseMapFunction.apply(ResponsePromiseMapFunction.java:12)
+	at com.atlassian.util.concurrent.Promises$Of$3.apply(Promises.java:285)
+	at com.atlassian.util.concurrent.Promises$2.onSuccess(Promises.java:162)
+	at com.google.common.util.concurrent.Futures$6.run(Futures.java:799)
+	at com.google.common.util.concurrent.MoreExecutors$SameThreadExecutorService.execute(MoreExecutors.java:262)
+	at com.google.common.util.concurrent.ExecutionList$RunnableExecutorPair.execute(ExecutionList.java:149)
+	at com.google.common.util.concurrent.ExecutionList.execute(ExecutionList.java:134)
+	at com.google.common.util.concurrent.AbstractFuture.set(AbstractFuture.java:175)
+	at com.google.common.util.concurrent.SettableFuture.set(SettableFuture.java:53)
+	at com.atlassian.util.concurrent.Promises$Of$3.apply(Promises.java:285)
+	at com.atlassian.util.concurrent.Promises$2.onSuccess(Promises.java:162)
+	at com.google.common.util.concurrent.Futures$6.run(Futures.java:799)
+	at com.google.common.util.concurrent.MoreExecutors$SameThreadExecutorService.execute(MoreExecutors.java:262)
+	at com.google.common.util.concurrent.ExecutionList$RunnableExecutorPair.execute(ExecutionList.java:149)
+	at com.google.common.util.concurrent.ExecutionList.execute(ExecutionList.java:134)
+	at com.google.common.util.concurrent.AbstractFuture.set(AbstractFuture.java:175)
+	at com.google.common.util.concurrent.SettableFuture.set(SettableFuture.java:53)
+	at com.atlassian.httpclient.apache.httpcomponents.SettableFuturePromiseHttpPromiseAsyncClient$1$1.run(SettableFuturePromiseHttpPromiseAsyncClient.java:46)
+	at com.atlassian.httpclient.apache.httpcomponents.SettableFuturePromiseHttpPromiseAsyncClient$ThreadLocalDelegateRunnable$1.run(SettableFuturePromiseHttpPromiseAsyncClient.java:197)
+	at com.atlassian.httpclient.apache.httpcomponents.SettableFuturePromiseHttpPromiseAsyncClient.runInContext(SettableFuturePromiseHttpPromiseAsyncClient.java:90)
+	at com.atlassian.httpclient.apache.httpcomponents.SettableFuturePromiseHttpPromiseAsyncClient$ThreadLocalDelegateRunnable.run(SettableFuturePromiseHttpPromiseAsyncClient.java:192)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[ERROR] 2020-02-27 22:49:20,463 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:74)
+Failed to get issue information.
+java.util.concurrent.ExecutionException: com.atlassian.jira.rest.client.RestClientException: Issue Does Not Exist
+	at com.google.common.util.concurrent.AbstractFuture$Sync.getValue(AbstractFuture.java:294)
+	at com.google.common.util.concurrent.AbstractFuture$Sync.get(AbstractFuture.java:281)
+	at com.google.common.util.concurrent.AbstractFuture.get(AbstractFuture.java:116)
+	at com.google.common.util.concurrent.ForwardingFuture.get(ForwardingFuture.java:63)
+	at com.levy.jiratool.lib.JiraClient.getComments(JiraClient.java:26)
+	at com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:64)
+	at com.levy.jiratool.rooomy.RooomyIssueService.lambda$loadIssueCommentsAsync$0(RooomyIssueService.java:54)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1382)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:481)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
+	at java.util.stream.ReduceOps$ReduceTask.doLeaf(ReduceOps.java:747)
+	at java.util.stream.ReduceOps$ReduceTask.doLeaf(ReduceOps.java:721)
+	at java.util.stream.AbstractTask.compute(AbstractTask.java:316)
+	at java.util.concurrent.CountedCompleter.exec(CountedCompleter.java:731)
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056)
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692)
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:157)
+Caused by: com.atlassian.jira.rest.client.RestClientException: Issue Does Not Exist
+	at com.atlassian.jira.rest.client.internal.async.AbstractAsynchronousRestClient$2.apply(AbstractAsynchronousRestClient.java:165)
+	at com.atlassian.jira.rest.client.internal.async.AbstractAsynchronousRestClient$2.apply(AbstractAsynchronousRestClient.java:159)
+	at com.atlassian.httpclient.api.ResponsePromiseMapFunction.apply(ResponsePromiseMapFunction.java:48)
+	at com.atlassian.httpclient.api.ResponsePromiseMapFunction.apply(ResponsePromiseMapFunction.java:12)
+	at com.atlassian.util.concurrent.Promises$Of$3.apply(Promises.java:285)
+	at com.atlassian.util.concurrent.Promises$2.onSuccess(Promises.java:162)
+	at com.google.common.util.concurrent.Futures$6.run(Futures.java:799)
+	at com.google.common.util.concurrent.MoreExecutors$SameThreadExecutorService.execute(MoreExecutors.java:262)
+	at com.google.common.util.concurrent.ExecutionList$RunnableExecutorPair.execute(ExecutionList.java:149)
+	at com.google.common.util.concurrent.ExecutionList.execute(ExecutionList.java:134)
+	at com.google.common.util.concurrent.AbstractFuture.set(AbstractFuture.java:175)
+	at com.google.common.util.concurrent.SettableFuture.set(SettableFuture.java:53)
+	at com.atlassian.util.concurrent.Promises$Of$3.apply(Promises.java:285)
+	at com.atlassian.util.concurrent.Promises$2.onSuccess(Promises.java:162)
+	at com.google.common.util.concurrent.Futures$6.run(Futures.java:799)
+	at com.google.common.util.concurrent.MoreExecutors$SameThreadExecutorService.execute(MoreExecutors.java:262)
+	at com.google.common.util.concurrent.ExecutionList$RunnableExecutorPair.execute(ExecutionList.java:149)
+	at com.google.common.util.concurrent.ExecutionList.execute(ExecutionList.java:134)
+	at com.google.common.util.concurrent.AbstractFuture.set(AbstractFuture.java:175)
+	at com.google.common.util.concurrent.SettableFuture.set(SettableFuture.java:53)
+	at com.atlassian.httpclient.apache.httpcomponents.SettableFuturePromiseHttpPromiseAsyncClient$1$1.run(SettableFuturePromiseHttpPromiseAsyncClient.java:46)
+	at com.atlassian.httpclient.apache.httpcomponents.SettableFuturePromiseHttpPromiseAsyncClient$ThreadLocalDelegateRunnable$1.run(SettableFuturePromiseHttpPromiseAsyncClient.java:197)
+	at com.atlassian.httpclient.apache.httpcomponents.SettableFuturePromiseHttpPromiseAsyncClient.runInContext(SettableFuturePromiseHttpPromiseAsyncClient.java:90)
+	at com.atlassian.httpclient.apache.httpcomponents.SettableFuturePromiseHttpPromiseAsyncClient$ThreadLocalDelegateRunnable.run(SettableFuturePromiseHttpPromiseAsyncClient.java:192)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[ERROR] 2020-02-27 22:49:20,463 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:74)
+Failed to get issue information.
+java.util.concurrent.ExecutionException: com.atlassian.jira.rest.client.RestClientException: Issue Does Not Exist
+	at com.google.common.util.concurrent.AbstractFuture$Sync.getValue(AbstractFuture.java:294)
+	at com.google.common.util.concurrent.AbstractFuture$Sync.get(AbstractFuture.java:281)
+	at com.google.common.util.concurrent.AbstractFuture.get(AbstractFuture.java:116)
+	at com.google.common.util.concurrent.ForwardingFuture.get(ForwardingFuture.java:63)
+	at com.levy.jiratool.lib.JiraClient.getComments(JiraClient.java:26)
+	at com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:64)
+	at com.levy.jiratool.rooomy.RooomyIssueService.lambda$loadIssueCommentsAsync$0(RooomyIssueService.java:54)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1382)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:481)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
+	at java.util.stream.ReduceOps$ReduceTask.doLeaf(ReduceOps.java:747)
+	at java.util.stream.ReduceOps$ReduceTask.doLeaf(ReduceOps.java:721)
+	at java.util.stream.AbstractTask.compute(AbstractTask.java:316)
+	at java.util.concurrent.CountedCompleter.exec(CountedCompleter.java:731)
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056)
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692)
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:157)
+Caused by: com.atlassian.jira.rest.client.RestClientException: Issue Does Not Exist
+	at com.atlassian.jira.rest.client.internal.async.AbstractAsynchronousRestClient$2.apply(AbstractAsynchronousRestClient.java:165)
+	at com.atlassian.jira.rest.client.internal.async.AbstractAsynchronousRestClient$2.apply(AbstractAsynchronousRestClient.java:159)
+	at com.atlassian.httpclient.api.ResponsePromiseMapFunction.apply(ResponsePromiseMapFunction.java:48)
+	at com.atlassian.httpclient.api.ResponsePromiseMapFunction.apply(ResponsePromiseMapFunction.java:12)
+	at com.atlassian.util.concurrent.Promises$Of$3.apply(Promises.java:285)
+	at com.atlassian.util.concurrent.Promises$2.onSuccess(Promises.java:162)
+	at com.google.common.util.concurrent.Futures$6.run(Futures.java:799)
+	at com.google.common.util.concurrent.MoreExecutors$SameThreadExecutorService.execute(MoreExecutors.java:262)
+	at com.google.common.util.concurrent.ExecutionList$RunnableExecutorPair.execute(ExecutionList.java:149)
+	at com.google.common.util.concurrent.ExecutionList.execute(ExecutionList.java:134)
+	at com.google.common.util.concurrent.AbstractFuture.set(AbstractFuture.java:175)
+	at com.google.common.util.concurrent.SettableFuture.set(SettableFuture.java:53)
+	at com.atlassian.util.concurrent.Promises$Of$3.apply(Promises.java:285)
+	at com.atlassian.util.concurrent.Promises$2.onSuccess(Promises.java:162)
+	at com.google.common.util.concurrent.Futures$6.run(Futures.java:799)
+	at com.google.common.util.concurrent.MoreExecutors$SameThreadExecutorService.execute(MoreExecutors.java:262)
+	at com.google.common.util.concurrent.ExecutionList$RunnableExecutorPair.execute(ExecutionList.java:149)
+	at com.google.common.util.concurrent.ExecutionList.execute(ExecutionList.java:134)
+	at com.google.common.util.concurrent.AbstractFuture.set(AbstractFuture.java:175)
+	at com.google.common.util.concurrent.SettableFuture.set(SettableFuture.java:53)
+	at com.atlassian.httpclient.apache.httpcomponents.SettableFuturePromiseHttpPromiseAsyncClient$1$1.run(SettableFuturePromiseHttpPromiseAsyncClient.java:46)
+	at com.atlassian.httpclient.apache.httpcomponents.SettableFuturePromiseHttpPromiseAsyncClient$ThreadLocalDelegateRunnable$1.run(SettableFuturePromiseHttpPromiseAsyncClient.java:197)
+	at com.atlassian.httpclient.apache.httpcomponents.SettableFuturePromiseHttpPromiseAsyncClient.runInContext(SettableFuturePromiseHttpPromiseAsyncClient.java:90)
+	at com.atlassian.httpclient.apache.httpcomponents.SettableFuturePromiseHttpPromiseAsyncClient$ThreadLocalDelegateRunnable.run(SettableFuturePromiseHttpPromiseAsyncClient.java:192)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[ERROR] 2020-02-27 22:49:20,463 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:74)
+Failed to get issue information.
+java.util.concurrent.ExecutionException: com.atlassian.jira.rest.client.RestClientException: Issue Does Not Exist
+	at com.google.common.util.concurrent.AbstractFuture$Sync.getValue(AbstractFuture.java:294)
+	at com.google.common.util.concurrent.AbstractFuture$Sync.get(AbstractFuture.java:281)
+	at com.google.common.util.concurrent.AbstractFuture.get(AbstractFuture.java:116)
+	at com.google.common.util.concurrent.ForwardingFuture.get(ForwardingFuture.java:63)
+	at com.levy.jiratool.lib.JiraClient.getComments(JiraClient.java:26)
+	at com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:64)
+	at com.levy.jiratool.rooomy.RooomyIssueService.lambda$loadIssueCommentsAsync$0(RooomyIssueService.java:54)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1382)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:481)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
+	at java.util.stream.ReduceOps$ReduceTask.doLeaf(ReduceOps.java:747)
+	at java.util.stream.ReduceOps$ReduceTask.doLeaf(ReduceOps.java:721)
+	at java.util.stream.AbstractTask.compute(AbstractTask.java:316)
+	at java.util.concurrent.CountedCompleter.exec(CountedCompleter.java:731)
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)
+	at java.util.concurrent.ForkJoinTask.doInvoke(ForkJoinTask.java:401)
+	at java.util.concurrent.ForkJoinTask.invoke(ForkJoinTask.java:734)
+	at java.util.stream.ReduceOps$ReduceOp.evaluateParallel(ReduceOps.java:714)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:233)
+	at java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:499)
+	at com.levy.jiratool.rooomy.RooomyIssueService.loadIssueCommentsAsync(RooomyIssueService.java:55)
+	at com.levy.jiratool.rooomy.RooomyIssueService.getRejectedIssueComments(RooomyIssueService.java:133)
+	at com.levy.jiratool.rooomy.RooomyIssueService.getRejectedIssueComments(RooomyIssueService.java:128)
+	at com.levy.jiratool.RoomyMain.main(RoomyMain.java:8)
+Caused by: com.atlassian.jira.rest.client.RestClientException: Issue Does Not Exist
+	at com.atlassian.jira.rest.client.internal.async.AbstractAsynchronousRestClient$2.apply(AbstractAsynchronousRestClient.java:165)
+	at com.atlassian.jira.rest.client.internal.async.AbstractAsynchronousRestClient$2.apply(AbstractAsynchronousRestClient.java:159)
+	at com.atlassian.httpclient.api.ResponsePromiseMapFunction.apply(ResponsePromiseMapFunction.java:48)
+	at com.atlassian.httpclient.api.ResponsePromiseMapFunction.apply(ResponsePromiseMapFunction.java:12)
+	at com.atlassian.util.concurrent.Promises$Of$3.apply(Promises.java:285)
+	at com.atlassian.util.concurrent.Promises$2.onSuccess(Promises.java:162)
+	at com.google.common.util.concurrent.Futures$6.run(Futures.java:799)
+	at com.google.common.util.concurrent.MoreExecutors$SameThreadExecutorService.execute(MoreExecutors.java:262)
+	at com.google.common.util.concurrent.ExecutionList$RunnableExecutorPair.execute(ExecutionList.java:149)
+	at com.google.common.util.concurrent.ExecutionList.execute(ExecutionList.java:134)
+	at com.google.common.util.concurrent.AbstractFuture.set(AbstractFuture.java:175)
+	at com.google.common.util.concurrent.SettableFuture.set(SettableFuture.java:53)
+	at com.atlassian.util.concurrent.Promises$Of$3.apply(Promises.java:285)
+	at com.atlassian.util.concurrent.Promises$2.onSuccess(Promises.java:162)
+	at com.google.common.util.concurrent.Futures$6.run(Futures.java:799)
+	at com.google.common.util.concurrent.MoreExecutors$SameThreadExecutorService.execute(MoreExecutors.java:262)
+	at com.google.common.util.concurrent.ExecutionList$RunnableExecutorPair.execute(ExecutionList.java:149)
+	at com.google.common.util.concurrent.ExecutionList.execute(ExecutionList.java:134)
+	at com.google.common.util.concurrent.AbstractFuture.set(AbstractFuture.java:175)
+	at com.google.common.util.concurrent.SettableFuture.set(SettableFuture.java:53)
+	at com.atlassian.httpclient.apache.httpcomponents.SettableFuturePromiseHttpPromiseAsyncClient$1$1.run(SettableFuturePromiseHttpPromiseAsyncClient.java:46)
+	at com.atlassian.httpclient.apache.httpcomponents.SettableFuturePromiseHttpPromiseAsyncClient$ThreadLocalDelegateRunnable$1.run(SettableFuturePromiseHttpPromiseAsyncClient.java:197)
+	at com.atlassian.httpclient.apache.httpcomponents.SettableFuturePromiseHttpPromiseAsyncClient.runInContext(SettableFuturePromiseHttpPromiseAsyncClient.java:90)
+	at com.atlassian.httpclient.apache.httpcomponents.SettableFuturePromiseHttpPromiseAsyncClient$ThreadLocalDelegateRunnable.run(SettableFuturePromiseHttpPromiseAsyncClient.java:192)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[ERROR] 2020-02-27 22:49:20,462 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:74)
+Failed to get issue information.
+java.util.concurrent.ExecutionException: com.atlassian.jira.rest.client.RestClientException: Issue Does Not Exist
+	at com.google.common.util.concurrent.AbstractFuture$Sync.getValue(AbstractFuture.java:294)
+	at com.google.common.util.concurrent.AbstractFuture$Sync.get(AbstractFuture.java:281)
+	at com.google.common.util.concurrent.AbstractFuture.get(AbstractFuture.java:116)
+	at com.google.common.util.concurrent.ForwardingFuture.get(ForwardingFuture.java:63)
+	at com.levy.jiratool.lib.JiraClient.getComments(JiraClient.java:26)
+	at com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:64)
+	at com.levy.jiratool.rooomy.RooomyIssueService.lambda$loadIssueCommentsAsync$0(RooomyIssueService.java:54)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1382)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:481)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
+	at java.util.stream.ReduceOps$ReduceTask.doLeaf(ReduceOps.java:747)
+	at java.util.stream.ReduceOps$ReduceTask.doLeaf(ReduceOps.java:721)
+	at java.util.stream.AbstractTask.compute(AbstractTask.java:316)
+	at java.util.concurrent.CountedCompleter.exec(CountedCompleter.java:731)
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056)
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692)
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:157)
+Caused by: com.atlassian.jira.rest.client.RestClientException: Issue Does Not Exist
+	at com.atlassian.jira.rest.client.internal.async.AbstractAsynchronousRestClient$2.apply(AbstractAsynchronousRestClient.java:165)
+	at com.atlassian.jira.rest.client.internal.async.AbstractAsynchronousRestClient$2.apply(AbstractAsynchronousRestClient.java:159)
+	at com.atlassian.httpclient.api.ResponsePromiseMapFunction.apply(ResponsePromiseMapFunction.java:48)
+	at com.atlassian.httpclient.api.ResponsePromiseMapFunction.apply(ResponsePromiseMapFunction.java:12)
+	at com.atlassian.util.concurrent.Promises$Of$3.apply(Promises.java:285)
+	at com.atlassian.util.concurrent.Promises$2.onSuccess(Promises.java:162)
+	at com.google.common.util.concurrent.Futures$6.run(Futures.java:799)
+	at com.google.common.util.concurrent.MoreExecutors$SameThreadExecutorService.execute(MoreExecutors.java:262)
+	at com.google.common.util.concurrent.ExecutionList$RunnableExecutorPair.execute(ExecutionList.java:149)
+	at com.google.common.util.concurrent.ExecutionList.execute(ExecutionList.java:134)
+	at com.google.common.util.concurrent.AbstractFuture.set(AbstractFuture.java:175)
+	at com.google.common.util.concurrent.SettableFuture.set(SettableFuture.java:53)
+	at com.atlassian.util.concurrent.Promises$Of$3.apply(Promises.java:285)
+	at com.atlassian.util.concurrent.Promises$2.onSuccess(Promises.java:162)
+	at com.google.common.util.concurrent.Futures$6.run(Futures.java:799)
+	at com.google.common.util.concurrent.MoreExecutors$SameThreadExecutorService.execute(MoreExecutors.java:262)
+	at com.google.common.util.concurrent.ExecutionList$RunnableExecutorPair.execute(ExecutionList.java:149)
+	at com.google.common.util.concurrent.ExecutionList.execute(ExecutionList.java:134)
+	at com.google.common.util.concurrent.AbstractFuture.set(AbstractFuture.java:175)
+	at com.google.common.util.concurrent.SettableFuture.set(SettableFuture.java:53)
+	at com.atlassian.httpclient.apache.httpcomponents.SettableFuturePromiseHttpPromiseAsyncClient$1$1.run(SettableFuturePromiseHttpPromiseAsyncClient.java:46)
+	at com.atlassian.httpclient.apache.httpcomponents.SettableFuturePromiseHttpPromiseAsyncClient$ThreadLocalDelegateRunnable$1.run(SettableFuturePromiseHttpPromiseAsyncClient.java:197)
+	at com.atlassian.httpclient.apache.httpcomponents.SettableFuturePromiseHttpPromiseAsyncClient.runInContext(SettableFuturePromiseHttpPromiseAsyncClient.java:90)
+	at com.atlassian.httpclient.apache.httpcomponents.SettableFuturePromiseHttpPromiseAsyncClient$ThreadLocalDelegateRunnable.run(SettableFuturePromiseHttpPromiseAsyncClient.java:192)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[ERROR] 2020-02-27 22:49:20,462 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:74)
+Failed to get issue information.
+java.util.concurrent.ExecutionException: com.atlassian.jira.rest.client.RestClientException: Issue Does Not Exist
+	at com.google.common.util.concurrent.AbstractFuture$Sync.getValue(AbstractFuture.java:294)
+	at com.google.common.util.concurrent.AbstractFuture$Sync.get(AbstractFuture.java:281)
+	at com.google.common.util.concurrent.AbstractFuture.get(AbstractFuture.java:116)
+	at com.google.common.util.concurrent.ForwardingFuture.get(ForwardingFuture.java:63)
+	at com.levy.jiratool.lib.JiraClient.getComments(JiraClient.java:26)
+	at com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:64)
+	at com.levy.jiratool.rooomy.RooomyIssueService.lambda$loadIssueCommentsAsync$0(RooomyIssueService.java:54)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1382)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:481)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
+	at java.util.stream.ReduceOps$ReduceTask.doLeaf(ReduceOps.java:747)
+	at java.util.stream.ReduceOps$ReduceTask.doLeaf(ReduceOps.java:721)
+	at java.util.stream.AbstractTask.compute(AbstractTask.java:316)
+	at java.util.concurrent.CountedCompleter.exec(CountedCompleter.java:731)
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056)
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692)
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:157)
+Caused by: com.atlassian.jira.rest.client.RestClientException: Issue Does Not Exist
+	at com.atlassian.jira.rest.client.internal.async.AbstractAsynchronousRestClient$2.apply(AbstractAsynchronousRestClient.java:165)
+	at com.atlassian.jira.rest.client.internal.async.AbstractAsynchronousRestClient$2.apply(AbstractAsynchronousRestClient.java:159)
+	at com.atlassian.httpclient.api.ResponsePromiseMapFunction.apply(ResponsePromiseMapFunction.java:48)
+	at com.atlassian.httpclient.api.ResponsePromiseMapFunction.apply(ResponsePromiseMapFunction.java:12)
+	at com.atlassian.util.concurrent.Promises$Of$3.apply(Promises.java:285)
+	at com.atlassian.util.concurrent.Promises$2.onSuccess(Promises.java:162)
+	at com.google.common.util.concurrent.Futures$6.run(Futures.java:799)
+	at com.google.common.util.concurrent.MoreExecutors$SameThreadExecutorService.execute(MoreExecutors.java:262)
+	at com.google.common.util.concurrent.ExecutionList$RunnableExecutorPair.execute(ExecutionList.java:149)
+	at com.google.common.util.concurrent.ExecutionList.execute(ExecutionList.java:134)
+	at com.google.common.util.concurrent.AbstractFuture.set(AbstractFuture.java:175)
+	at com.google.common.util.concurrent.SettableFuture.set(SettableFuture.java:53)
+	at com.atlassian.util.concurrent.Promises$Of$3.apply(Promises.java:285)
+	at com.atlassian.util.concurrent.Promises$2.onSuccess(Promises.java:162)
+	at com.google.common.util.concurrent.Futures$6.run(Futures.java:799)
+	at com.google.common.util.concurrent.MoreExecutors$SameThreadExecutorService.execute(MoreExecutors.java:262)
+	at com.google.common.util.concurrent.ExecutionList$RunnableExecutorPair.execute(ExecutionList.java:149)
+	at com.google.common.util.concurrent.ExecutionList.execute(ExecutionList.java:134)
+	at com.google.common.util.concurrent.AbstractFuture.set(AbstractFuture.java:175)
+	at com.google.common.util.concurrent.SettableFuture.set(SettableFuture.java:53)
+	at com.atlassian.httpclient.apache.httpcomponents.SettableFuturePromiseHttpPromiseAsyncClient$1$1.run(SettableFuturePromiseHttpPromiseAsyncClient.java:46)
+	at com.atlassian.httpclient.apache.httpcomponents.SettableFuturePromiseHttpPromiseAsyncClient$ThreadLocalDelegateRunnable$1.run(SettableFuturePromiseHttpPromiseAsyncClient.java:197)
+	at com.atlassian.httpclient.apache.httpcomponents.SettableFuturePromiseHttpPromiseAsyncClient.runInContext(SettableFuturePromiseHttpPromiseAsyncClient.java:90)
+	at com.atlassian.httpclient.apache.httpcomponents.SettableFuturePromiseHttpPromiseAsyncClient$ThreadLocalDelegateRunnable.run(SettableFuturePromiseHttpPromiseAsyncClient.java:192)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[ERROR] 2020-02-27 22:49:20,462 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:74)
+Failed to get issue information.
+java.util.concurrent.ExecutionException: com.atlassian.jira.rest.client.RestClientException: Issue Does Not Exist
+	at com.google.common.util.concurrent.AbstractFuture$Sync.getValue(AbstractFuture.java:294)
+	at com.google.common.util.concurrent.AbstractFuture$Sync.get(AbstractFuture.java:281)
+	at com.google.common.util.concurrent.AbstractFuture.get(AbstractFuture.java:116)
+	at com.google.common.util.concurrent.ForwardingFuture.get(ForwardingFuture.java:63)
+	at com.levy.jiratool.lib.JiraClient.getComments(JiraClient.java:26)
+	at com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:64)
+	at com.levy.jiratool.rooomy.RooomyIssueService.lambda$loadIssueCommentsAsync$0(RooomyIssueService.java:54)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1382)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:481)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
+	at java.util.stream.ReduceOps$ReduceTask.doLeaf(ReduceOps.java:747)
+	at java.util.stream.ReduceOps$ReduceTask.doLeaf(ReduceOps.java:721)
+	at java.util.stream.AbstractTask.compute(AbstractTask.java:316)
+	at java.util.concurrent.CountedCompleter.exec(CountedCompleter.java:731)
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056)
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692)
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:157)
+Caused by: com.atlassian.jira.rest.client.RestClientException: Issue Does Not Exist
+	at com.atlassian.jira.rest.client.internal.async.AbstractAsynchronousRestClient$2.apply(AbstractAsynchronousRestClient.java:165)
+	at com.atlassian.jira.rest.client.internal.async.AbstractAsynchronousRestClient$2.apply(AbstractAsynchronousRestClient.java:159)
+	at com.atlassian.httpclient.api.ResponsePromiseMapFunction.apply(ResponsePromiseMapFunction.java:48)
+	at com.atlassian.httpclient.api.ResponsePromiseMapFunction.apply(ResponsePromiseMapFunction.java:12)
+	at com.atlassian.util.concurrent.Promises$Of$3.apply(Promises.java:285)
+	at com.atlassian.util.concurrent.Promises$2.onSuccess(Promises.java:162)
+	at com.google.common.util.concurrent.Futures$6.run(Futures.java:799)
+	at com.google.common.util.concurrent.MoreExecutors$SameThreadExecutorService.execute(MoreExecutors.java:262)
+	at com.google.common.util.concurrent.ExecutionList$RunnableExecutorPair.execute(ExecutionList.java:149)
+	at com.google.common.util.concurrent.ExecutionList.execute(ExecutionList.java:134)
+	at com.google.common.util.concurrent.AbstractFuture.set(AbstractFuture.java:175)
+	at com.google.common.util.concurrent.SettableFuture.set(SettableFuture.java:53)
+	at com.atlassian.util.concurrent.Promises$Of$3.apply(Promises.java:285)
+	at com.atlassian.util.concurrent.Promises$2.onSuccess(Promises.java:162)
+	at com.google.common.util.concurrent.Futures$6.run(Futures.java:799)
+	at com.google.common.util.concurrent.MoreExecutors$SameThreadExecutorService.execute(MoreExecutors.java:262)
+	at com.google.common.util.concurrent.ExecutionList$RunnableExecutorPair.execute(ExecutionList.java:149)
+	at com.google.common.util.concurrent.ExecutionList.execute(ExecutionList.java:134)
+	at com.google.common.util.concurrent.AbstractFuture.set(AbstractFuture.java:175)
+	at com.google.common.util.concurrent.SettableFuture.set(SettableFuture.java:53)
+	at com.atlassian.httpclient.apache.httpcomponents.SettableFuturePromiseHttpPromiseAsyncClient$1$1.run(SettableFuturePromiseHttpPromiseAsyncClient.java:46)
+	at com.atlassian.httpclient.apache.httpcomponents.SettableFuturePromiseHttpPromiseAsyncClient$ThreadLocalDelegateRunnable$1.run(SettableFuturePromiseHttpPromiseAsyncClient.java:197)
+	at com.atlassian.httpclient.apache.httpcomponents.SettableFuturePromiseHttpPromiseAsyncClient.runInContext(SettableFuturePromiseHttpPromiseAsyncClient.java:90)
+	at com.atlassian.httpclient.apache.httpcomponents.SettableFuturePromiseHttpPromiseAsyncClient$ThreadLocalDelegateRunnable.run(SettableFuturePromiseHttpPromiseAsyncClient.java:192)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[INFO] 2020-02-27 22:50:09,885 com.levy.jiratool.rooomy.RooomyIssueService.<init>(RooomyIssueService.java:44)
+Login...
+[INFO] 2020-02-27 22:50:13,259 com.levy.jiratool.rooomy.LoadIssueKey.loadIssueKey(LoadIssueKey.java:42)
+Load 17 issue keys.
+[INFO] 2020-02-27 22:50:13,293 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:60)
+Try to get issue comments of AMZCUS4-39085
+[INFO] 2020-02-27 22:50:13,294 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:60)
+Try to get issue comments of AMZCUS5-5412
+[INFO] 2020-02-27 22:50:13,295 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:60)
+Try to get issue comments of AMZCUS5-5873
+[INFO] 2020-02-27 22:50:13,294 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:60)
+Try to get issue comments of AMZCUS5-11391
+[INFO] 2020-02-27 22:50:13,294 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:60)
+Try to get issue comments of AMZCUS5-2111
+[INFO] 2020-02-27 22:50:13,294 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:60)
+Try to get issue comments of AMZCUS4-39085
+[INFO] 2020-02-27 22:50:13,294 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:60)
+Try to get issue comments of AMZCUS5-5412
+[INFO] 2020-02-27 22:50:13,294 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:60)
+Try to get issue comments of AMZCUS4-166370
+[INFO] 2020-02-27 22:50:13,294 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:60)
+Try to get issue comments of AMZCUS5-12024
+[INFO] 2020-02-27 22:50:13,294 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:60)
+Try to get issue comments of AMZCUS5-12610
+[INFO] 2020-02-27 22:50:13,293 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:60)
+Try to get issue comments of AMZCUS5-11391
+[INFO] 2020-02-27 22:50:13,293 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:60)
+Try to get issue comments of AMZCUS5-5873
+[INFO] 2020-02-27 22:50:13,295 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:60)
+Try to get issue comments of AMZCUS5-12610
+[INFO] 2020-02-27 22:50:13,295 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:60)
+Try to get issue comments of AMZCUS4-147299
+[INFO] 2020-02-27 22:50:13,295 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:60)
+Try to get issue comments of AMZCUS5-12024
+[INFO] 2020-02-27 22:50:13,294 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:60)
+Try to get issue comments of AMZCUS4-147299
+[INFO] 2020-02-27 22:50:13,294 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:60)
+Try to get issue comments of AMZCUS4-166370
+[INFO] 2020-02-27 22:50:15,083 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:72)
+Complete get issue comments of AMZCUS5-11391
+[INFO] 2020-02-27 22:50:15,083 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:72)
+Complete get issue comments of AMZCUS5-5412
+[INFO] 2020-02-27 22:50:15,167 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:72)
+Complete get issue comments of AMZCUS5-5412
+[INFO] 2020-02-27 22:50:15,168 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:72)
+Complete get issue comments of AMZCUS5-11391
+[INFO] 2020-02-27 22:50:15,191 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:72)
+Complete get issue comments of AMZCUS4-39085
+[INFO] 2020-02-27 22:50:15,210 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:72)
+Complete get issue comments of AMZCUS5-12610
+[INFO] 2020-02-27 22:50:15,211 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:72)
+Complete get issue comments of AMZCUS4-147299
+[INFO] 2020-02-27 22:50:15,245 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:72)
+Complete get issue comments of AMZCUS5-5873
+[INFO] 2020-02-27 22:50:15,246 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:72)
+Complete get issue comments of AMZCUS5-12024
+[INFO] 2020-02-27 22:50:15,258 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:72)
+Complete get issue comments of AMZCUS4-147299
+[INFO] 2020-02-27 22:50:15,265 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:72)
+Complete get issue comments of AMZCUS4-166370
+[INFO] 2020-02-27 22:50:15,266 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:72)
+Complete get issue comments of AMZCUS5-12610
+[INFO] 2020-02-27 22:50:15,266 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:72)
+Complete get issue comments of AMZCUS5-5873
+[INFO] 2020-02-27 22:50:15,267 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:72)
+Complete get issue comments of AMZCUS4-166370
+[INFO] 2020-02-27 22:50:15,267 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:72)
+Complete get issue comments of AMZCUS5-12024
+[INFO] 2020-02-27 22:50:15,267 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:72)
+Complete get issue comments of AMZCUS4-39085
+[INFO] 2020-02-27 22:50:15,278 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:72)
+Complete get issue comments of AMZCUS5-2111
+[INFO] 2020-02-27 22:50:15,316 com.levy.jiratool.writer.TextFileWriter.write(TextFileWriter.java:26)
+Save data success.
+[INFO] 2020-02-27 23:22:50,256 com.levy.jiratool.rooomy.RooomyIssueService.<init>(RooomyIssueService.java:42)
+Login...
+[INFO] 2020-02-27 23:22:53,572 com.levy.jiratool.rooomy.LoadIssueKey.loadIssueKey(LoadIssueKey.java:42)
+Load 1 issue keys.
+[INFO] 2020-02-27 23:22:53,598 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:58)
+Try to get issue comments of AMZCUS4-161662
+[ERROR] 2020-02-27 23:22:54,804 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:76)
+Failed to get issue information.
+java.lang.NullPointerException
+	at com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:64)
+	at com.levy.jiratool.rooomy.RooomyIssueService.lambda$loadIssueCommentsAsync$0(RooomyIssueService.java:52)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1382)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:481)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
+	at java.util.stream.ReduceOps$ReduceTask.doLeaf(ReduceOps.java:747)
+	at java.util.stream.ReduceOps$ReduceTask.doLeaf(ReduceOps.java:721)
+	at java.util.stream.AbstractTask.compute(AbstractTask.java:316)
+	at java.util.concurrent.CountedCompleter.exec(CountedCompleter.java:731)
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)
+	at java.util.concurrent.ForkJoinTask.doInvoke(ForkJoinTask.java:401)
+	at java.util.concurrent.ForkJoinTask.invoke(ForkJoinTask.java:734)
+	at java.util.stream.ReduceOps$ReduceOp.evaluateParallel(ReduceOps.java:714)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:233)
+	at java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:499)
+	at com.levy.jiratool.rooomy.RooomyIssueService.loadIssueCommentsAsync(RooomyIssueService.java:53)
+	at com.levy.jiratool.rooomy.RooomyIssueService.getRejectedIssueComments(RooomyIssueService.java:151)
+	at com.levy.jiratool.rooomy.RooomyIssueService.getRejectedIssueComments(RooomyIssueService.java:146)
+	at com.levy.jiratool.RoomyMain.main(RoomyMain.java:8)
+[INFO] 2020-02-27 23:23:45,184 com.levy.jiratool.rooomy.RooomyIssueService.<init>(RooomyIssueService.java:42)
+Login...
+[INFO] 2020-02-27 23:23:48,186 com.levy.jiratool.rooomy.LoadIssueKey.loadIssueKey(LoadIssueKey.java:42)
+Load 1 issue keys.
+[INFO] 2020-02-27 23:23:48,213 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:58)
+Try to get issue comments of AMZCUS4-161662
+[INFO] 2020-02-27 23:23:49,655 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:74)
+Complete get issue comments of AMZCUS4-161662
+[INFO] 2020-02-27 23:23:49,672 com.levy.jiratool.writer.TextFileWriter.write(TextFileWriter.java:26)
+Save data success.
+[INFO] 2020-02-27 23:24:18,458 com.levy.jiratool.rooomy.RooomyIssueService.<init>(RooomyIssueService.java:42)
+Login...
+[INFO] 2020-02-27 23:24:21,962 com.levy.jiratool.rooomy.LoadIssueKey.loadIssueKey(LoadIssueKey.java:42)
+Load 1 issue keys.
+[INFO] 2020-02-27 23:24:21,993 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:58)
+Try to get issue comments of AMZCUS4-161662
+[INFO] 2020-02-27 23:24:23,641 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:74)
+Complete get issue comments of AMZCUS4-161662
+[INFO] 2020-02-27 23:24:23,652 com.levy.jiratool.writer.TextFileWriter.write(TextFileWriter.java:26)
+Save data success.
+[INFO] 2020-02-27 23:25:51,381 com.levy.jiratool.rooomy.RooomyIssueService.<init>(RooomyIssueService.java:42)
+Login...
+[INFO] 2020-02-27 23:25:57,732 com.levy.jiratool.rooomy.LoadIssueKey.loadIssueKey(LoadIssueKey.java:42)
+Load 1 issue keys.
+[INFO] 2020-02-27 23:25:57,756 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:58)
+Try to get issue comments of AMZCUS4-161662
+[INFO] 2020-02-27 23:26:08,040 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:74)
+Complete get issue comments of AMZCUS4-161662
+[INFO] 2020-02-27 23:26:37,120 com.levy.jiratool.writer.TextFileWriter.write(TextFileWriter.java:26)
+Save data success.
+[INFO] 2020-02-27 23:27:19,949 com.levy.jiratool.rooomy.RooomyIssueService.<init>(RooomyIssueService.java:42)
+Login...
+[INFO] 2020-02-27 23:27:23,449 com.levy.jiratool.rooomy.LoadIssueKey.loadIssueKey(LoadIssueKey.java:42)
+Load 1 issue keys.
+[INFO] 2020-02-27 23:27:23,479 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:58)
+Try to get issue comments of AMZCUS4-161662
+[INFO] 2020-02-27 23:27:24,337 com.levy.jiratool.rooomy.RooomyIssueService.<init>(RooomyIssueService.java:42)
+Login...
+[INFO] 2020-02-27 23:27:25,731 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:74)
+Complete get issue comments of AMZCUS4-161662
+[INFO] 2020-02-27 23:27:25,743 com.levy.jiratool.writer.TextFileWriter.write(TextFileWriter.java:26)
+Save data success.
+[INFO] 2020-02-27 23:27:28,159 com.levy.jiratool.rooomy.LoadIssueKey.loadIssueKey(LoadIssueKey.java:42)
+Load 1 issue keys.
+[INFO] 2020-02-27 23:27:28,182 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:58)
+Try to get issue comments of AMZCUS4-161662
+[INFO] 2020-02-27 23:27:29,547 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:74)
+Complete get issue comments of AMZCUS4-161662
+[INFO] 2020-02-27 23:27:29,559 com.levy.jiratool.writer.TextFileWriter.write(TextFileWriter.java:26)
+Save data success.
+[INFO] 2020-02-27 23:29:12,432 com.levy.jiratool.rooomy.RooomyIssueService.<init>(RooomyIssueService.java:42)
+Login...
+[INFO] 2020-02-27 23:29:17,152 com.levy.jiratool.rooomy.LoadIssueKey.loadIssueKey(LoadIssueKey.java:42)
+Load 18 issue keys.
+[INFO] 2020-02-27 23:29:17,196 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:58)
+Try to get issue comments of AMZCUS4-39085
+[INFO] 2020-02-27 23:29:17,197 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:58)
+Try to get issue comments of AMZCUS4-147299
+[INFO] 2020-02-27 23:29:17,204 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:58)
+Try to get issue comments of AMZCUS5-5412
+[INFO] 2020-02-27 23:29:17,205 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:58)
+Try to get issue comments of AMZCUS5-11391
+[INFO] 2020-02-27 23:29:17,205 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:58)
+Try to get issue comments of AMZCUS5-12024
+[INFO] 2020-02-27 23:29:17,207 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:58)
+Try to get issue comments of AMZCUS4-39085
+[INFO] 2020-02-27 23:29:17,210 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:58)
+Try to get issue comments of AMZCUS4-166370
+[INFO] 2020-02-27 23:29:17,208 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:58)
+Try to get issue comments of AMZCUS5-12610
+[INFO] 2020-02-27 23:29:17,211 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:58)
+Try to get issue comments of AMZCUS5-5873
+[INFO] 2020-02-27 23:29:17,211 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:58)
+Try to get issue comments of AMZCUS4-166370
+[INFO] 2020-02-27 23:29:17,213 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:58)
+Try to get issue comments of AMZCUS4-161662
+[INFO] 2020-02-27 23:29:17,212 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:58)
+Try to get issue comments of AMZCUS5-11391
+[INFO] 2020-02-27 23:29:17,216 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:58)
+Try to get issue comments of AMZCUS5-5412
+[INFO] 2020-02-27 23:29:17,216 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:58)
+Try to get issue comments of AMZCUS5-12610
+[INFO] 2020-02-27 23:29:17,214 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:58)
+Try to get issue comments of AMZCUS4-147299
+[INFO] 2020-02-27 23:29:17,229 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:58)
+Try to get issue comments of AMZCUS5-12024
+[INFO] 2020-02-27 23:29:17,217 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:58)
+Try to get issue comments of AMZCUS5-2111
+[INFO] 2020-02-27 23:29:17,216 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:58)
+Try to get issue comments of AMZCUS5-5873
+[INFO] 2020-02-27 23:29:19,396 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:74)
+Complete get issue comments of AMZCUS4-161662
+[INFO] 2020-02-27 23:29:19,416 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:74)
+Complete get issue comments of AMZCUS5-5412
+[INFO] 2020-02-27 23:29:19,420 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:74)
+Complete get issue comments of AMZCUS5-11391
+[INFO] 2020-02-27 23:29:19,423 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:74)
+Complete get issue comments of AMZCUS5-12610
+[INFO] 2020-02-27 23:29:19,504 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:74)
+Complete get issue comments of AMZCUS5-12024
+[INFO] 2020-02-27 23:29:19,506 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:74)
+Complete get issue comments of AMZCUS5-5412
+[INFO] 2020-02-27 23:29:19,519 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:74)
+Complete get issue comments of AMZCUS4-166370
+[INFO] 2020-02-27 23:29:19,519 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:74)
+Complete get issue comments of AMZCUS4-147299
+[INFO] 2020-02-27 23:29:19,533 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:74)
+Complete get issue comments of AMZCUS5-12024
+[INFO] 2020-02-27 23:29:19,536 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:74)
+Complete get issue comments of AMZCUS4-39085
+[INFO] 2020-02-27 23:29:19,536 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:74)
+Complete get issue comments of AMZCUS5-12610
+[INFO] 2020-02-27 23:29:19,540 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:74)
+Complete get issue comments of AMZCUS4-166370
+[INFO] 2020-02-27 23:29:19,540 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:74)
+Complete get issue comments of AMZCUS5-2111
+[INFO] 2020-02-27 23:29:19,536 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:74)
+Complete get issue comments of AMZCUS5-5873
+[INFO] 2020-02-27 23:29:19,536 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:74)
+Complete get issue comments of AMZCUS4-39085
+[INFO] 2020-02-27 23:29:19,541 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:74)
+Complete get issue comments of AMZCUS4-147299
+[INFO] 2020-02-27 23:29:19,540 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:74)
+Complete get issue comments of AMZCUS5-5873
+[INFO] 2020-02-27 23:29:19,807 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:74)
+Complete get issue comments of AMZCUS5-11391
+[INFO] 2020-02-27 23:29:19,852 com.levy.jiratool.writer.TextFileWriter.write(TextFileWriter.java:26)
+Save data success.
+[INFO] 2020-02-27 23:30:47,150 com.levy.jiratool.rooomy.RooomyIssueService.<init>(RooomyIssueService.java:42)
+Login...
+[INFO] 2020-02-27 23:30:50,327 com.levy.jiratool.rooomy.LoadIssueKey.loadIssueKey(LoadIssueKey.java:42)
+Load 18 issue keys.
+[INFO] 2020-02-27 23:30:50,354 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:58)
+Try to get issue comments of AMZCUS5-5412
+[INFO] 2020-02-27 23:30:50,355 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:58)
+Try to get issue comments of AMZCUS4-166370
+[INFO] 2020-02-27 23:30:50,355 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:58)
+Try to get issue comments of AMZCUS5-5873
+[INFO] 2020-02-27 23:30:50,355 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:58)
+Try to get issue comments of AMZCUS5-12024
+[INFO] 2020-02-27 23:30:50,354 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:58)
+Try to get issue comments of AMZCUS4-39085
+[INFO] 2020-02-27 23:30:50,354 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:58)
+Try to get issue comments of AMZCUS4-147299
+[INFO] 2020-02-27 23:30:50,358 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:58)
+Try to get issue comments of AMZCUS5-12610
+[INFO] 2020-02-27 23:30:50,357 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:58)
+Try to get issue comments of AMZCUS4-39085
+[INFO] 2020-02-27 23:30:50,356 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:58)
+Try to get issue comments of AMZCUS5-11391
+[INFO] 2020-02-27 23:30:50,360 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:58)
+Try to get issue comments of AMZCUS5-2111
+[INFO] 2020-02-27 23:30:50,356 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:58)
+Try to get issue comments of AMZCUS5-11391
+[INFO] 2020-02-27 23:30:50,359 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:58)
+Try to get issue comments of AMZCUS4-166370
+[INFO] 2020-02-27 23:30:50,359 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:58)
+Try to get issue comments of AMZCUS5-5873
+[INFO] 2020-02-27 23:30:50,359 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:58)
+Try to get issue comments of AMZCUS5-5412
+[INFO] 2020-02-27 23:30:50,358 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:58)
+Try to get issue comments of AMZCUS4-147299
+[INFO] 2020-02-27 23:30:50,366 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:58)
+Try to get issue comments of AMZCUS5-12024
+[INFO] 2020-02-27 23:30:50,365 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:58)
+Try to get issue comments of AMZCUS5-12610
+[INFO] 2020-02-27 23:30:50,362 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:58)
+Try to get issue comments of AMZCUS4-161662
+[INFO] 2020-02-27 23:30:52,175 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:74)
+Complete get issue comments of AMZCUS4-161662
+[INFO] 2020-02-27 23:30:52,306 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:74)
+Complete get issue comments of AMZCUS5-5412
+[INFO] 2020-02-27 23:30:52,314 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:74)
+Complete get issue comments of AMZCUS5-11391
+[INFO] 2020-02-27 23:30:52,328 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:74)
+Complete get issue comments of AMZCUS4-39085
+[INFO] 2020-02-27 23:30:52,351 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:74)
+Complete get issue comments of AMZCUS5-11391
+[INFO] 2020-02-27 23:30:52,352 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:74)
+Complete get issue comments of AMZCUS5-5873
+[INFO] 2020-02-27 23:30:52,355 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:74)
+Complete get issue comments of AMZCUS4-147299
+[INFO] 2020-02-27 23:30:52,359 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:74)
+Complete get issue comments of AMZCUS5-5412
+[INFO] 2020-02-27 23:30:52,360 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:74)
+Complete get issue comments of AMZCUS5-12024
+[INFO] 2020-02-27 23:30:52,388 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:74)
+Complete get issue comments of AMZCUS5-12610
+[INFO] 2020-02-27 23:30:52,394 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:74)
+Complete get issue comments of AMZCUS4-147299
+[INFO] 2020-02-27 23:30:52,394 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:74)
+Complete get issue comments of AMZCUS5-5873
+[INFO] 2020-02-27 23:30:52,396 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:74)
+Complete get issue comments of AMZCUS4-39085
+[INFO] 2020-02-27 23:30:52,400 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:74)
+Complete get issue comments of AMZCUS5-12024
+[INFO] 2020-02-27 23:30:52,400 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:74)
+Complete get issue comments of AMZCUS5-2111
+[INFO] 2020-02-27 23:30:52,400 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:74)
+Complete get issue comments of AMZCUS5-12610
+[INFO] 2020-02-27 23:30:52,412 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:74)
+Complete get issue comments of AMZCUS4-166370
+[INFO] 2020-02-27 23:30:52,435 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:74)
+Complete get issue comments of AMZCUS4-166370
+[INFO] 2020-02-27 23:30:52,454 com.levy.jiratool.writer.TextFileWriter.write(TextFileWriter.java:26)
+Save data success.
+[INFO] 2020-02-27 23:33:51,821 com.levy.jiratool.rooomy.RooomyIssueService.<init>(RooomyIssueService.java:42)
+Login...
+[INFO] 2020-02-27 23:33:54,852 com.levy.jiratool.rooomy.LoadIssueKey.loadIssueKey(LoadIssueKey.java:42)
+Load 18 issue keys.
+[INFO] 2020-02-27 23:33:54,883 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:58)
+Try to get issue comments of AMZCUS4-147299
+[INFO] 2020-02-27 23:33:54,883 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:58)
+Try to get issue comments of AMZCUS4-39085
+[INFO] 2020-02-27 23:33:54,883 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:58)
+Try to get issue comments of AMZCUS4-166370
+[INFO] 2020-02-27 23:33:54,883 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:58)
+Try to get issue comments of AMZCUS5-5873
+[INFO] 2020-02-27 23:33:54,883 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:58)
+Try to get issue comments of AMZCUS4-166370
+[INFO] 2020-02-27 23:33:54,883 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:58)
+Try to get issue comments of AMZCUS5-12024
+[INFO] 2020-02-27 23:33:54,885 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:58)
+Try to get issue comments of AMZCUS4-39085
+[INFO] 2020-02-27 23:33:54,885 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:58)
+Try to get issue comments of AMZCUS5-11391
+[INFO] 2020-02-27 23:33:54,884 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:58)
+Try to get issue comments of AMZCUS4-147299
+[INFO] 2020-02-27 23:33:54,886 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:58)
+Try to get issue comments of AMZCUS5-11391
+[INFO] 2020-02-27 23:33:54,887 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:58)
+Try to get issue comments of AMZCUS4-161662
+[INFO] 2020-02-27 23:33:54,897 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:58)
+Try to get issue comments of AMZCUS5-5412
+[INFO] 2020-02-27 23:33:54,914 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:58)
+Try to get issue comments of AMZCUS5-5873
+[INFO] 2020-02-27 23:33:54,901 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:58)
+Try to get issue comments of AMZCUS5-2111
+[INFO] 2020-02-27 23:33:54,901 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:58)
+Try to get issue comments of AMZCUS5-12024
+[INFO] 2020-02-27 23:33:54,901 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:58)
+Try to get issue comments of AMZCUS5-12610
+[INFO] 2020-02-27 23:33:54,900 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:58)
+Try to get issue comments of AMZCUS5-12610
+[INFO] 2020-02-27 23:33:54,897 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:58)
+Try to get issue comments of AMZCUS5-5412
+[INFO] 2020-02-27 23:33:56,987 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:74)
+Complete get issue comments of AMZCUS5-11391
+[INFO] 2020-02-27 23:33:57,062 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:74)
+Complete get issue comments of AMZCUS4-161662
+[INFO] 2020-02-27 23:33:57,063 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:74)
+Complete get issue comments of AMZCUS4-147299
+[INFO] 2020-02-27 23:33:57,168 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:74)
+Complete get issue comments of AMZCUS5-12024
+[INFO] 2020-02-27 23:33:57,646 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:74)
+Complete get issue comments of AMZCUS5-11391
+[INFO] 2020-02-27 23:33:57,646 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:74)
+Complete get issue comments of AMZCUS5-5412
+[INFO] 2020-02-27 23:33:57,715 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:74)
+Complete get issue comments of AMZCUS4-39085
+[INFO] 2020-02-27 23:33:57,716 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:74)
+Complete get issue comments of AMZCUS5-12024
+[INFO] 2020-02-27 23:33:57,755 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:74)
+Complete get issue comments of AMZCUS5-5873
+[INFO] 2020-02-27 23:33:58,009 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:74)
+Complete get issue comments of AMZCUS5-5873
+[INFO] 2020-02-27 23:33:58,216 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:74)
+Complete get issue comments of AMZCUS4-166370
+[INFO] 2020-02-27 23:33:58,265 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:74)
+Complete get issue comments of AMZCUS5-12610
+[INFO] 2020-02-27 23:33:58,621 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:74)
+Complete get issue comments of AMZCUS4-39085
+[INFO] 2020-02-27 23:33:59,361 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:74)
+Complete get issue comments of AMZCUS4-147299
+[INFO] 2020-02-27 23:33:59,634 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:74)
+Complete get issue comments of AMZCUS5-5412
+[INFO] 2020-02-27 23:34:00,340 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:74)
+Complete get issue comments of AMZCUS4-166370
+[INFO] 2020-02-27 23:34:00,478 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:74)
+Complete get issue comments of AMZCUS5-12610
+[INFO] 2020-02-27 23:34:00,680 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:74)
+Complete get issue comments of AMZCUS5-2111
+[INFO] 2020-02-27 23:34:00,695 com.levy.jiratool.writer.TextFileWriter.write(TextFileWriter.java:26)
+Save data success.
+[INFO] 2020-02-27 23:37:03,412 com.levy.jiratool.rooomy.RooomyIssueService.<init>(RooomyIssueService.java:42)
+Login...
+[INFO] 2020-02-27 23:37:06,868 com.levy.jiratool.rooomy.LoadIssueKey.loadIssueKey(LoadIssueKey.java:42)
+Load 1 issue keys.
+[INFO] 2020-02-27 23:37:06,885 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:58)
+Try to get issue comments of AMZCUS4-39085
+[INFO] 2020-02-27 23:37:08,806 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:74)
+Complete get issue comments of AMZCUS4-39085
+[INFO] 2020-02-27 23:38:34,944 com.levy.jiratool.writer.TextFileWriter.write(TextFileWriter.java:26)
+Save data success.
+[INFO] 2020-02-27 23:38:52,104 com.levy.jiratool.rooomy.RooomyIssueService.<init>(RooomyIssueService.java:42)
+Login...
+[INFO] 2020-02-27 23:38:55,542 com.levy.jiratool.rooomy.LoadIssueKey.loadIssueKey(LoadIssueKey.java:42)
+Load 1 issue keys.
+[INFO] 2020-02-27 23:38:55,559 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:58)
+Try to get issue comments of AMZCUS4-39085
+[INFO] 2020-02-27 23:40:03,361 com.levy.jiratool.rooomy.RooomyIssueService.<init>(RooomyIssueService.java:42)
+Login...
+[INFO] 2020-02-27 23:40:06,917 com.levy.jiratool.rooomy.LoadIssueKey.loadIssueKey(LoadIssueKey.java:42)
+Load 1 issue keys.
+[INFO] 2020-02-27 23:40:06,934 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:58)
+Try to get issue comments of AMZCUS4-39085
+[INFO] 2020-02-27 23:40:09,501 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:74)
+Complete get issue comments of AMZCUS4-39085
+[INFO] 2020-02-27 23:42:11,178 com.levy.jiratool.writer.TextFileWriter.write(TextFileWriter.java:26)
+Save data success.
+[INFO] 2020-02-27 23:43:03,768 com.levy.jiratool.rooomy.RooomyIssueService.<init>(RooomyIssueService.java:42)
+Login...
+[INFO] 2020-02-27 23:43:07,097 com.levy.jiratool.rooomy.LoadIssueKey.loadIssueKey(LoadIssueKey.java:42)
+Load 1 issue keys.
+[INFO] 2020-02-27 23:43:07,117 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:58)
+Try to get issue comments of AMZCUS4-39085
+[INFO] 2020-02-27 23:43:08,663 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:74)
+Complete get issue comments of AMZCUS4-39085
+[INFO] 2020-02-27 23:43:08,677 com.levy.jiratool.writer.TextFileWriter.write(TextFileWriter.java:26)
+Save data success.
+[INFO] 2020-02-27 23:43:31,642 com.levy.jiratool.rooomy.RooomyIssueService.<init>(RooomyIssueService.java:42)
+Login...
+[INFO] 2020-02-27 23:43:34,652 com.levy.jiratool.rooomy.LoadIssueKey.loadIssueKey(LoadIssueKey.java:42)
+Load 18 issue keys.
+[INFO] 2020-02-27 23:43:34,678 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:58)
+Try to get issue comments of AMZCUS4-166370
+[INFO] 2020-02-27 23:43:34,679 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:58)
+Try to get issue comments of AMZCUS5-5412
+[INFO] 2020-02-27 23:43:34,680 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:58)
+Try to get issue comments of AMZCUS4-39085
+[INFO] 2020-02-27 23:43:34,680 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:58)
+Try to get issue comments of AMZCUS4-147299
+[INFO] 2020-02-27 23:43:34,681 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:58)
+Try to get issue comments of AMZCUS5-11391
+[INFO] 2020-02-27 23:43:34,679 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:58)
+Try to get issue comments of AMZCUS5-12610
+[INFO] 2020-02-27 23:43:34,682 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:58)
+Try to get issue comments of AMZCUS4-161662
+[INFO] 2020-02-27 23:43:34,679 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:58)
+Try to get issue comments of AMZCUS4-166370
+[INFO] 2020-02-27 23:43:34,678 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:58)
+Try to get issue comments of AMZCUS5-12024
+[INFO] 2020-02-27 23:43:34,678 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:58)
+Try to get issue comments of AMZCUS5-5873
+[INFO] 2020-02-27 23:43:34,678 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:58)
+Try to get issue comments of AMZCUS4-39085
+[INFO] 2020-02-27 23:43:34,678 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:58)
+Try to get issue comments of AMZCUS4-147299
+[INFO] 2020-02-27 23:43:34,683 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:58)
+Try to get issue comments of AMZCUS5-2111
+[INFO] 2020-02-27 23:43:34,683 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:58)
+Try to get issue comments of AMZCUS5-5873
+[INFO] 2020-02-27 23:43:34,682 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:58)
+Try to get issue comments of AMZCUS5-5412
+[INFO] 2020-02-27 23:43:34,681 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:58)
+Try to get issue comments of AMZCUS5-12610
+[INFO] 2020-02-27 23:43:34,680 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:58)
+Try to get issue comments of AMZCUS5-11391
+[INFO] 2020-02-27 23:43:34,680 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:58)
+Try to get issue comments of AMZCUS5-12024
+[INFO] 2020-02-27 23:43:36,822 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:74)
+Complete get issue comments of AMZCUS5-5412
+[INFO] 2020-02-27 23:43:36,933 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:74)
+Complete get issue comments of AMZCUS4-161662
+[INFO] 2020-02-27 23:43:37,071 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:74)
+Complete get issue comments of AMZCUS5-11391
+[INFO] 2020-02-27 23:43:37,072 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:74)
+Complete get issue comments of AMZCUS5-5412
+[INFO] 2020-02-27 23:43:37,074 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:74)
+Complete get issue comments of AMZCUS5-12024
+[INFO] 2020-02-27 23:43:37,157 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:74)
+Complete get issue comments of AMZCUS5-11391
+[INFO] 2020-02-27 23:43:37,160 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:74)
+Complete get issue comments of AMZCUS4-39085
+[INFO] 2020-02-27 23:43:37,320 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:74)
+Complete get issue comments of AMZCUS5-2111
+[INFO] 2020-02-27 23:43:37,321 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:74)
+Complete get issue comments of AMZCUS4-147299
+[INFO] 2020-02-27 23:43:37,321 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:74)
+Complete get issue comments of AMZCUS4-166370
+[INFO] 2020-02-27 23:43:37,689 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:74)
+Complete get issue comments of AMZCUS4-39085
+[INFO] 2020-02-27 23:43:38,016 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:74)
+Complete get issue comments of AMZCUS5-12610
+[INFO] 2020-02-27 23:43:38,133 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:74)
+Complete get issue comments of AMZCUS5-12024
+[INFO] 2020-02-27 23:43:38,133 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:74)
+Complete get issue comments of AMZCUS4-166370
+[INFO] 2020-02-27 23:43:38,360 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:74)
+Complete get issue comments of AMZCUS5-5873
+[INFO] 2020-02-27 23:43:38,403 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:74)
+Complete get issue comments of AMZCUS5-5873
+[INFO] 2020-02-27 23:43:38,619 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:74)
+Complete get issue comments of AMZCUS5-12610
+[INFO] 2020-02-27 23:43:39,666 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:74)
+Complete get issue comments of AMZCUS4-147299
+[INFO] 2020-02-27 23:43:39,684 com.levy.jiratool.writer.TextFileWriter.write(TextFileWriter.java:26)
+Save data success.

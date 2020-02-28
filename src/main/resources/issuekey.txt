@@ -10,7 +10,6 @@ xiao.fei;AMZCUS5-2111
 xiao.fei;AMZCUS5-5412
 xiao.fei;AMZCUS5-11391
 xiao.fei;AMZCUS4-39085
-xiao.fei;AMZCUS4-166370
 xiao.fei;AMZCUS5-12024
 xiao.fei;AMZCUS4-147299
 xiao.fei;AMZCUS5-5873
