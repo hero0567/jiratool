@@ -5758,3 +5758,161 @@ Failed to merge assignee for AMZCUS5-15541
 Time Around check: 2020-02-25T21:19:34.482+08:00, 2020-02-25T21:19:34.478+08:00
 [INFO] 2020-02-28 13:23:46,258 com.levy.jiratool.writer.TextFileWriter.write(TextFileWriter.java:26)
 Save data success.
+[INFO] 2020-02-28 13:35:33,504 com.levy.jiratool.rooomy.RooomyIssueService.<init>(RooomyIssueService.java:48)
+Login...
+[INFO] 2020-02-28 13:35:37,387 com.levy.jiratool.rooomy.LoadIssueKey.loadIssueKey(LoadIssueKey.java:40)
+Load 1 issue keys.
+[INFO] 2020-02-28 13:35:37,399 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:64)
+Try to get issue comments of fei.xiao;AMZCUS5-15541
+[ERROR] 2020-02-28 13:35:41,103 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:78)
+Failed to get issue(fei.xiao;AMZCUS5-15541) information.
+java.util.concurrent.ExecutionException: com.atlassian.jira.rest.client.RestClientException: Issue Does Not Exist
+	at com.google.common.util.concurrent.AbstractFuture$Sync.getValue(AbstractFuture.java:294)
+	at com.google.common.util.concurrent.AbstractFuture$Sync.get(AbstractFuture.java:281)
+	at com.google.common.util.concurrent.AbstractFuture.get(AbstractFuture.java:116)
+	at com.google.common.util.concurrent.ForwardingFuture.get(ForwardingFuture.java:63)
+	at com.levy.jiratool.lib.JiraClient.getComments(JiraClient.java:28)
+	at com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:70)
+	at com.levy.jiratool.rooomy.RooomyIssueService.lambda$loadIssueCommentsAsync$0(RooomyIssueService.java:58)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1382)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:481)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
+	at java.util.stream.ReduceOps$ReduceTask.doLeaf(ReduceOps.java:747)
+	at java.util.stream.ReduceOps$ReduceTask.doLeaf(ReduceOps.java:721)
+	at java.util.stream.AbstractTask.compute(AbstractTask.java:316)
+	at java.util.concurrent.CountedCompleter.exec(CountedCompleter.java:731)
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)
+	at java.util.concurrent.ForkJoinTask.doInvoke(ForkJoinTask.java:401)
+	at java.util.concurrent.ForkJoinTask.invoke(ForkJoinTask.java:734)
+	at java.util.stream.ReduceOps$ReduceOp.evaluateParallel(ReduceOps.java:714)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:233)
+	at java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:499)
+	at com.levy.jiratool.rooomy.RooomyIssueService.loadIssueCommentsAsync(RooomyIssueService.java:59)
+	at com.levy.jiratool.rooomy.RooomyIssueService.getRejectedIssueComments(RooomyIssueService.java:238)
+	at com.levy.jiratool.rooomy.RooomyIssueService.getRejectedIssueComments(RooomyIssueService.java:230)
+	at com.levy.jiratool.RoomyMain.main(RoomyMain.java:8)
+Caused by: com.atlassian.jira.rest.client.RestClientException: Issue Does Not Exist
+	at com.atlassian.jira.rest.client.internal.async.AbstractAsynchronousRestClient$2.apply(AbstractAsynchronousRestClient.java:165)
+	at com.atlassian.jira.rest.client.internal.async.AbstractAsynchronousRestClient$2.apply(AbstractAsynchronousRestClient.java:159)
+	at com.atlassian.httpclient.api.ResponsePromiseMapFunction.apply(ResponsePromiseMapFunction.java:48)
+	at com.atlassian.httpclient.api.ResponsePromiseMapFunction.apply(ResponsePromiseMapFunction.java:12)
+	at com.atlassian.util.concurrent.Promises$Of$3.apply(Promises.java:285)
+	at com.atlassian.util.concurrent.Promises$2.onSuccess(Promises.java:162)
+	at com.google.common.util.concurrent.Futures$6.run(Futures.java:799)
+	at com.google.common.util.concurrent.MoreExecutors$SameThreadExecutorService.execute(MoreExecutors.java:262)
+	at com.google.common.util.concurrent.ExecutionList$RunnableExecutorPair.execute(ExecutionList.java:149)
+	at com.google.common.util.concurrent.ExecutionList.execute(ExecutionList.java:134)
+	at com.google.common.util.concurrent.AbstractFuture.set(AbstractFuture.java:175)
+	at com.google.common.util.concurrent.SettableFuture.set(SettableFuture.java:53)
+	at com.atlassian.util.concurrent.Promises$Of$3.apply(Promises.java:285)
+	at com.atlassian.util.concurrent.Promises$2.onSuccess(Promises.java:162)
+	at com.google.common.util.concurrent.Futures$6.run(Futures.java:799)
+	at com.google.common.util.concurrent.MoreExecutors$SameThreadExecutorService.execute(MoreExecutors.java:262)
+	at com.google.common.util.concurrent.ExecutionList$RunnableExecutorPair.execute(ExecutionList.java:149)
+	at com.google.common.util.concurrent.ExecutionList.execute(ExecutionList.java:134)
+	at com.google.common.util.concurrent.AbstractFuture.set(AbstractFuture.java:175)
+	at com.google.common.util.concurrent.SettableFuture.set(SettableFuture.java:53)
+	at com.atlassian.httpclient.apache.httpcomponents.SettableFuturePromiseHttpPromiseAsyncClient$1$1.run(SettableFuturePromiseHttpPromiseAsyncClient.java:46)
+	at com.atlassian.httpclient.apache.httpcomponents.SettableFuturePromiseHttpPromiseAsyncClient$ThreadLocalDelegateRunnable$1.run(SettableFuturePromiseHttpPromiseAsyncClient.java:197)
+	at com.atlassian.httpclient.apache.httpcomponents.SettableFuturePromiseHttpPromiseAsyncClient.runInContext(SettableFuturePromiseHttpPromiseAsyncClient.java:90)
+	at com.atlassian.httpclient.apache.httpcomponents.SettableFuturePromiseHttpPromiseAsyncClient$ThreadLocalDelegateRunnable.run(SettableFuturePromiseHttpPromiseAsyncClient.java:192)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[ERROR] 2020-02-28 13:35:41,115 com.levy.jiratool.rooomy.RooomyIssueService.mergeIssueRejectedComments(RooomyIssueService.java:152)
+Failed to merge comments for fei.xiao;AMZCUS5-15541
+[ERROR] 2020-02-28 13:35:41,115 com.levy.jiratool.rooomy.RooomyIssueService.mergeAssignee(RooomyIssueService.java:103)
+Failed to merge assignee for fei.xiao;AMZCUS5-15541
+[ERROR] 2020-02-28 13:35:41,116 com.levy.jiratool.rooomy.RooomyIssueService.mergeLastComments(RooomyIssueService.java:123)
+Failed to merge last comments for fei.xiao;AMZCUS5-15541
+[ERROR] 2020-02-28 13:35:41,116 com.levy.jiratool.rooomy.RooomyIssueService.mergeRemark(RooomyIssueService.java:203)
+Failed to merge remark for fei.xiao;AMZCUS5-15541
+[INFO] 2020-02-28 13:35:41,130 com.levy.jiratool.writer.TextFileWriter.write(TextFileWriter.java:26)
+Save data success.
+[INFO] 2020-02-28 13:36:11,234 com.levy.jiratool.rooomy.RooomyIssueService.<init>(RooomyIssueService.java:48)
+Login...
+[INFO] 2020-02-28 13:36:14,715 com.levy.jiratool.rooomy.LoadIssueKey.loadIssueKey(LoadIssueKey.java:40)
+Load 1 issue keys.
+[INFO] 2020-02-28 13:36:14,729 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:64)
+Try to get issue comments of AMZCUS5-15541
+[INFO] 2020-02-28 13:36:36,996 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:76)
+Complete get issue AMZCUS5-15541
+[ERROR] 2020-02-28 13:36:37,000 com.levy.jiratool.rooomy.RooomyIssueService.mergeAssignee(RooomyIssueService.java:103)
+Failed to merge assignee for AMZCUS5-15541
+[INFO] 2020-02-28 13:36:37,001 com.levy.jiratool.rooomy.RooomyIssueService.timeAround(RooomyIssueService.java:213)
+Time Around check: 2020-02-25T21:19:34.482+08:00, 2020-02-25T21:19:34.478+08:00
+[INFO] 2020-02-28 13:36:37,008 com.levy.jiratool.writer.TextFileWriter.write(TextFileWriter.java:26)
+Save data success.
+[INFO] 2020-02-28 13:36:48,903 com.levy.jiratool.rooomy.RooomyIssueService.<init>(RooomyIssueService.java:48)
+Login...
+[INFO] 2020-02-28 13:36:52,566 com.levy.jiratool.rooomy.LoadIssueKey.loadIssueKey(LoadIssueKey.java:40)
+Load 1 issue keys.
+[INFO] 2020-02-28 13:36:52,578 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:64)
+Try to get issue comments of fei.xiao;AMZCUS5-15541
+[ERROR] 2020-02-28 13:36:55,054 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:78)
+Failed to get issue(fei.xiao;AMZCUS5-15541) information.
+java.util.concurrent.ExecutionException: com.atlassian.jira.rest.client.RestClientException: Issue Does Not Exist
+	at com.google.common.util.concurrent.AbstractFuture$Sync.getValue(AbstractFuture.java:294)
+	at com.google.common.util.concurrent.AbstractFuture$Sync.get(AbstractFuture.java:281)
+	at com.google.common.util.concurrent.AbstractFuture.get(AbstractFuture.java:116)
+	at com.google.common.util.concurrent.ForwardingFuture.get(ForwardingFuture.java:63)
+	at com.levy.jiratool.lib.JiraClient.getComments(JiraClient.java:28)
+	at com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:70)
+	at com.levy.jiratool.rooomy.RooomyIssueService.lambda$loadIssueCommentsAsync$0(RooomyIssueService.java:58)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1382)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:481)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
+	at java.util.stream.ReduceOps$ReduceTask.doLeaf(ReduceOps.java:747)
+	at java.util.stream.ReduceOps$ReduceTask.doLeaf(ReduceOps.java:721)
+	at java.util.stream.AbstractTask.compute(AbstractTask.java:316)
+	at java.util.concurrent.CountedCompleter.exec(CountedCompleter.java:731)
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)
+	at java.util.concurrent.ForkJoinTask.doInvoke(ForkJoinTask.java:401)
+	at java.util.concurrent.ForkJoinTask.invoke(ForkJoinTask.java:734)
+	at java.util.stream.ReduceOps$ReduceOp.evaluateParallel(ReduceOps.java:714)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:233)
+	at java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:499)
+	at com.levy.jiratool.rooomy.RooomyIssueService.loadIssueCommentsAsync(RooomyIssueService.java:59)
+	at com.levy.jiratool.rooomy.RooomyIssueService.getRejectedIssueComments(RooomyIssueService.java:238)
+	at com.levy.jiratool.rooomy.RooomyIssueService.getRejectedIssueComments(RooomyIssueService.java:230)
+	at com.levy.jiratool.RoomyMain.main(RoomyMain.java:8)
+Caused by: com.atlassian.jira.rest.client.RestClientException: Issue Does Not Exist
+	at com.atlassian.jira.rest.client.internal.async.AbstractAsynchronousRestClient$2.apply(AbstractAsynchronousRestClient.java:165)
+	at com.atlassian.jira.rest.client.internal.async.AbstractAsynchronousRestClient$2.apply(AbstractAsynchronousRestClient.java:159)
+	at com.atlassian.httpclient.api.ResponsePromiseMapFunction.apply(ResponsePromiseMapFunction.java:48)
+	at com.atlassian.httpclient.api.ResponsePromiseMapFunction.apply(ResponsePromiseMapFunction.java:12)
+	at com.atlassian.util.concurrent.Promises$Of$3.apply(Promises.java:285)
+	at com.atlassian.util.concurrent.Promises$2.onSuccess(Promises.java:162)
+	at com.google.common.util.concurrent.Futures$6.run(Futures.java:799)
+	at com.google.common.util.concurrent.MoreExecutors$SameThreadExecutorService.execute(MoreExecutors.java:262)
+	at com.google.common.util.concurrent.ExecutionList$RunnableExecutorPair.execute(ExecutionList.java:149)
+	at com.google.common.util.concurrent.ExecutionList.execute(ExecutionList.java:134)
+	at com.google.common.util.concurrent.AbstractFuture.set(AbstractFuture.java:175)
+	at com.google.common.util.concurrent.SettableFuture.set(SettableFuture.java:53)
+	at com.atlassian.util.concurrent.Promises$Of$3.apply(Promises.java:285)
+	at com.atlassian.util.concurrent.Promises$2.onSuccess(Promises.java:162)
+	at com.google.common.util.concurrent.Futures$6.run(Futures.java:799)
+	at com.google.common.util.concurrent.MoreExecutors$SameThreadExecutorService.execute(MoreExecutors.java:262)
+	at com.google.common.util.concurrent.ExecutionList$RunnableExecutorPair.execute(ExecutionList.java:149)
+	at com.google.common.util.concurrent.ExecutionList.execute(ExecutionList.java:134)
+	at com.google.common.util.concurrent.AbstractFuture.set(AbstractFuture.java:175)
+	at com.google.common.util.concurrent.SettableFuture.set(SettableFuture.java:53)
+	at com.atlassian.httpclient.apache.httpcomponents.SettableFuturePromiseHttpPromiseAsyncClient$1$1.run(SettableFuturePromiseHttpPromiseAsyncClient.java:46)
+	at com.atlassian.httpclient.apache.httpcomponents.SettableFuturePromiseHttpPromiseAsyncClient$ThreadLocalDelegateRunnable$1.run(SettableFuturePromiseHttpPromiseAsyncClient.java:197)
+	at com.atlassian.httpclient.apache.httpcomponents.SettableFuturePromiseHttpPromiseAsyncClient.runInContext(SettableFuturePromiseHttpPromiseAsyncClient.java:90)
+	at com.atlassian.httpclient.apache.httpcomponents.SettableFuturePromiseHttpPromiseAsyncClient$ThreadLocalDelegateRunnable.run(SettableFuturePromiseHttpPromiseAsyncClient.java:192)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[ERROR] 2020-02-28 13:36:55,063 com.levy.jiratool.rooomy.RooomyIssueService.mergeIssueRejectedComments(RooomyIssueService.java:152)
+Failed to merge comments for fei.xiao;AMZCUS5-15541
+[ERROR] 2020-02-28 13:36:55,064 com.levy.jiratool.rooomy.RooomyIssueService.mergeAssignee(RooomyIssueService.java:103)
+Failed to merge assignee for fei.xiao;AMZCUS5-15541
+[ERROR] 2020-02-28 13:36:55,064 com.levy.jiratool.rooomy.RooomyIssueService.mergeLastComments(RooomyIssueService.java:123)
+Failed to merge last comments for fei.xiao;AMZCUS5-15541
+[ERROR] 2020-02-28 13:36:55,065 com.levy.jiratool.rooomy.RooomyIssueService.mergeRemark(RooomyIssueService.java:203)
+Failed to merge remark for fei.xiao;AMZCUS5-15541
+[INFO] 2020-02-28 13:36:55,070 com.levy.jiratool.writer.TextFileWriter.write(TextFileWriter.java:26)
+Save data success.

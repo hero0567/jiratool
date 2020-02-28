@@ -31,14 +31,8 @@ public class LoadIssueKey {
             String line;
             while (StringUtils.isNotBlank(line = bufferedRreader.readLine())) {
                 IssueKey issueKey = new IssueKey();
-                String[] keyInfo = line.split(";", 2);
-                if (keyInfo.length == 2) {
-                    issueKey.setId(keyInfo[1]);
-                    issueKey.setName(keyInfo[0]);
-                    issueKeys.add(issueKey);
-                }else{
-                    log.info("Found invalid issue key: {}", line);
-                }
+                issueKey.setId(line);
+                issueKeys.add(issueKey);
             }
         } catch (IOException e) {
             log.error("Failed to load issue key.", e);

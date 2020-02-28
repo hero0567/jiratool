@@ -29,7 +29,6 @@ public class RooomyContextService {
             String remarkComment = issueResult.isRemarkComment() ? "Yes" : "No";
             String remarkAttachment = issueResult.isRemarkAttachment() ? "Yes" : "No";
             String content = String.join(";",
-                    issueResult.getName(),
                     issueResult.getId(),
                     assigne,
                     String.valueOf(issueResult.getAssignees().size()),
@@ -45,7 +44,6 @@ public class RooomyContextService {
 
     public String getContentHeader(Map<String, String> rejectCause) {
         List<String> header = new ArrayList<>();
-        header.add("QA");
         header.add("Issuekey(CUS)");
         header.add("Assignee");
         header.add("ACount");

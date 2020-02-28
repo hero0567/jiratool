@@ -1,2 +1,2 @@
-QA;Issuekey(CUS);Assignee;ACount;Model-Dimensions;Model-Error;Process-Missing Comment;Process-Zip;Model-Detail;Model-Geometry;Texture-Color;Texture-Appearance;Remark Comment;Remark Attachment;Second Comment;Last Comment
-fei.xiao;AMZCUS5-15541;cn.devaiamn(2020-02-25 21:19:22)->pooshree(2020-02-22 08:38:33);2;1;;;;;;1;;Yes;No;;
+Issuekey(CUS);Assignee;ACount;Model-Dimensions;Model-Error;Process-Missing Comment;Process-Zip;Model-Detail;Model-Geometry;Texture-Color;Texture-Appearance;Remark Comment;Remark Attachment;Second Comment;Last Comment
+fei.xiao;AMZCUS5-15541;;0;;No;No;;
