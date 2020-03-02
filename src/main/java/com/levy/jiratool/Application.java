@@ -12,7 +12,7 @@ public class Application extends JFrame {
     public Application() {
         super("JIRA Issue Tool");
         this.getContentPane().add(new MainPage());
-        this.setSize(620, 650);
+        this.setSize(620, 700);
         this.setDefaultCloseOperation(EXIT_ON_CLOSE);
         this.setLocationRelativeTo(null);
         this.setVisible(true);

@@ -3,6 +3,7 @@ package com.levy.jiratool.lib;
 import com.atlassian.jira.rest.client.IssueRestClient;
 import com.atlassian.jira.rest.client.JiraRestClient;
 import com.atlassian.jira.rest.client.domain.*;
+import com.levy.jiratool.model.IssueKey;
 import lombok.extern.slf4j.Slf4j;
 
 import java.util.ArrayList;
@@ -19,8 +20,8 @@ public class JiraClient {
         this.jc = jc;
     }
 
-    public SearchResult searchJql(String jql) throws ExecutionException, InterruptedException {
-        SearchResult r = jc.getSearchClient().searchJql(jql).get();
+    public SearchResult searchJql(String jql, int max, int start) throws ExecutionException, InterruptedException {
+        SearchResult r = jc.getSearchClient().searchJql(jql, max, start).get();
         return r;
     }
 
@@ -34,12 +35,12 @@ public class JiraClient {
     }
 
     public Iterable<Worklog> getWorklog(String issueId) throws ExecutionException, InterruptedException {
-        IssueRestClient.Expandos[] expandArr = new IssueRestClient.Expandos[] { IssueRestClient.Expandos.CHANGELOG };
+        IssueRestClient.Expandos[] expandArr = new IssueRestClient.Expandos[]{IssueRestClient.Expandos.CHANGELOG};
         return jc.getIssueClient().getIssue(issueId, Arrays.asList(expandArr)).get().getWorklogs();
     }
 
     public Iterable<ChangelogGroup> getChangelog(String issueId) throws ExecutionException, InterruptedException {
-        IssueRestClient.Expandos[] expandArr = new IssueRestClient.Expandos[] { IssueRestClient.Expandos.CHANGELOG };
+        IssueRestClient.Expandos[] expandArr = new IssueRestClient.Expandos[]{IssueRestClient.Expandos.CHANGELOG};
         Iterable<ChangelogGroup> changelog = jc.getIssueClient().getIssue(issueId, Arrays.asList(expandArr)).get().getChangelog();
         List<ChangelogGroup> invertedOrderChnagelog = new ArrayList<>();
         for (ChangelogGroup changelogGroup : changelog) {

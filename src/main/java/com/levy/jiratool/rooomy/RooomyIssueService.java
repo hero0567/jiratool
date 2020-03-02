@@ -255,7 +255,19 @@ public class RooomyIssueService {
         messager.setStartTime(System.currentTimeMillis());
         List<IssueKey> issueKeys = LoadIssueKey.loadIssueKey(keyPath);
         messager.infot("Totally load " + issueKeys.size() + " valid issue keys.");
+        loadIssueAndWrite(issueKeys);
+    }
 
+    public void getRejectedIssueCommentsByJql(String jql){
+        messager.setStartTime(System.currentTimeMillis());
+        log.info("Start try to load issue key from jira.");
+        messager.info("Start try to load issue key from jira.");
+        List<IssueKey> issueKeys = LoadIssueKey.loadIssueKeyByJql(jiraClient, jql);
+        messager.infot("Totally load " + issueKeys.size() + " valid issue keys.");
+        loadIssueAndWrite(issueKeys);
+    }
+
+    private void loadIssueAndWrite(List<IssueKey> issueKeys){
         List<IssueResult> issueResults = loadIssueCommentsAsync(issueKeys);
         messager.infot("Completed load all(" + issueKeys.size() + ") issues.");
 
@@ -264,5 +276,9 @@ public class RooomyIssueService {
         List<String> contents = contextService.getContent(issueResults, rejectCause);
         FileWriter fileWriter = new ExcelFileWriter();
         fileWriter.write(contents);
+    }
+
+    public void addCause(String k, String v){
+        rejectCause.put(k, v);
     }
 }
