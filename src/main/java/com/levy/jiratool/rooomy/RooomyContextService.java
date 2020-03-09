@@ -2,12 +2,15 @@ package com.levy.jiratool.rooomy;
 
 import com.atlassian.jira.rest.client.domain.Comment;
 import com.levy.jiratool.model.IssueResult;
+import org.joda.time.format.DateTimeFormat;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
 public class RooomyContextService {
+
+    private String formatter = "yyyy-MM-dd HH:mm:ss";
 
     public List<String> getContent(List<IssueResult> issueResults, Map<String, String> rejectCause) {
         List<String> contentList = new ArrayList<>();
@@ -24,19 +27,30 @@ public class RooomyContextService {
                         .replaceAll(";", "");
             }
             String lastComment = "";
+            String lastCommentUpdateDate = "";
             if (issueResult.getLastComment() != null) {
                 Comment comment = issueResult.getLastComment();
                 lastComment = comment.getAuthor().getDisplayName() + ":" + comment.getBody()
                         .replaceAll("\r\n", "")
                         .replaceAll(";", "");
+
+                lastCommentUpdateDate = issueResult.getLastComment().getUpdateDate().toString(DateTimeFormat.forPattern(formatter));
             }
+
             String remarkComment = issueResult.isRemarkComment() ? "Yes" : "No";
             String remarkAttachment = issueResult.isRemarkAttachment() ? "Yes" : "No";
             String content = String.join(";",
                     issueResult.getId(),
                     assigne,
-                    String.valueOf(issueResult.getAssignees().size()),
-                    rejectResults,
+                    String.valueOf(issueResult.getAssignees().size()),  //ACount
+                    issueResult.getUniqueValue(),
+                    issueResult.getVariationValue(),        //Variation Qty
+                    issueResult.getLastAssignee(),
+                    issueResult.getInternalQa(),
+                    issueResult.getInternalQaRoundValue(),
+                    issueResult.getExternalQaRoundValue(),
+                    rejectResults,                          //reject
+                    lastCommentUpdateDate,
                     remarkComment,
                     remarkAttachment,
                     secondComment,
@@ -51,7 +65,14 @@ public class RooomyContextService {
         header.add("Issuekey(CUS)");
         header.add("Assignee");
         header.add("ACount");
-        header.add(String.join(";", rejectCause.keySet()));
+        header.add("Unique Qty");
+        header.add("Variation Qty");
+        header.add("External QA");
+        header.add("Internal QA");
+        header.add("Internal QA Round");
+        header.add("External QA Round");
+        header.add(String.join(";", rejectCause.keySet()));   //reject
+        header.add("Remark Last Date");
         header.add("Remark Comment");
         header.add("Remark Attachment");
         header.add("Second Comment");

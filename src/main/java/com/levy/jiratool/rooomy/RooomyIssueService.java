@@ -1,10 +1,7 @@
 package com.levy.jiratool.rooomy;
 
 import com.atlassian.jira.rest.client.RestClientException;
-import com.atlassian.jira.rest.client.domain.Attachment;
-import com.atlassian.jira.rest.client.domain.ChangelogGroup;
-import com.atlassian.jira.rest.client.domain.ChangelogItem;
-import com.atlassian.jira.rest.client.domain.Comment;
+import com.atlassian.jira.rest.client.domain.*;
 
 import com.levy.jiratool.gui.MessageHelper;
 import com.levy.jiratool.lib.JiraClient;
@@ -13,16 +10,13 @@ import com.levy.jiratool.model.IssueKey;
 import com.levy.jiratool.model.IssueResult;
 import com.levy.jiratool.writer.ExcelFileWriter;
 import com.levy.jiratool.writer.FileWriter;
-import com.levy.jiratool.writer.TextFileWriter;
 import lombok.extern.slf4j.Slf4j;
-import org.apache.commons.lang.StringUtils;
+import org.codehaus.jettison.json.JSONArray;
+import org.codehaus.jettison.json.JSONException;
+import org.codehaus.jettison.json.JSONObject;
 import org.joda.time.DateTime;
 import org.joda.time.format.DateTimeFormat;
 
-import java.io.File;
-import java.io.FileOutputStream;
-import java.io.PrintStream;
-import java.time.format.DateTimeFormatter;
 import java.util.*;
 import java.util.concurrent.ExecutionException;
 import java.util.regex.Pattern;
@@ -94,14 +88,44 @@ public class RooomyIssueService {
 
     private boolean loadIssueResult(JiraClient jiraClient, IssueKey issueKey, IssueResult issueResult) {
         try {
-            Iterable<Comment> comments = jiraClient.getComments(issueKey.getId());
+            Issue issue = jiraClient.getIssue(issueKey.getId());
+            Field uniqueField = issue.getFieldByName("Unique ASIN qty");
+            if (uniqueField != null) {
+                String uniqueValue = (String) ((JSONArray) uniqueField.getValue()).get(0);
+                issueResult.setUniqueValue(uniqueValue);
+            }
+            Field variationField = issue.getFieldByName("Variation ASIN Qty");
+            if (variationField != null) {
+                String variationValue = (String) ((JSONArray) variationField.getValue()).get(0);
+                issueResult.setVariationValue(variationValue);
+            }
+
+            //AMZCUS, AMZFAC
+            Issue facIssue = jiraClient.getIssue(issueKey.getId().replaceAll("AMZCUS", "AMZFAC"));
+            Field externalQaRound = facIssue.getFieldByName("External QA Round");
+            if (externalQaRound != null) {
+                String externalQaRoundValue = String.valueOf(((Double)externalQaRound.getValue()).intValue());
+                issueResult.setExternalQaRoundValue(externalQaRoundValue);
+            }
+            Field internalQaRound = facIssue.getFieldByName("Internal QA Round");
+            if (internalQaRound != null) {
+                String internalQaRoundValue = String.valueOf(((Double)internalQaRound.getValue()).intValue());
+                issueResult.setInternalQaRoundValue(internalQaRoundValue);
+            }
+            Field qaField = facIssue.getFieldByName("QA");
+            if (qaField != null) {
+                String qa = (String) ((JSONObject)qaField.getValue()).get("displayName");
+                issueResult.setInternalQa(qa);
+            }
+
+
+            Iterable<Comment> comments = jiraClient.getComments(issue);
             Iterable<ChangelogGroup> changelog = jiraClient.getChangelog(issueKey.getId());
-            Iterable<Attachment> attachments = jiraClient.getAttachments(issueKey.getId());
             issueResult.setComments(comments);
             issueResult.setChangelogs(changelog);
-            issueResult.setAttachments(attachments);
+            issueResult.setAttachments(issue.getAttachments());
             log.info("Complete get issue {}", issueKey.getId());
-        } catch (RestClientException | ExecutionException | InterruptedException e) {
+        } catch (RestClientException | ExecutionException | InterruptedException | JSONException e) {
             return false;
         }
         return true;
@@ -110,12 +134,14 @@ public class RooomyIssueService {
     private void mergeAssignee(IssueResult issueResult) {
         try {
             List<String> assignees = new ArrayList<>();
+            String lastAssignee = "";
             issueResult.setAssignees(assignees);
             for (ChangelogGroup changelog : issueResult.getChangelogs()) {
                 changelog.getItems().forEach(item -> {
                     if ("assignee".equals(item.getField())) {
                         if (!Arrays.asList(removedAssignees).contains(item.getTo().toLowerCase())) {
                             assignees.add(item.getTo() + "(" + changelog.getCreated().toString(DateTimeFormat.forPattern(formatter)) + ")");
+                            issueResult.setLastAssignee(item.getTo());
                         }
                     }
                 });
@@ -258,7 +284,7 @@ public class RooomyIssueService {
         loadIssueAndWrite(issueKeys);
     }
 
-    public void getRejectedIssueCommentsByJql(String jql){
+    public void getRejectedIssueCommentsByJql(String jql) {
         messager.setStartTime(System.currentTimeMillis());
         log.info("Start try to load issue key from jira.");
         messager.info("Start try to load issue key from jira.");
@@ -267,7 +293,7 @@ public class RooomyIssueService {
         loadIssueAndWrite(issueKeys);
     }
 
-    private void loadIssueAndWrite(List<IssueKey> issueKeys){
+    private void loadIssueAndWrite(List<IssueKey> issueKeys) {
         List<IssueResult> issueResults = loadIssueCommentsAsync(issueKeys);
         messager.infot("Completed load all(" + issueKeys.size() + ") issues.");
 
@@ -278,7 +304,7 @@ public class RooomyIssueService {
         fileWriter.write(contents);
     }
 
-    public void addCause(String k, String v){
+    public void addCause(String k, String v) {
         rejectCause.put(k, v);
     }
 }

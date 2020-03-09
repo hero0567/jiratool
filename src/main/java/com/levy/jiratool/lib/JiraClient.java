@@ -25,8 +25,12 @@ public class JiraClient {
         return r;
     }
 
-    public Iterable<Comment> getComments(String issueId) throws ExecutionException, InterruptedException {
-        Iterable<Comment> comments = jc.getIssueClient().getIssue(issueId).get().getComments();
+    public Issue getIssue(String issueId) throws ExecutionException, InterruptedException {
+        return jc.getIssueClient().getIssue(issueId).get();
+    }
+
+    public Iterable<Comment> getComments(Issue issue) throws ExecutionException, InterruptedException {
+        Iterable<Comment> comments = issue.getComments();
         List<Comment> invertedOrderCommetns = new ArrayList<>();
         for (Comment comment : comments) {
             invertedOrderCommetns.add(0, comment);

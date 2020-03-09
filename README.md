@@ -37,8 +37,14 @@ mvn assembly:assembly
 3. assignee去掉固定的一些名字
 
 
+新需求
+1 最后一次Remark by Customer状态修改的Date
+2 获取JIRA上的Unique ASIN Qty或者是Variation ASIN Qty（取决于当前的Issuekey是Unique 还是variation）
+3 获取CUS界面的客户Assignee信息
+4 获取FAC界面的QA信息
+5 获取FAC界面的External QA Round和Internal QA Round
 
-
+功能介绍
 1. 现在暂时只支持从txt去读ISSUE Key，结果也是保存到txt里面
 2. ISSUE Key的txt格式如下：第一个为QA的名字，第二个为ISSUE Key
 xiao.fei;AMZCUS5-5412

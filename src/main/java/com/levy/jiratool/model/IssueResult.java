@@ -16,10 +16,16 @@ public class IssueResult {
     private Iterable<ChangelogGroup> changelogs;
     private Iterable<Attachment> attachments;
     private List<String> assignees;
+    private String lastAssignee;
     private List<String> rejectResults;
     private Comment lastComment;
     private Comment secondComment;
     private ChangelogGroup lastRemark;
     private boolean remarkAttachment;
     private boolean remarkComment;
+    private String uniqueValue = "";
+    private String variationValue = "";
+    private String externalQaRoundValue = "";
+    private String internalQaRoundValue = "";
+    private String internalQa = "";
 }
