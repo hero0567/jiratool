@@ -37,7 +37,7 @@ mvn assembly:assembly
 3. assignee去掉固定的一些名字
 
 
-新需求
+新需求2020-03-09
 1 最后一次Remark by Customer状态修改的Date
 2 获取JIRA上的Unique ASIN Qty或者是Variation ASIN Qty（取决于当前的Issuekey是Unique 还是variation）
 3 获取CUS界面的客户Assignee信息

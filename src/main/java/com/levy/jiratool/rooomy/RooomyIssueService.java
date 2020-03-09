@@ -90,12 +90,12 @@ public class RooomyIssueService {
         try {
             Issue issue = jiraClient.getIssue(issueKey.getId());
             Field uniqueField = issue.getFieldByName("Unique ASIN qty");
-            if (uniqueField != null) {
+            if (uniqueField != null && uniqueField.getValue() != null) {
                 String uniqueValue = (String) ((JSONArray) uniqueField.getValue()).get(0);
                 issueResult.setUniqueValue(uniqueValue);
             }
-            Field variationField = issue.getFieldByName("Variation ASIN Qty");
-            if (variationField != null) {
+            Field variationField = issue.getFieldByName("Variation ASIN qty");
+            if (variationField != null && variationField.getValue() != null) {
                 String variationValue = (String) ((JSONArray) variationField.getValue()).get(0);
                 issueResult.setVariationValue(variationValue);
             }
@@ -103,18 +103,18 @@ public class RooomyIssueService {
             //AMZCUS, AMZFAC
             Issue facIssue = jiraClient.getIssue(issueKey.getId().replaceAll("AMZCUS", "AMZFAC"));
             Field externalQaRound = facIssue.getFieldByName("External QA Round");
-            if (externalQaRound != null) {
-                String externalQaRoundValue = String.valueOf(((Double)externalQaRound.getValue()).intValue());
+            if (externalQaRound != null && externalQaRound.getValue() != null) {
+                String externalQaRoundValue = String.valueOf(((Double) externalQaRound.getValue()).intValue());
                 issueResult.setExternalQaRoundValue(externalQaRoundValue);
             }
             Field internalQaRound = facIssue.getFieldByName("Internal QA Round");
-            if (internalQaRound != null) {
-                String internalQaRoundValue = String.valueOf(((Double)internalQaRound.getValue()).intValue());
+            if (internalQaRound != null && internalQaRound.getValue() != null) {
+                String internalQaRoundValue = String.valueOf(((Double) internalQaRound.getValue()).intValue());
                 issueResult.setInternalQaRoundValue(internalQaRoundValue);
             }
             Field qaField = facIssue.getFieldByName("QA");
             if (qaField != null) {
-                String qa = (String) ((JSONObject)qaField.getValue()).get("displayName");
+                String qa = (String) ((JSONObject) qaField.getValue()).get("displayName");
                 issueResult.setInternalQa(qa);
             }
 

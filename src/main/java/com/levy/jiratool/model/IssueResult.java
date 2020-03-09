@@ -16,7 +16,7 @@ public class IssueResult {
     private Iterable<ChangelogGroup> changelogs;
     private Iterable<Attachment> attachments;
     private List<String> assignees;
-    private String lastAssignee;
+    private String lastAssignee = "";
     private List<String> rejectResults;
     private Comment lastComment;
     private Comment secondComment;
