@@ -17,7 +17,8 @@ public class RooomyContextService {
         String header = getContentHeader(rejectCause);
         contentList.add(header);
         for (IssueResult issueResult : issueResults) {
-            String assigne = String.join("->", issueResult.getAssignees());
+            //String assigne = String.join("->", issueResult.getAssignees());
+            String commentAuthors = String.join("->", issueResult.getCommentAuthors());
             String rejectResults = String.join(";", issueResult.getRejectResults());
             String secondComment = "";
             if (issueResult.getSecondComment() != null) {
@@ -41,11 +42,13 @@ public class RooomyContextService {
             String remarkAttachment = issueResult.isRemarkAttachment() ? "Yes" : "No";
             String content = String.join(";",
                     issueResult.getId(),
-                    assigne,
-                    String.valueOf(issueResult.getAssignees().size()),  //ACount
+                    commentAuthors,
+                    String.valueOf(issueResult.getCommentAuthors().size()),  //ACount
+                    issueResult.getStatus(),
+                    issueResult.getTicketType(),
                     issueResult.getUniqueValue(),
                     issueResult.getVariationValue(),        //Variation Qty
-                    issueResult.getLastAssignee(),
+                    issueResult.getAssignee(),
                     issueResult.getInternalQa(),
                     issueResult.getInternalQaRoundValue(),
                     issueResult.getExternalQaRoundValue(),
@@ -63,8 +66,10 @@ public class RooomyContextService {
     public String getContentHeader(Map<String, String> rejectCause) {
         List<String> header = new ArrayList<>();
         header.add("Issuekey(CUS)");
-        header.add("Assignee");
-        header.add("ACount");
+        header.add("Comment Authors");
+        header.add("Comment Author Count");
+        header.add("Status");
+        header.add("Ticket Type");
         header.add("Unique Qty");
         header.add("Variation Qty");
         header.add("External QA");

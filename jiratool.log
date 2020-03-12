@@ -1,440 +1,40 @@
-[INFO] 2020-03-09 15:54:05,707 com.levy.jiratool.rooomy.RooomyIssueService.<init>(RooomyIssueService.java:48)
+[INFO] 2020-03-12 14:17:41,147 com.levy.jiratool.rooomy.RooomyIssueService.<init>(RooomyIssueService.java:45)
 Login...
-[INFO] 2020-03-09 15:54:09,165 com.levy.jiratool.rooomy.LoadIssueKey.loadIssueKey(LoadIssueKey.java:46)
+[INFO] 2020-03-12 14:17:46,971 com.levy.jiratool.rooomy.LoadIssueKey.loadIssueKey(LoadIssueKey.java:46)
 Load 1 issue keys.
-[INFO] 2020-03-09 15:54:09,184 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:64)
-Try to get issue comments of AMZCUS5-2251
-[INFO] 2020-03-09 16:00:15,193 com.levy.jiratool.rooomy.RooomyIssueService.<init>(RooomyIssueService.java:48)
-Login...
-[INFO] 2020-03-09 16:00:18,793 com.levy.jiratool.rooomy.LoadIssueKey.loadIssueKey(LoadIssueKey.java:46)
-Load 1 issue keys.
-[INFO] 2020-03-09 16:00:18,816 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:64)
-Try to get issue comments of AMZCUS5-2251
-[ERROR] 2020-03-09 16:00:21,616 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:81)
-Failed to get issue(AMZCUS5-2251) information.
-java.lang.NullPointerException
-	at com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:96)
-	at com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:71)
-	at com.levy.jiratool.rooomy.RooomyIssueService.lambda$loadIssueCommentsAsync$0(RooomyIssueService.java:58)
-	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
-	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1382)
-	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:481)
-	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
-	at java.util.stream.ReduceOps$ReduceTask.doLeaf(ReduceOps.java:747)
-	at java.util.stream.ReduceOps$ReduceTask.doLeaf(ReduceOps.java:721)
-	at java.util.stream.AbstractTask.compute(AbstractTask.java:316)
-	at java.util.concurrent.CountedCompleter.exec(CountedCompleter.java:731)
-	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)
-	at java.util.concurrent.ForkJoinTask.doInvoke(ForkJoinTask.java:401)
-	at java.util.concurrent.ForkJoinTask.invoke(ForkJoinTask.java:734)
-	at java.util.stream.ReduceOps$ReduceOp.evaluateParallel(ReduceOps.java:714)
-	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:233)
-	at java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:499)
-	at com.levy.jiratool.rooomy.RooomyIssueService.loadIssueCommentsAsync(RooomyIssueService.java:59)
-	at com.levy.jiratool.rooomy.RooomyIssueService.loadIssueAndWrite(RooomyIssueService.java:271)
-	at com.levy.jiratool.rooomy.RooomyIssueService.getRejectedIssueComments(RooomyIssueService.java:258)
-	at com.levy.jiratool.rooomy.RooomyIssueService.getRejectedIssueComments(RooomyIssueService.java:251)
-	at com.levy.jiratool.RoomyMain.main(RoomyMain.java:8)
-[ERROR] 2020-03-09 16:00:21,624 com.levy.jiratool.rooomy.RooomyIssueService.mergeIssueRejectedComments(RooomyIssueService.java:173)
-Failed to merge comments for AMZCUS5-2251
-[ERROR] 2020-03-09 16:00:21,625 com.levy.jiratool.rooomy.RooomyIssueService.mergeAssignee(RooomyIssueService.java:124)
-Failed to merge assignee for AMZCUS5-2251
-[ERROR] 2020-03-09 16:00:21,625 com.levy.jiratool.rooomy.RooomyIssueService.mergeLastComments(RooomyIssueService.java:144)
-Failed to merge last comments for AMZCUS5-2251
-[ERROR] 2020-03-09 16:00:21,626 com.levy.jiratool.rooomy.RooomyIssueService.mergeRemark(RooomyIssueService.java:224)
-Failed to merge remark for AMZCUS5-2251
-[INFO] 2020-03-09 16:00:21,632 com.levy.jiratool.writer.ExcelFileWriter.createExcel(ExcelFileWriter.java:26)
+[INFO] 2020-03-12 14:17:46,992 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:61)
+Try to get issue comments of AMZCUS4-150094
+[INFO] 2020-03-12 14:18:06,534 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:127)
+Complete get issue AMZCUS4-150094
+[INFO] 2020-03-12 14:18:06,534 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:76)
+Complete get issue AMZCUS4-150094
+[INFO] 2020-03-12 14:18:06,541 com.levy.jiratool.rooomy.RooomyIssueService.timeAround(RooomyIssueService.java:260)
+Time Around check: 2020-03-03T16:38:35.882+08:00, 2020-03-03T16:38:35.878+08:00
+[INFO] 2020-03-12 14:18:06,561 com.levy.jiratool.writer.ExcelFileWriter.createExcel(ExcelFileWriter.java:26)
 Will save data into: issueresult.xlsx
-[INFO] 2020-03-09 16:00:22,881 com.levy.jiratool.writer.ExcelFileWriter.createExcel(ExcelFileWriter.java:48)
+[INFO] 2020-03-12 14:18:07,753 com.levy.jiratool.writer.ExcelFileWriter.createExcel(ExcelFileWriter.java:48)
 Success save data to file.
-[INFO] 2020-03-09 16:00:36,641 com.levy.jiratool.rooomy.RooomyIssueService.<init>(RooomyIssueService.java:48)
+[INFO] 2020-03-12 14:21:35,091 com.levy.jiratool.rooomy.RooomyIssueService.<init>(RooomyIssueService.java:45)
 Login...
-[INFO] 2020-03-09 16:00:40,102 com.levy.jiratool.rooomy.LoadIssueKey.loadIssueKey(LoadIssueKey.java:46)
+[INFO] 2020-03-12 14:21:39,322 com.levy.jiratool.rooomy.LoadIssueKey.loadIssueKey(LoadIssueKey.java:46)
 Load 1 issue keys.
-[INFO] 2020-03-09 16:00:40,119 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:64)
-Try to get issue comments of AMZCUS5-2251
-[ERROR] 2020-03-09 16:01:54,047 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:81)
-Failed to get issue(AMZCUS5-2251) information.
-java.lang.NullPointerException
-	at com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:96)
-	at com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:71)
-	at com.levy.jiratool.rooomy.RooomyIssueService.lambda$loadIssueCommentsAsync$0(RooomyIssueService.java:58)
-	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
-	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1382)
-	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:481)
-	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
-	at java.util.stream.ReduceOps$ReduceTask.doLeaf(ReduceOps.java:747)
-	at java.util.stream.ReduceOps$ReduceTask.doLeaf(ReduceOps.java:721)
-	at java.util.stream.AbstractTask.compute(AbstractTask.java:316)
-	at java.util.concurrent.CountedCompleter.exec(CountedCompleter.java:731)
-	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)
-	at java.util.concurrent.ForkJoinTask.doInvoke(ForkJoinTask.java:401)
-	at java.util.concurrent.ForkJoinTask.invoke(ForkJoinTask.java:734)
-	at java.util.stream.ReduceOps$ReduceOp.evaluateParallel(ReduceOps.java:714)
-	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:233)
-	at java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:499)
-	at com.levy.jiratool.rooomy.RooomyIssueService.loadIssueCommentsAsync(RooomyIssueService.java:59)
-	at com.levy.jiratool.rooomy.RooomyIssueService.loadIssueAndWrite(RooomyIssueService.java:271)
-	at com.levy.jiratool.rooomy.RooomyIssueService.getRejectedIssueComments(RooomyIssueService.java:258)
-	at com.levy.jiratool.rooomy.RooomyIssueService.getRejectedIssueComments(RooomyIssueService.java:251)
-	at com.levy.jiratool.RoomyMain.main(RoomyMain.java:8)
-[ERROR] 2020-03-09 16:01:54,054 com.levy.jiratool.rooomy.RooomyIssueService.mergeIssueRejectedComments(RooomyIssueService.java:173)
-Failed to merge comments for AMZCUS5-2251
-[ERROR] 2020-03-09 16:01:54,054 com.levy.jiratool.rooomy.RooomyIssueService.mergeAssignee(RooomyIssueService.java:124)
-Failed to merge assignee for AMZCUS5-2251
-[ERROR] 2020-03-09 16:01:54,055 com.levy.jiratool.rooomy.RooomyIssueService.mergeLastComments(RooomyIssueService.java:144)
-Failed to merge last comments for AMZCUS5-2251
-[ERROR] 2020-03-09 16:01:54,055 com.levy.jiratool.rooomy.RooomyIssueService.mergeRemark(RooomyIssueService.java:224)
-Failed to merge remark for AMZCUS5-2251
-[INFO] 2020-03-09 16:01:54,059 com.levy.jiratool.writer.ExcelFileWriter.createExcel(ExcelFileWriter.java:26)
+[INFO] 2020-03-12 14:21:39,341 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:61)
+Try to get issue comments of AMZCUS4-150094
+[INFO] 2020-03-12 14:24:48,372 com.levy.jiratool.rooomy.RooomyIssueService.<init>(RooomyIssueService.java:45)
+Login...
+[INFO] 2020-03-12 14:24:52,568 com.levy.jiratool.rooomy.LoadIssueKey.loadIssueKey(LoadIssueKey.java:46)
+Load 1 issue keys.
+[INFO] 2020-03-12 14:24:52,585 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:61)
+Try to get issue comments of AMZCUS4-150094
+[INFO] 2020-03-12 14:25:19,543 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:127)
+Complete get issue AMZCUS4-150094
+[INFO] 2020-03-12 14:25:19,544 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:76)
+Complete get issue AMZCUS4-150094
+[INFO] 2020-03-12 14:27:00,535 com.levy.jiratool.rooomy.RooomyIssueService.timeAround(RooomyIssueService.java:260)
+Time Around check: 2020-03-03T16:38:35.882+08:00, 2020-03-03T16:38:35.878+08:00
+[INFO] 2020-03-12 14:27:16,766 com.levy.jiratool.writer.ExcelFileWriter.createExcel(ExcelFileWriter.java:26)
 Will save data into: issueresult.xlsx
-[INFO] 2020-03-09 16:07:26,360 com.levy.jiratool.rooomy.RooomyIssueService.<init>(RooomyIssueService.java:50)
-Login...
-[INFO] 2020-03-09 16:07:29,423 com.levy.jiratool.rooomy.LoadIssueKey.loadIssueKey(LoadIssueKey.java:46)
-Load 1 issue keys.
-[INFO] 2020-03-09 16:07:29,442 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:66)
-Try to get issue comments of AMZCUS5-2251
-[INFO] 2020-03-09 16:07:31,226 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:112)
-Complete get issue AMZCUS5-2251
-[INFO] 2020-03-09 16:07:31,227 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:81)
-Complete get issue AMZCUS5-2251
-[INFO] 2020-03-09 16:07:31,234 com.levy.jiratool.rooomy.RooomyIssueService.timeAround(RooomyIssueService.java:243)
-Time Around check: 2020-03-06T01:51:17.321+08:00, 2020-03-06T01:51:17.316+08:00
-[INFO] 2020-03-09 16:07:31,235 com.levy.jiratool.rooomy.RooomyIssueService.timeAround(RooomyIssueService.java:243)
-Time Around check: 2020-03-06T01:51:17.321+08:00, 2020-03-06T01:51:27.087+08:00
-[INFO] 2020-03-09 16:07:31,239 com.levy.jiratool.writer.ExcelFileWriter.createExcel(ExcelFileWriter.java:26)
-Will save data into: issueresult.xlsx
-[INFO] 2020-03-09 16:07:32,217 com.levy.jiratool.writer.ExcelFileWriter.createExcel(ExcelFileWriter.java:48)
-Success save data to file.
-[INFO] 2020-03-09 16:08:31,986 com.levy.jiratool.rooomy.RooomyIssueService.<init>(RooomyIssueService.java:50)
-Login...
-[INFO] 2020-03-09 16:08:35,500 com.levy.jiratool.rooomy.LoadIssueKey.loadIssueKey(LoadIssueKey.java:46)
-Load 1 issue keys.
-[INFO] 2020-03-09 16:08:35,527 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:66)
-Try to get issue comments of AMZCUS5-2251
-[INFO] 2020-03-09 16:08:37,372 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:112)
-Complete get issue AMZCUS5-2251
-[INFO] 2020-03-09 16:08:37,372 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:81)
-Complete get issue AMZCUS5-2251
-[INFO] 2020-03-09 16:08:37,377 com.levy.jiratool.rooomy.RooomyIssueService.timeAround(RooomyIssueService.java:243)
-Time Around check: 2020-03-06T01:51:17.321+08:00, 2020-03-06T01:51:17.316+08:00
-[INFO] 2020-03-09 16:08:37,377 com.levy.jiratool.rooomy.RooomyIssueService.timeAround(RooomyIssueService.java:243)
-Time Around check: 2020-03-06T01:51:17.321+08:00, 2020-03-06T01:51:27.087+08:00
-[INFO] 2020-03-09 16:08:37,386 com.levy.jiratool.writer.ExcelFileWriter.createExcel(ExcelFileWriter.java:26)
-Will save data into: issueresult.xlsx
-[INFO] 2020-03-09 16:08:38,310 com.levy.jiratool.writer.ExcelFileWriter.createExcel(ExcelFileWriter.java:48)
-Success save data to file.
-[INFO] 2020-03-09 16:28:48,664 com.levy.jiratool.rooomy.RooomyIssueService.<init>(RooomyIssueService.java:50)
-Login...
-[INFO] 2020-03-09 16:28:52,046 com.levy.jiratool.rooomy.LoadIssueKey.loadIssueKey(LoadIssueKey.java:46)
-Load 1 issue keys.
-[INFO] 2020-03-09 16:28:52,064 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:66)
-Try to get issue comments of AMZCUS5-2251
-[ERROR] 2020-03-09 16:29:26,451 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:83)
-Failed to get issue(AMZCUS5-2251) information.
-java.lang.ClassCastException: java.lang.Double cannot be cast to org.codehaus.jettison.json.JSONArray
-	at com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:112)
-	at com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:73)
-	at com.levy.jiratool.rooomy.RooomyIssueService.lambda$loadIssueCommentsAsync$0(RooomyIssueService.java:60)
-	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
-	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1382)
-	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:481)
-	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
-	at java.util.stream.ReduceOps$ReduceTask.doLeaf(ReduceOps.java:747)
-	at java.util.stream.ReduceOps$ReduceTask.doLeaf(ReduceOps.java:721)
-	at java.util.stream.AbstractTask.compute(AbstractTask.java:316)
-	at java.util.concurrent.CountedCompleter.exec(CountedCompleter.java:731)
-	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)
-	at java.util.concurrent.ForkJoinTask.doInvoke(ForkJoinTask.java:401)
-	at java.util.concurrent.ForkJoinTask.invoke(ForkJoinTask.java:734)
-	at java.util.stream.ReduceOps$ReduceOp.evaluateParallel(ReduceOps.java:714)
-	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:233)
-	at java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:499)
-	at com.levy.jiratool.rooomy.RooomyIssueService.loadIssueCommentsAsync(RooomyIssueService.java:61)
-	at com.levy.jiratool.rooomy.RooomyIssueService.loadIssueAndWrite(RooomyIssueService.java:294)
-	at com.levy.jiratool.rooomy.RooomyIssueService.getRejectedIssueComments(RooomyIssueService.java:281)
-	at com.levy.jiratool.rooomy.RooomyIssueService.getRejectedIssueComments(RooomyIssueService.java:274)
-	at com.levy.jiratool.RoomyMain.main(RoomyMain.java:8)
-[ERROR] 2020-03-09 16:29:26,456 com.levy.jiratool.rooomy.RooomyIssueService.mergeIssueRejectedComments(RooomyIssueService.java:196)
-Failed to merge comments for AMZCUS5-2251
-[ERROR] 2020-03-09 16:29:26,456 com.levy.jiratool.rooomy.RooomyIssueService.mergeAssignee(RooomyIssueService.java:147)
-Failed to merge assignee for AMZCUS5-2251
-[ERROR] 2020-03-09 16:29:26,457 com.levy.jiratool.rooomy.RooomyIssueService.mergeLastComments(RooomyIssueService.java:167)
-Failed to merge last comments for AMZCUS5-2251
-[ERROR] 2020-03-09 16:29:26,457 com.levy.jiratool.rooomy.RooomyIssueService.mergeRemark(RooomyIssueService.java:247)
-Failed to merge remark for AMZCUS5-2251
-[INFO] 2020-03-09 16:29:26,461 com.levy.jiratool.writer.ExcelFileWriter.createExcel(ExcelFileWriter.java:26)
-Will save data into: issueresult.xlsx
-[ERROR] 2020-03-09 16:29:27,466 com.levy.jiratool.writer.ExcelFileWriter.createExcel(ExcelFileWriter.java:50)
-Faild save data to file.
-java.io.FileNotFoundException: issueresult.xlsx (The process cannot access the file because it is being used by another process)
-	at java.io.FileOutputStream.open0(Native Method)
-	at java.io.FileOutputStream.open(FileOutputStream.java:270)
-	at java.io.FileOutputStream.<init>(FileOutputStream.java:213)
-	at java.io.FileOutputStream.<init>(FileOutputStream.java:101)
-	at com.levy.jiratool.writer.ExcelFileWriter.createExcel(ExcelFileWriter.java:44)
-	at com.levy.jiratool.writer.ExcelFileWriter.write(ExcelFileWriter.java:22)
-	at com.levy.jiratool.rooomy.RooomyIssueService.loadIssueAndWrite(RooomyIssueService.java:301)
-	at com.levy.jiratool.rooomy.RooomyIssueService.getRejectedIssueComments(RooomyIssueService.java:281)
-	at com.levy.jiratool.rooomy.RooomyIssueService.getRejectedIssueComments(RooomyIssueService.java:274)
-	at com.levy.jiratool.RoomyMain.main(RoomyMain.java:8)
-[INFO] 2020-03-09 16:29:33,335 com.levy.jiratool.rooomy.RooomyIssueService.<init>(RooomyIssueService.java:50)
-Login...
-[INFO] 2020-03-09 16:29:36,608 com.levy.jiratool.rooomy.LoadIssueKey.loadIssueKey(LoadIssueKey.java:46)
-Load 1 issue keys.
-[INFO] 2020-03-09 16:29:36,627 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:66)
-Try to get issue comments of AMZCUS5-2251
-[ERROR] 2020-03-09 16:29:59,762 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:83)
-Failed to get issue(AMZCUS5-2251) information.
-java.lang.ClassCastException: java.lang.Double cannot be cast to org.codehaus.jettison.json.JSONArray
-	at com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:112)
-	at com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:73)
-	at com.levy.jiratool.rooomy.RooomyIssueService.lambda$loadIssueCommentsAsync$0(RooomyIssueService.java:60)
-	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
-	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1382)
-	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:481)
-	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
-	at java.util.stream.ReduceOps$ReduceTask.doLeaf(ReduceOps.java:747)
-	at java.util.stream.ReduceOps$ReduceTask.doLeaf(ReduceOps.java:721)
-	at java.util.stream.AbstractTask.compute(AbstractTask.java:316)
-	at java.util.concurrent.CountedCompleter.exec(CountedCompleter.java:731)
-	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)
-	at java.util.concurrent.ForkJoinTask.doInvoke(ForkJoinTask.java:401)
-	at java.util.concurrent.ForkJoinTask.invoke(ForkJoinTask.java:734)
-	at java.util.stream.ReduceOps$ReduceOp.evaluateParallel(ReduceOps.java:714)
-	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:233)
-	at java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:499)
-	at com.levy.jiratool.rooomy.RooomyIssueService.loadIssueCommentsAsync(RooomyIssueService.java:61)
-	at com.levy.jiratool.rooomy.RooomyIssueService.loadIssueAndWrite(RooomyIssueService.java:294)
-	at com.levy.jiratool.rooomy.RooomyIssueService.getRejectedIssueComments(RooomyIssueService.java:281)
-	at com.levy.jiratool.rooomy.RooomyIssueService.getRejectedIssueComments(RooomyIssueService.java:274)
-	at com.levy.jiratool.RoomyMain.main(RoomyMain.java:8)
-[ERROR] 2020-03-09 16:29:59,768 com.levy.jiratool.rooomy.RooomyIssueService.mergeIssueRejectedComments(RooomyIssueService.java:196)
-Failed to merge comments for AMZCUS5-2251
-[ERROR] 2020-03-09 16:29:59,768 com.levy.jiratool.rooomy.RooomyIssueService.mergeAssignee(RooomyIssueService.java:147)
-Failed to merge assignee for AMZCUS5-2251
-[ERROR] 2020-03-09 16:29:59,769 com.levy.jiratool.rooomy.RooomyIssueService.mergeLastComments(RooomyIssueService.java:167)
-Failed to merge last comments for AMZCUS5-2251
-[ERROR] 2020-03-09 16:29:59,769 com.levy.jiratool.rooomy.RooomyIssueService.mergeRemark(RooomyIssueService.java:247)
-Failed to merge remark for AMZCUS5-2251
-[INFO] 2020-03-09 16:29:59,773 com.levy.jiratool.writer.ExcelFileWriter.createExcel(ExcelFileWriter.java:26)
-Will save data into: issueresult.xlsx
-[INFO] 2020-03-09 16:33:30,366 com.levy.jiratool.rooomy.RooomyIssueService.<init>(RooomyIssueService.java:50)
-Login...
-[INFO] 2020-03-09 16:33:33,664 com.levy.jiratool.rooomy.LoadIssueKey.loadIssueKey(LoadIssueKey.java:46)
-Load 1 issue keys.
-[INFO] 2020-03-09 16:33:33,679 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:66)
-Try to get issue comments of AMZCUS5-2251
-[INFO] 2020-03-09 16:36:17,924 com.levy.jiratool.rooomy.RooomyIssueService.<init>(RooomyIssueService.java:51)
-Login...
-[INFO] 2020-03-09 16:36:21,006 com.levy.jiratool.rooomy.LoadIssueKey.loadIssueKey(LoadIssueKey.java:46)
-Load 1 issue keys.
-[INFO] 2020-03-09 16:36:21,028 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:67)
-Try to get issue comments of AMZCUS5-2251
-[INFO] 2020-03-09 16:36:22,763 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:133)
-Complete get issue AMZCUS5-2251
-[INFO] 2020-03-09 16:36:22,763 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:82)
-Complete get issue AMZCUS5-2251
-[INFO] 2020-03-09 16:36:22,770 com.levy.jiratool.rooomy.RooomyIssueService.timeAround(RooomyIssueService.java:264)
-Time Around check: 2020-03-06T01:51:17.321+08:00, 2020-03-06T01:51:17.316+08:00
-[INFO] 2020-03-09 16:36:22,771 com.levy.jiratool.rooomy.RooomyIssueService.timeAround(RooomyIssueService.java:264)
-Time Around check: 2020-03-06T01:51:17.321+08:00, 2020-03-06T01:51:27.087+08:00
-[INFO] 2020-03-09 16:36:22,774 com.levy.jiratool.writer.ExcelFileWriter.createExcel(ExcelFileWriter.java:26)
-Will save data into: issueresult.xlsx
-[ERROR] 2020-03-09 16:36:23,592 com.levy.jiratool.writer.ExcelFileWriter.createExcel(ExcelFileWriter.java:50)
-Faild save data to file.
-java.io.FileNotFoundException: issueresult.xlsx (The process cannot access the file because it is being used by another process)
-	at java.io.FileOutputStream.open0(Native Method)
-	at java.io.FileOutputStream.open(FileOutputStream.java:270)
-	at java.io.FileOutputStream.<init>(FileOutputStream.java:213)
-	at java.io.FileOutputStream.<init>(FileOutputStream.java:101)
-	at com.levy.jiratool.writer.ExcelFileWriter.createExcel(ExcelFileWriter.java:44)
-	at com.levy.jiratool.writer.ExcelFileWriter.write(ExcelFileWriter.java:22)
-	at com.levy.jiratool.rooomy.RooomyIssueService.loadIssueAndWrite(RooomyIssueService.java:308)
-	at com.levy.jiratool.rooomy.RooomyIssueService.getRejectedIssueComments(RooomyIssueService.java:288)
-	at com.levy.jiratool.rooomy.RooomyIssueService.getRejectedIssueComments(RooomyIssueService.java:281)
-	at com.levy.jiratool.RoomyMain.main(RoomyMain.java:8)
-[INFO] 2020-03-09 16:46:09,838 com.levy.jiratool.rooomy.RooomyIssueService.<init>(RooomyIssueService.java:45)
-Login...
-[INFO] 2020-03-09 16:46:13,065 com.levy.jiratool.rooomy.LoadIssueKey.loadIssueKey(LoadIssueKey.java:46)
-Load 1 issue keys.
-[INFO] 2020-03-09 16:46:13,080 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:61)
-Try to get issue comments of AMZCUS5-2251
-[INFO] 2020-03-09 16:46:14,768 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:127)
-Complete get issue AMZCUS5-2251
-[INFO] 2020-03-09 16:46:14,769 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:76)
-Complete get issue AMZCUS5-2251
-[INFO] 2020-03-09 16:46:14,773 com.levy.jiratool.rooomy.RooomyIssueService.timeAround(RooomyIssueService.java:258)
-Time Around check: 2020-03-06T01:51:17.321+08:00, 2020-03-06T01:51:17.316+08:00
-[INFO] 2020-03-09 16:46:14,774 com.levy.jiratool.rooomy.RooomyIssueService.timeAround(RooomyIssueService.java:258)
-Time Around check: 2020-03-06T01:51:17.321+08:00, 2020-03-06T01:51:27.087+08:00
-[INFO] 2020-03-09 16:46:14,780 com.levy.jiratool.writer.ExcelFileWriter.createExcel(ExcelFileWriter.java:26)
-Will save data into: issueresult.xlsx
-[INFO] 2020-03-09 16:46:15,820 com.levy.jiratool.writer.ExcelFileWriter.createExcel(ExcelFileWriter.java:48)
-Success save data to file.
-[INFO] 2020-03-09 16:49:21,928 com.levy.jiratool.rooomy.RooomyIssueService.<init>(RooomyIssueService.java:45)
-Login...
-[INFO] 2020-03-09 16:49:25,305 com.levy.jiratool.rooomy.LoadIssueKey.loadIssueKey(LoadIssueKey.java:46)
-Load 1 issue keys.
-[INFO] 2020-03-09 16:49:25,322 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:61)
-Try to get issue comments of AMZCUS5-2251
-[INFO] 2020-03-09 16:51:27,142 com.levy.jiratool.rooomy.RooomyIssueService.<init>(RooomyIssueService.java:45)
-Login...
-[INFO] 2020-03-09 16:51:30,168 com.levy.jiratool.rooomy.LoadIssueKey.loadIssueKey(LoadIssueKey.java:46)
-Load 1 issue keys.
-[INFO] 2020-03-09 16:51:30,180 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:61)
-Try to get issue comments of AMZCUS5-2251
-[INFO] 2020-03-09 16:51:32,237 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:127)
-Complete get issue AMZCUS5-2251
-[INFO] 2020-03-09 16:51:32,237 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:76)
-Complete get issue AMZCUS5-2251
-[INFO] 2020-03-09 16:51:32,246 com.levy.jiratool.rooomy.RooomyIssueService.timeAround(RooomyIssueService.java:258)
-Time Around check: 2020-03-06T01:51:17.321+08:00, 2020-03-06T01:51:17.316+08:00
-[INFO] 2020-03-09 16:51:32,246 com.levy.jiratool.rooomy.RooomyIssueService.timeAround(RooomyIssueService.java:258)
-Time Around check: 2020-03-06T01:51:17.321+08:00, 2020-03-06T01:51:27.087+08:00
-[INFO] 2020-03-09 16:51:32,250 com.levy.jiratool.writer.ExcelFileWriter.createExcel(ExcelFileWriter.java:26)
-Will save data into: issueresult.xlsx
-[INFO] 2020-03-09 16:51:33,209 com.levy.jiratool.writer.ExcelFileWriter.createExcel(ExcelFileWriter.java:48)
-Success save data to file.
-[INFO] 2020-03-09 16:55:57,721 com.levy.jiratool.rooomy.RooomyIssueService.<init>(RooomyIssueService.java:45)
-Login...
-[INFO] 2020-03-09 16:56:00,898 com.levy.jiratool.rooomy.LoadIssueKey.loadIssueKey(LoadIssueKey.java:46)
-Load 1 issue keys.
-[INFO] 2020-03-09 16:56:00,915 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:61)
-Try to get issue comments of AMZCUS5-2251
-[INFO] 2020-03-09 16:56:02,574 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:127)
-Complete get issue AMZCUS5-2251
-[INFO] 2020-03-09 16:56:02,575 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:76)
-Complete get issue AMZCUS5-2251
-[INFO] 2020-03-09 16:56:02,580 com.levy.jiratool.rooomy.RooomyIssueService.timeAround(RooomyIssueService.java:260)
-Time Around check: 2020-03-06T01:51:17.321+08:00, 2020-03-06T01:51:17.316+08:00
-[INFO] 2020-03-09 16:56:02,580 com.levy.jiratool.rooomy.RooomyIssueService.timeAround(RooomyIssueService.java:260)
-Time Around check: 2020-03-06T01:51:17.321+08:00, 2020-03-06T01:51:27.087+08:00
-[INFO] 2020-03-09 16:56:02,591 com.levy.jiratool.writer.ExcelFileWriter.createExcel(ExcelFileWriter.java:26)
-Will save data into: issueresult.xlsx
-[INFO] 2020-03-09 16:56:03,552 com.levy.jiratool.writer.ExcelFileWriter.createExcel(ExcelFileWriter.java:48)
-Success save data to file.
-[INFO] 2020-03-09 17:47:16,473 com.levy.jiratool.rooomy.RooomyIssueService.<init>(RooomyIssueService.java:45)
-Login...
-[INFO] 2020-03-09 17:47:20,928 com.levy.jiratool.rooomy.LoadIssueKey.loadIssueKey(LoadIssueKey.java:46)
-Load 1 issue keys.
-[INFO] 2020-03-09 17:47:20,951 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:61)
-Try to get issue comments of AMZCUS5-14214
-[ERROR] 2020-03-09 17:47:22,671 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:78)
-Failed to get issue(AMZCUS5-14214) information.
-java.lang.NullPointerException
-	at com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:94)
-	at com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:68)
-	at com.levy.jiratool.rooomy.RooomyIssueService.lambda$loadIssueCommentsAsync$0(RooomyIssueService.java:55)
-	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
-	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1382)
-	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:481)
-	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
-	at java.util.stream.ReduceOps$ReduceTask.doLeaf(ReduceOps.java:747)
-	at java.util.stream.ReduceOps$ReduceTask.doLeaf(ReduceOps.java:721)
-	at java.util.stream.AbstractTask.compute(AbstractTask.java:316)
-	at java.util.concurrent.CountedCompleter.exec(CountedCompleter.java:731)
-	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)
-	at java.util.concurrent.ForkJoinTask.doInvoke(ForkJoinTask.java:401)
-	at java.util.concurrent.ForkJoinTask.invoke(ForkJoinTask.java:734)
-	at java.util.stream.ReduceOps$ReduceOp.evaluateParallel(ReduceOps.java:714)
-	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:233)
-	at java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:499)
-	at com.levy.jiratool.rooomy.RooomyIssueService.loadIssueCommentsAsync(RooomyIssueService.java:56)
-	at com.levy.jiratool.rooomy.RooomyIssueService.loadIssueAndWrite(RooomyIssueService.java:297)
-	at com.levy.jiratool.rooomy.RooomyIssueService.getRejectedIssueComments(RooomyIssueService.java:284)
-	at com.levy.jiratool.rooomy.RooomyIssueService.getRejectedIssueComments(RooomyIssueService.java:277)
-	at com.levy.jiratool.RoomyMain.main(RoomyMain.java:8)
-[ERROR] 2020-03-09 17:47:22,674 com.levy.jiratool.rooomy.RooomyIssueService.mergeIssueRejectedComments(RooomyIssueService.java:199)
-Failed to merge comments for AMZCUS5-14214
-[ERROR] 2020-03-09 17:47:22,674 com.levy.jiratool.rooomy.RooomyIssueService.mergeAssignee(RooomyIssueService.java:150)
-Failed to merge assignee for AMZCUS5-14214
-[ERROR] 2020-03-09 17:47:22,674 com.levy.jiratool.rooomy.RooomyIssueService.mergeLastComments(RooomyIssueService.java:170)
-Failed to merge last comments for AMZCUS5-14214
-[ERROR] 2020-03-09 17:47:22,675 com.levy.jiratool.rooomy.RooomyIssueService.mergeRemark(RooomyIssueService.java:250)
-Failed to merge remark for AMZCUS5-14214
-[INFO] 2020-03-09 17:47:22,679 com.levy.jiratool.writer.ExcelFileWriter.createExcel(ExcelFileWriter.java:26)
-Will save data into: issueresult.xlsx
-[INFO] 2020-03-09 17:47:23,640 com.levy.jiratool.writer.ExcelFileWriter.createExcel(ExcelFileWriter.java:48)
-Success save data to file.
-[INFO] 2020-03-09 17:47:38,898 com.levy.jiratool.rooomy.RooomyIssueService.<init>(RooomyIssueService.java:45)
-Login...
-[INFO] 2020-03-09 17:47:42,278 com.levy.jiratool.rooomy.LoadIssueKey.loadIssueKey(LoadIssueKey.java:46)
-Load 1 issue keys.
-[INFO] 2020-03-09 17:47:42,297 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:61)
-Try to get issue comments of AMZCUS5-14214
-[ERROR] 2020-03-09 17:48:17,282 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:78)
-Failed to get issue(AMZCUS5-14214) information.
-java.lang.NullPointerException
-	at com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:94)
-	at com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:68)
-	at com.levy.jiratool.rooomy.RooomyIssueService.lambda$loadIssueCommentsAsync$0(RooomyIssueService.java:55)
-	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
-	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1382)
-	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:481)
-	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
-	at java.util.stream.ReduceOps$ReduceTask.doLeaf(ReduceOps.java:747)
-	at java.util.stream.ReduceOps$ReduceTask.doLeaf(ReduceOps.java:721)
-	at java.util.stream.AbstractTask.compute(AbstractTask.java:316)
-	at java.util.concurrent.CountedCompleter.exec(CountedCompleter.java:731)
-	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)
-	at java.util.concurrent.ForkJoinTask.doInvoke(ForkJoinTask.java:401)
-	at java.util.concurrent.ForkJoinTask.invoke(ForkJoinTask.java:734)
-	at java.util.stream.ReduceOps$ReduceOp.evaluateParallel(ReduceOps.java:714)
-	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:233)
-	at java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:499)
-	at com.levy.jiratool.rooomy.RooomyIssueService.loadIssueCommentsAsync(RooomyIssueService.java:56)
-	at com.levy.jiratool.rooomy.RooomyIssueService.loadIssueAndWrite(RooomyIssueService.java:297)
-	at com.levy.jiratool.rooomy.RooomyIssueService.getRejectedIssueComments(RooomyIssueService.java:284)
-	at com.levy.jiratool.rooomy.RooomyIssueService.getRejectedIssueComments(RooomyIssueService.java:277)
-	at com.levy.jiratool.RoomyMain.main(RoomyMain.java:8)
-[ERROR] 2020-03-09 17:48:17,293 com.levy.jiratool.rooomy.RooomyIssueService.mergeIssueRejectedComments(RooomyIssueService.java:199)
-Failed to merge comments for AMZCUS5-14214
-[ERROR] 2020-03-09 17:48:17,293 com.levy.jiratool.rooomy.RooomyIssueService.mergeAssignee(RooomyIssueService.java:150)
-Failed to merge assignee for AMZCUS5-14214
-[ERROR] 2020-03-09 17:48:17,293 com.levy.jiratool.rooomy.RooomyIssueService.mergeLastComments(RooomyIssueService.java:170)
-Failed to merge last comments for AMZCUS5-14214
-[ERROR] 2020-03-09 17:48:17,294 com.levy.jiratool.rooomy.RooomyIssueService.mergeRemark(RooomyIssueService.java:250)
-Failed to merge remark for AMZCUS5-14214
-[INFO] 2020-03-09 17:48:17,298 com.levy.jiratool.writer.ExcelFileWriter.createExcel(ExcelFileWriter.java:26)
-Will save data into: issueresult.xlsx
-[INFO] 2020-03-09 17:49:32,538 com.levy.jiratool.rooomy.RooomyIssueService.<init>(RooomyIssueService.java:45)
-Login...
-[INFO] 2020-03-09 17:49:35,728 com.levy.jiratool.rooomy.LoadIssueKey.loadIssueKey(LoadIssueKey.java:46)
-Load 1 issue keys.
-[INFO] 2020-03-09 17:49:35,743 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:61)
-Try to get issue comments of AMZCUS5-14214
-[INFO] 2020-03-09 17:49:37,341 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:127)
-Complete get issue AMZCUS5-14214
-[INFO] 2020-03-09 17:49:37,342 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:76)
-Complete get issue AMZCUS5-14214
-[INFO] 2020-03-09 17:49:37,348 com.levy.jiratool.rooomy.RooomyIssueService.timeAround(RooomyIssueService.java:260)
-Time Around check: 2020-03-05T01:19:17.173+08:00, 2020-03-05T01:19:17.166+08:00
-[INFO] 2020-03-09 17:49:37,352 com.levy.jiratool.writer.ExcelFileWriter.createExcel(ExcelFileWriter.java:26)
-Will save data into: issueresult.xlsx
-[INFO] 2020-03-09 17:49:38,466 com.levy.jiratool.writer.ExcelFileWriter.createExcel(ExcelFileWriter.java:48)
-Success save data to file.
-[INFO] 2020-03-09 17:50:39,779 com.levy.jiratool.rooomy.RooomyIssueService.<init>(RooomyIssueService.java:45)
-Login...
-[INFO] 2020-03-09 17:50:43,242 com.levy.jiratool.rooomy.LoadIssueKey.loadIssueKey(LoadIssueKey.java:46)
-Load 1 issue keys.
-[INFO] 2020-03-09 17:50:43,258 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:61)
-Try to get issue comments of AMZCUS5-14214
-[INFO] 2020-03-09 17:52:53,291 com.levy.jiratool.rooomy.RooomyIssueService.<init>(RooomyIssueService.java:45)
-Login...
-[INFO] 2020-03-09 17:52:56,618 com.levy.jiratool.rooomy.LoadIssueKey.loadIssueKey(LoadIssueKey.java:46)
-Load 1 issue keys.
-[INFO] 2020-03-09 17:52:56,633 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:61)
-Try to get issue comments of AMZCUS5-14214
-[INFO] 2020-03-09 17:53:11,706 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:127)
-Complete get issue AMZCUS5-14214
-[INFO] 2020-03-09 17:53:11,706 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:76)
-Complete get issue AMZCUS5-14214
-[INFO] 2020-03-09 17:53:11,713 com.levy.jiratool.rooomy.RooomyIssueService.timeAround(RooomyIssueService.java:260)
-Time Around check: 2020-03-05T01:19:17.173+08:00, 2020-03-05T01:19:17.166+08:00
-[INFO] 2020-03-09 17:53:11,717 com.levy.jiratool.writer.ExcelFileWriter.createExcel(ExcelFileWriter.java:26)
-Will save data into: issueresult.xlsx
-[ERROR] 2020-03-09 17:53:12,824 com.levy.jiratool.writer.ExcelFileWriter.createExcel(ExcelFileWriter.java:50)
+[ERROR] 2020-03-12 14:27:17,692 com.levy.jiratool.writer.ExcelFileWriter.createExcel(ExcelFileWriter.java:50)
 Faild save data to file.
 java.io.FileNotFoundException: issueresult.xlsx (The process cannot access the file because it is being used by another process)
 	at java.io.FileOutputStream.open0(Native Method)
@@ -447,35 +47,426 @@ java.io.FileNotFoundException: issueresult.xlsx (The process cannot access the f
 	at com.levy.jiratool.rooomy.RooomyIssueService.getRejectedIssueComments(RooomyIssueService.java:284)
 	at com.levy.jiratool.rooomy.RooomyIssueService.getRejectedIssueComments(RooomyIssueService.java:277)
 	at com.levy.jiratool.RoomyMain.main(RoomyMain.java:8)
-[INFO] 2020-03-09 17:53:24,650 com.levy.jiratool.rooomy.RooomyIssueService.<init>(RooomyIssueService.java:45)
+[INFO] 2020-03-12 14:27:24,275 com.levy.jiratool.rooomy.RooomyIssueService.<init>(RooomyIssueService.java:45)
 Login...
-[INFO] 2020-03-09 17:53:27,938 com.levy.jiratool.rooomy.LoadIssueKey.loadIssueKey(LoadIssueKey.java:46)
+[INFO] 2020-03-12 14:27:28,552 com.levy.jiratool.rooomy.LoadIssueKey.loadIssueKey(LoadIssueKey.java:46)
 Load 1 issue keys.
-[INFO] 2020-03-09 17:53:27,952 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:61)
-Try to get issue comments of AMZCUS5-14214
-[INFO] 2020-03-09 17:53:29,730 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:127)
-Complete get issue AMZCUS5-14214
-[INFO] 2020-03-09 17:53:29,730 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:76)
-Complete get issue AMZCUS5-14214
-[INFO] 2020-03-09 17:53:29,734 com.levy.jiratool.rooomy.RooomyIssueService.timeAround(RooomyIssueService.java:260)
-Time Around check: 2020-03-05T01:19:17.173+08:00, 2020-03-05T01:19:17.166+08:00
-[INFO] 2020-03-09 17:53:29,741 com.levy.jiratool.writer.ExcelFileWriter.createExcel(ExcelFileWriter.java:26)
+[INFO] 2020-03-12 14:27:28,567 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:61)
+Try to get issue comments of AMZCUS4-150094
+[INFO] 2020-03-12 14:27:59,929 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:127)
+Complete get issue AMZCUS4-150094
+[INFO] 2020-03-12 14:27:59,930 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:76)
+Complete get issue AMZCUS4-150094
+[INFO] 2020-03-12 14:30:20,052 com.levy.jiratool.rooomy.RooomyIssueService.timeAround(RooomyIssueService.java:260)
+Time Around check: 2020-03-03T16:38:35.882+08:00, 2020-03-03T16:38:35.878+08:00
+[INFO] 2020-03-12 14:30:20,592 com.levy.jiratool.writer.ExcelFileWriter.createExcel(ExcelFileWriter.java:26)
 Will save data into: issueresult.xlsx
-[INFO] 2020-03-09 17:53:30,806 com.levy.jiratool.writer.ExcelFileWriter.createExcel(ExcelFileWriter.java:48)
+[ERROR] 2020-03-12 14:30:21,504 com.levy.jiratool.writer.ExcelFileWriter.createExcel(ExcelFileWriter.java:50)
+Faild save data to file.
+java.io.FileNotFoundException: issueresult.xlsx (The process cannot access the file because it is being used by another process)
+	at java.io.FileOutputStream.open0(Native Method)
+	at java.io.FileOutputStream.open(FileOutputStream.java:270)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:213)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:101)
+	at com.levy.jiratool.writer.ExcelFileWriter.createExcel(ExcelFileWriter.java:44)
+	at com.levy.jiratool.writer.ExcelFileWriter.write(ExcelFileWriter.java:22)
+	at com.levy.jiratool.rooomy.RooomyIssueService.loadIssueAndWrite(RooomyIssueService.java:304)
+	at com.levy.jiratool.rooomy.RooomyIssueService.getRejectedIssueComments(RooomyIssueService.java:284)
+	at com.levy.jiratool.rooomy.RooomyIssueService.getRejectedIssueComments(RooomyIssueService.java:277)
+	at com.levy.jiratool.RoomyMain.main(RoomyMain.java:8)
+[INFO] 2020-03-12 14:30:39,292 com.levy.jiratool.rooomy.RooomyIssueService.<init>(RooomyIssueService.java:45)
+Login...
+[INFO] 2020-03-12 14:30:44,549 com.levy.jiratool.rooomy.LoadIssueKey.loadIssueKey(LoadIssueKey.java:46)
+Load 1 issue keys.
+[INFO] 2020-03-12 14:30:44,569 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:61)
+Try to get issue comments of AMZCUS4-150094
+[INFO] 2020-03-12 14:30:46,947 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:127)
+Complete get issue AMZCUS4-150094
+[INFO] 2020-03-12 14:30:46,948 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:76)
+Complete get issue AMZCUS4-150094
+[INFO] 2020-03-12 14:30:55,115 com.levy.jiratool.rooomy.RooomyIssueService.timeAround(RooomyIssueService.java:260)
+Time Around check: 2020-03-03T16:38:35.882+08:00, 2020-03-03T16:38:35.878+08:00
+[INFO] 2020-03-12 14:33:50,305 com.levy.jiratool.writer.ExcelFileWriter.createExcel(ExcelFileWriter.java:26)
+Will save data into: issueresult.xlsx
+[INFO] 2020-03-12 14:33:53,560 com.levy.jiratool.rooomy.RooomyIssueService.<init>(RooomyIssueService.java:45)
+Login...
+[INFO] 2020-03-12 14:33:57,754 com.levy.jiratool.rooomy.LoadIssueKey.loadIssueKey(LoadIssueKey.java:46)
+Load 1 issue keys.
+[INFO] 2020-03-12 14:33:57,769 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:61)
+Try to get issue comments of AMZCUS4-150094
+[INFO] 2020-03-12 14:33:59,518 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:127)
+Complete get issue AMZCUS4-150094
+[INFO] 2020-03-12 14:33:59,519 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:76)
+Complete get issue AMZCUS4-150094
+[INFO] 2020-03-12 14:34:50,850 com.levy.jiratool.rooomy.RooomyIssueService.timeAround(RooomyIssueService.java:260)
+Time Around check: 2020-03-03T16:38:35.882+08:00, 2020-03-03T16:38:35.878+08:00
+[INFO] 2020-03-12 14:34:50,853 com.levy.jiratool.writer.ExcelFileWriter.createExcel(ExcelFileWriter.java:26)
+Will save data into: issueresult.xlsx
+[INFO] 2020-03-12 14:53:47,586 com.levy.jiratool.rooomy.RooomyIssueService.<init>(RooomyIssueService.java:45)
+Login...
+[INFO] 2020-03-12 14:53:51,954 com.levy.jiratool.rooomy.LoadIssueKey.loadIssueKey(LoadIssueKey.java:46)
+Load 1 issue keys.
+[INFO] 2020-03-12 14:53:51,968 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:61)
+Try to get issue comments of AMZCUS4-150094
+[INFO] 2020-03-12 14:53:55,376 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:127)
+Complete get issue AMZCUS4-150094
+[INFO] 2020-03-12 14:53:55,376 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:76)
+Complete get issue AMZCUS4-150094
+[INFO] 2020-03-12 14:57:30,722 com.levy.jiratool.rooomy.RooomyIssueService.timeAround(RooomyIssueService.java:259)
+Time Around check: 2020-03-03T16:38:35.882+08:00, 2020-03-03T16:38:35.878+08:00
+[INFO] 2020-03-12 14:57:30,727 com.levy.jiratool.writer.ExcelFileWriter.createExcel(ExcelFileWriter.java:26)
+Will save data into: issueresult.xlsx
+[INFO] 2020-03-12 15:00:24,749 com.levy.jiratool.rooomy.RooomyIssueService.<init>(RooomyIssueService.java:45)
+Login...
+[INFO] 2020-03-12 15:00:29,092 com.levy.jiratool.rooomy.LoadIssueKey.loadIssueKey(LoadIssueKey.java:46)
+Load 1 issue keys.
+[INFO] 2020-03-12 15:00:29,106 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:61)
+Try to get issue comments of AMZCUS4-150094
+[INFO] 2020-03-12 15:03:06,308 com.levy.jiratool.rooomy.RooomyIssueService.<init>(RooomyIssueService.java:45)
+Login...
+[INFO] 2020-03-12 15:03:10,883 com.levy.jiratool.rooomy.LoadIssueKey.loadIssueKey(LoadIssueKey.java:46)
+Load 1 issue keys.
+[INFO] 2020-03-12 15:03:10,897 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:61)
+Try to get issue comments of AMZCUS4-150094
+[ERROR] 2020-03-12 15:08:27,532 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:78)
+Failed to get issue(AMZCUS4-150094) information.
+java.lang.ClassCastException: org.codehaus.jettison.json.JSONObject cannot be cast to org.codehaus.jettison.json.JSONArray
+	at com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:105)
+	at com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:68)
+	at com.levy.jiratool.rooomy.RooomyIssueService.lambda$loadIssueCommentsAsync$0(RooomyIssueService.java:55)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1382)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:481)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
+	at java.util.stream.ReduceOps$ReduceTask.doLeaf(ReduceOps.java:747)
+	at java.util.stream.ReduceOps$ReduceTask.doLeaf(ReduceOps.java:721)
+	at java.util.stream.AbstractTask.compute(AbstractTask.java:316)
+	at java.util.concurrent.CountedCompleter.exec(CountedCompleter.java:731)
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)
+	at java.util.concurrent.ForkJoinTask.doInvoke(ForkJoinTask.java:401)
+	at java.util.concurrent.ForkJoinTask.invoke(ForkJoinTask.java:734)
+	at java.util.stream.ReduceOps$ReduceOp.evaluateParallel(ReduceOps.java:714)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:233)
+	at java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:499)
+	at com.levy.jiratool.rooomy.RooomyIssueService.loadIssueCommentsAsync(RooomyIssueService.java:56)
+	at com.levy.jiratool.rooomy.RooomyIssueService.loadIssueAndWrite(RooomyIssueService.java:302)
+	at com.levy.jiratool.rooomy.RooomyIssueService.getRejectedIssueComments(RooomyIssueService.java:289)
+	at com.levy.jiratool.rooomy.RooomyIssueService.getRejectedIssueComments(RooomyIssueService.java:282)
+	at com.levy.jiratool.RoomyMain.main(RoomyMain.java:8)
+[ERROR] 2020-03-12 15:08:27,539 com.levy.jiratool.rooomy.RooomyIssueService.mergeIssueRejectedComments(RooomyIssueService.java:204)
+Failed to merge comments for AMZCUS4-150094
+[ERROR] 2020-03-12 15:08:27,539 com.levy.jiratool.rooomy.RooomyIssueService.mergeAssignee(RooomyIssueService.java:155)
+Failed to merge assignee for AMZCUS4-150094
+[ERROR] 2020-03-12 15:08:27,539 com.levy.jiratool.rooomy.RooomyIssueService.mergeLastComments(RooomyIssueService.java:175)
+Failed to merge last comments for AMZCUS4-150094
+[ERROR] 2020-03-12 15:08:27,540 com.levy.jiratool.rooomy.RooomyIssueService.mergeRemark(RooomyIssueService.java:255)
+Failed to merge remark for AMZCUS4-150094
+[INFO] 2020-03-12 15:08:27,545 com.levy.jiratool.writer.ExcelFileWriter.createExcel(ExcelFileWriter.java:26)
+Will save data into: issueresult.xlsx
+[INFO] 2020-03-12 15:09:59,155 com.levy.jiratool.rooomy.RooomyIssueService.<init>(RooomyIssueService.java:45)
+Login...
+[INFO] 2020-03-12 15:10:04,214 com.levy.jiratool.rooomy.LoadIssueKey.loadIssueKey(LoadIssueKey.java:46)
+Load 1 issue keys.
+[INFO] 2020-03-12 15:10:04,239 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:61)
+Try to get issue comments of AMZCUS4-150094
+[INFO] 2020-03-12 15:18:42,931 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:74)
+Issue AMZCUS4-150094 will retry 1 time.
+[INFO] 2020-03-12 15:47:18,668 com.levy.jiratool.rooomy.RooomyIssueService.<init>(RooomyIssueService.java:45)
+Login...
+[INFO] 2020-03-12 15:47:22,883 com.levy.jiratool.rooomy.LoadIssueKey.loadIssueKey(LoadIssueKey.java:46)
+Load 1 issue keys.
+[INFO] 2020-03-12 15:47:22,899 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:61)
+Try to get issue comments of AMZCUS4-150094
+[INFO] 2020-03-12 15:47:25,458 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:133)
+Complete get issue AMZCUS4-150094
+[INFO] 2020-03-12 15:47:25,459 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:76)
+Complete get issue AMZCUS4-150094
+[INFO] 2020-03-12 15:47:25,465 com.levy.jiratool.rooomy.RooomyIssueService.timeAround(RooomyIssueService.java:286)
+Time Around check: 2020-03-03T16:38:35.882+08:00, 2020-03-03T16:38:35.878+08:00
+[INFO] 2020-03-12 15:47:25,468 com.levy.jiratool.writer.ExcelFileWriter.createExcel(ExcelFileWriter.java:26)
+Will save data into: issueresult.xlsx
+[ERROR] 2020-03-12 15:47:26,485 com.levy.jiratool.writer.ExcelFileWriter.createExcel(ExcelFileWriter.java:50)
+Faild save data to file.
+java.io.FileNotFoundException: issueresult.xlsx (The process cannot access the file because it is being used by another process)
+	at java.io.FileOutputStream.open0(Native Method)
+	at java.io.FileOutputStream.open(FileOutputStream.java:270)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:213)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:101)
+	at com.levy.jiratool.writer.ExcelFileWriter.createExcel(ExcelFileWriter.java:44)
+	at com.levy.jiratool.writer.ExcelFileWriter.write(ExcelFileWriter.java:22)
+	at com.levy.jiratool.rooomy.RooomyIssueService.loadIssueAndWrite(RooomyIssueService.java:331)
+	at com.levy.jiratool.rooomy.RooomyIssueService.getRejectedIssueComments(RooomyIssueService.java:311)
+	at com.levy.jiratool.rooomy.RooomyIssueService.getRejectedIssueComments(RooomyIssueService.java:304)
+	at com.levy.jiratool.RoomyMain.main(RoomyMain.java:8)
+[INFO] 2020-03-12 15:47:37,815 com.levy.jiratool.rooomy.RooomyIssueService.<init>(RooomyIssueService.java:45)
+Login...
+[INFO] 2020-03-12 15:47:41,754 com.levy.jiratool.rooomy.LoadIssueKey.loadIssueKey(LoadIssueKey.java:46)
+Load 1 issue keys.
+[INFO] 2020-03-12 15:47:41,773 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:61)
+Try to get issue comments of AMZCUS4-150094
+[INFO] 2020-03-12 15:47:43,400 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:133)
+Complete get issue AMZCUS4-150094
+[INFO] 2020-03-12 15:47:43,400 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:76)
+Complete get issue AMZCUS4-150094
+[INFO] 2020-03-12 15:47:43,405 com.levy.jiratool.rooomy.RooomyIssueService.timeAround(RooomyIssueService.java:286)
+Time Around check: 2020-03-03T16:38:35.882+08:00, 2020-03-03T16:38:35.878+08:00
+[INFO] 2020-03-12 15:47:43,408 com.levy.jiratool.writer.ExcelFileWriter.createExcel(ExcelFileWriter.java:26)
+Will save data into: issueresult.xlsx
+[INFO] 2020-03-12 15:47:44,343 com.levy.jiratool.writer.ExcelFileWriter.createExcel(ExcelFileWriter.java:48)
 Success save data to file.
-[INFO] 2020-03-09 17:55:05,161 com.levy.jiratool.rooomy.RooomyIssueService.<init>(RooomyIssueService.java:45)
+[INFO] 2020-03-12 15:49:05,067 com.levy.jiratool.rooomy.RooomyIssueService.<init>(RooomyIssueService.java:45)
 Login...
-[INFO] 2020-03-09 17:55:08,451 com.levy.jiratool.rooomy.LoadIssueKey.loadIssueKey(LoadIssueKey.java:46)
+[INFO] 2020-03-12 15:49:09,644 com.levy.jiratool.rooomy.LoadIssueKey.loadIssueKey(LoadIssueKey.java:46)
 Load 1 issue keys.
-[INFO] 2020-03-09 17:55:08,467 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:61)
-Try to get issue comments of AMZCUS5-14214
-[INFO] 2020-03-09 17:55:10,190 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:127)
-Complete get issue AMZCUS5-14214
-[INFO] 2020-03-09 17:55:10,194 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:76)
-Complete get issue AMZCUS5-14214
-[INFO] 2020-03-09 17:55:10,198 com.levy.jiratool.rooomy.RooomyIssueService.timeAround(RooomyIssueService.java:260)
-Time Around check: 2020-03-05T01:19:17.173+08:00, 2020-03-05T01:19:17.166+08:00
-[INFO] 2020-03-09 17:55:10,202 com.levy.jiratool.writer.ExcelFileWriter.createExcel(ExcelFileWriter.java:26)
+[INFO] 2020-03-12 15:49:09,665 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:61)
+Try to get issue comments of AMZCUS4-150094
+[INFO] 2020-03-12 15:49:15,299 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:133)
+Complete get issue AMZCUS4-150094
+[INFO] 2020-03-12 15:49:15,300 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:76)
+Complete get issue AMZCUS4-150094
+[INFO] 2020-03-12 15:49:37,322 com.levy.jiratool.rooomy.RooomyIssueService.timeAround(RooomyIssueService.java:286)
+Time Around check: 2020-03-03T16:38:35.882+08:00, 2020-03-03T16:38:35.878+08:00
+[INFO] 2020-03-12 15:49:38,947 com.levy.jiratool.writer.ExcelFileWriter.createExcel(ExcelFileWriter.java:26)
 Will save data into: issueresult.xlsx
-[INFO] 2020-03-09 17:55:11,241 com.levy.jiratool.writer.ExcelFileWriter.createExcel(ExcelFileWriter.java:48)
+[INFO] 2020-03-12 15:49:39,993 com.levy.jiratool.writer.ExcelFileWriter.createExcel(ExcelFileWriter.java:48)
+Success save data to file.
+[INFO] 2020-03-12 15:51:48,784 com.levy.jiratool.rooomy.RooomyIssueService.<init>(RooomyIssueService.java:45)
+Login...
+[INFO] 2020-03-12 15:51:52,875 com.levy.jiratool.rooomy.LoadIssueKey.loadIssueKey(LoadIssueKey.java:46)
+Load 1 issue keys.
+[INFO] 2020-03-12 15:51:52,892 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:61)
+Try to get issue comments of AMZCUS4-150094
+[INFO] 2020-03-12 15:51:54,571 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:133)
+Complete get issue AMZCUS4-150094
+[INFO] 2020-03-12 15:51:54,571 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:76)
+Complete get issue AMZCUS4-150094
+[INFO] 2020-03-12 15:51:54,574 com.levy.jiratool.rooomy.RooomyIssueService.timeAround(RooomyIssueService.java:286)
+Time Around check: 2020-03-03T16:38:35.882+08:00, 2020-03-03T16:38:35.878+08:00
+[INFO] 2020-03-12 15:51:54,578 com.levy.jiratool.writer.ExcelFileWriter.createExcel(ExcelFileWriter.java:26)
+Will save data into: issueresult.xlsx
+[INFO] 2020-03-12 15:51:55,445 com.levy.jiratool.writer.ExcelFileWriter.createExcel(ExcelFileWriter.java:48)
+Success save data to file.
+[INFO] 2020-03-12 15:57:04,065 com.levy.jiratool.rooomy.RooomyIssueService.<init>(RooomyIssueService.java:45)
+Login...
+[INFO] 2020-03-12 15:57:08,439 com.levy.jiratool.rooomy.LoadIssueKey.loadIssueKey(LoadIssueKey.java:46)
+Load 1 issue keys.
+[INFO] 2020-03-12 15:57:08,456 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:61)
+Try to get issue comments of AMZFAC5-16031
+[INFO] 2020-03-12 15:57:10,040 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:133)
+Complete get issue AMZFAC5-16031
+[INFO] 2020-03-12 15:57:10,042 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:76)
+Complete get issue AMZFAC5-16031
+[WARN] 2020-03-12 15:57:36,248 com.levy.jiratool.rooomy.RooomyIssueService.mergeRemark(RooomyIssueService.java:256)
+AMZFAC5-16031 not found remark.
+[INFO] 2020-03-12 15:57:36,252 com.levy.jiratool.writer.ExcelFileWriter.createExcel(ExcelFileWriter.java:26)
+Will save data into: issueresult.xlsx
+[INFO] 2020-03-12 16:01:02,131 com.levy.jiratool.rooomy.RooomyIssueService.<init>(RooomyIssueService.java:45)
+Login...
+[INFO] 2020-03-12 16:01:06,239 com.levy.jiratool.rooomy.LoadIssueKey.loadIssueKey(LoadIssueKey.java:46)
+Load 1 issue keys.
+[INFO] 2020-03-12 16:01:06,254 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:61)
+Try to get issue comments of AMZFAC5-16031
+[INFO] 2020-03-12 16:01:08,082 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:133)
+Complete get issue AMZFAC5-16031
+[INFO] 2020-03-12 16:01:08,082 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:76)
+Complete get issue AMZFAC5-16031
+[WARN] 2020-03-12 16:01:08,086 com.levy.jiratool.rooomy.RooomyIssueService.mergeRemark(RooomyIssueService.java:256)
+AMZFAC5-16031 not found remark.
+[INFO] 2020-03-12 16:01:08,089 com.levy.jiratool.writer.ExcelFileWriter.createExcel(ExcelFileWriter.java:26)
+Will save data into: issueresult.xlsx
+[INFO] 2020-03-12 16:01:08,934 com.levy.jiratool.writer.ExcelFileWriter.createExcel(ExcelFileWriter.java:48)
+Success save data to file.
+[INFO] 2020-03-12 16:13:22,088 com.levy.jiratool.rooomy.RooomyIssueService.<init>(RooomyIssueService.java:45)
+Login...
+[INFO] 2020-03-12 16:13:26,152 com.levy.jiratool.rooomy.LoadIssueKey.loadIssueKey(LoadIssueKey.java:46)
+Load 1 issue keys.
+[INFO] 2020-03-12 16:13:26,165 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:61)
+Try to get issue comments of AMZFAC5-16031
+[INFO] 2020-03-12 16:13:27,839 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:134)
+Complete get issue AMZFAC5-16031
+[INFO] 2020-03-12 16:13:27,840 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:76)
+Complete get issue AMZFAC5-16031
+[WARN] 2020-03-12 16:13:27,843 com.levy.jiratool.rooomy.RooomyIssueService.mergeRemark(RooomyIssueService.java:257)
+AMZFAC5-16031 not found remark.
+[INFO] 2020-03-12 16:13:27,846 com.levy.jiratool.writer.ExcelFileWriter.createExcel(ExcelFileWriter.java:26)
+Will save data into: issueresult.xlsx
+[INFO] 2020-03-12 16:13:28,721 com.levy.jiratool.writer.ExcelFileWriter.createExcel(ExcelFileWriter.java:48)
+Success save data to file.
+[INFO] 2020-03-12 16:14:28,898 com.levy.jiratool.rooomy.RooomyIssueService.<init>(RooomyIssueService.java:45)
+Login...
+[INFO] 2020-03-12 16:14:32,987 com.levy.jiratool.rooomy.LoadIssueKey.loadIssueKey(LoadIssueKey.java:46)
+Load 18 issue keys.
+[INFO] 2020-03-12 16:14:33,008 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:61)
+Try to get issue comments of AMZCUS5-12024
+[INFO] 2020-03-12 16:14:33,009 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:61)
+Try to get issue comments of AMZCUS4-166370
+[INFO] 2020-03-12 16:14:33,008 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:61)
+Try to get issue comments of AMZCUS5-11391
+[INFO] 2020-03-12 16:14:33,012 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:61)
+Try to get issue comments of AMZCUS4-147299
+[INFO] 2020-03-12 16:14:33,015 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:61)
+Try to get issue comments of AMZCUS4-39085
+[INFO] 2020-03-12 16:14:33,012 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:61)
+Try to get issue comments of AMZCUS4-39085
+[INFO] 2020-03-12 16:14:33,011 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:61)
+Try to get issue comments of AMZCUS5-12610
+[INFO] 2020-03-12 16:14:33,037 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:61)
+Try to get issue comments of AMZCUS4-147299
+[INFO] 2020-03-12 16:14:33,011 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:61)
+Try to get issue comments of AMZCUS5-11391
+[INFO] 2020-03-12 16:14:33,010 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:61)
+Try to get issue comments of AMZCUS5-5873
+[INFO] 2020-03-12 16:14:33,037 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:61)
+Try to get issue comments of AMZCUS5-5873
+[INFO] 2020-03-12 16:14:33,037 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:61)
+Try to get issue comments of AMZCUS5-12610
+[INFO] 2020-03-12 16:14:33,018 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:61)
+Try to get issue comments of AMZCUS4-166370
+[INFO] 2020-03-12 16:14:33,017 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:61)
+Try to get issue comments of AMZCUS5-12024
+[INFO] 2020-03-12 16:14:33,015 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:61)
+Try to get issue comments of AMZCUS5-5412
+[INFO] 2020-03-12 16:14:33,015 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:61)
+Try to get issue comments of AMZCUS5-2111
+[INFO] 2020-03-12 16:14:33,015 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:61)
+Try to get issue comments of AMZFAC5-16031
+[INFO] 2020-03-12 16:14:33,015 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:61)
+Try to get issue comments of AMZCUS5-5412
+[INFO] 2020-03-12 16:14:35,168 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:134)
+Complete get issue AMZFAC5-16031
+[INFO] 2020-03-12 16:14:35,168 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:76)
+Complete get issue AMZFAC5-16031
+[INFO] 2020-03-12 16:14:35,203 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:134)
+Complete get issue AMZCUS5-11391
+[INFO] 2020-03-12 16:14:35,203 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:76)
+Complete get issue AMZCUS5-11391
+[INFO] 2020-03-12 16:14:35,278 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:134)
+Complete get issue AMZCUS5-11391
+[INFO] 2020-03-12 16:14:35,279 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:76)
+Complete get issue AMZCUS5-11391
+[INFO] 2020-03-12 16:14:35,315 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:134)
+Complete get issue AMZCUS4-39085
+[INFO] 2020-03-12 16:14:35,316 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:76)
+Complete get issue AMZCUS4-39085
+[INFO] 2020-03-12 16:14:35,351 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:134)
+Complete get issue AMZCUS5-5873
+[INFO] 2020-03-12 16:14:35,352 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:76)
+Complete get issue AMZCUS5-5873
+[INFO] 2020-03-12 16:14:35,363 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:134)
+Complete get issue AMZCUS5-12024
+[INFO] 2020-03-12 16:14:35,364 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:76)
+Complete get issue AMZCUS5-12024
+[INFO] 2020-03-12 16:14:35,364 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:134)
+Complete get issue AMZCUS4-39085
+[INFO] 2020-03-12 16:14:35,364 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:76)
+Complete get issue AMZCUS4-39085
+[INFO] 2020-03-12 16:14:35,393 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:134)
+Complete get issue AMZCUS5-5873
+[INFO] 2020-03-12 16:14:35,393 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:76)
+Complete get issue AMZCUS5-5873
+[INFO] 2020-03-12 16:14:35,434 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:134)
+Complete get issue AMZCUS5-5412
+[INFO] 2020-03-12 16:14:35,434 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:76)
+Complete get issue AMZCUS5-5412
+[INFO] 2020-03-12 16:14:35,435 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:134)
+Complete get issue AMZCUS4-147299
+[INFO] 2020-03-12 16:14:35,435 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:134)
+Complete get issue AMZCUS4-147299
+[INFO] 2020-03-12 16:14:35,435 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:76)
+Complete get issue AMZCUS4-147299
+[INFO] 2020-03-12 16:14:35,435 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:76)
+Complete get issue AMZCUS4-147299
+[INFO] 2020-03-12 16:14:35,436 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:134)
+Complete get issue AMZCUS5-12024
+[INFO] 2020-03-12 16:14:35,436 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:76)
+Complete get issue AMZCUS5-12024
+[INFO] 2020-03-12 16:14:35,470 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:134)
+Complete get issue AMZCUS4-166370
+[INFO] 2020-03-12 16:14:35,470 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:76)
+Complete get issue AMZCUS4-166370
+[INFO] 2020-03-12 16:14:35,479 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:134)
+Complete get issue AMZCUS4-166370
+[INFO] 2020-03-12 16:14:35,480 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:76)
+Complete get issue AMZCUS4-166370
+[INFO] 2020-03-12 16:14:35,481 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:134)
+Complete get issue AMZCUS5-5412
+[INFO] 2020-03-12 16:14:35,482 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:76)
+Complete get issue AMZCUS5-5412
+[INFO] 2020-03-12 16:14:35,535 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:134)
+Complete get issue AMZCUS5-2111
+[INFO] 2020-03-12 16:14:35,535 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:76)
+Complete get issue AMZCUS5-2111
+[INFO] 2020-03-12 16:14:35,613 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:134)
+Complete get issue AMZCUS5-12610
+[INFO] 2020-03-12 16:14:35,613 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:76)
+Complete get issue AMZCUS5-12610
+[INFO] 2020-03-12 16:14:35,698 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:134)
+Complete get issue AMZCUS5-12610
+[INFO] 2020-03-12 16:14:35,699 com.levy.jiratool.rooomy.RooomyIssueService.loadIssueResult(RooomyIssueService.java:76)
+Complete get issue AMZCUS5-12610
+[WARN] 2020-03-12 16:14:35,699 com.levy.jiratool.rooomy.RooomyIssueService.mergeRemark(RooomyIssueService.java:257)
+AMZFAC5-16031 not found remark.
+[INFO] 2020-03-12 16:14:35,701 com.levy.jiratool.rooomy.RooomyIssueService.timeAround(RooomyIssueService.java:287)
+Time Around check: 2020-03-04T17:05:47.436+08:00, 2020-03-04T17:05:47.430+08:00
+[INFO] 2020-03-12 16:14:35,701 com.levy.jiratool.rooomy.RooomyIssueService.timeAround(RooomyIssueService.java:287)
+Time Around check: 2020-03-04T17:05:47.436+08:00, 2020-03-04T17:02:32.134+08:00
+[INFO] 2020-03-12 16:14:35,701 com.levy.jiratool.rooomy.RooomyIssueService.timeAround(RooomyIssueService.java:287)
+Time Around check: 2020-02-14T13:33:08.732+08:00, 2020-02-14T13:33:08.725+08:00
+[INFO] 2020-03-12 16:14:35,702 com.levy.jiratool.rooomy.RooomyIssueService.timeAround(RooomyIssueService.java:287)
+Time Around check: 2020-02-14T13:33:08.732+08:00, 2020-02-14T13:31:05.868+08:00
+[INFO] 2020-03-12 16:14:35,702 com.levy.jiratool.rooomy.RooomyIssueService.timeAround(RooomyIssueService.java:287)
+Time Around check: 2020-02-17T21:26:24.328+08:00, 2020-02-17T21:26:24.319+08:00
+[INFO] 2020-03-12 16:14:35,702 com.levy.jiratool.rooomy.RooomyIssueService.timeAround(RooomyIssueService.java:287)
+Time Around check: 2020-02-17T21:26:24.328+08:00, 2020-02-17T21:25:42.293+08:00
+[INFO] 2020-03-12 16:14:35,703 com.levy.jiratool.rooomy.RooomyIssueService.timeAround(RooomyIssueService.java:287)
+Time Around check: 2020-02-14T13:10:06.630+08:00, 2020-02-14T13:10:06.623+08:00
+[INFO] 2020-03-12 16:14:35,703 com.levy.jiratool.rooomy.RooomyIssueService.timeAround(RooomyIssueService.java:287)
+Time Around check: 2020-02-26T17:39:48.417+08:00, 2020-02-26T17:39:48.413+08:00
+[INFO] 2020-03-12 16:14:35,703 com.levy.jiratool.rooomy.RooomyIssueService.timeAround(RooomyIssueService.java:287)
+Time Around check: 2020-02-26T17:39:48.417+08:00, 2020-02-26T17:39:40.878+08:00
+[INFO] 2020-03-12 16:14:35,704 com.levy.jiratool.rooomy.RooomyIssueService.timeAround(RooomyIssueService.java:287)
+Time Around check: 2020-02-19T09:52:28.498+08:00, 2020-02-19T09:52:28.494+08:00
+[INFO] 2020-03-12 16:14:35,704 com.levy.jiratool.rooomy.RooomyIssueService.timeAround(RooomyIssueService.java:287)
+Time Around check: 2020-02-19T12:03:59.118+08:00, 2020-02-19T12:03:59.113+08:00
+[INFO] 2020-03-12 16:14:35,704 com.levy.jiratool.rooomy.RooomyIssueService.timeAround(RooomyIssueService.java:287)
+Time Around check: 2020-02-19T12:03:59.118+08:00, 2020-02-19T12:03:09.457+08:00
+[INFO] 2020-03-12 16:14:35,705 com.levy.jiratool.rooomy.RooomyIssueService.timeAround(RooomyIssueService.java:287)
+Time Around check: 2020-03-07T16:14:48.119+08:00, 2020-03-07T16:14:48.114+08:00
+[INFO] 2020-03-12 16:14:35,705 com.levy.jiratool.rooomy.RooomyIssueService.timeAround(RooomyIssueService.java:287)
+Time Around check: 2020-03-07T16:14:48.119+08:00, 2020-03-07T16:14:40.514+08:00
+[INFO] 2020-03-12 16:14:35,706 com.levy.jiratool.rooomy.RooomyIssueService.timeAround(RooomyIssueService.java:287)
+Time Around check: 2020-02-29T16:08:20.411+08:00, 2020-02-29T16:08:47.929+08:00
+[INFO] 2020-03-12 16:14:35,706 com.levy.jiratool.rooomy.RooomyIssueService.timeAround(RooomyIssueService.java:287)
+Time Around check: 2020-02-29T16:08:20.411+08:00, 2020-02-29T16:07:11.501+08:00
+[INFO] 2020-03-12 16:14:35,707 com.levy.jiratool.rooomy.RooomyIssueService.timeAround(RooomyIssueService.java:287)
+Time Around check: 2020-03-04T17:05:47.436+08:00, 2020-03-04T17:05:47.430+08:00
+[INFO] 2020-03-12 16:14:35,707 com.levy.jiratool.rooomy.RooomyIssueService.timeAround(RooomyIssueService.java:287)
+Time Around check: 2020-03-04T17:05:47.436+08:00, 2020-03-04T17:02:32.134+08:00
+[INFO] 2020-03-12 16:14:35,707 com.levy.jiratool.rooomy.RooomyIssueService.timeAround(RooomyIssueService.java:287)
+Time Around check: 2020-02-14T13:33:08.732+08:00, 2020-02-14T13:33:08.725+08:00
+[INFO] 2020-03-12 16:14:35,707 com.levy.jiratool.rooomy.RooomyIssueService.timeAround(RooomyIssueService.java:287)
+Time Around check: 2020-02-14T13:33:08.732+08:00, 2020-02-14T13:31:05.868+08:00
+[INFO] 2020-03-12 16:14:35,708 com.levy.jiratool.rooomy.RooomyIssueService.timeAround(RooomyIssueService.java:287)
+Time Around check: 2020-02-17T21:26:24.328+08:00, 2020-02-17T21:26:24.319+08:00
+[INFO] 2020-03-12 16:14:35,708 com.levy.jiratool.rooomy.RooomyIssueService.timeAround(RooomyIssueService.java:287)
+Time Around check: 2020-02-17T21:26:24.328+08:00, 2020-02-17T21:25:42.293+08:00
+[INFO] 2020-03-12 16:14:35,708 com.levy.jiratool.rooomy.RooomyIssueService.timeAround(RooomyIssueService.java:287)
+Time Around check: 2020-02-14T13:10:06.630+08:00, 2020-02-14T13:10:06.623+08:00
+[INFO] 2020-03-12 16:14:35,709 com.levy.jiratool.rooomy.RooomyIssueService.timeAround(RooomyIssueService.java:287)
+Time Around check: 2020-02-26T17:39:48.417+08:00, 2020-02-26T17:39:48.413+08:00
+[INFO] 2020-03-12 16:14:35,709 com.levy.jiratool.rooomy.RooomyIssueService.timeAround(RooomyIssueService.java:287)
+Time Around check: 2020-02-26T17:39:48.417+08:00, 2020-02-26T17:39:40.878+08:00
+[INFO] 2020-03-12 16:14:35,709 com.levy.jiratool.rooomy.RooomyIssueService.timeAround(RooomyIssueService.java:287)
+Time Around check: 2020-02-19T09:52:28.498+08:00, 2020-02-19T09:52:28.494+08:00
+[INFO] 2020-03-12 16:14:35,710 com.levy.jiratool.rooomy.RooomyIssueService.timeAround(RooomyIssueService.java:287)
+Time Around check: 2020-02-19T12:03:59.118+08:00, 2020-02-19T12:03:59.113+08:00
+[INFO] 2020-03-12 16:14:35,710 com.levy.jiratool.rooomy.RooomyIssueService.timeAround(RooomyIssueService.java:287)
+Time Around check: 2020-02-19T12:03:59.118+08:00, 2020-02-19T12:03:09.457+08:00
+[INFO] 2020-03-12 16:14:35,711 com.levy.jiratool.rooomy.RooomyIssueService.timeAround(RooomyIssueService.java:287)
+Time Around check: 2020-03-07T16:14:48.119+08:00, 2020-03-07T16:14:48.114+08:00
+[INFO] 2020-03-12 16:14:35,712 com.levy.jiratool.rooomy.RooomyIssueService.timeAround(RooomyIssueService.java:287)
+Time Around check: 2020-03-07T16:14:48.119+08:00, 2020-03-07T16:14:40.514+08:00
+[INFO] 2020-03-12 16:14:35,717 com.levy.jiratool.writer.ExcelFileWriter.createExcel(ExcelFileWriter.java:26)
+Will save data into: issueresult.xlsx
+[INFO] 2020-03-12 16:14:37,018 com.levy.jiratool.writer.ExcelFileWriter.createExcel(ExcelFileWriter.java:48)
 Success save data to file.

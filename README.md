@@ -56,6 +56,11 @@ xiao.fei;AMZCUS5-11391
     
     
 
+release 1.3
+1. 添加status，ticket type
+2. Assignees改为Comment Authors，展示的数据规则也变化
+3. ACount改为Comment Author Count 数量
+4. Last Comment和Second Comment由于2的变化也相应变化
 
 
 

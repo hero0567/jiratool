@@ -28,7 +28,7 @@ public class RooomyIssueService {
     private Map<String, String> rejectCause = new HashMap<>();
     private String formatter = "yyyy-MM-dd HH:mm:ss";
     private JiraClient jiraClient;
-    private String[] removedAssignees = {"issue1", "issue2", "issue3", "amazon managem"};
+    private String[] removedAssignees = {"issue1", "issue2", "issue3", "amazonmanagement", "Songbai Xiao", "Girma Gessesse"};
     private MessageHelper messager = MessageHelper.getLog();
     private RooomyIssueCounter counter = RooomyIssueCounter.getInstance();
 
@@ -99,6 +99,13 @@ public class RooomyIssueService {
                 String variationValue = (String) ((JSONArray) variationField.getValue()).get(0);
                 issueResult.setVariationValue(variationValue);
             }
+            issueResult.setStatus(issue.getStatus().getName());
+            issueResult.setAssignee(issue.getAssignee().getDisplayName());
+            Field tickectTypeField = issue.getFieldByName("Ticket Type");
+            if (tickectTypeField != null && tickectTypeField.getValue() != null) {
+                String tickectTypeValue = ((JSONObject) tickectTypeField.getValue()).getString("value");
+                issueResult.setTicketType(tickectTypeValue);
+            }
 
             //AMZCUS, AMZFAC
             Issue facIssue = jiraClient.getIssue(issueKey.getId().replaceAll("AMZCUS", "AMZFAC"));
@@ -125,8 +132,11 @@ public class RooomyIssueService {
             issueResult.setChangelogs(changelog);
             issueResult.setAttachments(issue.getAttachments());
             log.info("Complete get issue {}", issueKey.getId());
-        } catch (RestClientException | ExecutionException | InterruptedException | JSONException e) {
+        } catch (RestClientException | ExecutionException | InterruptedException e) {
             return false;
+        } catch (JSONException e) {
+            //JSON error, no need get data again.
+            return true;
         }
         return true;
     }
@@ -134,13 +144,12 @@ public class RooomyIssueService {
     private void mergeAssignee(IssueResult issueResult) {
         try {
             List<String> assignees = new ArrayList<>();
-            String lastAssignee = "";
             issueResult.setAssignees(assignees);
             for (ChangelogGroup changelog : issueResult.getChangelogs()) {
                 changelog.getItems().forEach(item -> {
                     if ("assignee".equals(item.getField())) {
                         if (!Arrays.asList(removedAssignees).contains(item.getTo().toLowerCase())) {
-                            assignees.add(item.getTo() + "(" + changelog.getCreated().toString(DateTimeFormat.forPattern(formatter)) + ")");
+                            assignees.add(item.getToString() + "(" + changelog.getCreated().toString(DateTimeFormat.forPattern(formatter)) + ")");
                             issueResult.setLastAssignee(item.getTo());
                         }
                     }
@@ -149,14 +158,32 @@ public class RooomyIssueService {
         } catch (Exception e) {
             log.error("Failed to merge assignee for {}", issueResult.getId());
         }
+    }
 
+    private void mergeCommentAuthor(IssueResult issueResult) {
+        try {
+            Set<String> uniqAuthors = new HashSet<>();
+            for(String removedAuthor : removedAssignees){
+                uniqAuthors.add(removedAuthor);
+            }
+            List<String> commentAuthors = new ArrayList<>();
+            issueResult.setCommentAuthors(commentAuthors);
+            for (Comment comment : issueResult.getComments()) {
+                String author = comment.getAuthor().getDisplayName();
+                if (uniqAuthors.add(author)){
+                    commentAuthors.add(0, author+ "(" + comment.getUpdateDate().toString(DateTimeFormat.forPattern(formatter)) + ")");
+                }
+            }
+        } catch (Exception e) {
+            log.error("Failed to merge author for {}", issueResult.getId());
+        }
     }
 
     private void mergeLastComments(IssueResult issueResult) {
         try {
             for (Comment comment : issueResult.getComments()) {
-                for (String assignee : issueResult.getAssignees()) {
-                    if (assignee.toLowerCase().startsWith(comment.getAuthor().getName().toLowerCase() + "(")) {
+                for (String commentAuthor : issueResult.getCommentAuthors()) {
+                    if (commentAuthor.toLowerCase().startsWith(comment.getAuthor().getDisplayName().toLowerCase() + "(")) {
                         if (issueResult.getLastComment() == null) {
                             issueResult.setLastComment(comment);
                         } else {
@@ -266,7 +293,8 @@ public class RooomyIssueService {
     private void convertIssue(List<IssueResult> issueResults) {
         for (IssueResult issueResult : issueResults) {
             mergeIssueRejectedComments(issueResult);
-            mergeAssignee(issueResult);
+            //mergeAssignee(issueResult);
+            mergeCommentAuthor(issueResult);
             mergeLastComments(issueResult);
             mergeRemark(issueResult);
         }
