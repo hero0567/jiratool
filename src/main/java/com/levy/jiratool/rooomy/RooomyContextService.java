@@ -20,6 +20,8 @@ public class RooomyContextService {
             //String assigne = String.join("->", issueResult.getAssignees());
             String commentAuthors = String.join("->", issueResult.getCommentAuthors());
             String rejectResults = String.join(";", issueResult.getRejectResults());
+
+            //comment body
             String secondComment = "";
             if (issueResult.getSecondComment() != null) {
                 Comment comment = issueResult.getSecondComment();
@@ -38,12 +40,22 @@ public class RooomyContextService {
                 lastCommentUpdateDate = issueResult.getLastComment().getUpdateDate().toString(DateTimeFormat.forPattern(formatter));
             }
 
+            //QA changed
+            String qaChanged = "";
+            if (issueResult.getSecondComment() != null && issueResult.getLastComment() != null) {
+                if (issueResult.getSecondComment().getAuthor().getDisplayName().equals(issueResult.getLastComment().getAuthor().getDisplayName())){
+                    qaChanged = "No";
+                }else{
+                    qaChanged = "Yes";
+                }
+            }
+
             String remarkComment = issueResult.isRemarkComment() ? "Yes" : "No";
             String remarkAttachment = issueResult.isRemarkAttachment() ? "Yes" : "No";
             String content = String.join(";",
                     issueResult.getId(),
                     commentAuthors,
-                    String.valueOf(issueResult.getCommentAuthors().size()),  //ACount
+                    String.valueOf(issueResult.getCommentUniqAuthors().size()),  //ACount
                     issueResult.getStatus(),
                     issueResult.getTicketType(),
                     issueResult.getUniqueValue(),
@@ -52,10 +64,12 @@ public class RooomyContextService {
                     issueResult.getInternalQa(),
                     issueResult.getInternalQaRoundValue(),
                     issueResult.getExternalQaRoundValue(),
+                    issueResult.getLastReadyForCustomerDate(),
                     rejectResults,                          //reject
                     lastCommentUpdateDate,
                     remarkComment,
                     remarkAttachment,
+                    qaChanged,
                     secondComment,
                     lastComment);
             contentList.add(content);
@@ -76,10 +90,12 @@ public class RooomyContextService {
         header.add("Internal QA");
         header.add("Internal QA Round");
         header.add("External QA Round");
+        header.add("Last Ready For Customer");
         header.add(String.join(";", rejectCause.keySet()));   //reject
         header.add("Remark Last Date");
         header.add("Remark Comment");
         header.add("Remark Attachment");
+        header.add("QA Changed(Last Two Round)");
         header.add("Second Comment");
         header.add("Last Comment");
         return String.join(";", header);

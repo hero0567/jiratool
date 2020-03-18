@@ -17,8 +17,9 @@ public class IssueResult {
     private Iterable<Attachment> attachments;
     private List<String> assignees;
     private List<String> commentAuthors;
+    private List<String> commentUniqAuthors;
     private String lastAssignee = "";
-    private String assignee;
+    private String assignee = "";
     private List<String> rejectResults;
     //the last, second comment but the author should be in comments and removed special authors
     private Comment lastComment;
@@ -33,4 +34,5 @@ public class IssueResult {
     private String internalQa = "";
     private String status = "";
     private String ticketType = "";
+    private String lastReadyForCustomerDate = "";
 }

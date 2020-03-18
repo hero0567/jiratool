@@ -28,7 +28,7 @@ public class RooomyIssueService {
     private Map<String, String> rejectCause = new HashMap<>();
     private String formatter = "yyyy-MM-dd HH:mm:ss";
     private JiraClient jiraClient;
-    private String[] removedAssignees = {"issue1", "issue2", "issue3", "amazonmanagement", "Songbai Xiao", "Girma Gessesse"};
+    private String[] removedAssignees = {"issue1", "issue2", "issue3", "amazonmanagement", "Songbai Xiao", "Girma Gessesse", "Xuelan Jin"};
     private MessageHelper messager = MessageHelper.getLog();
     private RooomyIssueCounter counter = RooomyIssueCounter.getInstance();
 
@@ -168,14 +168,21 @@ public class RooomyIssueService {
     private void mergeCommentAuthor(IssueResult issueResult) {
         try {
             Set<String> uniqAuthors = new HashSet<>();
+            Set<String> removedqAuthors = new HashSet<>();
             for (String removedAuthor : removedAssignees) {
                 uniqAuthors.add(removedAuthor);
+                removedqAuthors.add(removedAuthor);
             }
+            List<String> commentUniqAuthors = new ArrayList<>();
             List<String> commentAuthors = new ArrayList<>();
             issueResult.setCommentAuthors(commentAuthors);
+            issueResult.setCommentUniqAuthors(commentUniqAuthors);
             for (Comment comment : issueResult.getComments()) {
                 String author = comment.getAuthor().getDisplayName();
                 if (uniqAuthors.add(author)) {
+                    commentUniqAuthors.add(0, author + "(" + comment.getUpdateDate().toString(DateTimeFormat.forPattern(formatter)) + ")");
+                }
+                if (!removedqAuthors.contains(author)){
                     commentAuthors.add(0, author + "(" + comment.getUpdateDate().toString(DateTimeFormat.forPattern(formatter)) + ")");
                 }
             }
@@ -284,6 +291,21 @@ public class RooomyIssueService {
 
     }
 
+    private void mergeLastStatusReadyForCustomer(IssueResult issueResult) {
+        try{
+            for (ChangelogGroup changelog : issueResult.getChangelogs()) {
+                for (ChangelogItem item : changelog.getItems()) {
+                    if ("status".equals(item.getField()) && ("10818".equals(item.getTo()) || "10825".equals(item.getTo()))) {
+                        issueResult.setLastReadyForCustomerDate(changelog.getCreated().toString(DateTimeFormat.forPattern(this.formatter)));
+                        return;
+                    }
+                }
+            }
+        }catch (Exception e){
+            log.error("Failed to merge last ready for customer.", e);
+        }
+    }
+
     private boolean timeAround(DateTime givenTime, DateTime checkTime) {
         long around = 3 * 60 * 60 * 1000;
         long givenMillis = givenTime.getMillis();
@@ -302,6 +324,7 @@ public class RooomyIssueService {
             mergeCommentAuthor(issueResult);
             mergeLastComments(issueResult);
             mergeRemark(issueResult);
+            mergeLastStatusReadyForCustomer(issueResult);
         }
     }
 

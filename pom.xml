@@ -75,6 +75,10 @@
 
     <repositories>
         <repository>
+            <id>aliyunmaven</id>
+            <url>http://maven.aliyun.com/nexus/content/groups/public/</url>
+        </repository>
+        <repository>
             <id>central</id>
             <name>Atlassian Public Repository</name>
             <layout>default</layout>
