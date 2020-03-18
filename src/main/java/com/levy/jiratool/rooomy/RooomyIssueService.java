@@ -99,8 +99,14 @@ public class RooomyIssueService {
                 String variationValue = (String) ((JSONArray) variationField.getValue()).get(0);
                 issueResult.setVariationValue(variationValue);
             }
-            issueResult.setStatus(issue.getStatus().getName());
-            issueResult.setAssignee(issue.getAssignee().getDisplayName());
+            BasicStatus basicStatus = issue.getStatus();
+            if (basicStatus != null){
+                issueResult.setStatus(basicStatus.getName());
+            }
+            BasicUser basicUser = issue.getAssignee();
+            if (basicUser != null) {
+                issueResult.setAssignee(basicUser.getDisplayName());
+            }
             Field tickectTypeField = issue.getFieldByName("Ticket Type");
             if (tickectTypeField != null && tickectTypeField.getValue() != null) {
                 String tickectTypeValue = ((JSONObject) tickectTypeField.getValue()).getString("value");
@@ -124,7 +130,6 @@ public class RooomyIssueService {
                 String qa = (String) ((JSONObject) qaField.getValue()).get("displayName");
                 issueResult.setInternalQa(qa);
             }
-
 
             Iterable<Comment> comments = jiraClient.getComments(issue);
             Iterable<ChangelogGroup> changelog = jiraClient.getChangelog(issueKey.getId());
@@ -163,15 +168,15 @@ public class RooomyIssueService {
     private void mergeCommentAuthor(IssueResult issueResult) {
         try {
             Set<String> uniqAuthors = new HashSet<>();
-            for(String removedAuthor : removedAssignees){
+            for (String removedAuthor : removedAssignees) {
                 uniqAuthors.add(removedAuthor);
             }
             List<String> commentAuthors = new ArrayList<>();
             issueResult.setCommentAuthors(commentAuthors);
             for (Comment comment : issueResult.getComments()) {
                 String author = comment.getAuthor().getDisplayName();
-                if (uniqAuthors.add(author)){
-                    commentAuthors.add(0, author+ "(" + comment.getUpdateDate().toString(DateTimeFormat.forPattern(formatter)) + ")");
+                if (uniqAuthors.add(author)) {
+                    commentAuthors.add(0, author + "(" + comment.getUpdateDate().toString(DateTimeFormat.forPattern(formatter)) + ")");
                 }
             }
         } catch (Exception e) {
