@@ -352,10 +352,10 @@ public class RooomyIssueService {
     private void loadIssueAndWrite(List<IssueKey> issueKeys) {
         List<IssueResult> issueResults = loadIssueCommentsAsync(issueKeys);
         messager.infot("Completed load all(" + issueKeys.size() + ") issues.");
-
         convertIssue(issueResults);
         RooomyContextService contextService = new RooomyContextService();
         List<String> contents = contextService.getContent(issueResults, rejectCause);
+        messager.infot("Only " + contents.size() + " issues will be saved to excel.");
         FileWriter fileWriter = new ExcelFileWriter();
         fileWriter.write(contents);
     }
