@@ -1,6 +1,7 @@
 package com.levy.jiratool.rooomy;
 
 import com.atlassian.jira.rest.client.domain.Comment;
+import com.google.common.base.Strings;
 import com.levy.jiratool.model.IssueResult;
 import lombok.extern.slf4j.Slf4j;
 import org.joda.time.format.DateTimeFormat;
@@ -43,18 +44,21 @@ public class RooomyContextService {
                     lastCommentUpdateDate = issueResult.getLastComment().getUpdateDate().toString(DateTimeFormat.forPattern(formatter));
                 }
 
+                int uniqueValue = getStringInt(issueResult.getUniqueValue());
+                int variationValue = getStringInt(issueResult.getVariationValue());
+                int maxQty = Math.max(uniqueValue, variationValue);
+
                 //QA changed
                 String qaChanged = "";
                 if (issueResult.getSecondComment() != null && issueResult.getLastComment() != null) {
-                    if (issueResult.getSecondComment().getAuthor().getDisplayName().equals(issueResult.getLastComment().getAuthor().getDisplayName())) {
-                        qaChanged = "No";
-                    } else {
-                        qaChanged = "Yes";
+                    if (!issueResult.getSecondComment().getAuthor().getDisplayName().equals(issueResult.getLastComment().getAuthor().getDisplayName())) {
+                        //not equal, qa changed
+                        qaChanged = String.valueOf(maxQty);
                     }
                 }
 
-                String remarkComment = issueResult.isRemarkComment() ? "Yes" : "No";
-                String remarkAttachment = issueResult.isRemarkAttachment() ? "Yes" : "No";
+                String remarkComment = issueResult.isRemarkComment() ? "" : String.valueOf(maxQty);
+                String remarkAttachment = issueResult.isRemarkAttachment() ? "" : String.valueOf(maxQty);
                 String content = String.join(";",
                         issueResult.getId(),
                         commentAuthors,
@@ -105,5 +109,19 @@ public class RooomyContextService {
         header.add("Second Comment");
         header.add("Last Comment");
         return String.join(";", header);
+    }
+
+    private int getStringInt(String s) {
+        int v = 0;
+        if (Strings.isNullOrEmpty(s)) {
+            return 0;
+        }
+
+        try {
+            v = Integer.valueOf(s);
+        } catch (Exception e) {
+            log.error("Failed convert string to integer: {}", s);
+        }
+        return v;
     }
 }

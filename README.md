@@ -54,3 +54,7 @@ release 1.4
 4 "Last Ready For Customer" miss and back again.
 
 
+release 1.4.1
+1. 修改QA Changed为qty的数量
+2. 修改Remark Comment为qty的数量
+3. 修改Remark Attachemtn为qty的数量
