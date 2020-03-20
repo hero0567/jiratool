@@ -21,8 +21,20 @@ public class RooomyContextService {
         contentList.add(header);
         for (IssueResult issueResult : issueResults) {
             try {
-                //String assigne = String.join("->", issueResult.getAssignees());
+                int uniqueValue = getStringInt(issueResult.getUniqueValue());
+                int variationValue = getStringInt(issueResult.getVariationValue());
+                int maxQty = Math.max(uniqueValue, variationValue);
+
                 String commentAuthors = String.join("->", issueResult.getCommentAuthors());
+
+                //use QTY instead of "1"
+                List<String> rejectList= issueResult.getRejectResults();
+                for (int i = 0; i < rejectList.size(); i++) {
+                    String reject = rejectList.get(i);
+                    if ("1".equals(reject)) {
+                        rejectList.set(i, String.valueOf(maxQty));
+                    }
+                }
                 String rejectResults = String.join(";", issueResult.getRejectResults());
 
                 //comment body
@@ -43,10 +55,6 @@ public class RooomyContextService {
 
                     lastCommentUpdateDate = issueResult.getLastComment().getUpdateDate().toString(DateTimeFormat.forPattern(formatter));
                 }
-
-                int uniqueValue = getStringInt(issueResult.getUniqueValue());
-                int variationValue = getStringInt(issueResult.getVariationValue());
-                int maxQty = Math.max(uniqueValue, variationValue);
 
                 //QA changed
                 String qaChanged = "";
@@ -69,12 +77,13 @@ public class RooomyContextService {
                         issueResult.getVariationValue(),        //Variation Qty
                         issueResult.getAssignee(),
                         issueResult.getInternalQa(),
+                        issueResult.getFacAssignee(),           //FAC assignee
                         issueResult.getInternalQaRoundValue(),
                         issueResult.getExternalQaRoundValue(),
                         issueResult.getLastReadyForCustomerDate(),
                         rejectResults,                          //reject
                         lastCommentUpdateDate,
-                        remarkComment,
+                        remarkComment,                          //Remark Comment
                         remarkAttachment,
                         qaChanged,
                         secondComment,
@@ -98,6 +107,7 @@ public class RooomyContextService {
         header.add("Variation Qty");
         header.add("External QA");
         header.add("Internal QA");
+        header.add("FAC Assignee");
         header.add("Internal QA Round");
         header.add("External QA Round");
         header.add("Last Ready For Customer");

@@ -20,6 +20,7 @@ public class IssueResult {
     private List<String> commentUniqAuthors;
     private String lastAssignee = "";
     private String assignee = "";
+    private String facAssignee = "";
     private List<String> rejectResults;
     //the last, second comment but the author should be in comments and removed special authors
     private Comment lastComment;

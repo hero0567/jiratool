@@ -115,6 +115,11 @@ public class RooomyIssueService {
 
             //AMZCUS, AMZFAC
             Issue facIssue = jiraClient.getIssue(issueKey.getId().replaceAll("AMZCUS", "AMZFAC"));
+            BasicUser facUser = facIssue.getAssignee();
+            if (facUser != null) {
+                issueResult.setFacAssignee(facUser.getDisplayName());
+            }
+
             Field externalQaRound = facIssue.getFieldByName("External QA Round");
             if (externalQaRound != null && externalQaRound.getValue() != null) {
                 String externalQaRoundValue = String.valueOf(((Double) externalQaRound.getValue()).intValue());

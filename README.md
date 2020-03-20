@@ -58,3 +58,7 @@ release 1.4.1
 1. 修改QA Changed为qty的数量
 2. 修改Remark Comment为qty的数量
 3. 修改Remark Attachemtn为qty的数量
+
+release 1.4.2
+1. 把Reject的flag 1改为QTY的值
+2. 添加FAC的assignee
