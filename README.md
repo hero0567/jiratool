@@ -62,3 +62,6 @@ release 1.4.1
 release 1.4.2
 1. 把Reject的flag 1改为QTY的值
 2. 添加FAC的assignee
+
+release 1.4.3
+1. 替换所有的name从displayName替换为name

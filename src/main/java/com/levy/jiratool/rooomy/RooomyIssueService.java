@@ -28,7 +28,8 @@ public class RooomyIssueService {
     private Map<String, String> rejectCause = new HashMap<>();
     private String formatter = "yyyy-MM-dd HH:mm:ss";
     private JiraClient jiraClient;
-    private String[] removedAssignees = {"issue1", "issue2", "issue3", "amazonmanagement", "Songbai Xiao", "Girma Gessesse", "Xuelan Jin"};
+//    private String[] removedAssignees = {"issue1", "issue2", "issue3", "amazonmanagement", "Songbai Xiao", "Girma Gessesse", "Xuelan Jin"};
+    private String[] removedAssignees = {"issue1", "issue2", "issue3", "amazonmanagement", "cn.songbai.xiao", "cn.girma.gessesse", "cn.xuelan.jin"};
     private MessageHelper messager = MessageHelper.getLog();
     private RooomyIssueCounter counter = RooomyIssueCounter.getInstance();
 
@@ -105,7 +106,7 @@ public class RooomyIssueService {
             }
             BasicUser basicUser = issue.getAssignee();
             if (basicUser != null) {
-                issueResult.setAssignee(basicUser.getDisplayName());
+                issueResult.setAssignee(basicUser.getName());
             }
             Field tickectTypeField = issue.getFieldByName("Ticket Type");
             if (tickectTypeField != null && tickectTypeField.getValue() != null) {
@@ -117,7 +118,7 @@ public class RooomyIssueService {
             Issue facIssue = jiraClient.getIssue(issueKey.getId().replaceAll("AMZCUS", "AMZFAC"));
             BasicUser facUser = facIssue.getAssignee();
             if (facUser != null) {
-                issueResult.setFacAssignee(facUser.getDisplayName());
+                issueResult.setFacAssignee(facUser.getName());
             }
 
             Field externalQaRound = facIssue.getFieldByName("External QA Round");
@@ -132,7 +133,7 @@ public class RooomyIssueService {
             }
             Field qaField = facIssue.getFieldByName("QA");
             if (qaField != null) {
-                String qa = (String) ((JSONObject) qaField.getValue()).get("displayName");
+                String qa = (String) ((JSONObject) qaField.getValue()).get("name");
                 issueResult.setInternalQa(qa);
             }
 
@@ -151,25 +152,6 @@ public class RooomyIssueService {
         return true;
     }
 
-    private void mergeAssignee(IssueResult issueResult) {
-        try {
-            List<String> assignees = new ArrayList<>();
-            issueResult.setAssignees(assignees);
-            for (ChangelogGroup changelog : issueResult.getChangelogs()) {
-                changelog.getItems().forEach(item -> {
-                    if ("assignee".equals(item.getField())) {
-                        if (!Arrays.asList(removedAssignees).contains(item.getTo().toLowerCase())) {
-                            assignees.add(item.getToString() + "(" + changelog.getCreated().toString(DateTimeFormat.forPattern(formatter)) + ")");
-                            issueResult.setLastAssignee(item.getTo());
-                        }
-                    }
-                });
-            }
-        } catch (Exception e) {
-            log.error("Failed to merge assignee for {}", issueResult.getId());
-        }
-    }
-
     private void mergeCommentAuthor(IssueResult issueResult) {
         try {
             Set<String> uniqAuthors = new HashSet<>();
@@ -183,7 +165,7 @@ public class RooomyIssueService {
             issueResult.setCommentAuthors(commentAuthors);
             issueResult.setCommentUniqAuthors(commentUniqAuthors);
             for (Comment comment : issueResult.getComments()) {
-                String author = comment.getAuthor().getDisplayName();
+                String author = comment.getAuthor().getName();
                 if (uniqAuthors.add(author)) {
                     commentUniqAuthors.add(0, author + "(" + comment.getUpdateDate().toString(DateTimeFormat.forPattern(formatter)) + ")");
                 }
