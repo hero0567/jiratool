@@ -41,7 +41,7 @@ public class RooomyContextService {
                 String secondComment = "";
                 if (issueResult.getSecondComment() != null) {
                     Comment comment = issueResult.getSecondComment();
-                    secondComment = comment.getAuthor().getDisplayName() + ":" + comment.getBody()
+                    secondComment = comment.getAuthor().getName()+ ":" + comment.getBody()
                             .replaceAll("\r\n", "")
                             .replaceAll(";", "");
                 }
@@ -49,7 +49,7 @@ public class RooomyContextService {
                 String lastCommentUpdateDate = "";
                 if (issueResult.getLastComment() != null) {
                     Comment comment = issueResult.getLastComment();
-                    lastComment = comment.getAuthor().getDisplayName() + ":" + comment.getBody()
+                    lastComment = comment.getAuthor().getName() + ":" + comment.getBody()
                             .replaceAll("\r\n", "")
                             .replaceAll(";", "");
 
@@ -59,7 +59,7 @@ public class RooomyContextService {
                 //QA changed
                 String qaChanged = "";
                 if (issueResult.getSecondComment() != null && issueResult.getLastComment() != null) {
-                    if (!issueResult.getSecondComment().getAuthor().getDisplayName().equals(issueResult.getLastComment().getAuthor().getDisplayName())) {
+                    if (!issueResult.getSecondComment().getAuthor().getName().equals(issueResult.getLastComment().getAuthor().getName())) {
                         //not equal, qa changed
                         qaChanged = String.valueOf(maxQty);
                     }

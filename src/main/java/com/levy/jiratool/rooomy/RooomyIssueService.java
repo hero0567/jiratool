@@ -182,7 +182,7 @@ public class RooomyIssueService {
         try {
             for (Comment comment : issueResult.getComments()) {
                 for (String commentAuthor : issueResult.getCommentAuthors()) {
-                    if (commentAuthor.toLowerCase().startsWith(comment.getAuthor().getDisplayName().toLowerCase() + "(")) {
+                    if (commentAuthor.toLowerCase().startsWith(comment.getAuthor().getName().toLowerCase() + "(")) {
                         if (issueResult.getLastComment() == null) {
                             issueResult.setLastComment(comment);
                         } else {
