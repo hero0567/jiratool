@@ -36,4 +36,5 @@ public class IssueResult {
     private String status = "";
     private String ticketType = "";
     private String lastReadyForCustomerDate = "";
+    private String lastOldComment = "";
 }

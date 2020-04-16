@@ -28,7 +28,7 @@ public class RooomyIssueService {
     private Map<String, String> rejectCause = new HashMap<>();
     private String formatter = "yyyy-MM-dd HH:mm:ss";
     private JiraClient jiraClient;
-//    private String[] removedAssignees = {"issue1", "issue2", "issue3", "amazonmanagement", "Songbai Xiao", "Girma Gessesse", "Xuelan Jin"};
+    //    private String[] removedAssignees = {"issue1", "issue2", "issue3", "amazonmanagement", "Songbai Xiao", "Girma Gessesse", "Xuelan Jin"};
     private String[] removedAssignees = {"issue1", "issue2", "issue3", "amazonmanagement", "cn.songbai.xiao", "cn.girma.gessesse", "cn.xuelan.jin"};
     private MessageHelper messager = MessageHelper.getLog();
     private RooomyIssueCounter counter = RooomyIssueCounter.getInstance();
@@ -62,6 +62,7 @@ public class RooomyIssueService {
         log.info("Try to get issue comments of {}", issueKey.getId());
         long begin = System.currentTimeMillis();
         IssueResult issueResult = new IssueResult();
+        issueResult.setLastOldComment(issueKey.getName());
         issueResult.setId(issueKey.getId());
         issueResult.setName(issueKey.getName());
         try {
@@ -101,7 +102,7 @@ public class RooomyIssueService {
                 issueResult.setVariationValue(variationValue);
             }
             BasicStatus basicStatus = issue.getStatus();
-            if (basicStatus != null){
+            if (basicStatus != null) {
                 issueResult.setStatus(basicStatus.getName());
             }
             BasicUser basicUser = issue.getAssignee();
@@ -169,7 +170,7 @@ public class RooomyIssueService {
                 if (uniqAuthors.add(author)) {
                     commentUniqAuthors.add(0, author + "(" + comment.getUpdateDate().toString(DateTimeFormat.forPattern(formatter)) + ")");
                 }
-                if (!removedqAuthors.contains(author)){
+                if (!removedqAuthors.contains(author)) {
                     commentAuthors.add(0, author + "(" + comment.getUpdateDate().toString(DateTimeFormat.forPattern(formatter)) + ")");
                 }
             }
@@ -183,12 +184,15 @@ public class RooomyIssueService {
             for (Comment comment : issueResult.getComments()) {
                 for (String commentAuthor : issueResult.getCommentAuthors()) {
                     if (commentAuthor.toLowerCase().startsWith(comment.getAuthor().getName().toLowerCase() + "(")) {
-                        if (issueResult.getLastComment() == null) {
+                        String body = comment.getAuthor().getName() + ":" + comment.getBody()
+                                .replaceAll("\r\n", "")
+                                .replaceAll(";", "");
+                        if (issueResult.getLastComment() == null && issueResult.getLastOldComment().equals(body)) {
                             issueResult.setLastComment(comment);
                             break;
-                        } else {
+                        }
+                        if (issueResult.getLastComment() != null){
                             issueResult.setSecondComment(comment);
-                            return;
                         }
                     }
                 }
@@ -280,7 +284,7 @@ public class RooomyIssueService {
     }
 
     private void mergeLastStatusReadyForCustomer(IssueResult issueResult) {
-        try{
+        try {
             for (ChangelogGroup changelog : issueResult.getChangelogs()) {
                 for (ChangelogItem item : changelog.getItems()) {
                     if ("status".equals(item.getField()) && ("10818".equals(item.getTo()) || "10825".equals(item.getTo()))) {
@@ -289,7 +293,7 @@ public class RooomyIssueService {
                     }
                 }
             }
-        }catch (Exception e){
+        } catch (Exception e) {
             log.error("Failed to merge last ready for customer.", e);
         }
     }

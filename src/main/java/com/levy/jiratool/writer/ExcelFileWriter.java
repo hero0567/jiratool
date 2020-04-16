@@ -1,5 +1,6 @@
 package com.levy.jiratool.writer;
 
+import com.levy.jiratool.model.IssueKey;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.poi.ss.usermodel.CellStyle;
 import org.apache.poi.xssf.usermodel.XSSFCell;
@@ -8,8 +9,7 @@ import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 import javax.swing.filechooser.FileSystemView;
-import java.io.File;
-import java.io.FileOutputStream;
+import java.io.*;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
@@ -17,12 +17,40 @@ import java.util.List;
 
 @Slf4j
 public class ExcelFileWriter implements FileWriter {
+
+    public final static int keyIndex = 1;
+    public final static int commentIndex = 33;
+
     @Override
     public void write(List<String> contents) {
         createExcel(contents, "issueresult.xlsx");
     }
 
-    private static void createExcel(List<String> contents, String path) {
+    public List<IssueKey> read(String keyPath) {
+        List<IssueKey> issueKeys = new ArrayList<>();
+        try (FileInputStream inputStream = new FileInputStream(keyPath);) {
+            XSSFWorkbook xssfWorkbook = new XSSFWorkbook(inputStream);
+            XSSFSheet xssfSheet = xssfWorkbook.getSheetAt(0);
+            for (int rowIndex = 0; rowIndex < xssfSheet.getPhysicalNumberOfRows(); rowIndex++) {
+                XSSFRow xssfRow = xssfSheet.getRow(rowIndex);
+                String key = xssfRow.getCell(keyIndex).getStringCellValue();
+                String comment = xssfRow.getCell(commentIndex).getStringCellValue();
+                if (rowIndex == 0) {
+                    log.info("Load: {}, {}", key, comment);
+                    continue;
+                }
+                IssueKey issueKey = new IssueKey();
+                issueKey.setId(key);
+                issueKey.setName(comment);
+                issueKeys.add(issueKey);
+            }
+        } catch (Exception e) {
+            log.error("Failed to open excel.", e);
+        }
+        return issueKeys;
+    }
+
+    private void createExcel(List<String> contents, String path) {
         log.info("Will save data into: {}", path);
         try {
             XSSFWorkbook wb = new XSSFWorkbook();  //创建工作薄
@@ -40,7 +68,7 @@ public class ExcelFileWriter implements FileWriter {
             for (int i = 0; i < headers.length; i++) {
                 sheet.autoSizeColumn(i);
             }
-            
+
             try (FileOutputStream outputStream = new FileOutputStream(path);) {
                 wb.write(outputStream);
                 outputStream.flush();
