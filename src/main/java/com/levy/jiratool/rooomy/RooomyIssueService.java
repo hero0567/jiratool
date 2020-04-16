@@ -185,6 +185,7 @@ public class RooomyIssueService {
                     if (commentAuthor.toLowerCase().startsWith(comment.getAuthor().getName().toLowerCase() + "(")) {
                         if (issueResult.getLastComment() == null) {
                             issueResult.setLastComment(comment);
+                            break;
                         } else {
                             issueResult.setSecondComment(comment);
                             return;
